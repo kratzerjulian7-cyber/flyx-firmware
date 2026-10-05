@@ -1,0 +1,205 @@
+{
+  "updated": "2026-10-05T07:00:00Z",
+  "items": [
+    {
+      "vendor": "ExpressLRS",
+      "product": "ExpressLRS",
+      "type": "ExpressLRS",
+      "mode": "fpv",
+      "version": "4.1.0",
+      "date": "2026-07-17",
+      "notes": "https://github.com/ExpressLRS/ExpressLRS/releases/latest",
+      "source": "https://github.com/ExpressLRS/ExpressLRS/releases/latest"
+    },
+    {
+      "vendor": "EdgeTX",
+      "product": "EdgeTX",
+      "type": "EdgeTX",
+      "mode": "fpv",
+      "version": "2.12.4",
+      "date": "2026-09-02",
+      "notes": "https://github.com/EdgeTX/edgetx/releases/latest",
+      "source": "https://github.com/EdgeTX/edgetx/releases/latest"
+    },
+    {
+      "vendor": "Betaflight",
+      "product": "Betaflight",
+      "type": "Betaflight",
+      "mode": "fpv",
+      "version": "2026.6.2",
+      "date": "2026-09-16",
+      "notes": "https://github.com/betaflight/betaflight/releases/latest",
+      "source": "https://github.com/betaflight/betaflight/releases/latest"
+    },
+    {
+      "vendor": "INAV",
+      "product": "INAV",
+      "type": "INAV",
+      "mode": "fpv",
+      "version": "9.1.0",
+      "date": "2026-07-09",
+      "notes": "https://github.com/iNavFlight/inav/releases/latest",
+      "source": "https://github.com/iNavFlight/inav/releases/latest"
+    },
+    {
+      "vendor": "HDZero",
+      "product": "HDZero (Brille)",
+      "type": "HDZero (Brille)",
+      "mode": "fpv",
+      "version": "9.5.0",
+      "date": "2025-03-20",
+      "notes": "https://github.com/hd-zero/hdzero-goggle/releases/latest",
+      "source": "https://github.com/hd-zero/hdzero-goggle/releases/latest"
+    },
+    {
+      "vendor": "HDZero",
+      "product": "HDZero (VTX)",
+      "type": "HDZero (VTX)",
+      "mode": "fpv",
+      "version": "1.7.0",
+      "date": "2026-09-23",
+      "notes": "https://github.com/hd-zero/hdzero-vtx/releases/latest",
+      "source": "https://github.com/hd-zero/hdzero-vtx/releases/latest"
+    },
+    {
+      "vendor": "Walksnail",
+      "product": "Walksnail",
+      "type": "Walksnail",
+      "mode": "fpv",
+      "version": "39.44.18",
+      "date": "2026-06-01",
+      "notes": "https://walksnail.app/firmware/avatar/39.44.18",
+      "source": "https://walksnail.app/firmware"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI Goggles 3",
+      "type": "DJI",
+      "mode": "fpv",
+      "version": null,
+      "date": "2026-09-01",
+      "notes": "https://www.dji.com/goggles-3/downloads",
+      "source": "https://www.dji.com/goggles-3/downloads"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI Goggles N3",
+      "type": "DJI",
+      "mode": "fpv",
+      "version": "v01.00.1100",
+      "date": "2026-09-01",
+      "notes": "https://www.dji.com/goggles-n3/downloads",
+      "source": "https://latestupdate.io/wares/dji:firmware:dji-goggles-n3"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI O4 Air Unit Pro",
+      "type": "DJI",
+      "mode": "fpv",
+      "version": "v01.00.07.00",
+      "date": "2026-07-02",
+      "notes": "https://www.dji.com/o4-air-unit/downloads",
+      "source": "https://www.dji.com/o4-air-unit/downloads"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI O4 Air Unit",
+      "type": "DJI",
+      "mode": "fpv",
+      "version": "v01.00.0400",
+      "date": "2026-06-25",
+      "notes": "https://www.dji.com/o4-air-unit/downloads",
+      "source": "https://www.dji.com/o4-air-unit/downloads"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI Avata 2",
+      "mode": "fpv",
+      "version": "v01.00.0500",
+      "date": "2026-07-30",
+      "notes": "https://www.dji.com/avata-2/downloads",
+      "source": "https://latestupdate.io/wares/dji:firmware:dji-avata-2"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI Neo",
+      "mode": "camera",
+      "version": "v01.00.0400",
+      "date": "2024-11-06",
+      "notes": "https://dl.djicdn.com/downloads/neo/20241106/DJI_Neo_Release_Notes_us_20241106_.pdf",
+      "source": "https://www.dji.com/neo/downloads"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI Mini 3",
+      "mode": "camera",
+      "version": "v01.00.0500",
+      "date": "2024-05-28",
+      "notes": "https://dl.djicdn.com/downloads/DJI_Mini_3/RN/20240528/DJI_Mini_3_Release_Notes_EN.pdf",
+      "source": "https://www.dji.com/mini-3/downloads"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI Mini 4 Pro",
+      "mode": "camera",
+      "version": "v01.00.1100",
+      "date": "2025-11-05",
+      "notes": "https://dl.djicdn.com/downloads/DJI_Mini_4_Pro/20251105/DJI_Mini_4_Pro_Release_Notes_EN.pdf",
+      "source": "https://www.dji.com/mini-4-pro/downloads"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI Mini 5 Pro",
+      "mode": "camera",
+      "version": "v01.00.0600",
+      "date": "2025-12-10",
+      "notes": "https://www.dji.com/mini-5-pro/downloads",
+      "source": "https://latestupdate.io/wares/dji:firmware:dji-mini-5-pro"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI Flip",
+      "mode": "camera",
+      "version": "v01.00.13.00",
+      "date": "2025-05-23",
+      "notes": "https://www.dji.com/flip/downloads",
+      "source": "https://latestupdate.io/wares/dji:firmware:dji-flip"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI Air 3",
+      "mode": "camera",
+      "version": "v01.00.1600",
+      "date": "2025-05-13",
+      "notes": "https://dl.djicdn.com/downloads/DJI_Air_3/RN/20250513/DJI_Air_3_Release_Notes_EN.pdf",
+      "source": "https://www.dji.com/air-3/downloads"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI Air 3S",
+      "mode": "camera",
+      "version": "v01.00.1700",
+      "date": "2026-07-30",
+      "notes": "https://www.dji.com/air-3s/downloads",
+      "source": "https://latestupdate.io/wares/dji:firmware:dji-air-3s"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI Mavic 3 Pro",
+      "mode": "camera",
+      "version": "v01.01.0700",
+      "date": "2024-07-23",
+      "notes": "https://dl.djicdn.com/downloads/DJI_Mavic_3_Pro/20240723/DJI_Mavic_3_Pro_Release_Notes_EN.pdf",
+      "source": "https://www.dji.com/mavic-3-pro/downloads"
+    },
+    {
+      "vendor": "DJI",
+      "product": "DJI Mavic 4 Pro",
+      "mode": "camera",
+      "version": "v01.00.0800",
+      "date": "2026-07-30",
+      "notes": "https://www.dji.com/mavic-4-pro/downloads",
+      "source": "https://latestupdate.io/wares/dji:firmware:dji-mavic-4-pro"
+    }
+  ]
+}
