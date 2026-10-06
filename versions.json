@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T07:00:00Z",
+  "updated": "2026-10-06T10:41:58Z",
   "items": [
     {
       "vendor": "ExpressLRS",
@@ -76,7 +76,7 @@
       "product": "DJI Goggles 3",
       "type": "DJI",
       "mode": "fpv",
-      "version": null,
+      "version": "v01.00.1500",
       "date": "2026-09-01",
       "notes": "https://www.dji.com/goggles-3/downloads",
       "source": "https://www.dji.com/goggles-3/downloads"
