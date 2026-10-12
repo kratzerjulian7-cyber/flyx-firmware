@@ -25,7 +25,7 @@
 <main class="wrap">
   <article class="legal">
     <h1>Privacy</h1>
-    <p class="meta">Last updated 7 October 2026</p>
+    <p class="meta">Last updated 12 October 2026</p>
     <div class="toc">
       <a class="btn ghost" href="#map">Flyx Map</a>
       <a class="btn ghost" href="#cut">Flyx Cut</a>
@@ -40,7 +40,7 @@
     <ul>
       <li><strong>Crew:</strong> when you post, your display name, title, text, spot coordinates and optionally a small photo are stored via Apple iCloud (CloudKit, public database), visible to anyone with your Crew code. You can delete your posts at any time; they are deleted when you leave the Crew. Posts can be reported and users blocked; reports are reviewed within 24 hours.</li>
       <li><strong>Geo zones (“Can I fly here?”):</strong> the coordinates of the map area or point are sent to the country's official provider (DE: DFS/dipul, CH: swisstopo/FOCA, FR: IGN/DGAC, US: FAA via Esri). We do not store them.</li>
-      <li><strong>Flight weather:</strong> your position is sent to Apple (WeatherKit) to get the forecast. It is not stored.</li>
+      <li><strong>Flight weather:</strong> your position is sent to Apple (WeatherKit) to get the forecast. If Apple Weather is unavailable, Flyx Map gets the forecast from Bright Sky instead (api.brightsky.dev, data from the German Weather Service DWD); only your position rounded to about 1 km is sent. Your position is not stored.</li>
       <li><strong>Map and place search:</strong> via Apple Maps. Your position is only shown live on the device.</li>
       <li><strong>Product link import:</strong> the page you paste is loaded to read its name and category.</li>
       <li><strong>Firmware notes:</strong> if you added gear or camera drones, Flyx Map loads a public version list (GitHub) at most every 12 hours. Nothing about you is sent.</li>
