@@ -379,6 +379,7 @@ Liefere einen startbaren Build und berichte:
 ## B1. Entscheidungen per Karte
 - **App-Icon: „Goldenes V“** (goldenes, genietetes V mit Schlüsselloch auf Dunkelgrün), Julian 13.10. 12:41. Datei `icon-goldenes-v.png`; für den Store in voller Auflösung neu erzeugen.
 - **Werbefrei: 6,99 €**, Einmalkauf, Julian 13.10. 13:07.
+- **Kauf-IDs (Code 1.0):** `com.julian.vaultoria.adfree` (6,99 €), `com.julian.vaultoria.starterpack` (2,99 €), `com.julian.vaultoria.design.classicfacade` (3,99 €).
 - **Projekt:** Name Vaultoria, Ordner `/Volumes/LifeEmpire/Programme/Vaultoria`, Bundle `com.julian.vaultoria`. Alles zu Julians Projekten liegt auf `/Volumes/LifeEmpire`.
 
 ## B2. Flyx Fix
@@ -431,7 +432,7 @@ Liefere einen startbaren Build und berichte:
 2. **Bauzeiten:** §16 nennt Bauzeitverkürzung, die UI-Bilder zeigen sofortige Käufe. Vorschlag: kurze Bauzeiten nur für Etagen und große Meilensteine (Umbau bei laufendem Betrieb), Einrichtungsstufen sofort.
 3. **Figurenstil:** stilisiert (Shop-Bilder) oder realistisch (Betrieb/Raubzug). Karte offen, Vorschlag stilisiert.
 4. **Navigation** und **einheitliche Kopfleiste:** Vorschläge am Ende von `UI-Vorgabe.md`.
-5. **Länge eines Spieltags** (Pfandfristen): Vorschlag 1 Spieltag = 1 Stunde Echtzeit.
+5. **Länge eines Spieltags** (Pfandfristen): **vorerst 1 Spieltag = 10 Minuten Echtzeit** (so in Vaultoria 1.0 gebaut, 13.10.2026). Früherer Vorschlag war 1 Stunde.
 6. **Unterschlagung** (§5): Vorschlag für den ersten Build zurückstellen (laut §5 erlaubt).
 7. Konkrete Schutzzeiten, Preise, Verlustgrenzen (§12): später.
 
