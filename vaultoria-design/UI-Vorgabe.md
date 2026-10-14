@@ -1,6 +1,6 @@
-# Vaultoria – UI-Vorgabe 2.4 (verbindlich, nachbaufähig ohne Bilder)
+# Vaultoria – UI-Vorgabe 3.0 (verbindlich)
 
-Stand 14.10.2026, 09:10 (2.4: Teil 00 neu: Idle-Tycoon wie Eatventure, Handel von Hand nur Bonus). 2.3 vom 14.10. 09:00 ( Teil 00 oberste Regel „Spiel, nicht Arbeit“, Handel/Werkstatt/Ausbau direkt in der Szene). 2.2 vom 14.10. 08:00 ( Julians Überarbeitungsliste nach Prüfung von 25 Screenshots, Spielkonzept Teil G: Teil 0b, neue Tab-Leiste, Bottom-Sheets, 16 pt, Tutorial in 7 Schritten, Rebirth-Zusammenfassung). 2.1 vom 14.10. 07:20 ( Euro statt Spielgeld, Kamera von weit oben, Erklärkarten K5, Julian 14.10 07:09). 2.0 vom 13.10.2026, 20:45 ersetzt die erste Fassung. Grund: Julian zu Build 1.0 (18:33): „noch sehr unübersichtlich … so wie ich es dir geschickt habe, so möchte ich das haben und nicht anders. Sondern genau so. Wie auf den Bildern … Genau diese Logik.“
+Stand 14.10.2026, 09:30 (**3.0: neuer Kern nach Julians Konzept 09:19, Teil 00. Spielablauf aus Teil 0–8 ersetzt, dort gilt nur noch das Aussehen.** 2.4 vom 14.10. 09:10 ( Teil 00 neu: Idle-Tycoon wie Eatventure, Handel von Hand nur Bonus). 2.3 vom 14.10. 09:00 ( Teil 00 oberste Regel „Spiel, nicht Arbeit“, Handel/Werkstatt/Ausbau direkt in der Szene). 2.2 vom 14.10. 08:00 ( Julians Überarbeitungsliste nach Prüfung von 25 Screenshots, Spielkonzept Teil G: Teil 0b, neue Tab-Leiste, Bottom-Sheets, 16 pt, Tutorial in 7 Schritten, Rebirth-Zusammenfassung). 2.1 vom 14.10. 07:20 ( Euro statt Spielgeld, Kamera von weit oben, Erklärkarten K5, Julian 14.10 07:09). 2.0 vom 13.10.2026, 20:45 ersetzt die erste Fassung. Grund: Julian zu Build 1.0 (18:33): „noch sehr unübersichtlich … so wie ich es dir geschickt habe, so möchte ich das haben und nicht anders. Sondern genau so. Wie auf den Bildern … Genau diese Logik.“
 
 **Diese Datei beschreibt jede Ansicht aus Julians Konzeptbildern so, dass sie ohne Bild nachgebaut werden kann.** Spielregeln und Zahlen stehen in `Spielkonzept.md`. Bei Widerspruch gilt für Aussehen und Bedienung diese Datei, für Regeln und Zahlen das Spielkonzept.
 
@@ -13,40 +13,132 @@ Quelle: fünf Bilder von Julian (13.10.2026, 12:40 bis 12:50), im selben Ordner:
 
 ---
 
-# Teil 00 – OBERSTE REGEL: Idle-Tycoon wie Eatventure (2.4, Julian 14.10 09:01)
+# Teil 00 – DER NEUE KERN: „Fund oder Fehlkauf?“ (3.0, Julian 14.10 09:19, Spielkonzept Teil J)
 
-> „es soll ein idle tycoon game sein man das fühlt sich schei0e an“
-> (davor 08:51: „es fühlt sich nicht wie eion spiel an es fühlt sich wie eine krnakheit an“)
+Geht **allem** in dieser Datei vor und ersetzt den Idle-Kern aus 2.4 vollständig. **Teil 0 bis Teil 8 gelten nur noch für das Aussehen** (Farben, Schrift, Bottom-Sheets N2, Fensterform N3, 16 pt N6, ein Hinweis zur Zeit N7, Verkaufseffekt N8, Räume N9, Figuren N10, Kamera von oben Regel 6, Euro F2). Jeder Spielablauf, jede Zahl und jeder Knopf dort, der dem Kern hier widerspricht, entfällt. Der wichtigste Moment im Spiel: **„Ist dieser Gegenstand ein wertvoller Fund oder verbrenne ich gerade mein Geld?“**
 
-Geht **allem** in dieser Datei vor. Ersetzt Teil 00 aus 2.3 (Handel von Hand als Kern). Alles weiter unten (Handel-Sheets, Verhandlung, Werkstatt, Raubzug, Tabs) gilt nur noch, soweit es zu diesem Idle-Kern passt.
+## 00.1 Bau-Reihenfolge (verbindlich, nichts vorziehen)
 
-**I1. Stationen verdienen automatisch.** Jeder Raum besteht aus **Stationen** (Laden: Ankaufstheke, Vitrine, Kasse, Schätz-Tisch · Werkstatt: Werkbank, Polierplatz · Wertlager: Schließfach-Reihe, Tresor · Tierpension: Körbchen, Auslauf, Futterplatz). Kunden laufen von selbst herein, gehen zur Station, **Personal bedient sie sichtbar** (Figur läuft hin, Aktion mit Fortschrittsring über der Station 1–4 s), Kunde zahlt und geht. Ohne einen einzigen Tipp läuft Geld ein.
+1. **Kern** (00.2–00.8): Kunde, Prüfen, Verhandeln, Entscheiden, Käufer finden, gebundenes Kapital. Nur Laden-Erdgeschoss. Erst weiter, wenn Julian sagt, dass das Spaß macht.
+2. **Baumodus** (00.9).
+3. **Mitarbeiter** mit Erfahrung, Gehalt, Eigenschaften, Fehlern.
+4. **Expansion**: Laden verkaufen oder Geschäftsführer, neue Standorte.
+5. **Raubzüge** (illegale Seite).
 
-**I2. Geld fliegt in den Zähler.** Jede Zahlung: Geldschein-Symbol mit „+42 €“ springt aus der Station und fliegt in einem Bogen zum Kontostand oben, der Zähler rollt hoch, leises Kassen-Klingeln. Bei vielen Zahlungen bündeln (höchstens 4 Flüge pro Sekunde).
+Shop und Rebirth-Shop sind zurückgestellt (in 1.x ausgeblendet, Werbung bleibt aus, bis Julian es freigibt).
 
-**I3. Hauptaktion = Upgrade-Pfeile.** Über jeder Station schwebt ein **grüner Pfeil-Knopf mit Preis**, sobald das Geld reicht (sonst grau, ohne Preis-Blinken). Tipp = Stufe +1: Station hüpft kurz, Funken, Zahl „Stufe 12“ springt, Einnahme pro Kunde steigt. **Gedrückt halten = schnell mehrfach kaufen.** Station antippen öffnet ein kleines Sheet (halbe Höhe) mit genau: Name, Stufe, Einnahme pro Kunde, Dauer pro Kunde, Knopf „×1 / ×10 / Max“.
+## 00.2 Bildschirm im Kern
 
-**I4. Meilensteine bei Stufe 10, 25, 50, 100.** Fortschrittsbalken unter jeder Station zeigt den Weg zum nächsten Meilenstein. Erreicht: Konfetti, Fanfare, Schild „×2 Einnahmen“ bzw. „Schneller“, Station bekommt sichtbar ein besseres Modell (z. B. Holztheke → Glastheke → Marmortheke).
+- **Hauptansicht:** Laden von oben (Regel 6), Kunden kommen einzeln durch die Tür, stellen sich an die Theke. Kopfleiste nur: Logo · **Bargeld „3.240 €“** · **„In Ware 5.800 €“** (kleiner, grau-gold) · Zahnrad. Keine Sterne, keine Prozentbalken, keine schwebenden Preise.
+- **Tab-Leiste in Schritt 1 nur drei Tabs:** **Laden · Besitz · Käufer**. Weitere Tabs erst mit Schritt 2–5.
+- Kunde antippen → Kamera fährt an die Theke (Nahansicht über die Schulter des Betreibers), unten öffnet sich das **Gesprächs-Sheet** (halbe Höhe). Oben sieht man Kunde und Gegenstand groß.
 
-**I5. Neue Stationen und Räume freischalten.** Gesperrte Stationen stehen als grauer Umriss mit Schloss und Preis im Raum („Vitrine 2.500 €“). Antippen bei genug Geld = freigeschaltet mit Bau-Animation (2 s). Neue Räume genauso über ihre Etage im Gebäude (Werkstatt, Wertlager, Tierpension).
+## 00.3 Der Gegenstand: acht verdeckte Eigenschaften
 
-**I6. Standort-Ziel.** Oben unter der Kopfleiste ein **Fortschrittsbalken des Standorts** (Gold auf Dunkelgrün, 8 pt hoch, volle Breite mit 16 pt Rand) mit drei Sternen bei 33/66/100 %. Er füllt sich durch Stationsstufen und Freischaltungen. Antippen zeigt die nächsten 3 Aufgaben („Theke auf Stufe 25“, „Werkstatt freischalten“, „Verdiene 50.000 €“).
+Jeder Gegenstand hat acht Werte, die am Anfang **verdeckt** sind. Die **Gutachten-Karte** (oben rechts über der Szene, 44 % breit, Creme, aufklappbar) zeigt sie als Zeilen mit Symbol:
 
-**I7. Manager automatisieren.** Pro Raum ein **Manager** (einmalig einstellen, Spielkonzept: Personal einmalig). Er lässt den Raum ohne Engpass weiterlaufen und gibt einen Bonus (z. B. „Laden +25 % Einnahmen“). Erst mit Manager laufen alle Stationen eines Raums ohne Pausen.
+| Eigenschaft | Verdeckt | Teilweise | Aufgedeckt |
+|---|---|---|---|
+| Marktwert | „? €“ | Spanne „200–900 €“ | „620 €“ |
+| Zustand | „?“ | „eher gut“ | „Gut (Kratzer am Glas)“ |
+| Echtheit | „?“ | „Zweifel“ / „wirkt echt“ | „Echt“ / „Fälschung“ |
+| Seltenheit | „?“ | – | Gewöhnlich · Selten · Sehr selten · Einzelstück (Farbe am Rand) |
+| Versteckte Schäden | „?“ | „Verdacht“ | „keine“ / „Riss im Rahmen, −30 %“ |
+| Herkunft | „?“ | Hinweis aus Gespräch | „Nachlass Familie Berger“ |
+| Nachfrage | „?“ | – | „hoch / normal / niedrig“ (Pfeil) |
+| Sammlerstück | „?“ | – | „Teil der Serie ‚Zeitmesser 1950‘ (2/5)“ |
 
-**I8. Offline-Einnahmen.** Beim Öffnen nach Pause ein Sheet: „Während du weg warst“, große Zahl „12.480 €“, Uhr „3 h 12 min“ (max. 4 h, Spielkonzept), grüner Knopf „Einsammeln“, darunter Umrissknopf mit Video-Symbol **„Verdoppeln“** (freiwilliges Werbevideo).
+Die Marktwert-Spanne wird mit jedem Prüfschritt enger. Das ist die Spannung: Man sieht, wie unsicher man noch ist.
 
-**I9. Rebirth, wenn der Standort voll ist.** Bei 3 Sternen im Standort-Balken leuchtet der Knopf „Umziehen“: Ablauf A4 (Zusammenfassung → alter Laden → Bestätigung), danach nächster Standort mit mehr Stationen und höheren Einnahmen.
+## 00.4 Prüfen: drei Wege
 
-**I10. Handel von Hand ist nur noch ein Bonus.** Ab und zu (alle 1–2 Minuten) kommt ein **Kunde mit „!“** über dem Kopf. Antippen = Sonderhandel mit den **drei Preis-Chips** (Niedrig · Fair · Hoch) direkt in der Szene, 3–5 s, bringt einen deutlich höheren Bonus (z. B. ×5 einer normalen Zahlung) oder ein seltenes Fundstück. Ignoriert er ihn, geht der Kunde nach 20 s. Keine Pflicht.
+Im Gesprächs-Sheet oben drei Knöpfe nebeneinander (Umriss, gleich groß):
 
-**I11. Zusatzmodi.** Werkstatt (Restaurieren per Tippen) und Raubzug sind **Zusatzmodi** für Abwechslung und Bonusgeld, nicht der Kern. Sie werden erst nach dem ersten Manager freigeschaltet.
+1. **„Genauer ansehen“** (kostenlos): Gegenstand erscheint groß in der Mitte, mit dem Finger drehen. Es leuchten 2–4 **Prüfstellen** auf (Signatur, Rückseite, Gravur, Naht). Antippen deckt je eine Eigenschaft teilweise auf. Jede Prüfstelle kostet **Geduld** des Kunden.
+2. **„Gutachter rufen“** (kostet Geld, z. B. 40 € oder 5 % der Spanne): deckt Echtheit und Marktwert genau auf, ein Gutachter-Gesicht erscheint kurz mit Satz („Echt. Etwa 620 €.“). In Schritt 1 ein externer Gutachter per Telefon, später eigener Mitarbeiter.
+3. **„Ungeprüft kaufen“**: direkt ins Verhandeln. Risiko, aber spart Geduld.
 
-**I12. Kein Lesen, Belohnung im Takt.** Kein Erklärtext vor der ersten Aktion, nur die Zeigehand auf den ersten Upgrade-Pfeil. Etwa alle 5–10 s etwas Erfreuliches (Geld-Flug, Stufe, Meilenstein, „!“-Kunde).
+**Geduld** wird nicht als Balken gezeigt, sondern am **Gesicht und an der Körpersprache** des Kunden: ruhig → tippt mit dem Fuß → verschränkt die Arme → geht. Bei „geht gleich“ zusätzlich kleines Uhr-Symbol über dem Kopf.
 
-**Erste 3 Minuten (ersetzt Teil 8 als Start):** Laden mit einer Ankaufstheke und einer Verkäuferin, Kunden kommen sofort, Geld fliegt → Zeigehand auf Pfeil über der Theke → Theke bis Stufe 10 (erster Meilenstein, Konfetti) → Umriss „Vitrine 2.500 €“ freischalten → erster „!“-Kunde → Standort-Balken erster Stern → Manager Laden einstellen. Kein Fenster außer dem kleinen Stations-Sheet.
+## 00.5 Verhandeln als Dialog
 
-**Prüffrage vor jedem Build:** Kann man das Handy 2 Minuten liegen lassen und es verdient trotzdem sichtbar Geld? Ist der wichtigste Knopf immer ein Upgrade-Pfeil über einer Station? Wenn nein, nicht an Julian schicken.
+Unten im Gesprächs-Sheet: **Sprechblase des Kunden** (17 pt) und darunter **3–4 Antwortkarten** (volle Breite, je 52 pt, Symbol links):
+
+- **Frage stellen** (z. B. „Woher haben Sie das?“, „Warum verkaufen Sie?“, „Gibt es Papiere?“): Antwort deckt Herkunft oder Persönlichkeit teilweise auf, kostet etwas Geduld.
+- **Angebot machen**: öffnet eine Zeile mit drei Betrags-Chips (z. B. „300 €“ · „380 €“ · „450 €“, abgeleitet aus Forderung und eigener Einschätzung) und einem kleinen „Anderer Betrag“.
+- **Pfandkredit anbieten** (nur wenn der Kunde dafür offen ist): Kredit-Betrag-Chips und Frist, Rückzahlung inkl. Gebühr sichtbar.
+- **Ablehnen** (dunkel, klein).
+
+**Persönlichkeiten** (je Kunde eine, erkennbar an Kleidung, Sätzen und Reaktion, nie als Etikett eingeblendet, erst nach dem Geschäft im Rückblick „Er war: erfahrener Händler“):
+
+| Persönlichkeit | Erkennbar an | Reagiert auf niedriges Angebot | Besonderheit |
+|---|---|---|---|
+| Braucht dringend Geld | nervös, „Ich brauche das Geld heute.“ | nimmt meist an | Pfand ist oft der faire Weg, bringt Ruf |
+| Kennt den Wert nicht | unsicher, „Keine Ahnung, ist vom Dachboden.“ | nimmt an | Chance auf Fund, zu unfair → Ruf sinkt, wenn er es später erfährt |
+| Erfahrener Händler | Anzug, Fachwörter | Gegenangebot, wenig Spielraum | blufft mit Marktwert |
+| Versucht Fälschung zu verkaufen | weicht Herkunftsfragen aus, drängt | will schnell abschließen | Prüfen lohnt sich besonders |
+| Emotional gebunden | „Das war von meiner Oma.“ | gekränkt, Geduld sinkt stark | will oft Pfand statt Verkauf |
+| Will nur Pfandkredit | „Ich will es zurückholen.“ | – | Kaufangebot wird abgelehnt |
+| Wird bei zu niedrigem Angebot sauer | ungeduldig, laut | bricht nach 1–2 schlechten Angeboten ab | kurze Verhandlung |
+
+Jede Antwort hat **sofort sichtbare Wirkung** in Mimik und Satz. Abschluss: Handschlag-Animation, Gegenstand wandert über die Theke, Bargeld zählt herunter, „In Ware“ zählt hoch.
+
+## 00.6 Nach dem Kauf: Entscheidung
+
+Gekaufte Gegenstände liegen im **Besitz** (Tab). Gegenstand antippen → Sheet mit großem Bild, Gutachten-Karte und bis zu sieben Wegen, je eine Zeile mit **erwartetem Ergebnis, Dauer und gebundenem Geld**:
+
+| Weg | Zeile (Beispiel) |
+|---|---|
+| Direkt verkaufen | „ca. 520 € · sofort“ (an Laufkundschaft, unter Marktwert) |
+| Reparieren / restaurieren | „Kosten 60 € · 1 Spieltag · danach ca. 780 €“ |
+| Im Schaufenster ausstellen | „lockt passende Käufer an · Platz 1/3“ |
+| Auf Wertsteigerung warten | „Nachfrage steigt ↑ · Geld bleibt gebunden“ |
+| Zur Auktion schicken | „Ergebnis 400–1.100 € · 2 Spieltage · 10 % Gebühr“ |
+| Sammler suchen | „Sammler für ‚Zeitmesser 1950‘: 1 bekannt“ |
+| Behalten (Sammlung) | „Serie 2/5 · zählt für Album“ |
+
+Nicht verfügbare Wege werden ausgeblendet (z. B. Auktion erst nach Baumodus „Auktionsbereich“). In Schritt 1 nur: **Direkt verkaufen · Restaurieren (einfache Werkbank) · Schaufenster · Käufer suchen · Behalten.**
+
+**Gebundenes Kapital:** In der Kopfleiste steht „In Ware“ immer neben dem Bargeld. Lagerplatz ist begrenzt (Schritt 1: 12 Plätze, sichtbar als Regal im Laden, das sich füllt). Ist das Bargeld knapp, kann man gute Angebote nicht annehmen. Das ist gewollt.
+
+## 00.7 Käufer finden
+
+Tab **Käufer**: wartende Kaufinteressenten als Porträtkarten mit Wunsch in einem Satz („Sucht alte Armbanduhren bis 900 €“). Passt ein Gegenstand aus dem Besitz, leuchtet er auf. Antippen → kurzer Verkaufsdialog (gleiches System wie 00.5, umgekehrt: Käufer bietet, Spieler verlangt). Laufkundschaft im Laden kauft zusätzlich, was im Schaufenster und in den Regalen liegt.
+
+## 00.8 Die ersten 10 Minuten (ersetzt Teil 8)
+
+| Zeit | Was passiert | Was der Spieler lernt |
+|---|---|---|
+| 0:00 | Heruntergekommener Laden (Staub, kaputtes Schild, eine Theke), Bargeld 5.000 €. Ein Kunde kommt rein. Nur Zeigehand auf den Kunden | Kunden bringen Dinge |
+| 0:15 | „Kennt den Wert nicht“: alte Taschenuhr vom Dachboden, will 80 € | Gutachten-Karte voller „?“ |
+| 0:30 | Zeigehand auf „Genauer ansehen“: Rückseite zeigt Gravur → Marktwert 150–600 € | Prüfen macht die Spanne enger |
+| 1:00 | Angebot 100 € angenommen | Verhandeln über Antwortkarten |
+| 1:30 | Besitz: Uhr → „Restaurieren 30 € · danach ca. 420 €“ oder „Direkt verkaufen ca. 180 €“ | Entscheidung nach dem Kauf |
+| 2:30 | Käufer-Tab erscheint: „Sammler sucht Taschenuhren“. Verkauf für 410 €, Effekt N8 | Passender Käufer = großer Gewinn |
+| 3:30 | Kunde „versucht Fälschung zu verkaufen“: Gemälde, drängt. Wer prüft, entdeckt es. Wer ungeprüft kauft, verliert Geld | Risiko ist echt |
+| 5:00 | „Braucht dringend Geld“: will Ring verpfänden, Pfandkredit-Karte erscheint zum ersten Mal | Pfand als eigener Weg |
+| 6:30 | Erfahrener Händler blufft | Nicht jeder Deal ist gut |
+| 8:00 | Lager-Regal halb voll, „In Ware“ 1.900 € | Kapital ist gebunden |
+| 10:00 | Erster Tag endet: kurzer Tagesabschluss (Einnahmen, Ausgaben, bester Fund) | Fortschritt ohne Prozentbalken |
+
+## 00.9 Baumodus (Schritt 2, erst nach dem Kern)
+
+- **Hammer-Knopf** in der Kopfleiste. Antippen: Kamera zieht etwas heraus, Laden wird leicht entsättigt, verbesserbare Bereiche bekommen einen goldenen Umriss mit Namen (Verkaufstheke, Schaufenster, Regale, Werkstatt, Sicherheitsanlage, Wertlager, Büro, Tierpension, Auktionsbereich; gesperrte mit Schloss).
+- Bereich antippen → Sheet mit **drei Ausbaustufen als Bilder nebeneinander** (aktuell / nächste / übernächste), Preis, Bauzeit und **Wirkung in Worten** („Lockt Kunden mit Waren bis 2.000 € an“, „Restaurierungen bis ‚Sehr gut‘ möglich“). Kein Prozentwert.
+- Bauen: Gerüst und Handwerker sichtbar im Gebäude, danach sieht der Bereich anders aus. **Außerhalb des Baumodus gibt es keine Upgrade-Knöpfe in der Szene.**
+
+## 00.10 Streichliste (sofort aus dem Build nehmen)
+
+- Schwebende Upgrade-Preise und Upgrade-Pfeile über Stationen.
+- Stern-, Prozent-, Ruf- und Standort-Fortschrittsbalken.
+- Stationen mit automatischem Geld, Geldflüge ohne sichtbaren Verkauf, Offline-Einnahmen ohne Verkäufe.
+- Klassischer Rebirth, Rebirth-Coins, Rebirth-Shop, A4/M3/R6.
+- Shop (M1/M2/M4) – zurückgestellt, Knopf ausblenden.
+- Tabs Personal, Werkstatt, Mehr, Kunden-Balken – erst mit ihrem Schritt.
+- Raubzug-Knopf und R1–R5 – erst mit Schritt 5.
+- Alle Erklärkarten, die mehr als eine Zeile haben.
+
+**Prüffrage vor jedem Build:** Gab es in den ersten 5 Minuten mindestens einen Moment „Fund oder Fehlkauf?“, bei dem der Spieler selbst entschieden hat? Kommt jedes Geld aus einem sichtbaren Geschäft? Wenn nein, nicht an Julian schicken.
 
 ---
 

@@ -832,3 +832,163 @@ Der Kernablauf (Gegenstand entdecken → einschätzen → verhandeln → verbess
 - **Handel von Hand nur als Bonus:** Kunden mit „!“ bringen einen Sonderhandel mit 3 Preis-Chips. Teil H S1 (jeder Kunde von Hand) entfällt.
 - **Werkstatt und Raubzüge sind Zusatzmodi**, nicht der Kern.
 - Teil A–H gelten weiter, soweit sie diesem Idle-Kern nicht widersprechen. Details: UI-Vorgabe 2.4 Teil 00.
+
+
+---
+
+# Teil J – DAS NEUE VAULTORIA (14.10.2026 09:19) – ERSETZT ALLES FRÜHERE ZUM SPIELABLAUF
+
+**Vermerk:** Dieser Teil ersetzt alle früheren Festlegungen zum Spielablauf (Teil A–I, insbesondere den Idle-Kern aus Teil I, die Upgrade-Stufen, Meilensteine, Standort-Balken und den klassischen Rebirth). Aus den früheren Teilen gelten nur noch: Look und Grafiken, Euro mit realistischen Preisen (F2), Eigentums-Kennzeichnung (Kundeneigentum nie verkaufen), Tiere nie Beute und nie verletzt, Apple-only außer Werbung, Raubzüge nur Training gegen erfundene Anlagen. Julian: „keine weiteren Funktionen mehr hinzufügen, bevor dieser neue Kern spielbar ist.“
+
+## J1. Julians Konzept (wörtlich)
+
+> Ja, ich verstehe dich. Aktuell ist Vaultoria kein richtiges Spielkonzept, sondern viele einzelne Systeme, Menüs und Upgrade-Knöpfe, die irgendwie zusammengebaut wurden. Man tippt auf Preise, wartet auf Geld und öffnet neue Bereiche – das fühlt sich wie ein gewöhnliches Idle-Game an. Dafür ist die Grundidee viel zu gut.
+> Wir sollten das Konzept einmal sauber neu aufbauen. Grafiken und vorhandene Systeme können teilweise bleiben, aber der eigentliche Spielablauf muss neu werden.
+> Das neue Vaultoria
+> Du übernimmst einen heruntergekommenen Pfandladen und baust daraus ein Handelsimperium auf.
+> Der Spieler verdient sein Geld nicht durch grüne Upgrade-Knöpfe, sondern durch gute Entscheidungen:
+>
+> 1. Kunden bringen Gegenstände.
+> 2. Du untersuchst Zustand, Echtheit und mögliche versteckte Besonderheiten.
+> 3. Du verhandelst den Einkaufspreis oder vergibst einen Pfandkredit.
+> 4. Du entscheidest: restaurieren, einlagern, versteigern oder direkt verkaufen.
+> 5. Du suchst den passenden Käufer und maximierst den Gewinn.
+> 6. Mit dem Gewinn baust du deinen echten Laden aus.
+>
+> Der Hauptspielablauf
+> Gegenstände prüfen
+> Jeder Gegenstand besitzt unbekannte Eigenschaften:
+>
+> * echter Marktwert
+> * Zustand
+> * Echtheit
+> * Seltenheit
+> * versteckte Schäden
+> * Herkunft
+> * aktuelle Nachfrage
+> * mögliches Sammlerstück
+>
+> Der Spieler kann beispielsweise ein Gemälde genauer ansehen, einen Gutachter bezahlen oder das Risiko eingehen und es ungeprüft kaufen.
+> Richtig verhandeln
+> Nicht mehr nur einen Regler verschieben. Kunden haben Persönlichkeiten:
+>
+> * dringend auf Geld angewiesen
+> * kennt den Wert nicht
+> * erfahrener Händler
+> * versucht eine Fälschung zu verkaufen
+> * emotional an den Gegenstand gebunden
+> * möchte nur einen Pfandkredit
+> * wird bei zu niedrigen Angeboten sauer
+>
+> Man wählt richtige Antworten, stellt Fragen und macht Angebote. Dadurch wird Verhandeln zum eigentlichen Spiel.
+> Gegenstände wirklich verwalten
+> Nach dem Kauf entscheidet man:
+>
+> * direkt verkaufen
+> * reparieren oder restaurieren
+> * im Schaufenster ausstellen
+> * auf eine Wertsteigerung warten
+> * zu einer Auktion schicken
+> * einen Sammler suchen
+> * als Teil einer Sammlung behalten
+>
+> Zu viel Lagerbestand bindet Kapital. Ein hoher möglicher Gewinn bedeutet deshalb nicht automatisch, dass der Kauf sinnvoll ist.
+> Der Laden
+> Upgrades werden nicht mehr als schwebende Geldknöpfe dargestellt.
+> Man wechselt in einen Baumodus und verbessert echte Bereiche:
+>
+> * Verkaufstheke
+> * Schaufenster
+> * Regale
+> * Werkstatt
+> * Sicherheitsanlage
+> * Wertlager
+> * Büro
+> * Tierpension
+> * Auktionsbereich
+>
+> Die Veränderungen müssen im Gebäude sichtbar sein. Ein besseres Schaufenster lockt reichere Kunden an. Eine bessere Werkstatt ermöglicht hochwertige Restaurierungen.
+> Mitarbeiter
+> Mitarbeiter sind keine einfachen Prozent-Boni:
+>
+> * Verkäufer verhandeln automatisch, machen aber manchmal schlechtere Geschäfte.
+> * Gutachter erkennen Fälschungen.
+> * Restauratoren verbessern Gegenstände.
+> * Sicherheitskräfte verhindern Diebstähle.
+> * Tierbetreuer kümmern sich um abgegebene Tiere.
+> * Geschäftsführer können später einen kompletten Standort übernehmen.
+>
+> Jeder besitzt Erfahrung, Gehalt, Eigenschaften und Fehler.
+> Expansion ohne langweiligen Rebirth
+> Kein klassischer Neustart mehr.
+> Wenn der erste Laden erfolgreich ist, gibt es zwei Möglichkeiten:
+>
+> * Laden verkaufen und mit viel Startkapital neu anfangen
+> * Geschäftsführer einstellen und den Laden als passive Filiale behalten
+>
+> Danach eröffnet man neue Standorte:
+>
+> * kleines Viertel
+> * Innenstadt
+> * Luxusbezirk
+> * Industriegebiet
+> * Hafen
+> * internationale Standorte
+>
+> Jeder Ort bringt andere Kunden, Waren und Risiken.
+> Raubzüge
+> Raubzüge bleiben, werden aber erst später freigeschaltet und gehören zur illegalen Seite des Spiels:
+>
+> * Informationen über wertvolle Lager kaufen
+> * Team und Ausrüstung auswählen
+> * automatisch planen oder selbst spielen
+> * Beute verkaufen oder für den eigenen Laden verwenden
+> * Risiko von Verletzungen, Verlusten und Ermittlungen
+>
+> Der Spieler kann entscheiden, ob er ein seriöses Handelsimperium oder ein riskanteres Untergrundgeschäft aufbaut.
+> Was wir streichen oder umbauen
+>
+> * Schwebende Upgrade-Preise entfernen
+> * Unverständliche Stern- und Prozentleisten entfernen
+> * Klassischen Rebirth-Zwang entfernen
+> * Automatisches Geld ohne nachvollziehbare Verkäufe entfernen
+> * Überladene Menüs reduzieren
+> * Shop und Rebirth-Shop vorerst zurückstellen
+> * Funktionen nicht mehr sofort gleichzeitig freischalten
+> * Raubzüge erst einbauen, wenn Handel und Laden wirklich Spaß machen
+>
+> Die klare Identität
+> Vaultoria ist kein Idle-Clicker.
+> Es wird eine Mischung aus:
+>
+> * Pfandhaus-Simulation
+> * Verhandlungsspiel
+> * Gegenstands- und Wirtschaftssystem
+> * Ladenaufbau
+> * Sammelspiel
+> * später optional Unterwelt und Raubzüge
+>
+> Der wichtigste Moment muss sein:
+> „Ist dieser Gegenstand ein wertvoller Fund oder verbrenne ich gerade mein Geld?“
+> Genau darauf würde ich jetzt alles neu aufbauen. Die bisherigen Grafiken können als Grundlage bleiben, aber Claude sollte keine weiteren Funktionen mehr hinzufügen, bevor dieser neue Kern spielbar ist.
+
+## J2. Bau-Reihenfolge (verbindlich)
+
+1. **Kern:** Kunde → Gegenstand prüfen → verhandeln (Dialog, Persönlichkeiten) → Entscheidung nach dem Kauf → passenden Käufer finden. Gebundenes Kapital sichtbar. **Erst wenn das Spaß macht, weiter.**
+2. **Baumodus:** echte Bereiche im Gebäude sichtbar verbessern (Theke, Schaufenster, Regale, Werkstatt, Sicherheit, Wertlager, Büro, Tierpension, Auktionsbereich).
+3. **Mitarbeiter** mit Erfahrung, Gehalt, Eigenschaften und Fehlern (ersetzt „Personal einmalig“ und Prozent-Boni).
+4. **Expansion:** Laden verkaufen oder Geschäftsführer, neue Standorte (Viertel, Innenstadt, Luxusbezirk, Industriegebiet, Hafen, international).
+5. **Raubzüge** zuletzt, als illegale Seite.
+
+Shop und Rebirth-Shop sind zurückgestellt. Kein Schritt wird freigeschaltet, bevor der vorige im Spiel gelernt ist.
+
+## J3. Streichliste (aus Julians Text und daraus folgend)
+
+- Schwebende Upgrade-Preise und Upgrade-Pfeile über Stationen (UI-Vorgabe 2.4 Teil 00 I3) – weg.
+- Stern-, Prozent- und Standort-Fortschrittsleisten (I4, I6, Ruf-Balken als Prozent) – weg. Ruf wird in Worten und Kundenqualität gezeigt.
+- Klassischer Rebirth, Rebirth-Coins, Rebirth-Shop, Rebirth-Zwang – weg. Ersetzt durch Verkaufen oder Geschäftsführer (J1 Expansion).
+- Automatisches Geld ohne sichtbaren Verkauf (I1 Stationen, Offline-Einnahmen ohne Verkäufe) – weg. Geld kommt nur aus nachvollziehbaren Geschäften.
+- Kaufbare Prozent-Boni bei Mitarbeitern – weg.
+- Shop (Echtgeld) und Rebirth-Shop – zurückgestellt.
+- Alles gleichzeitig freischalten – weg.
+- Raubzug im Spiel – erst nach Schritt 4.
