@@ -4,7 +4,7 @@ Stand 14.10.2026, 16:55. **Neu (Julian 16:46): „Werbung entfernen“ 6,99 €,
 
 **Product-IDs buchstabengenau übernehmen** (am besten kopieren). Eine Product-ID lässt sich nach dem Anlegen **nie mehr ändern oder wiederverwenden**.
 
-**Wann anlegen:** Alle 14 Produkte kannst du sofort anlegen. Eingereicht werden alle 14 zusammen mit dem 5.4-Build.
+**Wann anlegen:** Alle 14 Produkte kannst du sofort anlegen. Eingereicht werden alle 14 zusammen mit dem 5.4-Build (auf TestFlight: Build 202610141722). Die Beschreibungen von A11 und A12 hat der Mac am 14.10. per API angepasst, weil es Gebiete auf derselben Karte sind und keine eigenen Firmen.
 
 ## Vorher einmal prüfen
 
@@ -39,8 +39,8 @@ Alle Produkte haben den Typ **Nicht-Verbrauchsartikel**. Vor jede ID kommt `com.
 | A8 | Vaultoria Ultimate | `com.julian.vaultoria.bundle.ultimate` | 17,99 € | Vaultoria Ultimate | Werbefrei und alle Premium-Inhalte. | A1 + A2 + A3 + A4 + A5 + A9 |
 | A9 | Flughafen- und Eventbezirk | `com.julian.vaultoria.area.event` | 8,99 € | Flughafen- und Eventbezirk | Neues Gebiet mit VIP- und Event-Aufträgen. | Premium-Gebiet |
 | A10 | Zusatzregion Seeufer | `com.julian.vaultoria.region.extra` | 5,99 € | Seeufer | Neue Region am Seeufer mit eigenen Einsätzen. | kleine Zusatzregion |
-| A11 | Große Welt Umland Ost | `com.julian.vaultoria.world.large` | 8,99 € | Umland Ost | Große neue Welt mit eigener Firma. | große neue Welt |
-| A12 | Welt Bergland mit Bergekran | `com.julian.vaultoria.world.special` | 11,99 € | Bergland mit Bergekran | Neue Welt Bergland mit exklusivem Bergekran. | Welt + Spezialfahrzeug |
+| A11 | Große Welt Umland Ost | `com.julian.vaultoria.world.large` | 8,99 € | Umland Ost | Großes neues Gebiet im Osten mit Einsätzen. | großes Gebiet auf derselben Karte |
+| A12 | Welt Bergland mit Bergekran | `com.julian.vaultoria.world.special` | 11,99 € | Bergland mit Bergekran | Bergland-Gebiet mit exklusivem Bergekran. | Gebiet + Spezialfahrzeug |
 | A13 | Design Carbon | `com.julian.vaultoria.design.carbon` | 1,49 € | Design Carbon | Carbon-Optik für deine Einsatzfahrzeuge. | nur Optik |
 | A14 | Design Nachtlicht | `com.julian.vaultoria.design.night` | 2,49 € | Design Nachtlicht | Nachtlicht-Optik für Fahrzeuge und Zentrale. | nur Optik |
 
