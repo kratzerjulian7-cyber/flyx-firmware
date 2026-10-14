@@ -796,3 +796,23 @@ Julian hat alle 25 Screenshots von Build 1.0 geprüft. Diese Liste gilt verbindl
 3. **Raubzug:** „Automatik bringt weniger Beute als manuelles Spielen“ ersetzt „manuell und automatisch gleichwertig“ (Teil A). ENTWURF: Automatik bringt 70 % der Beute, die beim manuellen Spielen möglich ist. Konsequenzen wie Verletzung der Crew sind nur vorübergehend (Crew-Mitglied 1 Spieltag nicht verfügbar). Tiere bleiben nie verletzt und nie Beute.
 4. **Rebirth-Belohnung** im Beispiel jetzt 20 Rebirth-Coins (bisher +12). Vor dem Neustart kommt zuerst eine einfache Zusammenfassung mit vier Blöcken, erst danach das Bestätigungsfenster (UI-Vorgabe A4).
 5. **Ergänzungen** (Seltenheit, Fälschungen, Persönlichkeiten, Ereignisse usw.) sind als Ideen notiert. Was davon in Teil A, D oder E schon steht, wird in Punkt 8 umgesetzt, nicht vorher.
+
+
+---
+
+# Teil H – Oberste Regel: Es muss sich wie ein Spiel anfühlen (14.10.2026 08:51)
+
+## H1. Julian zu Build 1.11 (wörtlich)
+
+> es fühlt sich nicht wie eion spiel an es fühlt sich wie eine krnakheit an
+
+## H2. Regel (steht über allen anderen Teilen)
+
+Der Kernablauf (Gegenstand entdecken → einschätzen → verhandeln → verbessern → verkaufen → ausbauen) muss sich wie ein Spiel anfühlen, nicht wie Arbeit oder Formularausfüllen. Jede Entscheidung in Teil A–G wird daran gemessen. Wenn eine Funktion nur mit Fenster, Liste oder Lesen geht, wird sie vereinfacht oder verschoben, nicht so gebaut.
+
+1. **Handeln in der Spielwelt, nicht in Fenstern.** Kunde, Gegenstand, Preisschild, Geld und Werkbank sind Dinge in der 3D-Szene, die man direkt antippt. Fenster nur für Shop, Einstellungen und Rebirth.
+2. **Jedes Antippen hat sofort sichtbare Wirkung** (innerhalb 0,1 s): Wackeln, Aufploppen, Geräusch, Haptik, Zahl springt. Kein Antippen ohne Reaktion.
+3. **Ständig kleine Belohnungen:** Geld-Pops, Ruf-Sterne, Kombo bei schnellen Abschlüssen, Fundstücke, Level-Ups. Etwa alle 5–10 Sekunden passiert etwas Erfreuliches.
+4. **Kein Lesen, bevor etwas passiert.** Erst spielen, dann verstehen. Erklärkarten (K5) erscheinen nicht mehr vor der ersten Aktion, sondern höchstens als „?“ danach. Höchstens 3 Wörter Text bei einer Aktion.
+5. **Kurze Schleife:** Ein normaler Kunde dauert 3–5 Sekunden (antippen, Preis wählen, fertig). Lange Verhandlungen nur bei besonderen Kunden mit „!“.
+6. **Der Spieler tut, er verwaltet nicht.** Zahlen wie Marktwert und Gewinnspanne stehen nur dort, wo sie die nächste Entscheidung spannender machen.

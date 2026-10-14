@@ -1,6 +1,6 @@
-# Vaultoria – UI-Vorgabe 2.2 (verbindlich, nachbaufähig ohne Bilder)
+# Vaultoria – UI-Vorgabe 2.3 (verbindlich, nachbaufähig ohne Bilder)
 
-Stand 14.10.2026, 08:00 (2.2: Julians Überarbeitungsliste nach Prüfung von 25 Screenshots, Spielkonzept Teil G: Teil 0b, neue Tab-Leiste, Bottom-Sheets, 16 pt, Tutorial in 7 Schritten, Rebirth-Zusammenfassung). 2.1 vom 14.10. 07:20 ( Euro statt Spielgeld, Kamera von weit oben, Erklärkarten K5, Julian 14.10 07:09). 2.0 vom 13.10.2026, 20:45 ersetzt die erste Fassung. Grund: Julian zu Build 1.0 (18:33): „noch sehr unübersichtlich … so wie ich es dir geschickt habe, so möchte ich das haben und nicht anders. Sondern genau so. Wie auf den Bildern … Genau diese Logik.“
+Stand 14.10.2026, 09:00 (2.3: Teil 00 oberste Regel „Spiel, nicht Arbeit“, Handel/Werkstatt/Ausbau direkt in der Szene). 2.2 vom 14.10. 08:00 ( Julians Überarbeitungsliste nach Prüfung von 25 Screenshots, Spielkonzept Teil G: Teil 0b, neue Tab-Leiste, Bottom-Sheets, 16 pt, Tutorial in 7 Schritten, Rebirth-Zusammenfassung). 2.1 vom 14.10. 07:20 ( Euro statt Spielgeld, Kamera von weit oben, Erklärkarten K5, Julian 14.10 07:09). 2.0 vom 13.10.2026, 20:45 ersetzt die erste Fassung. Grund: Julian zu Build 1.0 (18:33): „noch sehr unübersichtlich … so wie ich es dir geschickt habe, so möchte ich das haben und nicht anders. Sondern genau so. Wie auf den Bildern … Genau diese Logik.“
 
 **Diese Datei beschreibt jede Ansicht aus Julians Konzeptbildern so, dass sie ohne Bild nachgebaut werden kann.** Spielregeln und Zahlen stehen in `Spielkonzept.md`. Bei Widerspruch gilt für Aussehen und Bedienung diese Datei, für Regeln und Zahlen das Spielkonzept.
 
@@ -10,6 +10,24 @@ Quelle: fünf Bilder von Julian (13.10.2026, 12:40 bis 12:50), im selben Ordner:
 - `ui-vorgabe-shop.png` → Menüs M1 bis M4
 - `ui-vorgabe-raubzug.png` → Raubzug R1 bis R6
 - `ui-vorgabe-betrieb.png` → Betrieb B1 bis B6
+
+---
+
+# Teil 00 – OBERSTE REGEL: Spiel, nicht Arbeit (2.3, Julian 14.10 08:51 zu Build 1.11)
+
+> „es fühlt sich nicht wie eion spiel an es fühlt sich wie eine krnakheit an“
+
+Geht **allem** in dieser Datei vor, auch Teil 0b. Wo eine Ansicht unten ein Fenster, eine Karte oder einen Regler beschreibt, gilt stattdessen die Variante in der Spielwelt hier.
+
+**S1. Handel direkt in der Szene (ersetzt das Handel-Sheet für normale Kunden).** Kunde kommt an die Theke, über seinem Kopf schwebt der Gegenstand als großes 3D-Symbol in einer Sprechblase mit Preis („240 €“). Antippen des Kunden: Gegenstand hüpft auf die Theke (Plopp-Geräusch, Haptik leicht). Daneben erscheinen **drei große runde Preis-Chips direkt in der Szene** über der Theke: **„Niedrig 180 €“ · „Fair 210 €“ · „Hoch 240 €“** (je 64 pt, Farben Rot/Gold/Grün für Annahmechance). Ein Tipp = Entscheidung. Sofort: Kunde nickt oder schüttelt den Kopf (Emoji-Blase), Gegenstand rutscht in die Vitrine, Geld fliegt. Gesamt 3–5 s. Kein Sheet, kein Regler, kein Text außer Preisen.
+**S2. Besondere Kunden („!“ über dem Kopf)** bekommen eine kurze Verhandlung: bis zu 3 Runden mit denselben Preis-Chips, Kunde reagiert mit Mimik und Gegenangebot in der Sprechblase. Prüfen = Gegenstand auf der Theke antippen und gedrückt halten: Lupe kreist, versteckte Merkmale ploppen als Icons auf (Kratzer, Signatur, Fälschung).
+**S3. Werkstatt in der Szene.** Gegenstand aus der Vitrine auf die Werkbank ziehen. Danach **schnell tippen** (Hammer-Schläge mit Funken) beschleunigt die Restaurierung, Wert-Zahl über dem Gegenstand zählt sichtbar hoch („300 € → 420 €“).
+**S4. Verkaufen in der Szene.** Kaufende Kunden zeigen mit einem Herz-Symbol auf ein Stück in der Vitrine. Antippen = verkauft, mit Effekt N8.
+**S5. Geld einsammeln.** Bezahltes Geld liegt als kleiner Stapel auf der Theke und wird per Tipp eingesammelt (oder automatisch nach 3 s, sobald Personal da ist). Jeder Tipp: Geldschein-Pop, „+130 €“ springt hoch, Kassen-Klingeln.
+**S6. Ausbauen in der Szene.** Über jeder Einrichtung (Theke, Vitrine, Werkbank) schwebt ein kleiner Pfeil-Knopf mit Preis, wenn das Geld reicht. Tipp = Stufe +1 mit Funken, Einrichtung wächst sichtbar. Gedrückt halten = mehrfach kaufen. Die Gebäudeübersicht A3 bleibt für Etagen, nicht für jede Stufe.
+**S7. Belohnungs-Takt.** Etwa alle 5–10 s etwas Erfreuliches: Geld-Pop, Ruf-Stern, **Kombo** (3 Abschlüsse in 10 s = „Kombo ×2“, Geld doppelt), seltener Fund (goldener Glanz, Fanfare), Stufen-Meilenstein (Konfetti). Töne und Haptik bei jedem Tipp.
+**S8. Kein Lesen vorher.** Keine Erklärkarte vor der ersten Aktion. Das Tutorial zeigt nur die Zeigehand auf das nächste Ding in der Szene. Erklärkarten (K5) nur über „?“ und höchstens einmal automatisch **nach** der ersten erfolgreichen Aktion eines Systems, mit 3 Zeilen. Bei einer Aktion höchstens 3 Wörter Text.
+**S9. Prüffrage vor jedem Build:** Kann man die ersten 3 Minuten spielen, ohne ein einziges Fenster zu öffnen und ohne einen Satz zu lesen? Fühlt sich jeder Tipp gut an? Wenn nein, nicht an Julian schicken.
 
 ---
 
