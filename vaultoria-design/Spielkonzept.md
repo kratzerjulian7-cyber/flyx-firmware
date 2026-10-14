@@ -1,3 +1,5 @@
+> **ARCHIV (14.10.2026 10:34):** Vaultoria ist jetzt ein Pannenhilfe- und Abschlepp-Tycoon. Verbindlich sind nur noch `Spielkonzept-Pannenhilfe.md` und `UI-Vorgabe-Pannenhilfe.md`. Diese Datei beschreibt das eingestellte Pfandhaus-Spiel (Kopie in `archiv-pfandhaus/`).
+
 # Vaultoria – Spielkonzept (verbindlicher Gesamtstand für den Mac-Build)
 
 **Stand: Julian, 13.10.2026 13:09 – Sammlung 1 abgeschlossen. Sammlung 2 (Teil D, ab 13:20) und Sammlung 3 (Teil E, abgeschlossen 13:37) ergänzen diesen Stand und gehen bei Widerspruch vor.**

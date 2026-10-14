@@ -1,5 +1,7 @@
 # Vaultoria – App-Store-Texte (Entwurf)
 
+> **Pannenhilfe-Umstellung (14.10.2026 10:34):** Vaultoria ist jetzt ein Pannenhilfe- und Abschlepp-Tycoon. Store-Texte werden erst neu geschrieben, wenn das neue Spiel spielbar ist.
+
 > **ÜBERHOLT (14.10.2026 10:30):** Julian hat Vaultoria radikal vereinfacht (Spielkonzept Teil L). Diese Texte beschreiben die abgeschaltete Version 2.3 und werden neu geschrieben, sobald die einfache Version spielbar ist. Nicht verwenden.
 
 Stand 14.10.2026, neu geschrieben für Vaultoria 2.3 (Build 202610141016, neuer Kern nach Spielkonzept Teil J und K). Kernsatz: „Wertvoller Fund oder Fehlkauf?“. Vor dem Einreichen gegen den echten Build prüfen: nur beschreiben, was wirklich drin ist. Name „Vaultoria“ ist Arbeitstitel und noch nicht markengeprüft.
