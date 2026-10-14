@@ -816,3 +816,19 @@ Der Kernablauf (Gegenstand entdecken → einschätzen → verhandeln → verbess
 4. **Kein Lesen, bevor etwas passiert.** Erst spielen, dann verstehen. Erklärkarten (K5) erscheinen nicht mehr vor der ersten Aktion, sondern höchstens als „?“ danach. Höchstens 3 Wörter Text bei einer Aktion.
 5. **Kurze Schleife:** Ein normaler Kunde dauert 3–5 Sekunden (antippen, Preis wählen, fertig). Lange Verhandlungen nur bei besonderen Kunden mit „!“.
 6. **Der Spieler tut, er verwaltet nicht.** Zahlen wie Marktwert und Gewinnspanne stehen nur dort, wo sie die nächste Entscheidung spannender machen.
+
+
+---
+
+# Teil I – Vaultoria ist ein Idle-Tycoon (14.10.2026 09:01, geht Teil H und allem anderen vor)
+
+## I1. Julian (wörtlich)
+
+> es soll ein idle tycoon game sein man das fühlt sich schei0e an
+
+## I2. Was daraus folgt
+
+- **Kern = Idle wie Eatventure:** Stationen verdienen automatisch, Personal bedient Kunden sichtbar, Geld fliegt in den Zähler. Der Spieler tippt vor allem Upgrade-Pfeile über den Stationen, Meilensteine bei Stufe 10/25/50/100, schaltet mit Geld neue Stationen und Räume frei, ein Standort-Fortschrittsbalken zeigt das Ziel. Manager automatisieren je Raum. Offline-Einnahmen (max. 4 h) mit freiwilligem Verdoppeln per Video. Ist der Standort voll, kommt der Rebirth zum nächsten Standort.
+- **Handel von Hand nur als Bonus:** Kunden mit „!“ bringen einen Sonderhandel mit 3 Preis-Chips. Teil H S1 (jeder Kunde von Hand) entfällt.
+- **Werkstatt und Raubzüge sind Zusatzmodi**, nicht der Kern.
+- Teil A–H gelten weiter, soweit sie diesem Idle-Kern nicht widersprechen. Details: UI-Vorgabe 2.4 Teil 00.

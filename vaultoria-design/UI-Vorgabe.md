@@ -1,6 +1,6 @@
-# Vaultoria – UI-Vorgabe 2.3 (verbindlich, nachbaufähig ohne Bilder)
+# Vaultoria – UI-Vorgabe 2.4 (verbindlich, nachbaufähig ohne Bilder)
 
-Stand 14.10.2026, 09:00 (2.3: Teil 00 oberste Regel „Spiel, nicht Arbeit“, Handel/Werkstatt/Ausbau direkt in der Szene). 2.2 vom 14.10. 08:00 ( Julians Überarbeitungsliste nach Prüfung von 25 Screenshots, Spielkonzept Teil G: Teil 0b, neue Tab-Leiste, Bottom-Sheets, 16 pt, Tutorial in 7 Schritten, Rebirth-Zusammenfassung). 2.1 vom 14.10. 07:20 ( Euro statt Spielgeld, Kamera von weit oben, Erklärkarten K5, Julian 14.10 07:09). 2.0 vom 13.10.2026, 20:45 ersetzt die erste Fassung. Grund: Julian zu Build 1.0 (18:33): „noch sehr unübersichtlich … so wie ich es dir geschickt habe, so möchte ich das haben und nicht anders. Sondern genau so. Wie auf den Bildern … Genau diese Logik.“
+Stand 14.10.2026, 09:10 (2.4: Teil 00 neu: Idle-Tycoon wie Eatventure, Handel von Hand nur Bonus). 2.3 vom 14.10. 09:00 ( Teil 00 oberste Regel „Spiel, nicht Arbeit“, Handel/Werkstatt/Ausbau direkt in der Szene). 2.2 vom 14.10. 08:00 ( Julians Überarbeitungsliste nach Prüfung von 25 Screenshots, Spielkonzept Teil G: Teil 0b, neue Tab-Leiste, Bottom-Sheets, 16 pt, Tutorial in 7 Schritten, Rebirth-Zusammenfassung). 2.1 vom 14.10. 07:20 ( Euro statt Spielgeld, Kamera von weit oben, Erklärkarten K5, Julian 14.10 07:09). 2.0 vom 13.10.2026, 20:45 ersetzt die erste Fassung. Grund: Julian zu Build 1.0 (18:33): „noch sehr unübersichtlich … so wie ich es dir geschickt habe, so möchte ich das haben und nicht anders. Sondern genau so. Wie auf den Bildern … Genau diese Logik.“
 
 **Diese Datei beschreibt jede Ansicht aus Julians Konzeptbildern so, dass sie ohne Bild nachgebaut werden kann.** Spielregeln und Zahlen stehen in `Spielkonzept.md`. Bei Widerspruch gilt für Aussehen und Bedienung diese Datei, für Regeln und Zahlen das Spielkonzept.
 
@@ -13,21 +13,40 @@ Quelle: fünf Bilder von Julian (13.10.2026, 12:40 bis 12:50), im selben Ordner:
 
 ---
 
-# Teil 00 – OBERSTE REGEL: Spiel, nicht Arbeit (2.3, Julian 14.10 08:51 zu Build 1.11)
+# Teil 00 – OBERSTE REGEL: Idle-Tycoon wie Eatventure (2.4, Julian 14.10 09:01)
 
-> „es fühlt sich nicht wie eion spiel an es fühlt sich wie eine krnakheit an“
+> „es soll ein idle tycoon game sein man das fühlt sich schei0e an“
+> (davor 08:51: „es fühlt sich nicht wie eion spiel an es fühlt sich wie eine krnakheit an“)
 
-Geht **allem** in dieser Datei vor, auch Teil 0b. Wo eine Ansicht unten ein Fenster, eine Karte oder einen Regler beschreibt, gilt stattdessen die Variante in der Spielwelt hier.
+Geht **allem** in dieser Datei vor. Ersetzt Teil 00 aus 2.3 (Handel von Hand als Kern). Alles weiter unten (Handel-Sheets, Verhandlung, Werkstatt, Raubzug, Tabs) gilt nur noch, soweit es zu diesem Idle-Kern passt.
 
-**S1. Handel direkt in der Szene (ersetzt das Handel-Sheet für normale Kunden).** Kunde kommt an die Theke, über seinem Kopf schwebt der Gegenstand als großes 3D-Symbol in einer Sprechblase mit Preis („240 €“). Antippen des Kunden: Gegenstand hüpft auf die Theke (Plopp-Geräusch, Haptik leicht). Daneben erscheinen **drei große runde Preis-Chips direkt in der Szene** über der Theke: **„Niedrig 180 €“ · „Fair 210 €“ · „Hoch 240 €“** (je 64 pt, Farben Rot/Gold/Grün für Annahmechance). Ein Tipp = Entscheidung. Sofort: Kunde nickt oder schüttelt den Kopf (Emoji-Blase), Gegenstand rutscht in die Vitrine, Geld fliegt. Gesamt 3–5 s. Kein Sheet, kein Regler, kein Text außer Preisen.
-**S2. Besondere Kunden („!“ über dem Kopf)** bekommen eine kurze Verhandlung: bis zu 3 Runden mit denselben Preis-Chips, Kunde reagiert mit Mimik und Gegenangebot in der Sprechblase. Prüfen = Gegenstand auf der Theke antippen und gedrückt halten: Lupe kreist, versteckte Merkmale ploppen als Icons auf (Kratzer, Signatur, Fälschung).
-**S3. Werkstatt in der Szene.** Gegenstand aus der Vitrine auf die Werkbank ziehen. Danach **schnell tippen** (Hammer-Schläge mit Funken) beschleunigt die Restaurierung, Wert-Zahl über dem Gegenstand zählt sichtbar hoch („300 € → 420 €“).
-**S4. Verkaufen in der Szene.** Kaufende Kunden zeigen mit einem Herz-Symbol auf ein Stück in der Vitrine. Antippen = verkauft, mit Effekt N8.
-**S5. Geld einsammeln.** Bezahltes Geld liegt als kleiner Stapel auf der Theke und wird per Tipp eingesammelt (oder automatisch nach 3 s, sobald Personal da ist). Jeder Tipp: Geldschein-Pop, „+130 €“ springt hoch, Kassen-Klingeln.
-**S6. Ausbauen in der Szene.** Über jeder Einrichtung (Theke, Vitrine, Werkbank) schwebt ein kleiner Pfeil-Knopf mit Preis, wenn das Geld reicht. Tipp = Stufe +1 mit Funken, Einrichtung wächst sichtbar. Gedrückt halten = mehrfach kaufen. Die Gebäudeübersicht A3 bleibt für Etagen, nicht für jede Stufe.
-**S7. Belohnungs-Takt.** Etwa alle 5–10 s etwas Erfreuliches: Geld-Pop, Ruf-Stern, **Kombo** (3 Abschlüsse in 10 s = „Kombo ×2“, Geld doppelt), seltener Fund (goldener Glanz, Fanfare), Stufen-Meilenstein (Konfetti). Töne und Haptik bei jedem Tipp.
-**S8. Kein Lesen vorher.** Keine Erklärkarte vor der ersten Aktion. Das Tutorial zeigt nur die Zeigehand auf das nächste Ding in der Szene. Erklärkarten (K5) nur über „?“ und höchstens einmal automatisch **nach** der ersten erfolgreichen Aktion eines Systems, mit 3 Zeilen. Bei einer Aktion höchstens 3 Wörter Text.
-**S9. Prüffrage vor jedem Build:** Kann man die ersten 3 Minuten spielen, ohne ein einziges Fenster zu öffnen und ohne einen Satz zu lesen? Fühlt sich jeder Tipp gut an? Wenn nein, nicht an Julian schicken.
+**I1. Stationen verdienen automatisch.** Jeder Raum besteht aus **Stationen** (Laden: Ankaufstheke, Vitrine, Kasse, Schätz-Tisch · Werkstatt: Werkbank, Polierplatz · Wertlager: Schließfach-Reihe, Tresor · Tierpension: Körbchen, Auslauf, Futterplatz). Kunden laufen von selbst herein, gehen zur Station, **Personal bedient sie sichtbar** (Figur läuft hin, Aktion mit Fortschrittsring über der Station 1–4 s), Kunde zahlt und geht. Ohne einen einzigen Tipp läuft Geld ein.
+
+**I2. Geld fliegt in den Zähler.** Jede Zahlung: Geldschein-Symbol mit „+42 €“ springt aus der Station und fliegt in einem Bogen zum Kontostand oben, der Zähler rollt hoch, leises Kassen-Klingeln. Bei vielen Zahlungen bündeln (höchstens 4 Flüge pro Sekunde).
+
+**I3. Hauptaktion = Upgrade-Pfeile.** Über jeder Station schwebt ein **grüner Pfeil-Knopf mit Preis**, sobald das Geld reicht (sonst grau, ohne Preis-Blinken). Tipp = Stufe +1: Station hüpft kurz, Funken, Zahl „Stufe 12“ springt, Einnahme pro Kunde steigt. **Gedrückt halten = schnell mehrfach kaufen.** Station antippen öffnet ein kleines Sheet (halbe Höhe) mit genau: Name, Stufe, Einnahme pro Kunde, Dauer pro Kunde, Knopf „×1 / ×10 / Max“.
+
+**I4. Meilensteine bei Stufe 10, 25, 50, 100.** Fortschrittsbalken unter jeder Station zeigt den Weg zum nächsten Meilenstein. Erreicht: Konfetti, Fanfare, Schild „×2 Einnahmen“ bzw. „Schneller“, Station bekommt sichtbar ein besseres Modell (z. B. Holztheke → Glastheke → Marmortheke).
+
+**I5. Neue Stationen und Räume freischalten.** Gesperrte Stationen stehen als grauer Umriss mit Schloss und Preis im Raum („Vitrine 2.500 €“). Antippen bei genug Geld = freigeschaltet mit Bau-Animation (2 s). Neue Räume genauso über ihre Etage im Gebäude (Werkstatt, Wertlager, Tierpension).
+
+**I6. Standort-Ziel.** Oben unter der Kopfleiste ein **Fortschrittsbalken des Standorts** (Gold auf Dunkelgrün, 8 pt hoch, volle Breite mit 16 pt Rand) mit drei Sternen bei 33/66/100 %. Er füllt sich durch Stationsstufen und Freischaltungen. Antippen zeigt die nächsten 3 Aufgaben („Theke auf Stufe 25“, „Werkstatt freischalten“, „Verdiene 50.000 €“).
+
+**I7. Manager automatisieren.** Pro Raum ein **Manager** (einmalig einstellen, Spielkonzept: Personal einmalig). Er lässt den Raum ohne Engpass weiterlaufen und gibt einen Bonus (z. B. „Laden +25 % Einnahmen“). Erst mit Manager laufen alle Stationen eines Raums ohne Pausen.
+
+**I8. Offline-Einnahmen.** Beim Öffnen nach Pause ein Sheet: „Während du weg warst“, große Zahl „12.480 €“, Uhr „3 h 12 min“ (max. 4 h, Spielkonzept), grüner Knopf „Einsammeln“, darunter Umrissknopf mit Video-Symbol **„Verdoppeln“** (freiwilliges Werbevideo).
+
+**I9. Rebirth, wenn der Standort voll ist.** Bei 3 Sternen im Standort-Balken leuchtet der Knopf „Umziehen“: Ablauf A4 (Zusammenfassung → alter Laden → Bestätigung), danach nächster Standort mit mehr Stationen und höheren Einnahmen.
+
+**I10. Handel von Hand ist nur noch ein Bonus.** Ab und zu (alle 1–2 Minuten) kommt ein **Kunde mit „!“** über dem Kopf. Antippen = Sonderhandel mit den **drei Preis-Chips** (Niedrig · Fair · Hoch) direkt in der Szene, 3–5 s, bringt einen deutlich höheren Bonus (z. B. ×5 einer normalen Zahlung) oder ein seltenes Fundstück. Ignoriert er ihn, geht der Kunde nach 20 s. Keine Pflicht.
+
+**I11. Zusatzmodi.** Werkstatt (Restaurieren per Tippen) und Raubzug sind **Zusatzmodi** für Abwechslung und Bonusgeld, nicht der Kern. Sie werden erst nach dem ersten Manager freigeschaltet.
+
+**I12. Kein Lesen, Belohnung im Takt.** Kein Erklärtext vor der ersten Aktion, nur die Zeigehand auf den ersten Upgrade-Pfeil. Etwa alle 5–10 s etwas Erfreuliches (Geld-Flug, Stufe, Meilenstein, „!“-Kunde).
+
+**Erste 3 Minuten (ersetzt Teil 8 als Start):** Laden mit einer Ankaufstheke und einer Verkäuferin, Kunden kommen sofort, Geld fliegt → Zeigehand auf Pfeil über der Theke → Theke bis Stufe 10 (erster Meilenstein, Konfetti) → Umriss „Vitrine 2.500 €“ freischalten → erster „!“-Kunde → Standort-Balken erster Stern → Manager Laden einstellen. Kein Fenster außer dem kleinen Stations-Sheet.
+
+**Prüffrage vor jedem Build:** Kann man das Handy 2 Minuten liegen lassen und es verdient trotzdem sichtbar Geld? Ist der wichtigste Knopf immer ein Upgrade-Pfeil über einer Station? Wenn nein, nicht an Julian schicken.
 
 ---
 
