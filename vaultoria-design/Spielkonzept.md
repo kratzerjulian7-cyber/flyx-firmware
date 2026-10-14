@@ -682,3 +682,117 @@ Kunden-Einnahmen werden so angehoben, dass die Zeitpunkte aus UI-Vorgabe Teil 8 
 
 - Laden-Hauptansicht (B1) fast als Draufsicht (≈ 70°), gerade ausgerichtet, ohne seitliche Drehung, weit herausgezoomt. Gebäudeübersicht (A3) gerade von vorne und deutlich von oben statt 20° gedreht. Schräge Blicke nur noch in Nahansichten (Theke, Raubzug). Details: UI-Vorgabe Regel 6.
 
+
+
+---
+
+# Teil G – Überarbeitungsliste nach Screenshot-Prüfung (14.10.2026 07:45)
+
+Julian hat alle 25 Screenshots von Build 1.0 geprüft. Diese Liste gilt verbindlich und geht bei Widerspruch vor Teil A–F. **Seine Reihenfolge (G1, „Meine Reihenfolge“) ist die Arbeitsreihenfolge.** Neue Inhalte kommen zuletzt (Punkt 8): „Jetzt nicht noch 20 neue Funktionen einbauen.“
+
+## G1. Julians Liste (wörtlich)
+
+> Ich habe alle 25 aktuellen Screenshots geprüft. Ehrlich: Vaultoria sieht bereits nach einem richtigen Mobile-Game aus. Es fehlt nicht an Inhalt – das größte Problem ist momentan, dass die vielen guten Systeme auf dem kleinen Bildschirm teilweise zu voll und unübersichtlich wirken.
+> Unbedingt zuerst verbessern
+>
+> 1. Mehr vom Spiel, weniger Benutzeroberfläche
+> Auf manchen Bildschirmen verdecken Menüleisten, Aufgaben, Hinweise und Karten fast die komplette Spielwelt. Besonders beim Handel sieht man vom Laden kaum noch etwas.
+> Lösung:
+>    * Aufgabenleiste einklappbar machen
+>    * Besitz nur als kleine Leiste zeigen und beim Antippen öffnen
+>    * Große Fenster als Bottom-Sheet einblenden
+>    * Während kein Menü geöffnet ist, mindestens 60–70 % der Spielwelt zeigen
+> 2. Texte und Buttons größer und ruhiger
+> Auf einem echten iPhone sind einige Erklärungen, Werte und graue Texte sehr klein. Besonders Shop, Rebirth-Shop, Bank und Betriebsübersicht.
+>    * Mindestens 16 pt für wichtige Texte
+>    * Serifenschrift nur für Überschriften und Vaultoria-Branding
+>    * Erklärungen kürzen
+>    * Wichtigste Zahl pro Karte deutlich hervorheben
+>    * Nicht mehr als einen grünen Hauptbutton pro Fenster
+> 3. Navigation überall gleich halten
+> Die untere Navigation verändert sich zwischen den Bildschirmen. Dadurch kann man schnell die Orientierung verlieren.
+> Mein Vorschlag:
+>    * Laden
+>    * Besitz
+>    * Personal
+>    * Werkstatt
+>    * Mehr
+> Unter „Mehr“ kommen Kunden, Album, Aufträge, Statistik und Einstellungen. Wertlager und Tierpension können direkt über das Gebäude geöffnet werden.
+> 4. Tutorial nicht alles gleichzeitig erklären
+> „Dein erster Laden“ ist gut, aber Titel, Hand-Symbol, Besitzleiste und Handelssystem erscheinen gleichzeitig.
+> Besserer Start:
+>    1. Kunde kommt herein
+>    2. Kunde antippen
+>    3. Gegenstand prüfen
+>    4. Preis einstellen
+>    5. Gegenstand kaufen
+>    6. Restaurieren oder direkt verkaufen
+>    7. Erst danach Personal und Ausbau zeigen
+>
+> Optisch verbessern
+>
+> * Die gold-grün-braune Gestaltung passt sehr gut zum Pfandhaus-Thema.
+> * Die Spielwelt braucht aber mehr Kontrast: Laden, Werkstatt, Wertlager und Tierpension sollten jeweils eigene Farben, Beleuchtung und Ausstattung bekommen.
+> * Kunden sollten bessere Schatten, deutlichere Gesichter und abwechslungsreichere Kleidung erhalten.
+> * Bei Verkäufen fehlen noch befriedigende Effekte: Geld zählt hoch, Gegenstand bewegt sich über den Tresen, Kunde reagiert und der Ruf steigt sichtbar.
+> * Leere Flächen im Shop entfernen. Nicht verfügbare Käufe entweder ausblenden oder mit „Demnächst“ versehen.
+> * Die abgerundeten oberen Shop-Fenster passen noch nicht ganz zur restlichen Oberfläche. Alle Fenster sollten dieselbe Formensprache verwenden.
+>
+> Spielerisch verbessern
+> Der stärkste Spielablauf sollte immer sein:
+> Gegenstand entdecken → Wert einschätzen → verhandeln → verbessern → verkaufen oder sammeln → Laden ausbauen
+> Diesen Ablauf würde ich stärker ins Zentrum stellen. Personal, Tiere, Bank und Raubzüge sind Erweiterungen davon.
+> Besonders gute Ergänzungen wären:
+>
+> * Seltenheitsstufen und besondere Fundstücke
+> * Fälschungen, beschädigte Ware und versteckte Merkmale
+> * Kunden mit unterschiedlichen Persönlichkeiten
+> * Stammkunden, Sammler und betrügerische Kunden
+> * Ereignisse wie Flohmarkt, Nachlass, Auktion oder prominenter Kunde
+> * Vergleich: Einkaufspreis, Reparaturkosten und erwarteter Gewinn
+> * Entscheidung: schnell verkaufen oder auf den richtigen Käufer warten
+> * Gegenstände direkt im Laden sichtbar ausstellen
+> * Mitarbeiter mit echten Stärken und Schwächen
+>
+> Raubzüge
+> Der Raubzug ist eine starke Abwechslung und kann ein echtes Werbemerkmal werden. Aktuell wirkt er optisch aber noch deutlich einfacher als das Hauptspiel.
+> Verbesserungen:
+>
+> * Sichtkegel verständlicher, aber leicht transparenter
+> * Ziel und Ausgang deutlich markieren
+> * Wachhunde, Kameras, Bewegungsmelder und verschlossene Räume
+> * Auswahl zwischen sicherer kleiner Beute und riskanter wertvoller Beute
+> * Gegenstände sichtbar tragen
+> * Vibration und Zeitlupe bei knappem Entkommen
+> * Automatik bringt weniger Beute als manuelles Spielen
+> * Konsequenzen wie Verletzungen, Verlust oder vorübergehend höheres Risiko
+>
+> Umzug und Rebirth
+> Der Bildschirm enthält aktuell zu viele Informationen auf einmal. Vor dem Neustart braucht es eine einfache Zusammenfassung:
+>
+> * Du verlierst: Geld, Ladenstufen und normale Gegenstände
+> * Du behältst: gekaufte Designs, Werbefreiheit und dauerhafte Boni
+> * Du erhältst: 20 Rebirth-Coins
+> * Neuer Standort: mehr Etagen, Kunden und Funktionen
+>
+> Danach erst ein deutliches Bestätigungsfenster.
+> Meine Reihenfolge
+>
+> 1. Oberfläche entschlacken
+> 2. Tutorial verbessern
+> 3. Navigation vereinheitlichen
+> 4. Verkauf und Verhandlung befriedigender animieren
+> 5. Räume optisch unterscheiden
+> 6. Raubzüge ausbauen
+> 7. Wirtschaft und Preise ausbalancieren
+> 8. Neue Inhalte ergänzen
+>
+> Wichtig: Jetzt nicht noch 20 neue Funktionen einbauen. Das Spiel besitzt bereits genug Systeme. Die nächste Entwicklungsphase sollte dafür sorgen, dass sich Kaufen, Verhandeln, Restaurieren und Verkaufen richtig gut anfühlt. Das macht Vaultoria wesentlich wertvoller als noch mehr Menüpunkte.
+
+## G2. Was sich dadurch an früheren Festlegungen ändert
+
+1. **Tab-Leiste** jetzt dauerhaft: Laden · Besitz · Personal · Werkstatt · Mehr (ersetzt Laden · Wertlager · Personal · Werkstatt · Kunden). Wertlager und Tierpension öffnet man über ihre Etage im Gebäude. Kunden, Album, Aufträge, Statistik und Einstellungen liegen unter „Mehr“. Was noch nicht gebaut ist, ist ausgeblendet oder trägt „Demnächst“.
+2. **Tutorial** folgt den 7 Schritten (Kaufen → Prüfen → Preis → Kaufen → Restaurieren oder Verkaufen, erst dann Personal und Ausbau). Pfand, Wertlager und Raubzug kommen nach Schritt 7. Neue Fassung in UI-Vorgabe Teil 8.
+3. **Raubzug:** „Automatik bringt weniger Beute als manuelles Spielen“ ersetzt „manuell und automatisch gleichwertig“ (Teil A). ENTWURF: Automatik bringt 70 % der Beute, die beim manuellen Spielen möglich ist. Konsequenzen wie Verletzung der Crew sind nur vorübergehend (Crew-Mitglied 1 Spieltag nicht verfügbar). Tiere bleiben nie verletzt und nie Beute.
+4. **Rebirth-Belohnung** im Beispiel jetzt 20 Rebirth-Coins (bisher +12). Vor dem Neustart kommt zuerst eine einfache Zusammenfassung mit vier Blöcken, erst danach das Bestätigungsfenster (UI-Vorgabe A4).
+5. **Ergänzungen** (Seltenheit, Fälschungen, Persönlichkeiten, Ereignisse usw.) sind als Ideen notiert. Was davon in Teil A, D oder E schon steht, wird in Punkt 8 umgesetzt, nicht vorher.

@@ -1,6 +1,6 @@
-# Vaultoria – UI-Vorgabe 2.1 (verbindlich, nachbaufähig ohne Bilder)
+# Vaultoria – UI-Vorgabe 2.2 (verbindlich, nachbaufähig ohne Bilder)
 
-Stand 14.10.2026, 07:20 (2.1: Euro statt Spielgeld, Kamera von weit oben, Erklärkarten K5, Julian 14.10 07:09). 2.0 vom 13.10.2026, 20:45 ersetzt die erste Fassung. Grund: Julian zu Build 1.0 (18:33): „noch sehr unübersichtlich … so wie ich es dir geschickt habe, so möchte ich das haben und nicht anders. Sondern genau so. Wie auf den Bildern … Genau diese Logik.“
+Stand 14.10.2026, 08:00 (2.2: Julians Überarbeitungsliste nach Prüfung von 25 Screenshots, Spielkonzept Teil G: Teil 0b, neue Tab-Leiste, Bottom-Sheets, 16 pt, Tutorial in 7 Schritten, Rebirth-Zusammenfassung). 2.1 vom 14.10. 07:20 ( Euro statt Spielgeld, Kamera von weit oben, Erklärkarten K5, Julian 14.10 07:09). 2.0 vom 13.10.2026, 20:45 ersetzt die erste Fassung. Grund: Julian zu Build 1.0 (18:33): „noch sehr unübersichtlich … so wie ich es dir geschickt habe, so möchte ich das haben und nicht anders. Sondern genau so. Wie auf den Bildern … Genau diese Logik.“
 
 **Diese Datei beschreibt jede Ansicht aus Julians Konzeptbildern so, dass sie ohne Bild nachgebaut werden kann.** Spielregeln und Zahlen stehen in `Spielkonzept.md`. Bei Widerspruch gilt für Aussehen und Bedienung diese Datei, für Regeln und Zahlen das Spielkonzept.
 
@@ -24,7 +24,7 @@ Jede der 20 Ansichten auf Julians Bildern folgt demselben Bauplan. Wer diesen Ba
 5. **Figuren bewegen sich immer** (Kunden laufen, warten, zeigen Gegenstände, Mitarbeiter tragen Waren, Hunde spielen und ruhen). Auch hinter Menü-Karten läuft die Szene weiter.
 6. **Die Kamera ist fest und schaut von weit oben** (Julian 14.10: „von viel weiter oben, nicht so komisch schräg“). Hauptansichten B1 und A3: Neigung ≈ 70° (fast Draufsicht), **keine seitliche Drehung** (Gebäude steht gerade, Kanten parallel zum Bildschirmrand), weit herausgezoomt, sodass der ganze Laden samt Gehweg bzw. das ganze Gebäude ins Bild passt. Schräge Blicke nur in Nahansichten (A1, B2: Blick über die Theke) und im Raubzug R4. Kamerafahrt in eine Nahansicht und zurück: 0,6 s, weich ein- und auslaufend.
 9. **Jedes System erklärt sich selbst** (Julian 14.10: „den Kredit und alles besser erklären“). Siehe K5: Erklärkarte beim ersten Mal und „?“-Knopf auf jeder Karte.
-7. **Alles wird schrittweise freigeschaltet.** Am Anfang gibt es nur den Laden mit einer Theke. Neue Bereiche, Tabs und Knöpfe erscheinen erst, wenn sie gebraucht werden (siehe Teil 8, Kernablauf). Gesperrte Tabs sind ausgeblendet, nicht grau.
+7. **Alles wird schrittweise freigeschaltet.** Am Anfang gibt es nur den Laden mit einer Theke. Neue Bereiche, Tabs und Knöpfe erscheinen erst, wenn sie gebraucht werden (siehe Teil 8, Kernablauf). Ausnahme Tab-Leiste: Sie hat immer dieselben fünf Plätze, gesperrte Tabs tragen ein Schloss (K3).
 8. **Keine Fremdmarken.** Erfundene Namen wie „LUMEN S-100“.
 
 ## Bildschirmmaß und Positionsangaben
@@ -60,8 +60,43 @@ Jede der 20 Ansichten auf Julians Bildern folgt demselben Bauplan. Wer diesen Ba
 ## Schrift
 
 - Spielansichten: SF Pro. Bereichstitel 28 pt fett in Versalien („HANDEL“), Untertitel 15 pt normal.
-- Menüs (Shop, Ausbau, Rebirth-Shop, Bonus): Titel in **Gold-Serifen-Versalien** (z. B. New York Bold oder eigenes Bild-Asset) mit Symbol davor. Kartentitel in dunkler Serife, zentriert.
+- Menüs (Shop, Ausbau, Rebirth-Shop, Bonus): Titel in **Gold-Serifen-Versalien** (z. B. New York Bold oder eigenes Bild-Asset) mit Symbol davor. Kartentitel SF Pro Semibold 17 pt, zentriert (Serife nur für Überschriften und Logo, N6).
 - Beträge fett, Tausenderpunkt, **immer mit „€“** und realistischen Preisen (Julian 14.10, Spielkonzept F2): „12.460 €“, „150 €“. Kein Wort „Spielgeld“ und keine Goldmünzen als Währung im Laden. Geldsymbol = kleiner grüner Geldschein. Rebirth-Coins bleiben violette Münzen (eigene Währung). Echtgeld-Preise im Shop kommen aus StoreKit und stehen nur dort. Überall, wo in dieser Datei „Münzen fliegen“ steht, fliegen im Laden **Geldscheine** zur Kopfleiste. Der Kontostand ist Geld im Spiel, er kann nie ausgezahlt oder gegen echtes Geld getauscht werden (steht einmal in den Einstellungen).
+
+---
+
+# Teil 0b – Neu in 2.2 (geht bei Widerspruch allem anderen in dieser Datei vor)
+
+Arbeitsreihenfolge laut Julian: 1. Oberfläche entschlacken · 2. Tutorial · 3. Navigation · 4. Verkauf und Verhandlung animieren · 5. Räume optisch unterscheiden · 6. Raubzüge · 7. Wirtschaft und Preise · 8. neue Inhalte. **Keine neuen Funktionen vor Punkt 8.**
+
+**N1. Spielwelt sichtbar (Julian: 60–70 %).** Ohne offenes Fenster sind mindestens **65 % der Bildschirmfläche freie Spielwelt** (Kopfleiste, Tab-Leiste, Aufgaben-Kapsel und Besitz-Leiste zusammen höchstens 35 %). Prüfen per Screenshot: alle Oberflächen-Flächen addieren.
+
+**N2. Bottom-Sheets.** Jedes größere Fenster (Handel, Pfand, Personal, Werkstatt, Wertlager, Shop, Rebirth, Mehr, Bank) kommt als **Bottom-Sheet** von unten. Zwei Höhen: **halb (45 %)**, Laden bleibt darüber sichtbar, und **groß (85 %)** nur für Shop, Rebirth-Shop und Listen. Handel und Pfand nutzen immer die halbe Höhe. Schließen: nach unten wischen oder „✕“ oben rechts.
+
+**N3. Eine Fensterform für alles.** Alle Sheets: oben 22 pt abgerundet, unten bündig mit dem Bildschirmrand, Hintergrund `#1E2A23` (dunkelgrün), 1,5 pt Goldrand oben, grauer Griff (36 × 5 pt) mittig oben. Karten in Sheets: 14 pt Radius. **Keine anders gerundeten Shop-Fenster mehr**, keine schwebenden Vollbild-Panels.
+
+**N4. Aufgaben-Kapsel einklappbar.** Aufgaben und Ziele stehen nicht mehr als Leiste, sondern als **eine Kapsel** oben links unter der Kopfleiste (y 6–10 %, max. 60 % breit): Häkchen-Symbol + aktuelles Ziel in einer Zeile („Verkaufe 3 Gegenstände 1/3“). Antippen klappt die Liste auf (max. 3 Ziele), erneut antippen klappt sie zu. Eingeklappt ist Standard.
+
+**N5. Besitz-Leiste klein.** Eingeklappt: schmale Leiste über der Tab-Leiste (y 85–90 %, 44 pt hoch): Kisten-Symbol, „Besitz 7“, Gesamtwert „1.840 €“, drei Mini-Bilder, Pfeil ▲. Antippen öffnet das Besitz-Sheet (halbe Höhe) mit Kachelraster. Die Leiste erscheint erst nach dem ersten Kauf.
+
+**N6. Schrift größer und ruhiger.** Wichtige Texte und Werte **mindestens 16 pt**, Nebentexte mindestens 14 pt in `#C9C3B8` (nicht dunkler auf Dunkelgrün). **Serifenschrift nur für Überschriften und das Vaultoria-Logo**, alles andere SF Pro (Kartentitel SF Pro Semibold 17 pt). **Pro Karte genau eine große Zahl** (28–34 pt fett, z. B. der Preis), alle anderen Zahlen normal. Erklärtexte höchstens eine Zeile. **Höchstens ein grüner Hauptknopf pro Fenster**, weitere Aktionen als dunkle Umrissknöpfe. Besonders prüfen: Shop, Rebirth-Shop, Bank, Gebäudeübersicht.
+
+**N7. Kein Hinweis-Gewitter.** Nie mehr als ein Hinweis gleichzeitig (Zeigehand, Pfeil, Erklärkarte oder Schwebetext). Titel wie „DEIN ERSTER LADEN“ blenden nach 2 s aus, bevor die Zeigehand erscheint.
+
+**N8. Verkaufs-Effekte (Julian: „befriedigend“).** Bei jedem Verkauf in dieser Reihenfolge (zusammen ≈ 1,6 s): Gegenstand gleitet über den Tresen zum Kunden (0,4 s) → Kunde reagiert (Freuen-Geste + Sprechblase mit Herz oder Daumen) → **Kontostand zählt sichtbar hoch** (0,8 s, Ziffern rollen) mit Geldschein-Flug → **Ruf-Stern** des Bereichs pulsiert, „+3 Ruf“ steigt auf → leichte Haptik (Erfolg). Beim Ankauf dasselbe rückwärts. Großer Gewinn (über 50 %): zusätzlich kurzer Goldglanz und kräftigere Haptik.
+
+**N9. Räume optisch unterscheiden.** Jeder Bereich bekommt eigene Farbe, eigenes Licht und eigene Ausstattung:
+
+| Bereich | Wände und Boden | Licht | Typische Ausstattung |
+|---|---|---|---|
+| Laden | warmes Holz, roter Teppich | warm, Lampenlicht 2.700 K | Theke, Vitrinen, Uhren, Gitarren |
+| Werkstatt | heller Beton, Holzwerkbank | neutral helles Arbeitslicht 4.500 K, Lampen über der Werkbank | Werkzeugwand, Schraubstock, Farbdosen, Späne am Boden |
+| Wertlager | dunkler Stahl, Steinboden | dunkel mit goldenen Spots auf den Fächern | Schließfächer, Rundtresor, Gitterschiebetür |
+| Tierpension | helles Holz, grüne Wände | Tageslicht, freundlich | Körbchen, Kratzbaum, Futternäpfe, Rasenauslauf |
+
+**N10. Figuren.** Kunden mit weichem Schatten am Boden, größeren klar lesbaren Gesichtern (Augen und Mund sichtbar auch von oben), mindestens 12 Kleidungs-Varianten (Jacken, Hüte, Taschen, Farben), keine zwei gleich gekleideten Kunden gleichzeitig im Laden.
+
+**N11. Shop ohne Lücken.** Keine leeren Flächen. Nicht verfügbare Käufe ausblenden oder als graue Karte mit Band „Demnächst“ (höchstens eine solche Karte pro Seite).
 
 ---
 
@@ -95,13 +130,15 @@ Lage: y 91–100 % (über der Home-Leiste), volle Breite, Panel `#1A1F1C`. Fünf
 
 | Tab | Symbol | Inhalt |
 |---|---|---|
-| Laden | Haus | Handel und Pfand (B1, B2, A1) |
-| Wertlager | Tresor-Quadrat | B3 |
+| Laden | Haus | Hauptansicht Laden (B1), Handel und Pfand als Sheet (A1, B2) |
+| Besitz | Kiste | Besitz-Sheet: eigene Ware, sortierbar nach Wert, Zustand, Seltenheit. Antippen eines Gegenstands: Verkaufen, Restaurieren, Ausstellen |
 | Personal | zwei Personen | B4 |
 | Werkstatt | Hammer + Schraubenschlüssel | B5 |
-| Kunden | Stern | B6 |
+| Mehr | drei Punkte | Sheet mit großen Zeilen (je 56 pt, Symbol + Text 17 pt): Kunden (B6) · Album · Aufträge · Statistik · Einstellungen. Noch nicht gebaut: ausgeblendet oder „Demnächst“ |
 
-Aktiver Tab: Symbol und Text gold `#E9BE4A`, goldene Linie 2 pt am oberen Rand des Tabs, Hintergrund etwas heller. Inaktiv: hellgrau. Tabs erscheinen erst, wenn der Bereich freigeschaltet ist (Teil 8).
+**Die Tab-Leiste ist in allen Betriebsansichten identisch** (gleiche 5 Tabs, gleiche Reihenfolge, nie andere Tabs, Julian 14.10). Wertlager und Tierpension haben keinen Tab, sie öffnen sich über ihre Etage in der Gebäudeübersicht A3 oder durch Antippen des Raums. Im Raubzug und in Sheets der großen Höhe ist die Tab-Leiste ausgeblendet.
+
+Aktiver Tab: Symbol und Text gold `#E9BE4A`, goldene Linie 2 pt am oberen Rand des Tabs, Hintergrund etwas heller. Inaktiv: hellgrau. Die Tab-Leiste erscheint nach Tutorial-Schritt 6 sofort mit allen fünf Tabs. Noch gesperrte Tabs (Personal, Werkstatt) zeigen ein kleines Schloss und bleiben an ihrem Platz, damit sich nichts verschiebt. Antippen eines gesperrten Tabs: Schwebetext „Ab Laden Stufe 5“.
 
 ## K4. Gebäude-Knopf, Raubzug-Knopf, Shop-Knopf
 
@@ -137,6 +174,8 @@ Pflicht-Erklärkarten (Texte als Vorlage, Zahlen kommen aus dem Spiel):
 # Teil 2 – Spielansichten (Bild `ui-vorgabe-ansichten.png`)
 
 ## A1. HANDEL (Nahansicht An- und Verkauf, Tab Laden während eines Kundengesprächs)
+
+> **2.2 (geht vor):** Gegenstandskarte und Verhandlungskarte liegen zusammen in **einem Bottom-Sheet halber Höhe** (y 55–91 %, N2), darüber bleibt der Laden mit Kunde und Theke sichtbar (y 6–55 %). Im Sheet von oben: Gegenstand (Bild 64 pt links, Name 17 pt, Zustand und Seltenheit als Chips) · **eine große Zahl: „Dein Angebot 200 €“** (34 pt) mit Regler · eine Vergleichszeile 16 pt „Marktwert 320 € · Reparatur ca. 60 € · erwarteter Gewinn 60–220 €“ · grüner Hauptknopf „Kaufen“ und dunkler Umrissknopf „Ablehnen“. Forderung und Kundensatz stehen als Sprechblase über dem Kopf des Kunden in der Szene, nicht im Sheet. Die Besitz-Leiste ist während des Handels eingeklappt (N5). **„Prüfen“:** Lupe am Gegenstandsbild, Antippen dreht das Bild in 3D und deckt versteckte Merkmale auf (Kratzer, Signatur, Fälschungs-Hinweis), 1 s.
 
 **Szene (ganzer Bildschirm):** Ladeninneres aus Sicht hinter der Theke. Im Vordergrund links unten (x 0–45 %, y 45–85 %) der **Betreiber von hinten** angeschnitten (dunkle Weste, weißes Hemd, Brille), die Theke aus dunklem Holz läuft quer durch das untere Drittel (y 52–80 %), darauf Kasse und kleiner Bildschirm. Hinter der Theke der **Kunde** (x 15–50 %, y 18–55 %): junger Mann, grüne Jacke, graue Kapuze, Rucksack, er hält die Kamera mit beiden Händen nach vorne. Hintergrund: Holzregale mit Uhren, Gitarren, Bildern, Lampen, Pflanzen; Wandschild „GUTE DINGE NEUE GESCHICHTEN“ mit kleiner Goldkrone (x 80–98 %, y 8–17 %). Warmes Lampenlicht, Teppich.
 
@@ -205,6 +244,21 @@ Bedienung:
 - Engpass-Schilder (rot) schweben direkt über der betroffenen Etage. Antippen springt zum passenden Tab (z. B. „Personal fehlt“ → B4).
 
 ## A4. UMZIEHEN & NEU STARTEN (Rebirth)
+
+> **2.2 (geht vor, Julian 14.10): erst Zusammenfassung, dann Bestätigung.** Ablauf in drei Schritten, jeder als Bottom-Sheet (N2):
+>
+> **Schritt 1 – Zusammenfassung** (Sheet groß, Titel „Umziehen“ in Gold-Serife). Vier große Blöcke untereinander, je Symbol 32 pt links + eine Zeile 17 pt:
+> - rot `#AB4539`, Kreispfeil: **„Du verlierst:** Geld, Ladenstufen und normale Gegenstände“
+> - grün, Schloss: **„Du behältst:** gekaufte Designs, Werbefreiheit und dauerhafte Boni“
+> - violett, Coin: **„Du erhältst: 20 Rebirth-Coins“** (die Zahl als einzige große Zahl, 34 pt)
+> - gold, Gebäude: **„Neuer Standort:** mehr Etagen, Kunden und Funktionen“
+> Darunter grüner Knopf „Weiter“. Sind Voraussetzungen offen, steht statt „Weiter“ eine Zeile „Noch offen: …“ mit dem ersten fehlenden Punkt und der Knopf ist grau.
+>
+> **Schritt 2 – Alter Laden:** Sheet halb: „Verkaufen“ oder „Geschäftsführer einsetzen“ (D3, E2.4), je eine Karte, eine Zahl pro Karte.
+>
+> **Schritt 3 – Bestätigung:** mittiges Fenster (gleiche Form N3, 80 % breit), Szene stark abgedunkelt: „Wirklich umziehen?“ (22 pt), eine Zeile „Das kann nicht rückgängig gemacht werden.“, grüner Knopf „Umziehen“, darunter Textknopf „Abbrechen“.
+>
+> Die Tabelle unten (Standortkarten, Voraussetzungen, Wird zurückgesetzt, Bleibt) entfällt als Einzelbildschirm. Die Voraussetzungen sind über „Noch offen“ und R6 erreichbar.
 
 Über der abgedunkelten Gebäudeübersicht (60 % Schwarz), dichtes Layout:
 
@@ -324,6 +378,8 @@ Erster Build: nur lokale **Trainingsanlagen** („Rivalen-Lagerhaus – Ebene 1�
 
 ## R3. EINBRUCH (manuell)
 
+> **2.2 (Julian, Punkt 6 der Reihenfolge):** Sichtkegel **35 % Deckkraft** mit klarem Rand (2 pt) und Ausrufezeichen, wenn man hineinläuft. **Ziel** = pulsierender goldener Ring mit Raute-Symbol, **Ausgang** = grün leuchtender Rahmen mit Laufmann, beide auch am Bildschirmrand als Pfeil, wenn außer Sicht. Neue Hindernisse: Wachhund (Geruchskegel), Bewegungsmelder (pulsierender roter Kreis am Boden), verschlossene Räume (Schloss-Symbol, Schlosserin nötig). Beute-Wahl: kleine sichere Beute nahe am Weg, wertvolle Beute tiefer im Gebäude. **Gegenstände sind sichtbar** im Rucksack bzw. unter dem Arm, Figur wird mit Gewicht langsamer. Knappes Entkommen (Wache unter 1,5 m): **0,6 s Zeitlupe + starke Haptik**. Automatik bringt 70 % der möglichen Beute (Spielkonzept G2.3). Folgen bei Erwischen: Teilbeute, Crew-Mitglied 1 Spieltag „verletzt“ (Pflaster-Symbol, nicht verfügbar), nächster Raubzug 1 Spieltag „Alarmstufe erhöht“.
+
 - Kopf links: Laufmann · **„EINBRUCH“** · „Finde das Ziel und entkomme unbemerkt.“
 - Rechts oben (x 69–96 %, y 7–12 %): Kapsel mit Goldrand, Uhr + **„01:24“** (läuft rückwärts). Darunter (y 15–20 %): Kapsel Geldschein + **„1.200 €“** (Beute, zählt hoch, Tausenderpunkt).
 - Szene: Nahansicht im Lager, schräg von oben **hinter der Spielfigur** (Dieb mit Kappe und großem Rucksack, geduckt). Wache mit Taschenlampe und rotem Sichtkegel in der Mitte, Kamera an der Wand mit rotem Kegel, offener Rundtresor mit Goldbarren rechts oben, grüner Notausgang rechts.
@@ -379,7 +435,7 @@ Kopfleiste in diesen Bildern: „VAULTORIA“ in Gold-Serife · Betrag (in den B
 - Unter den Zahlen eine graue Zeile: **„Rückzahlung: 165 € (150 € + 15 € Gebühr)“** und ein „?“-Knopf oben rechts (öffnet die Erklärkarte Pfandkredit aus K5, beim allerersten Pfand automatisch).
 - Spieltag vorerst 10 Minuten Echtzeit. Kredit wird sofort vom Kontostand abgezogen, Pfand bekommt Schloss-Chip „Verpfändet“ mit Restzeit. Auslösung = Kunde kommt zurück, zahlt Kredit + Gebühr (Münzen fliegen), nimmt das Stück mit. Sonst wird es nach Fristende „Dein Besitz“ und landet in der Besitz-Leiste.
 
-## B3. WERTLAGER (Tab Wertlager)
+## B3. WERTLAGER (über die Etage in A3, Sheet halbe Höhe)
 
 - Titel: **„WERTLAGER“** · „Sichere Kundeneigentum ein.“
 - Szene: Wand mit großen Schließfächern 01 bis 06 (Messingschilder), Fach in der Mitte offen (Gemälde, goldene Uhr, Vase). Mitarbeiterin in Weste und weißen Handschuhen zeigt einem älteren Kunden (Brille, Tweedjacke, von hinten links) das Fach.
@@ -400,7 +456,7 @@ Kopfleiste in diesen Bildern: „VAULTORIA“ in Gold-Serife · Betrag (in den B
 - Dunkle Karte (y 55–90 %): „Restaurieren“. Zwei Bilder nebeneinander „Vorher“ (abgenutzter Stuhl) → „Nachher“ (glänzender Stuhl), rechts daneben Box: **350 €** und grüner Pfeil „Wertsteigerung möglich“. Grüner Knopf mit Hammer **„Auftrag starten“**.
 - Nur eigene Ware. Dauer mit Fortschrittsbalken über der Werkbank. Ergebnis: Zustand eine Stufe besser, Wert steigt.
 
-## B6. KUNDEN & ANSEHEN (Tab Kunden)
+## B6. KUNDEN & ANSEHEN (Tab Mehr → Kunden)
 
 - Titel: **„KUNDEN & ANSEHEN“** · „Zufriedene Kunden kommen wieder.“
 - Szene: ältere Dame mit Sonnenbrille im Haar und buntem Tuch im Vordergrund, dunkle Sprechblase mit Krone **„Stammkunde“**. Dahinter weitere Kunden und ein Golden Retriever.
@@ -428,7 +484,8 @@ A3 Gebäudeübersicht (Hauptansicht)
  ├─ goldener Knopf Shop ─► M1 ◄─Reiter─► M2 / M3 ; M4 über „Bonus & Schutz ›“ in M1
  └─ Rebirth-Hinweis ─► R6 ─► A4 ─► neuer Standort
 
-Tab-Leiste (in B1–B6, A1, A2): Laden · Wertlager · Personal · Werkstatt · Kunden
+Tab-Leiste (überall gleich): Laden · Besitz · Personal · Werkstatt · Mehr (Mehr → Kunden, Album, Aufträge, Statistik, Einstellungen)
+Wertlager und Tierpension: nur über ihre Etage in A3
 Gebäude-Knopf oben rechts oder Wischen nach rechts ─► A3 (immer möglich)
 Simulierter Einbruch (Ereignis) ─► R5 als Karte über A3
 ```
@@ -442,30 +499,34 @@ Regeln:
 
 # Teil 8 – Kernablauf in Schritten (die ersten 10 Minuten)
 
-Ziel: Der Spieler versteht in 10 Minuten den Eatventure-Kreislauf **Kunden bedienen → Geld → ausbauen → Personal → Engpass lösen → neuer Bereich**, mit je einer kurzen Erklärkarte pro neuem System (K5). Alle Zahlen sind Startwerte (Entwurf) für die Balancing-Datei.
+Ziel: Im Zentrum steht Julians Kernablauf **Gegenstand entdecken → Wert einschätzen → verhandeln → verbessern → verkaufen oder sammeln → Laden ausbauen**. Das Tutorial folgt seinen 7 Schritten, ein Hinweis nach dem anderen (N7). Personal, Pfand, Wertlager, Tiere, Bank und Raubzug sind Erweiterungen und kommen erst danach. Der Spieler versteht das, mit je einer kurzen Erklärkarte pro neuem System (K5). Alle Zahlen sind Startwerte (Entwurf) für die Balancing-Datei.
 
 | Zeit | Was der Spieler sieht | Was er tut | Was passiert |
 |---|---|---|---|
-| 0:00 | S0 Startbildschirm, Logo, Claim, Szene animiert | „Spielen“ | Kamera fährt von weit oben auf den Laden (Draufsicht B1). Nur der Laden existiert, die oberen Etagen sind dunkle Umrisse. Kontostand **5.000 €**, Ansehen 0. Keine Tab-Leiste, keine anderen Knöpfe |
-| 0:10 | B1 „DEIN ERSTER LADEN“, Kunde läuft vom Parkplatz zur Theke, grüner Pfeil, Zeigehand | „Kunde bedienen“ | Kamerafahrt in A1. Erklärkarte „Ankauf & Verkauf“ (K5) |
-| 0:20 | A1 Handel: Kunde bietet **Armbanduhr** an, Forderung 240 €, Marktwert 320 €, unser Wert ca. 220 € | Regler bewegen (Zeigehand zeigt auf den Regler), „Angebot machen“ | Kunde nimmt bei 200 € an (im Tutorial immer Annahme). Uhr fliegt in „Dein Besitz“. Kontostand 4.800 € |
-| 0:50 | Zweiter Kunde will kaufen, zeigt auf die Uhr | Angebot annehmen | Verkauf für 330 €. Geldscheine fliegen zur Kopfleiste. Kontostand 5.130 €. Schwebetext „+130 € Gewinn“ |
-| 1:20 | Dritter Kunde mit Kamera, Sprechblase **„Ich brauche schnell Geld.“** (Kundenwunsch E2.1) | Zeigehand auf neuen Knopf „Pfand“ → **Erklärkarte Pfandkredit** (K5) → „Verstanden“ → B2 „Kredit vergeben“ 150 €, Rückzahlung 165 €, Frist 2 Spieltage (20 Min) | Erstes Pfand. Kamera bekommt Chip „Verpfändet 19:59“. **Tab-Leiste erscheint mit „Laden“** |
-| 2:00 | Kamera fährt zurück zur Gebäudeübersicht A3 (gerade von vorne, weit oben). Nur Erdgeschoss „Laden · Stufe 1“, Detailkarte „Theke · Stufe 1 / 100“, Knopf „Ausbauen: 250 €“ pulsiert | „Ausbauen“ zweimal | Theke Stufe 3: Kunden werden schneller bedient. Der Unterschied ist sofort sichtbar |
-| 2:30 | Kunden kommen jetzt von selbst in kurzer Folge. Normale Kunden handelt der Betreiber automatisch zum fairen Preis ab, nur Kunden mit „!“ brauchen den Spieler | 2–3 besondere Kunden selbst verhandeln | Kontostand steigt auf ≈ 6.500 € |
-| 4:00 | Schlange wird lang, rotes Schild **„Personal fehlt“** über dem Laden | Schild antippen → **Tab „Personal“ erscheint**, Erklärkarte „Personal“, B4 „Verkäufer einstellen: 1.500 €“ | Verkäuferin erscheint als Figur an der zweiten Theke. Schlange baut sich sichtbar ab |
-| 5:00 | Umriss „+ Nächste Etage“ wird gold und pulsiert: **„Wertlager freischalten: 4.500 €“** | antippen, Kauf bestätigen | Bauanimation (Gerüst, Staub, 3 s). Etage 2 Wertlager. **Tab „Wertlager“ erscheint**, Erklärkarte „Wertlager“ |
-| 5:30 | Kunde mit Gemälde, Sprechblase „Kann ich das sicher bei Ihnen lassen?“ | „Einlagern“ in B3 | Fach 01 öffnet sich, Gemälde mit Schloss „Kundeneigentum“. Gebühr 12 € pro Spieltag |
-| 6:30 | Ein gekaufter abgenutzter Stuhl liegt in „Dein Besitz“, Hinweis-Punkt am neuen **Tab „Werkstatt“** | Erklärkarte „Werkstatt“, „Auftrag starten“ (80 € Material) | Restaurator arbeitet 30 s sichtbar, Stuhl wird „Sehr gut“, Wert steigt von 300 € auf 520 € |
-| 8:00 | Ansehen-Stern zeigt erste Fortschritte, **Tab „Kunden“ erscheint**, erste Stammkundin mit Krone | Tab ansehen | Spieler sieht die vier Bereichsbalken (Handel schon gefüllt, Wertlager und Pfand wenig) |
-| 9:00 | Pfand-Kunde von 1:20 kommt zurück | nichts | Er löst aus: 165 € fliegen als Geldscheine, Schwebetext „+15 € Gebühr“. Bestätigt die Erklärkarte von 1:20 |
-| 9:30 | Gebäudeübersicht: Wertlager Stufe 1, Laden Stufe 5, neuer goldener Knopf rechts **„Raubzug-Training“** mit Hinweis-Punkt | (optional) antippen → Erklärkarte „Raubzug“ → R1 Trainingsanlage Ebene 1 | Kurzer Trainings-Raubzug: Route, Crew (nur Schlosserin frei), Einbruch 60 s, Abrechnung |
-| 10:00 | Nächstes Ziel sichtbar: Umriss **„+ Tierpension freischalten: 18.000 €“**, daneben kleiner Knopf „Bank-Kredit“ (Erklärkarte K5, höchstens eigener Kontostand) | weiterspielen | Ab hier läuft der Kreislauf: Geld sammeln, Etagen und Stufen kaufen, Engpässe lösen. Pflichtwerbung frühestens nach 15 aktiven Minuten und nie im Tutorial |
+| 0:00 | S0 Startbildschirm | „Spielen“ | Kamera fährt von weit oben auf den Laden (Draufsicht B1). Nur Kopfleiste mit **5.000 €**. Keine Tab-Leiste, keine Besitz-Leiste, keine Aufgaben-Kapsel |
+| 0:03 | Titel „DEIN ERSTER LADEN“ blendet ein und nach 2 s wieder aus | nichts | Ruhige Szene, Betreiber hinter der Theke |
+| 0:06 | **Schritt 1 – Kunde kommt herein:** Tür bimmelt, Kunde läuft vom Gehweg zur Theke | nichts | Kamera bleibt oben |
+| 0:10 | **Schritt 2 – Kunde antippen:** erst jetzt Zeigehand über dem Kunden (einziger Hinweis) | Kunde antippen | Kamerafahrt in A1, Handel-Sheet halbe Höhe. Erklärkarte „Ankauf & Verkauf“ (K5, eine Zeile pro Schritt) |
+| 0:20 | **Schritt 3 – Gegenstand prüfen:** Armbanduhr, Zustand „Gebraucht“, Zeigehand auf die Lupe | Lupe antippen | Uhr dreht sich, Kratzer am Glas wird sichtbar: „Glas zerkratzt, Werk läuft“. Marktwert 320 € erscheint |
+| 0:35 | **Schritt 4 – Preis einstellen:** Sprechblase „240 € hätte ich gern.“, Zeigehand auf den Regler | Regler auf 200 € | Vergleichszeile zeigt „erwarteter Gewinn 60–220 €“ |
+| 0:50 | **Schritt 5 – Gegenstand kaufen** | „Kaufen“ | Kunde nickt, Uhr gleitet über den Tresen zu dir, Kontostand zählt herunter auf 4.800 €. **Besitz-Leiste erscheint** (N5) mit der Uhr |
+| 1:10 | **Schritt 6 – Restaurieren oder direkt verkaufen:** Sheet „Was machst du mit der Uhr?“, zwei Karten mit je einer großen Zahl: „Direkt verkaufen · **290 €**“ und „Restaurieren · 60 € → **420 €**“ | eine Karte wählen (Zeigehand auf Restaurieren, beide gehen) | Restaurieren: Werkbank-Animation 10 s, Glas glänzt. Danach kommt ein Käufer, Verkauf mit vollem Effekt N8: Kontostand zählt hoch auf 5.160 € (bzw. 5.090 €), „+3 Ruf“ |
+| 2:00 | **Tab-Leiste erscheint** mit allen fünf Tabs (Personal und Werkstatt mit Schloss bzw. Werkstatt offen, falls restauriert). Aufgaben-Kapsel erscheint eingeklappt: „Verkaufe 3 Gegenstände 1/3“ | weiterspielen | Kunden kommen jetzt von selbst |
+| 2:00–3:30 | Normale Kunden handelt der Betreiber automatisch zum fairen Preis ab, nur Kunden mit „!“ brauchen den Spieler | 2–3 „!“-Kunden selbst bedienen | Kontostand ≈ 6.000 € |
+| 3:30 | **Schritt 7 – Ausbau:** Gebäude-Knopf pulsiert, Kamera fährt zu A3, „Theke ausbauen: 250 €“ | zweimal ausbauen | Theke Stufe 3, Kunden schneller |
+| 4:30 | **Schritt 7 – Personal:** Schlange wird lang, Schild „Personal fehlt“, Schloss am Tab Personal fällt ab | Tab Personal → „Verkäufer einstellen: 1.500 €“ | Verkäuferin erscheint, Schlange baut sich ab. **Tutorial endet hier** |
+| 5:30 | Kunde „Ich brauche schnell Geld.“ | „Pfand“ im Handel-Sheet → Erklärkarte Pfandkredit → 150 € | Erstes Pfand, Chip „Verpfändet“ |
+| 6:30 | In A3 wird „+ Nächste Etage“ gold: „Wertlager freischalten: 4.500 €“ | kaufen | Etage Wertlager, öffnet sich über die Etage (kein Tab). Erklärkarte „Wertlager“ |
+| 8:00 | Hinweis-Punkt auf „Mehr“ | Mehr → Kunden | Vier Bereichsbalken |
+| 9:00 | Pfand-Kunde kommt zurück | nichts | 165 € fliegen ein, „+15 € Gebühr“ |
+| 9:30 | Goldener Knopf „Raubzug-Training“ in A3 | optional | Erklärkarte Raubzug → R1 |
+| 10:00 | Nächstes Ziel in der Aufgaben-Kapsel: „Tierpension freischalten: 18.000 €“ | weiterspielen | Kreislauf läuft. Pflichtwerbung frühestens nach 15 aktiven Minuten, nie im Tutorial |
 
 Danach (Orientierung, kein Tutorial mehr): Tierpension nach ≈ 12–15 Min, Shop-Knopf ab ≈ 10 Min, Spezialisierungswahl ab Etage 2 (E2.8), Warenpakete ab Handels-Ruf 300 (E2.6), Schaufenster ab Laden Stufe 10 (E2.7), Rebirth-Hinweis R6 nach ≈ 2–3 Stunden Spielzeit.
 
 ## Prüfliste für den Umbau (vor TestFlight)
 
+0. Teil 0b N1–N11 einzeln abhaken (65 % Spielwelt, Bottom-Sheets, eine Fensterform, 16 pt, ein grüner Knopf, gleiche Tab-Leiste).
 1. Jede Ansicht gegen diese Datei prüfen: Lage der Karten (y-Prozent), Texte wörtlich, Zahlen mit Symbol, genau ein Hauptknopf.
 2. Szene füllt immer den ganzen Bildschirm und bewegt sich, auch hinter Karten.
 3. Hauptansichten von weit oben und gerade (Regel 6), alle Beträge in € (Spielkonzept F2), jede Erklärkarte aus K5 vorhanden.
