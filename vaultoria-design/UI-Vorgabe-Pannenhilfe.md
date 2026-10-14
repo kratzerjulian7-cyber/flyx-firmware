@@ -1,6 +1,6 @@
-# Vaultoria – UI-Vorgabe Pannenhilfe 1.3 (verbindlich)
+# Vaultoria – UI-Vorgabe Pannenhilfe 1.4 (verbindlich)
 
-Stand 14.10.2026, 11:20 (**1.3: Teil 00b Einsatz-Zuteilung und 00c Zentrale nach Julians Konzeptbildern 11:16.** 1.2 11:10: **1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
+Stand 14.10.2026, 11:30 (**1.4: Teil 13 erste Version mit 8 Pflichtpunkten, Später-Liste, offene Konzeptbilder, Julian 11:21.** 1.3 11:20: **1.3: Teil 00b Einsatz-Zuteilung und 00c Zentrale nach Julians Konzeptbildern 11:16.** 1.2 11:10: **1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
 
 **Prüffrage für jeden Bildschirm:** Sieht man in zwei Sekunden, welches Fahrzeug wohin fährt und was als Nächstes zu tun ist? Wenn nicht, ist der Bildschirm zu voll.
 
@@ -193,6 +193,30 @@ Pfandhaus, Gegenstandshandel, Käufer und Sammler, Marktpreise, Museum, Auktione
 - Beim Kauf: Kamera fährt zur Zentrale, kurze Bau-Animation (Gerüst, Kran, Staubwolke, Teil wächst hoch, Funken), dann goldenes Aufleuchten und Ton. Etwa 2–3 Sekunden, antippen überspringt.
 - Im Tab Zentrale zeigt jeder Eintrag ein Vorschaubild, wie das Teil an der Zentrale aussehen wird.
 
+## 13. Erste Version: 8 Pflichtpunkte (1.4, Julian 14.10 11:21, Spielkonzept Teil 3)
+
+**Priorität:** bewegte Karte, echte Routen, mehrere gleichzeitige Einsätze. Spielspaß entsteht auf der Karte, nicht in Menüs. Jeder Punkt unten wird auf der Karte oder im vorhandenen Panel gezeigt, kein neues Menü.
+
+1. **Einsatzwarteschlange:** Es liegen meist 2–4 Einsätze gleichzeitig auf der Karte. Der Tab „Karte“ zeigt die Zahl offener Einsätze. Antippen der Zahl öffnet eine schmale Liste (nach Countdown sortiert), Antippen eines Eintrags springt zum Marker und öffnet das Panel 00b.
+2. **Countdown:** Jeder Marker hat einen Ring, der abläuft (grün → bernstein → rot). Im Panel steht die Restzeit („wartet noch 2:40“). Ist er abgelaufen, fährt der Kunde weg, der Marker verblasst und die Bewertung sinkt etwas.
+3. **Live-Status:** An der Fahrzeugplakette und im Marker steht eine von vier Phasen mit Symbol: **Anfahrt → vor Ort → Reparatur → Rückfahrt**. Antippen eines Fahrzeugs zeigt eine kleine Leiste mit diesen vier Schritten, der aktuelle in Gold.
+4. **Verkehr und Routen:** Staus sind als rot eingefärbte Straßenabschnitte auf der Karte sichtbar und wandern langsam. Die Route weicht automatisch aus, wenn das schneller ist. Im Panel 00b steht die Ankunftszeit mit Stau. Kein Selbstlenken; der Spieler wählt nur das Fahrzeug.
+5. **Fahrzeugzustand:** Tank (bzw. Akku) und Zustand als zwei kleine Balken an jeder Fahrzeugkarte. Tanken, laden, reparieren und warten passiert in der Zentrale (Tab Flotte, Teil 6). Ist der Tank fast leer, schlägt das Spiel die Rückfahrt vor.
+6. **Mitarbeiterschichten:** Jeder Mitarbeiter hat eine Schichtleiste (z. B. 8 Spielstunden). Ist sie leer, geht er nach dem laufenden Einsatz nach Hause und ist für die nächste Schicht wieder da. Müde Mitarbeiter (wenig Restschicht) arbeiten langsamer. Sichtbar im Tab Personal und auf der Mitarbeiterkarte im Panel 00b.
+7. **Bewertungen:** Nach jedem Einsatz 1–5 Sterne, abhängig von Wartezeit und Ergebnis. Der Durchschnitt oben in der Kopfleiste. Höhere Bewertung bringt mehr und besser bezahlte Einsätze (in einem Satz erklärt, keine Prozentwerte).
+8. **Einsatzbericht:** Nach jedem Auftrag kurz eine kleine Karte über der Karte (blockiert nicht, verschwindet nach 4 s oder per Wisch): **Einnahmen, Kosten (Kraftstoff, Teile, Lohnanteil), Dauer, Gewinn** groß in Grün oder Rot und die Sterne. Antippen zeigt die Zeilen genauer.
+
+**Später, nicht jetzt (nichts davon einbauen, auch keine Platzhalter):** Verträge (Polizei, Versicherungen, Autohäuser, Werkstätten, Automobilclubs, Gemeinden), große Ereignisse (Massenkarambolage, Unwetter, Glatteis, Festival, Autobahnsperrung, Hochwasser, Wintereinbruch), Regionen (Innenstadt, Autobahn, Land, Berge, Industriegebiet), Spezialfahrzeuge (mobiler Batteriedienst, Plattform-Abschlepper, schwerer Berge-LKW, Kranwagen, mobile Ladestation, Ersatzteiltransporter), mehrere Zentralen mit Geschäftsführer, zusätzliche zufällige Entscheidungen (Öl verloren, Kunde kann nicht zahlen). Die eine seltene Sonderentscheidung aus Teil 5 bleibt.
+
+**Offene Konzeptbilder:** Julian hat diese Ansichten als nächste Bilder vorgeschlagen. Sobald er eins schickt, wird es wie 00–00c verbindlich und kommt als eigener Teil hierher:
+1. Flottenübersicht mit Fahrzeugzustand und Wartung
+2. Personalansicht mit verfügbaren Fahrern
+3. Einsatzbericht nach erfolgreicher Pannenhilfe
+4. Nacht-/Regenkarte mit mehreren Notfällen
+5. Große Autobahnbergung (späteres Spielziel)
+
+Bis dahin gelten für Flotte, Personal und Einsatzbericht die Texte in Teil 6, Teil 00 (Tab Personal) und Punkt 8 oben.
+
 ## 11. Screenshots für die Abnahme
 
-Hauptkarte leer · Einsatz erscheint · Einsatzfenster · Zuteilung · Fahrzeug unterwegs mit Route · Arbeit vor Ort · Belohnung · Rückfahrt · Fahrzeuge mit Warten · Zentrale mit Ausbau · Einsatz-Zuteilung-Panel (00b) · Tab Zentrale (00c) · Sonderentscheidung · Tagesabrechnung · ganze Stadt herausgezoomt · Zentrale vor und nach einem Ausbau · Bau-Animation.
+Hauptkarte leer · Einsatz erscheint · Einsatzfenster · Zuteilung · Fahrzeug unterwegs mit Route · Arbeit vor Ort · Belohnung · Rückfahrt · Fahrzeuge mit Warten · Zentrale mit Ausbau · Einsatz-Zuteilung-Panel (00b) · Tab Zentrale (00c) · Sonderentscheidung · Tagesabrechnung · mehrere Einsätze gleichzeitig mit Countdown-Ringen · Stau mit Umweg · Einsatzbericht · Personal mit Schichten · ganze Stadt herausgezoomt · Zentrale vor und nach einem Ausbau · Bau-Animation.

@@ -265,3 +265,87 @@ Aussehen und Bedienung jeder Ansicht: `UI-Vorgabe-Pannenhilfe.md`. Bei Widerspru
 > noch viel viel mehr machen große welt machen eine sehr große welt man soll sehen können wie die werkstatt größer wird wenn man es upgradet
 
 Gemeint (vom Koordinator bestätigt): eine sehr große Welt mit mehreren Vierteln, durch die man wischt und zoomt. Zentrale und Werkstatt wachsen auf der Karte sichtbar mit jedem Ausbau, jeder Ausbau ist ein eigenes Gebäudeteil mit kurzer Bau-Animation. Umsetzung: `UI-Vorgabe-Pannenhilfe.md` Teil 12.
+
+## 3. Ergänzung Julian (wörtlich, 14.10.2026 11:21)
+
+> Noch ein paar Sachen würden das Spiel deutlich besser machen, ohne es wieder so kompliziert wie Vaultoria vorher zu machen.
+> Für die erste Version
+>
+> * Einsatzwarteschlange: Mehrere Pannen erscheinen gleichzeitig. Du musst priorisieren.
+> * Countdown: Kunden warten nicht unbegrenzt.
+> * Live-Status: Anfahrt → vor Ort → Reparatur → Rückfahrt.
+> * Verkehr: Stau verlängert die Anfahrt; andere Route kann schneller sein.
+> * Fahrzeugzustand: Tanken, laden, reparieren und warten.
+> * Mitarbeiterschichten: Niemand kann dauerhaft arbeiten.
+> * Bewertungen: Schnelle Hilfe verbessert deinen Ruf und bringt bessere Aufträge.
+> * Einsatzbericht: Einnahmen, Kosten, Dauer und Gewinn nach jedem Auftrag.
+>
+> Sehr gute spätere Erweiterungen
+> Verträge
+>
+> * Polizei
+> * Versicherungen
+> * Autohäuser
+> * Werkstätten
+> * Automobilclubs
+> * Gemeinden
+>
+> Diese liefern regelmäßige Aufträge, verlangen aber kurze Reaktionszeiten.
+> Große Ereignisse
+>
+> * Massenkarambolage
+> * Unwetter
+> * Glatteis
+> * Festival mit vielen Falschparkern
+> * Autobahnsperrung
+> * Hochwasser
+> * Wintereinbruch
+>
+> Dabei müssen mehrere Fahrzeuge gleichzeitig koordiniert werden.
+> Unterschiedliche Regionen
+>
+> * Innenstadt: Verkehr und Falschparker
+> * Autobahn: schwere Unfälle und lange Strecken
+> * Land: wenige, aber weit entfernte Einsätze
+> * Berge: schwierige Bergungen
+> * Industriegebiet: LKW und schwere Fahrzeuge
+>
+> Spezielle Fahrzeuge
+>
+> * mobiler Batteriedienst
+> * Plattform-Abschlepper
+> * schwerer Berge-LKW
+> * Kranwagen
+> * mobile Elektro-Ladestation
+> * Ersatzteiltransporter
+>
+> Mehrere Zentralen
+> Später kaufst du neue Standorte. Jeder Standort benötigt Fahrzeuge und Personal. Ein Geschäftsführer übernimmt einfache Einsätze automatisch.
+> Zufällige Entscheidungen
+> Beispielsweise:
+> Das Unfallfahrzeug verliert Öl.
+>
+> * Feuerwehr anfordern
+> * Spezialfahrzeug schicken
+> * Auftrag abbrechen
+>
+> Oder:
+> Der Kunde kann nicht sofort bezahlen.
+>
+> * Rechnung ausstellen
+> * Barzahlung verlangen
+> * Fahrzeug einbehalten
+>
+> Solche Entscheidungen nur gelegentlich, damit es übersichtlich bleibt.
+> Weitere sinnvolle Bilder
+> Als Nächstes könnten wir visuell zeigen:
+>
+> 1. Flottenübersicht mit Fahrzeugzustand und Wartung
+> 2. Personalansicht mit verfügbaren Fahrern
+> 3. Einsatzbericht nach erfolgreicher Pannenhilfe
+> 4. Nacht-/Regenkarte mit mehreren Notfällen
+> 5. Große Autobahnbergung als späteres Spielziel
+>
+> Am wichtigsten sind jetzt aber eine bewegte Karte, echte Routen und mehrere gleichzeitige Einsätze. Genau daraus entsteht der Spielspaß – nicht aus vielen Menüs.
+
+**Einordnung:** Die 8 Punkte unter „Für die erste Version“ gehören verbindlich in die erste Version. Alles unter „Sehr gute spätere Erweiterungen“ (Verträge, große Ereignisse, Regionen, Spezialfahrzeuge, mehrere Zentralen, zufällige Entscheidungen) kommt erst später und wird jetzt nicht gebaut, auch nicht als Platzhalter. Priorität: bewegte Karte, echte Routen, mehrere gleichzeitige Einsätze. Umsetzung: `UI-Vorgabe-Pannenhilfe.md` Teil 13.
