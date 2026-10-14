@@ -524,7 +524,7 @@ Regeln im Code:
 
 ## 5. Updates (klein, einzeln testbar)
 
-Plan-Nummern E1–E19. Die echte Versionsnummer und Build-Nummer vergibt der Mac. Jedes Update: kompiliert, alte Spielstände laden (Migrationstest), TestFlight-Build, Screenshots als ZIP.
+Plan-Nummern E1–E19. **App-Versionen ab 14.10.2026: nächster Build = Vaultoria 5.0, danach 5.1, 5.2 … (Julians Wahl, weil 1.x unter der installierten 4.1 keine automatischen TestFlight-Updates bekam).** E1 kommt also als 5.0 oder später; die genaue Zuordnung vergibt der Mac. Jedes Update: kompiliert, alte Spielstände laden (Migrationstest), TestFlight-Build, Screenshots als ZIP.
 
 | Update | Inhalt | Abnahme | Screenshots |
 |---|---|---|---|
