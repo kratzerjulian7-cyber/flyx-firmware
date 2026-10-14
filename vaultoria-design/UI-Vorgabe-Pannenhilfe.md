@@ -1,6 +1,6 @@
-# Vaultoria – UI-Vorgabe Pannenhilfe 2.0 (verbindlich)
+# Vaultoria – UI-Vorgabe Pannenhilfe 2.1 (verbindlich)
 
-Stand 14.10.2026, 13:20 (**2.0: KEIN GOLD. Julian zu 1.4: „nicht gold mache es besser das sieht scheiße billig aus und wie für ein 2 jährigen“. Teil 000 Stil geht allem vor; Layout und Aufbau der Konzeptbilder bleiben, Farbe und Stil daraus gelten nicht mehr.** 1.4 11:30: **1.4: Teil 13 erste Version mit 8 Pflichtpunkten, Später-Liste, offene Konzeptbilder, Julian 11:21.** 1.3 11:20: **1.3: Teil 00b Einsatz-Zuteilung und 00c Zentrale nach Julians Konzeptbildern 11:16.** 1.2 11:10: **1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
+Stand 14.10.2026, 13:45 (**2.1: realistische Autos, Häuser und Menschen, CC0 von Poly Haven und ambientCG freigegeben, Julian 13:40.** 2.0 13:20: **2.0: KEIN GOLD. Julian zu 1.4: „nicht gold mache es besser das sieht scheiße billig aus und wie für ein 2 jährigen“. Teil 000 Stil geht allem vor; Layout und Aufbau der Konzeptbilder bleiben, Farbe und Stil daraus gelten nicht mehr.** 1.4 11:30: **1.4: Teil 13 erste Version mit 8 Pflichtpunkten, Später-Liste, offene Konzeptbilder, Julian 11:21.** 1.3 11:20: **1.3: Teil 00b Einsatz-Zuteilung und 00c Zentrale nach Julians Konzeptbildern 11:16.** 1.2 11:10: **1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
 
 **Versionen:** Die nächste App-Version ist **Vaultoria 5.0**, danach 5.1, 5.2 … (Julian 14.10.2026). Stil 2.0 dieser Datei gilt ab 5.0; „1.4“ meint den bisherigen Gold-Build 202610141306.
 
@@ -46,6 +46,14 @@ Farbe nur für Status. Kein Blau/Cyan in der Oberfläche (Wasser auf der Karte d
 - **Einsatzmarker:** kleine flache Kreise mit SF-Symbol in Statusfarbe (rot dringend, bernstein normal), dezenter Puls nur bei dringend.
 - **Zentrale:** moderner Flachbau in Anthrazit und Glas, Rolltore, sachlich beleuchtet, keine Goldfassade.
 - Personen (Mitarbeiterporträts): realistische Arbeitskleidung in Grau/Anthrazit mit Warnstreifen, kleines V-Logo.
+
+**Realismus (2.1, Julian 14.10 13:40: „ich gebe es dir frei weil ich wil ldas das realisitische autos häuser und menschen sind man“)**
+- **Autos, Häuser und Menschen realistisch**: echte Proportionen, realistische Fahrzeugformen (Kleinwagen, Kombi, Transporter, Lkw, Bus), Häuser mit echten Fassaden, Fenstern, Dächern, Gehwegen; Menschen mit natürlichen Körperproportionen und Kleidung.
+- **Keine Spielzeug- oder Low-Poly-Optik, auch nicht bei Figuren**: keine Kastenköpfe, keine Knubbelfiguren, keine übergroßen Köpfe, keine flachen Einfarb-Polygone, keine Comic-Konturen.
+- **Freigegebene Quellen (CC0):** Poly Haven (Modelle, PBR-Texturen, HDRIs) und ambientCG (PBR-Materialien: Asphalt, Putz, Ziegel, Dachziegel, Metall, Glas). Bisherige Kenney-/Quaternius-Low-Poly-Teile werden schrittweise ersetzt, wo sie sichtbar sind.
+- Materialien als PBR (Albedo, Normal, Roughness), entsättigt nach der Farbtabelle oben; Beleuchtung über ein Abend-HDRI. Lizenz und Quelle jedes Assets in einer Liste im Projekt festhalten (CC0, keine Namensnennung nötig, aber nachvollziehbar).
+- Keine echten Automarken oder Logos an Modellen; Kennzeichen fiktiv.
+- Leistung beachten: LOD-Stufen, beim Herauszoomen einfachere Modelle; 60 fps auf kleinen iPhones bleibt Pflicht.
 
 **Prüffrage zum Stil:** Sieht der Bildschirm aus wie eine ernsthafte Disponenten-Software in einem hochwertigen Spiel, nicht wie ein Kinderspiel? Wenn irgendwo Gold, Glow oder Spielzeug-Optik auftaucht, ist es falsch.
 
