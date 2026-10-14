@@ -1,6 +1,6 @@
-# Vaultoria – Erweiterungsplan Pannenhilfe 1.4 (freigegeben, E1 erledigt, als Nächstes Tempo + E1.5)
+# Vaultoria – Erweiterungsplan Pannenhilfe 1.5 (freigegeben, E1 erledigt, als Nächstes Tempo, E1.6 Transparenz, E1.5)
 
-Stand 14.10.2026, 14:10 (**1.4: Julian 14:03 bestellt E1.5 „Zielorte und Betriebsmittel“ vor E2 und ein ruhigeres Starttempo (8–12 Einsätze pro Spieltag), siehe Teil 5b. Tempo kommt in 5.2, E1.5 als 5.3.** 1.3 14:00: **1.3: E1 erledigt in Vaultoria 5.1, Build 202610141353, auf TestFlight; 17 Tests grün; Testbericht `/mnt/project-files/Testbericht.md`. Urteil Mac: Start mit 2 Wagen zu hektisch, Viertel öffnen zu schnell → Balancing in den nächsten Updates.** 1.2 14:15: **1.2: Teil 7 Abgleich mit dem Code vom Mac übernommen; wo der Code abweicht, gilt Teil 7. Spielstand der App: Vaultoria 1.4, Build 202610141306, auf TestFlight, mit Optik-Angleichung und Kenney-Stadt.** 1.1 13:45: **1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
+Stand 14.10.2026, 14:20 (**1.5: Julian 14:15 bestellt vor allen großen Erweiterungen ein Transparenz- und Detail-Update → E1.6, Teil 5c. Build-Reihenfolge: 5.2 Tempo + Premium-UI, 5.3 E1.6 + Zielort/Lager aus E1.5, 5.4 Rest E1.5, danach E2.** 1.4 14:10: **1.4: Julian 14:03 bestellt E1.5 „Zielorte und Betriebsmittel“ vor E2 und ein ruhigeres Starttempo (8–12 Einsätze pro Spieltag), siehe Teil 5b. Tempo kommt in 5.2, E1.5 als 5.3.** 1.3 14:00: **1.3: E1 erledigt in Vaultoria 5.1, Build 202610141353, auf TestFlight; 17 Tests grün; Testbericht `/mnt/project-files/Testbericht.md`. Urteil Mac: Start mit 2 Wagen zu hektisch, Viertel öffnen zu schnell → Balancing in den nächsten Updates.** 1.2 14:15: **1.2: Teil 7 Abgleich mit dem Code vom Mac übernommen; wo der Code abweicht, gilt Teil 7. Spielstand der App: Vaultoria 1.4, Build 202610141306, auf TestFlight, mit Optik-Angleichung und Kenney-Stadt.** 1.1 13:45: **1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
 
 ## Julians Auftrag (wörtlich, 14.10.2026 12:57)
 
@@ -530,6 +530,7 @@ Plan-Nummern E1–E19. **App-Versionen ab 14.10.2026: nächster Build = Vaultori
 |---|---|---|---|
 | **E1 Fundament** (siehe 5a) **✓ erledigt in 5.1** | Profil + Weltstand mit `worldId`, `schemaVersion` + Migration, Spieltag 18 Min, Simulation in festen Spielminuten, **Zeitsteuerung ⏸/1×/2×/4× mit Auto-Pause**, Freischaltsystem (nur Stufe 0), Seed-Tests | siehe 5a | siehe 5a |
 | **E1.5 Zielorte + Betriebsmittel** (Stufe 0, siehe 5b) | Zielwahl nach dem Abschleppen, Ladung sichtbar, Hof-Grundumfang, 5 Bestände, 4 Entsorgungscontainer, Ausbau Lager/Reifencontainer/Recycling, Starttempo | siehe 5b | siehe 5b |
+| **E1.6 Transparenz + Details** (Stufe 0, siehe 5c) | Kalkulation vor Zuteilung, Status während, Abrechnung danach, Kassenbuch, Fixkosten, Verlauf, eindeutige Status, Gründe, Kaufbestätigung, Geld-Rückmeldung, Ersthinweise | siehe 5c | siehe 5c |
 | **E2 Wetter + Dauer** (Stufe 1) | Wetter, Verkehrsfaktoren, Dauerformel, A*-Route über Stau | Regen verlängert sichtbar Fahrt; Route weicht Stau aus; Anzeige stimmt mit tatsächlicher Dauer ±10 % | Karte bei Regen, Panel mit Ankunft/Arbeit, Umweg um Stau |
 | **E3 Erfahrung** (Stufe 2) | XP, Stufen, Wertwahl alle 3 Stufen | Nach Einsätzen steigt XP in der genutzten Fähigkeit; Stufenkarte erscheint; Wert wirkt auf Dauer | Personal-Tab, Stufe-erreicht-Karte |
 | **E4 Ausgänge** (Stufe 3) | Outcome-Würfel, „gute Chance/riskant“, Berichte | Alle 7 Ausgänge mit festem Seed auslösbar, Geld/Sterne korrekt | Panel mit Chance-Wort, 3 Berichte mit unterschiedlichem Ausgang |
@@ -717,6 +718,89 @@ struct WasteArea: Codable { var fill: [WasteBin: Int]; var tireLevel: Int = 1; v
 **Screenshots:** Panel „Wohin?“ · Abschlepper mit Auto auf der Ladefläche unterwegs · Abladen auf dem Hof · Hof mit 3 abgestellten Autos · Lager-Karte in der Zentrale · ausgegrauter Einsatz wegen fehlender Reifen · Entsorger-Lkw am Hof · Tagesabrechnung mit Material/Entsorgung.
 
 **Nicht in E1.5:** Standgebühren, Auktionen, Kaufangebote, Sammlung, Hofkosten (alles E6/E12), Lkw-Reifen (E15), Wetter (E2).
+
+### 5c. E1.6 Transparenz und Details (vor E2; App 5.3 zusammen mit Zielort + Lager aus E1.5)
+
+**Julians Auftrag (wörtlich, 14.10.2026 14:15):**
+
+> Vaultoria 5.1 wirkt optisch deutlich besser, aber es fehlen viele kleine Informationen und nachvollziehbare Abläufe. Dadurch fühlt sich das Spiel noch wie eine technische Demo an. Ergänze vor weiteren großen Erweiterungen ein Transparenz- und Detailupdate.
+> Jeder Einsatz zeigt vor der Zuteilung erwartete Einnahmen, Kraftstoff, Material, anteilige Mitarbeiterkosten, Verschleiß, mögliche Zusatzkosten und den erwarteten Gewinn. Kennzeichne Schätzwerte klar.
+> Während des Einsatzes müssen Status, Restdauer, Mehrkosten, Probleme, Zielort und Verfügbarkeit sichtbar sein.
+> Nach jedem Einsatz folgt eine vollständige Abrechnung mit Einnahmen, sämtlichen Kosten, tatsächlichem Gewinn, Bewertung, Erfahrung, Verbrauch, Fahrzeugzustand und Zielort.
+> Ergänze außerdem Lagerbestände, Gründe für ungeeignete Fahrzeuge, eindeutige Fahrzeugstatus, Kaufbestätigungen, ein einfaches Kassenbuch, tägliche Fixkosten, Auftragshistorie, verständliche Ersthinweise sowie sichtbare Rückmeldungen bei Geldbewegungen.
+> Die Informationen dürfen die Karte nicht überladen. Im normalen Zustand wird nur der erwartete Gewinn gezeigt; über „Details“ öffnet sich die vollständige Aufschlüsselung. Keine neue Hauptnavigation und kein fünfter Tab.
+> Erst diesen vollständigen Spielablauf sauber machen, bevor Wetter, weitere Gebiete oder neue Fahrzeugklassen gebaut werden.
+
+**Reihenfolge der Builds (ergänzt, nichts davor ändert sich):**
+- **5.2:** Starttempo (5b Punkt 1) + Premium-UI und Modelltausch (UI-Vorgabe 000b).
+- **5.3:** E1.6 komplett + aus E1.5 **Zielorte, Ladung auf dem Abschlepper, Hof-Grundumfang und die 5 Bestände** (5b Punkte 2–5), weil die Abrechnung Zielort und Verbrauch braucht.
+- **5.4:** Rest von E1.5: 4 Entsorgungscontainer, Ausbau Lager/Reifencontainer/Recycling (5b Punkt 6 und Ausbaustufen aus Punkt 5).
+- Danach erst E2. Wetter, neue Gebiete und neue Fahrzeugklassen warten, bis dieser Ablauf sauber ist.
+
+**Umsetzung (Startwerte zum Testen):**
+
+**1. Kalkulation vor der Zuteilung.**
+```swift
+struct JobEstimate: Codable {   // alle Werte in €, isEstimate = true
+  var revenue: ClosedRange<Int>          // Einsatzlohn + Zielort-Erlös
+  var fuel: Int                          // km hin + zum Ziel + zurück × Verbrauch × Literpreis
+  var material: Int                      // Bestände × Einkaufspreis (Teil 5b)
+  var staffShare: Int                    // Tageslohn / Schichtminuten × erwartete Minuten
+  var wear: Int                          // km × Verschleißsatz der Fahrzeugklasse
+  var possibleExtra: ClosedRange<Int>    // z. B. Wartezeit, zweites Material, Stau
+  var expectedProfit: ClosedRange<Int>   // Spanne, nicht ein Punktwert
+}
+```
+- Startsätze: Diesel 1,75 €/l; Servicewagen 9 l/100 km, Abschlepper 16 l/100 km; Verschleiß 0,08 €/km (Service) bzw. 0,15 €/km (Abschlepper).
+- Im Panel 00b steht standardmäßig **nur** „Erwarteter Gewinn ca. 120–160 €“. „Details“ klappt die Aufschlüsselung aus. Alle Schätzwerte tragen „ca.“ und eine Spanne.
+- Wechselt der Spieler Mitarbeiter oder Fahrzeug, rechnet die Schätzung sofort neu (Zahl animiert).
+
+**2. Während des Einsatzes.** Antippen des Fahrzeugs oder des Einsatzes zeigt eine kompakte Karte: Status (eindeutig, Punkt 6), Restdauer („noch ca. 12 Min“), Zielort, Mehrkosten bisher (nur wenn > 0, orange), Probleme (z. B. „Kunde nicht vor Ort, +10 Min“), Verfügbarkeit („frei ab ca. 15:40“). Auf der Karte selbst bleibt nur die Plakette (UI 000a Punkt 5).
+
+**3. Abrechnung nach jedem Einsatz.**
+```swift
+struct JobReport: Codable {
+  let jobId: UUID; let finishedAt: GameTime; let destination: TowDestination?
+  let revenue: [Line]; let costs: [Line]      // Line = (Bezeichnung, Betrag)
+  let profit: Int; let stars: Int; let xp: Int
+  let consumed: [Supply: Int]; let vehicleCondition: (before: Int, after: Int); let fuelUsed: Double
+}
+```
+- Kosten-Zeilen: Kraftstoff, Material, Lohnanteil, Verschleiß, Zusatzkosten (mit Grund). Gewinn = Einnahmen − Kosten, **tatsächlich** (keine Spanne mehr).
+- Standard: kleines Banner „Einsatz erledigt · +142 € Gewinn · ★★★★“ (3 s, antippbar). Antippen öffnet den vollständigen Bericht. Auto-Pause nicht nötig.
+- Schätzung vs. Ergebnis: Im Bericht steht die Abweichung („2 € besser als geschätzt“), damit die Schätzung nachvollziehbar wird.
+
+**4. Kassenbuch und Fixkosten.**
+```swift
+struct LedgerEntry: Codable { let time: GameTime; let text: String; let amount: Int; let category: LedgerCategory; let jobId: UUID? }
+enum LedgerCategory: String, Codable { case job, destination, material, fuel, wages, fixed, purchase, upgrade, disposal, recycling, other }
+```
+- Jede Geldbewegung erzeugt einen Eintrag. Gespeichert werden die letzten 7 Spieltage voll, ältere als Tagessumme.
+- **Tägliche Fixkosten** (abends gebucht, vorher in der Zentrale sichtbar): Löhne (Teil 7, ×3,6), Fahrzeugversicherung/Steuer 12 € je Fahrzeug, Gebäude 30 € (Zentrale Stufe 1, +20 € je Ausbaustufe). Die Tagesabrechnung zeigt Fixkosten als eigenen Block.
+- Ort: Zentrale → Karte „Kasse“ (Saldo heute, Fixkosten heute, Einträge als Liste). Kein eigener Tab.
+
+**5. Auftragshistorie.** Liste der erledigten Einsätze (neueste oben, letzte 7 Spieltage) mit Art-Symbol, Ort, Gewinn, Sternen; Antippen öffnet den gespeicherten `JobReport`. Ort: Zentrale → „Verlauf“ (oder über die Warteschlangen-Liste, Teil 13 Punkt 1, als zweiter Reiter „Erledigt“).
+
+**6. Eindeutige Fahrzeugstatus.** Ein Status je Fahrzeug, immer genau einer, gleich benannt in Plakette, Flotte und Zuteilung:
+`Frei · Zum Einsatz · Vor Ort · Aufladen · Zum Ziel · Abladen · Rückfahrt · Tanken · Wartung · Defekt · Außer Dienst (keine Schicht)`. Farben nach UI 000a Punkt 5 (Zum Ziel = orange mit Auto-Symbol, Tanken/Wartung = grau, Defekt = rot).
+
+**7. Gründe für ungeeignete Fahrzeuge.** In der Zuteilung bleiben ungeeignete Fahrzeuge sichtbar, aber ausgegraut, mit einem Grund in einer Zeile: „Kein Abschlepper“, „Tank zu leer (8 %)“, „Zustand zu schlecht“, „Im Einsatz bis ca. 15:40“, „Keine Reifen im Lager“, „Fahrer hat keine Schicht“. Ungeeignete Mitarbeiter ebenso.
+
+**8. Kaufbestätigungen.** Jeder Kauf und Ausbau über 0 € zeigt vorher eine kleine Bestätigung: Was, Preis, Nutzen, Kontostand danach („Kontostand danach: 1.240 €“). Ausnahme: automatische Nachbestellung (einmal in den Einstellungen bestätigt, erscheint im Kassenbuch).
+
+**9. Rückmeldung bei Geldbewegungen.** Die Geldkapsel oben zählt animiert hoch/runter (`numericText`), dazu ein kurzes „+142 €“ (grün) bzw. „−300 €“ (Silber, nicht rot, außer der Kontostand geht ins Minus) neben der Kapsel. Haptik nach UI 000b Punkt 5. Mehrere Bewegungen in 1 s werden zusammengefasst.
+
+**10. Ersthinweise.** Höchstens ein Hinweis gleichzeitig, als schmale Sprechblase am betroffenen Element, je Hinweis nur einmal: erster Einsatz („Tippe auf den Marker“), erste Zuteilung („Erwarteter Gewinn: Details zeigen die Kosten“), erster Einsatz unterwegs, erster Bericht, erste Zielwahl, erstes leeres Material, erste Fixkostenabrechnung. „Hinweise zurücksetzen“ in den Einstellungen. Keine Textwände, kein Tutorial-Zwang.
+
+**11. Lagerbestände sichtbar.** Die Lager-Karte aus 5b Punkt 7 erscheint in 5.3; in der Zuteilung zeigt die Material-Zeile „Reifen: 1 von 6 im Lager“.
+
+**12. Spielstand.** Schema 4 bekommt zusätzlich `ledger`, `jobHistory` (Reports), `hintsSeen`, `autoReorder`. Alles mit Standardwerten; alte Stände starten mit leerem Kassenbuch.
+
+**Tests:** Schätzung liegt bei Einsätzen ohne Zwischenfall innerhalb der angezeigten Spanne; Summe des Kassenbuchs = Kontostandänderung (auf den Euro genau, über 3 Spieltage); jeder Kauf hat einen Eintrag; jedes Fahrzeug hat zu jedem Zeitpunkt genau einen Status; jeder ausgegraute Eintrag hat einen Grund.
+
+**Screenshots:** Panel mit „Erwarteter Gewinn“ zu und mit „Details“ offen · Fahrzeugkarte während des Einsatzes · Banner nach dem Einsatz · vollständiger Bericht · Kasse mit Fixkosten · Verlauf · Zuteilung mit ausgegrautem Fahrzeug und Grund · Kaufbestätigung · Geldkapsel mit „+142 €“ · ein Ersthinweis.
+
+**Nicht in E1.6:** neue Tabs oder Hauptnavigation, Statistiken mit Diagrammen (E10), Wetter (E2), neue Gebiete oder Fahrzeugklassen.
 
 ## 6. Offen bei Julian
 

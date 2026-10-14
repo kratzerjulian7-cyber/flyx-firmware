@@ -1,6 +1,6 @@
-# Vaultoria – UI-Vorgabe Pannenhilfe 2.3 (verbindlich)
+# Vaultoria – UI-Vorgabe Pannenhilfe 2.4 (verbindlich)
 
-Stand 14.10.2026, 14:05 (**2.3: Julian 13:59 „doch mache die ui besser viel besser“ → Teil 000b Premium-UI und einheitlich realistischer Modelltausch, Build 5.2. Farbe, Layout und Lesbarkeitsregeln bleiben.** 2.2 14:00: **2.2: Julians Bewertung des 5.0-Zwischenstands (8/10), Teil 000a Lesbarkeit. Grundoptik bleibt, Realismus-Block abgeschwächt, Orange wieder Funktionsfarbe.** 2.1 13:45: **2.1: realistische Autos, Häuser und Menschen, CC0 von Poly Haven und ambientCG freigegeben, Julian 13:40.** 2.0 13:20: **2.0: KEIN GOLD. Julian zu 1.4: „nicht gold mache es besser das sieht scheiße billig aus und wie für ein 2 jährigen“. Teil 000 Stil geht allem vor; Layout und Aufbau der Konzeptbilder bleiben, Farbe und Stil daraus gelten nicht mehr.** 1.4 11:30: **1.4: Teil 13 erste Version mit 8 Pflichtpunkten, Später-Liste, offene Konzeptbilder, Julian 11:21.** 1.3 11:20: **1.3: Teil 00b Einsatz-Zuteilung und 00c Zentrale nach Julians Konzeptbildern 11:16.** 1.2 11:10: **1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
+Stand 14.10.2026, 14:20 (**2.4: Teil 000c Transparenz ohne Überladung nach Julian 14:15 (Standard nur erwarteter Gewinn, „Details“, kein fünfter Tab, Schätzwerte markiert).** 2.3 14:05: **2.3: Julian 13:59 „doch mache die ui besser viel besser“ → Teil 000b Premium-UI und einheitlich realistischer Modelltausch, Build 5.2. Farbe, Layout und Lesbarkeitsregeln bleiben.** 2.2 14:00: **2.2: Julians Bewertung des 5.0-Zwischenstands (8/10), Teil 000a Lesbarkeit. Grundoptik bleibt, Realismus-Block abgeschwächt, Orange wieder Funktionsfarbe.** 2.1 13:45: **2.1: realistische Autos, Häuser und Menschen, CC0 von Poly Haven und ambientCG freigegeben, Julian 13:40.** 2.0 13:20: **2.0: KEIN GOLD. Julian zu 1.4: „nicht gold mache es besser das sieht scheiße billig aus und wie für ein 2 jährigen“. Teil 000 Stil geht allem vor; Layout und Aufbau der Konzeptbilder bleiben, Farbe und Stil daraus gelten nicht mehr.** 1.4 11:30: **1.4: Teil 13 erste Version mit 8 Pflichtpunkten, Später-Liste, offene Konzeptbilder, Julian 11:21.** 1.3 11:20: **1.3: Teil 00b Einsatz-Zuteilung und 00c Zentrale nach Julians Konzeptbildern 11:16.** 1.2 11:10: **1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
 
 **Versionen:** Die nächste App-Version ist **Vaultoria 5.0**, danach 5.1, 5.2 … (Julian 14.10.2026). Stil 2.0 dieser Datei gilt ab 5.0; „1.4“ meint den bisherigen Gold-Build 202610141306.
 
@@ -80,6 +80,17 @@ Farbe nur für Status. Kein Blau/Cyan in der Oberfläche (Wasser auf der Karte d
 9. Keine echten Marken oder Logos, Kennzeichen fiktiv.
 
 **Abnahme 5.2:** Seite-an-Seite-Vergleich mit 5.1 (Karte, Einsatzfenster, Zuteilung, Zentrale) und ehrliche Selbstkritik vor dem Upload: Wirkt es wie ein hochwertiges Management-Spiel? Gibt es Stilbrüche?
+
+## 000c. Transparenz ohne Überladung (2.4, Julian 14.10 14:15, Details im Erweiterungsplan Teil 5c)
+
+1. **Standard zeigt nur den erwarteten Gewinn.** Im Einsatz-Panel steht eine Zeile „Erwarteter Gewinn ca. 120–160 €“; die volle Aufschlüsselung (Einnahmen, Kraftstoff, Material, Lohnanteil, Verschleiß, mögliche Zusatzkosten) öffnet sich über einen Textknopf **„Details“** (Chevron, klappt im Panel auf, kein neues Fenster).
+2. **Schätzwerte immer markiert:** „ca.“ plus Spanne, Schrift #D7D7DB; tatsächliche Werte (Bericht, Kassenbuch) ohne „ca.“, Schrift #FFFFFF. Nie eine Schätzung als festen Betrag zeigen.
+3. **Keine neue Hauptnavigation, kein fünfter Tab.** Kasse, Verlauf und Lager sind Karten im Tab Zentrale; laufende Einsätze und Berichte öffnen sich als Panel über der Karte.
+4. **Karte bleibt ruhig:** Auf der Karte nur Marker, Plaketten mit Statuspunkt, Route und kurze Banner. Zahlenkolonnen nie direkt auf der Karte.
+5. **Banner statt Fenster** nach jedem Einsatz („Einsatz erledigt · +142 € · ★★★★“, 3 s, antippbar → Bericht); Geldkapsel zählt animiert, „+/− Betrag“ kurz daneben.
+6. **Ausgegraut heißt immer: mit Grund** in einer Zeile #8A8A91.
+7. **Kaufbestätigung** als kleines Sheet: Was · Preis · Nutzen · Kontostand danach · Knöpfe „Kaufen“ (Silber) und „Abbrechen“.
+8. **Ersthinweise** als schmale Sprechblase (Anthrazit, Silberrand), höchstens eine gleichzeitig, jede nur einmal.
 
 ## 000a. Lesbarkeit nach dem 5.0-Zwischenstand (2.2, geht Teil 000 bei Widerspruch vor; Punkt 1 ab 2.3 durch 000b ersetzt)
 
