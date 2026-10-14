@@ -1,6 +1,6 @@
-# Vaultoria – UI-Vorgabe Pannenhilfe 2.1 (verbindlich)
+# Vaultoria – UI-Vorgabe Pannenhilfe 2.2 (verbindlich)
 
-Stand 14.10.2026, 13:45 (**2.1: realistische Autos, Häuser und Menschen, CC0 von Poly Haven und ambientCG freigegeben, Julian 13:40.** 2.0 13:20: **2.0: KEIN GOLD. Julian zu 1.4: „nicht gold mache es besser das sieht scheiße billig aus und wie für ein 2 jährigen“. Teil 000 Stil geht allem vor; Layout und Aufbau der Konzeptbilder bleiben, Farbe und Stil daraus gelten nicht mehr.** 1.4 11:30: **1.4: Teil 13 erste Version mit 8 Pflichtpunkten, Später-Liste, offene Konzeptbilder, Julian 11:21.** 1.3 11:20: **1.3: Teil 00b Einsatz-Zuteilung und 00c Zentrale nach Julians Konzeptbildern 11:16.** 1.2 11:10: **1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
+Stand 14.10.2026, 14:00 (**2.2: Julians Bewertung des 5.0-Zwischenstands (8/10), Teil 000a Lesbarkeit. Grundoptik bleibt, Realismus-Block abgeschwächt, Orange wieder Funktionsfarbe.** 2.1 13:45: **2.1: realistische Autos, Häuser und Menschen, CC0 von Poly Haven und ambientCG freigegeben, Julian 13:40.** 2.0 13:20: **2.0: KEIN GOLD. Julian zu 1.4: „nicht gold mache es besser das sieht scheiße billig aus und wie für ein 2 jährigen“. Teil 000 Stil geht allem vor; Layout und Aufbau der Konzeptbilder bleiben, Farbe und Stil daraus gelten nicht mehr.** 1.4 11:30: **1.4: Teil 13 erste Version mit 8 Pflichtpunkten, Später-Liste, offene Konzeptbilder, Julian 11:21.** 1.3 11:20: **1.3: Teil 00b Einsatz-Zuteilung und 00c Zentrale nach Julians Konzeptbildern 11:16.** 1.2 11:10: **1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
 
 **Versionen:** Die nächste App-Version ist **Vaultoria 5.0**, danach 5.1, 5.2 … (Julian 14.10.2026). Stil 2.0 dieser Datei gilt ab 5.0; „1.4“ meint den bisherigen Gold-Build 202610141306.
 
@@ -23,6 +23,7 @@ Julian 14.10 13:12 zu Build 1.4: „nicht gold mache es besser das sieht scheiß
 | Akzent (aktiver Tab, Auswahlrahmen, Hauptknopf, eigene Routen, eigene Fahrzeuge auf der Karte) | Silber #C7C7CC, gedrückt #AEAEB2; Hauptknopf: Silber-Fläche mit dunkler Schrift #1C1C1E |
 | Status dringend | #D9473A (rot, gedeckt) |
 | Status normal / wartet | #D99A2B (bernstein, gedeckt) |
+| **Funktionsfarbe Orange (2.2)** | #F08A24 für Einsatzmarker, Warnungen, Rundumlichter |
 | Status erledigt / Gewinn | #3FA35B (grün, gedeckt) |
 | Verlust | #D9473A |
 
@@ -42,12 +43,12 @@ Farbe nur für Status. Kein Blau/Cyan in der Oberfläche (Wasser auf der Karte d
 **3D und Karte**
 - Entsättigte, realistische Materialien: Asphalt matt, Häuser in gedeckten Putz- und Ziegeltönen, Dächer dunkelgrau/rotbraun, Bäume dunkelgrün. Abendlicht warm, aber zurückhaltend; Straßenlaternen kleine Lichtpunkte ohne Bloom.
 - **Eigene Fahrzeuge:** realistisch weiß/graphit lackiert mit rot-weißer Warnmarkierung am Heck und orangefarbenem Rundumlicht (wie echte Abschleppwagen), kleines silbernes V an der Tür. Kein Gelb-Schwarz, kein Gold. Keine echten Marken.
-- **Routen:** dünne silberne Linie (2 pt), gestrichelt bei Rückfahrt, kein Leuchten.
-- **Einsatzmarker:** kleine flache Kreise mit SF-Symbol in Statusfarbe (rot dringend, bernstein normal), dezenter Puls nur bei dringend.
+- **Routen:** ~~dünne silberne Linie (2 pt)~~ ab 2.2 siehe Teil 000a.
+- **Einsatzmarker:** ab 2.2 Orange, siehe Teil 000a.
 - **Zentrale:** moderner Flachbau in Anthrazit und Glas, Rolltore, sachlich beleuchtet, keine Goldfassade.
 - Personen (Mitarbeiterporträts): realistische Arbeitskleidung in Grau/Anthrazit mit Warnstreifen, kleines V-Logo.
 
-**Realismus (2.1, Julian 14.10 13:40: „ich gebe es dir frei weil ich wil ldas das realisitische autos häuser und menschen sind man“)**
+**Realismus (2.1, ab 2.2 abgeschwächt, siehe Teil 000a: einheitlicher Stil geht vor; kein großer Asset-Tausch jetzt) — ursprünglich Julian 14.10 13:40: „ich gebe es dir frei weil ich wil ldas das realisitische autos häuser und menschen sind man“)**
 - **Autos, Häuser und Menschen realistisch**: echte Proportionen, realistische Fahrzeugformen (Kleinwagen, Kombi, Transporter, Lkw, Bus), Häuser mit echten Fassaden, Fenstern, Dächern, Gehwegen; Menschen mit natürlichen Körperproportionen und Kleidung.
 - **Keine Spielzeug- oder Low-Poly-Optik, auch nicht bei Figuren**: keine Kastenköpfe, keine Knubbelfiguren, keine übergroßen Köpfe, keine flachen Einfarb-Polygone, keine Comic-Konturen.
 - **Freigegebene Quellen (CC0):** Poly Haven (Modelle, PBR-Texturen, HDRIs) und ambientCG (PBR-Materialien: Asphalt, Putz, Ziegel, Dachziegel, Metall, Glas). Bisherige Kenney-/Quaternius-Low-Poly-Teile werden schrittweise ersetzt, wo sie sichtbar sind.
@@ -56,6 +57,49 @@ Farbe nur für Status. Kein Blau/Cyan in der Oberfläche (Wasser auf der Karte d
 - Leistung beachten: LOD-Stufen, beim Herauszoomen einfachere Modelle; 60 fps auf kleinen iPhones bleibt Pflicht.
 
 **Prüffrage zum Stil:** Sieht der Bildschirm aus wie eine ernsthafte Disponenten-Software in einem hochwertigen Spiel, nicht wie ein Kinderspiel? Wenn irgendwo Gold, Glow oder Spielzeug-Optik auftaucht, ist es falsch.
+
+## 000a. Lesbarkeit nach dem 5.0-Zwischenstand (2.2, geht Teil 000 bei Widerspruch vor)
+
+Julian 14.10 13:50 (wörtlich):
+
+> Das sieht deutlich professioneller aus. Die neue Richtung passt viel besser zu Vaultoria: seriös, hochwertig und wie ein richtiger Management-Tycoon. Die alte gelb-goldene Spielzeugoptik ist größtenteils weg.
+> Was noch geändert werden sollte:
+>
+> * Route etwas kräftiger machen. Die dünne silberne Linie geht zwischen Straßen und Gebäuden teilweise unter. Etwas dicker plus dunkler Rand.
+> * Orange als Funktionsfarbe behalten: Einsatzmarker, Warnungen und Rundumlichter dürfen orange sein. Sonst wird alles zu grau und unübersichtlich.
+> * Zeitknöpfe größer antippbar machen. Optisch dürfen sie klein bleiben, aber die unsichtbare Touchfläche sollte mindestens 44 × 44 Punkte haben.
+> * Eigene Fahrzeuge stärker kennzeichnen, damit man sofort erkennt, welcher Wagen gerade unterwegs oder verfügbar ist.
+> * Einsatzarten benötigen verschiedene Symbole: Batterie, Reifen, Unfall und Abschleppen dürfen nicht alle gleich aussehen.
+> * Bewertung am Spielstart nicht direkt 5,0: besser zunächst „Neu“ und die Sterne erst durch echte Einsätze aufbauen.
+> * Bei „Ausbauen“ zusätzlich Preis und Nutzen anzeigen, beispielsweise „2.500 € · +1 Stellplatz“. Nur „Ausbauen“ ist zu unklar.
+> * Die neu gerenderten Kartenbilder müssen stilistisch zur Stadt passen. Keine fotorealistischen Fahrzeuge in einer deutlich stilisierten Low-Poly-Stadt.
+>
+> Der große freie Hof hinter der Zentrale ist sehr gut – dort können später Stellplätze, Sammlung, Werkstatt und schwere Abschlepper sichtbar dazukommen.
+> Mein Urteil für diesen Zwischenstand: 8/10. Die Grundoptik würde ich jetzt nicht erneut verändern. Claude soll die Kartenbilder fertigstellen, die genannten Lesbarkeitsprobleme korrigieren und anschließend lieber das eigentliche Gameplay testen.
+
+**Grundoptik bleibt** wie im 5.0-Zwischenstand (Graphit/Anthrazit/Silber, SF Pro, dünne Linien, kein Gold). Nicht erneut umbauen. Danach Gameplay testen.
+
+1. **Einheitlicher Stil statt Fotorealismus:** Karte, Fahrzeuge, Häuser und Figuren im selben Stil wie die Stadt. Keine fotorealistischen Einzelteile in der stilisierten Stadt. Neu gerenderte Kartenbilder werden an Stil, Licht und Detailgrad der Stadt angepasst. Poly Haven/ambientCG nur für Materialien und Licht, wo es zur Stadt passt; **kein großer Asset-Tausch jetzt**. Keine Kinder-/Knubbel-Optik bleibt verboten.
+2. **Orange als Funktionsfarbe (#F08A24):** Einsatzmarker, Warnungen und Rundumlichter sind orange. Dringend bleibt rot (#D9473A) mit orangem Rundumlicht-Puls. Sonst bleibt alles Graphit/Silber.
+3. **Route kräftiger:** 4 pt Silber #C7C7CC mit 1,5 pt dunklem Rand #1C1C1E (insgesamt ca. 7 pt), auf Straßenniveau, nicht von Gebäuden verdeckt (über der Geometrie gezeichnet). Rückfahrt gestrichelt in gleicher Stärke. Kein Leuchten.
+4. **Touchflächen:** Alle Bedienelemente mindestens **44 × 44 pt** Trefferfläche, auch wenn sie optisch kleiner sind (Zeitknöpfe ⏸ 1× 2× 4× bleiben optisch klein, `contentShape` auf 44 × 44).
+5. **Eigene Fahrzeuge klar kennzeichnen:** Über jedem eigenen Fahrzeug eine Plakette (Anthrazit, Silberrand) mit Kürzel und Statuspunkt: **grün = frei** (in der Zentrale), **orange = unterwegs zum Einsatz**, **silber = Arbeit vor Ort**, **grau = Rückfahrt**, **rot = Problem** (Tank/Zustand). Unter dem Fahrzeug ein dezenter silberner Ring, den fremde Autos nicht haben. Antippen wählt das Fahrzeug aus.
+6. **Eigene Symbole je Einsatzart** (SF Symbols, im orangen bzw. roten Marker weiß):
+
+| Einsatzart | Symbol |
+|---|---|
+| Batterie leer | `minus.plus.batteryblock` |
+| Reifenpanne | `circle.circle` (Reifen) bzw. eigenes Reifen-Symbol |
+| Fahrzeug abgeschlossen | `key.fill` |
+| Falscher Kraftstoff | `fuelpump.fill` |
+| Technischer Defekt | `wrench.and.screwdriver.fill` |
+| Abschleppen | eigenes Abschlepphaken-Symbol |
+| Unfall | `car.side.rear.and.collision.and.car.side.front` |
+
+Keine zwei Einsatzarten mit gleichem Symbol.
+7. **Bewertung startet als „Neu“:** Die Bewertungskapsel zeigt „Neu“ statt Sternen, bis 5 Einsätze bewertet sind; danach Ø Sterne mit einer Nachkommastelle.
+8. **„Ausbauen“ mit Preis und Nutzen:** Knopf zweizeilig oder mit Unterzeile, z. B. **„Ausbauen“ / „2.500 € · +1 Stellplatz“**. Reicht das Geld nicht, Knopf ausgegraut mit „Fehlen 800 €“. Beispiele: Garage „+1 Stellplatz“, Werkstatt „Reparatur 20 % schneller“, Leitstelle „+1 gleichzeitiger Einsatz“.
+9. **Hof hinter der Zentrale reserviert:** Die große freie Fläche hinter der Zentrale bleibt frei für spätere, sichtbar wachsende Teile: Betriebshof-Stellplätze (E6), Sammlung/Schauhalle (E12), Werkstatt-Erweiterung, Stellplätze für schwere Abschlepper (E15/E18). Nichts anderes dort bauen.
 
 ## 00. Julians Konzeptbild und App-Icon (14.10 10:55, verbindlich, genau so umsetzen)
 
