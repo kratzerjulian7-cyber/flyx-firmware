@@ -1,6 +1,6 @@
-# Vaultoria – UI-Vorgabe Pannenhilfe 1.2 (verbindlich)
+# Vaultoria – UI-Vorgabe Pannenhilfe 1.3 (verbindlich)
 
-Stand 14.10.2026, 11:10 (**1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
+Stand 14.10.2026, 11:20 (**1.3: Teil 00b Einsatz-Zuteilung und 00c Zentrale nach Julians Konzeptbildern 11:16.** 1.2 11:10: **1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
 
 **Prüffrage für jeden Bildschirm:** Sieht man in zwei Sekunden, welches Fahrzeug wohin fährt und was als Nächstes zu tun ist? Wenn nicht, ist der Bildschirm zu voll.
 
@@ -22,6 +22,31 @@ Bilder im selben Ordner: `Konzept-Hauptbildschirm-Karte.png` (Hauptbildschirm, �
 **Farben ab 1.1:** Schwarz und Graphit mit Gold sind jetzt der Grundlook (Julians Bild, geht der alten Flyx-Regel „kein Schwarz“ hier vor). Kein Blau in der Oberfläche; Wasser auf der Karte darf nachtdunkel sein, wie im Bild.
 
 Was weiter unten anders steht (3 Tabs, Kopfleiste mit Uhrzeit, Farbe der Fahrzeuge), gilt nicht mehr; der Rest (Fenster, Abläufe, Zahlen) gilt unverändert.
+
+## 00b. Einsatz-Zuteilung (Konzeptbild `Konzept-Einsatz-Zuteilung.png`, 1.3, verbindlich)
+
+Ersetzt den Ablauf aus Teil 2 und 3 (zwei Seiten) durch **ein** Panel. Antippen eines Einsatzmarkers lässt das Panel von unten über die Karte hochfahren (etwa 45 % Höhe, Griffleiste oben, nach unten wischen schließt). Karte, Kopfleiste und Tab-Leiste bleiben sichtbar.
+
+- **Oben links** ein Bild des Kundenautos am Einsatzort (Motorhaube offen, Warndreiecke), Rahmen mit Goldrand.
+- **Rechts daneben** der Einsatztitel in goldener Versalschrift, z. B. **„BATTERIE LEER“**, darunter zwei Kapseln: Ortsnadel + **„4,2 km“** und Geldbündel + **„180–240 €“** (Belohnung als Spanne).
+- **Darunter zwei gleich große Karten nebeneinander**, beide schon vorausgewählt (goldener Haken oben rechts):
+  - **Mitarbeiter**: Porträt in gelb-schwarzer Arbeitsjacke mit V-Logo und Kappe, Name (z. B. „Jonas“) mit Personensymbol, darunter eine 3-Segment-Leiste (Erfahrung/Eignung).
+  - **Fahrzeug**: Bild des Wagens, Name (z. B. „Servicewagen 01“) mit Fahrzeugsymbol, darunter eine 4-Segment-Leiste (Zustand).
+  - Antippen einer Karte öffnet die Auswahl der anderen freien Mitarbeiter bzw. Fahrzeuge als waagerechte Reihe gleicher Karten; Werte wie in Teil 3 (vier Balken, Hinweis wenn ungeeignet).
+- **Unten ein breiter grüner Knopf** mit Goldrand: V-Logo links, **„Losschicken“** in Gold, Doppelpfeil rechts. Das ist der einzige Hauptknopf (Ausnahme zur Goldregel, Grün nur hier für „Los“). Ablehnen = Panel nach unten wischen.
+- Dringlichkeit, benötigte Ausrüstung und Dauer erscheinen nur, wenn sie wichtig sind: rote Kapsel „Dringend“ neben dem Titel, bernsteinfarbene Zeile über dem Knopf, wenn das Fahrzeug nicht passt.
+- Fahrzeugbilder ohne echte Herstellerlogos oder Marken (im Konzeptbild ist ein Stern zu sehen, der entfällt), nur das V-Logo.
+
+## 00c. Tab Zentrale (Konzeptbild `Konzept-Zentrale.png`, 1.3, verbindlich)
+
+- **Obere Hälfte**: isometrische Nahansicht der eigenen Zentrale bei Nacht: schwarzes Gebäude mit goldenem V-Logo, offene beleuchtete Tore mit gelb-schwarzen Fahrzeugen, gelb markierte Stellplätze, Tankstelle mit Dach, Reifenlager, Werkbänke, Mitarbeiter laufen herum, V-Schild an der Einfahrt, Kundenautos auf dem Hof. Alles, was ausgebaut ist, ist hier sichtbar (Teil 12).
+- **Untere Hälfte**: Panel mit Gebäudesymbol und **„ZENTRALE“** in goldener Versalschrift, darunter **drei Ausbaukarten nebeneinander**:
+  - **Garage** (Torsymbol): Bild mit Wagen auf Hebebühne, Symbol Auto+, Wirkung: mehr Stellplätze / Fahrzeuge.
+  - **Werkstatt** (Werkzeugsymbol): Bild mit Werkbank und Reifen, Symbol Zahnrad, Wirkung: Reparaturen in der Zentrale, schnellere Arbeit.
+  - **Leitstelle** (Bildschirmsymbol): Bild mit Arbeitsplatz und Stadtkarte auf Monitoren, Symbol Personen, Wirkung: mehr gleichzeitige Einsätze, mehr Personal, neue Viertel.
+  - Jede Karte: Kapsel **„Stufe 1“** oben rechts, Bild, Symbol, **3-Segment-Stufenleiste** (gold = erreicht), goldener Knopf **„Ausbauen“**. Antippen von „Ausbauen“ zeigt kurz Preis und einen Satz Auswirkung, dann bestätigen, Kamera schwenkt auf das wachsende Gebäudeteil (Bau-Animation, Teil 12).
+- Die sechs Ausbauten aus Teil 7 werden diesen drei Karten als Stufen zugeordnet: Garage = Stellplätze; Werkstatt = Werkstatt, Ersatzteillager, Tankstelle/Ladepunkt; Leitstelle = verbesserte Leitstelle. Mehr als drei Karten nur, wenn neue Gebäude dazukommen (dann seitlich wischen).
+- Aktiver Tab „Zentrale“ unten in Gold.
 
 ## 0. Grundregeln
 
@@ -170,4 +195,4 @@ Pfandhaus, Gegenstandshandel, Käufer und Sammler, Marktpreise, Museum, Auktione
 
 ## 11. Screenshots für die Abnahme
 
-Hauptkarte leer · Einsatz erscheint · Einsatzfenster · Zuteilung · Fahrzeug unterwegs mit Route · Arbeit vor Ort · Belohnung · Rückfahrt · Fahrzeuge mit Warten · Zentrale mit Ausbau · Sonderentscheidung · Tagesabrechnung · ganze Stadt herausgezoomt · Zentrale vor und nach einem Ausbau · Bau-Animation.
+Hauptkarte leer · Einsatz erscheint · Einsatzfenster · Zuteilung · Fahrzeug unterwegs mit Route · Arbeit vor Ort · Belohnung · Rückfahrt · Fahrzeuge mit Warten · Zentrale mit Ausbau · Einsatz-Zuteilung-Panel (00b) · Tab Zentrale (00c) · Sonderentscheidung · Tagesabrechnung · ganze Stadt herausgezoomt · Zentrale vor und nach einem Ausbau · Bau-Animation.
