@@ -1,6 +1,6 @@
-# Vaultoria – Erweiterungsplan Pannenhilfe (Planung, noch nicht bauen)
+# Vaultoria – Erweiterungsplan Pannenhilfe 1.1 (freigegeben, Umsetzung ab E1)
 
-Stand 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
+Stand 14.10.2026, 13:45 (**1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
 
 ## Julians Auftrag (wörtlich, 14.10.2026 12:57)
 
@@ -25,12 +25,71 @@ Stand 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-P
 >
 > Zunächst nur Architektur, Datenmodelle, Freischaltreihenfolge und UI-Ablauf planen. Noch nicht sämtliche Inhalte gleichzeitig implementieren. Danach die Umsetzung in kleine, einzeln testbare Updates aufteilen. Die Karte bleibt das zentrale Spielelement; Menüs sollen nur unterstützend eingesetzt werden.
 
+## Julians Freigabe mit Änderungen (wörtlich, 14.10.2026 13:05)
+
+> Der Plan ist insgesamt sehr gut und trifft deine Idee. Claude sollte aber vor dem Bauen noch ein paar Dinge ändern, sonst werden aus 100 Stunden schnell 100 Stunden Wiederholung.
+> Wichtigste Änderungen
+>
+> 1. Ein Spieltag darf nicht nur 6 Minuten dauern.
+> Bei 100 Stunden wären das ungefähr 1.000 Tagesabrechnungen – extrem nervig. Besser:
+>    * ein Spieltag etwa 15–20 Minuten
+>    * ungefähr 250–350 Spieltage für die erste Welt
+>    * Zeitsteuerung: Pause, 1×, 2× und 4×
+>    * automatische Pause bei neuen dringenden Einsätzen und wichtigen Entscheidungen
+> 2. Einsatzausgänge nicht einfach auswürfeln.
+> Fahrzeug, Ausrüstung und Mitarbeiter müssen den Ausgang sichtbar beeinflussen. Zufall darf nur einen kleinen Anteil haben. Sonst fühlt es sich unfair an.
+> 3. Betriebshof darf keine automatische Gelddruckmaschine werden.
+>    * Einnahmen durch Standgebühren
+>    * gleichzeitig Kosten für Platz, Verwaltung und Sicherheit
+>    * nicht abgeholte Fahrzeuge blockieren wertvolle Stellplätze
+>    * große Fahrzeuge benötigen deutlich mehr Platz
+> 4. Rechtssystem spielerisch vereinfachen.
+> Die Recherche ist gut, aber der Spieler sollte nicht sieben juristische Schritte einzeln anklicken müssen. Besser nur:
+>    * Halter kontaktieren
+>    * Frist läuft
+>    * Abholung, Verkauf oder offizielle Auktion
+> Im Hintergrund kann die Simulation trotzdem korrekt arbeiten.
+> 5. Mitarbeiter brauchen echte Persönlichkeiten.
+> Nicht nur Zahlen, sondern beispielsweise:
+>    * schnell, aber unsauber
+>    * zuverlässig, aber langsam
+>    * besonders gut nachts
+>    * Spezialist für Lkw
+>    * stark bei schwierigen Bergungen
+>    * wird bei zu vielen Schichten müde
+> 6. Die Welt muss von Anfang an für Erweiterungen vorbereitet sein.
+> Nach dem Abschluss erscheint zunächst keine sofort spielbare zweite Welt, sondern ein sichtbarer Ausblick: „Neue Region folgt mit einem späteren Update“. Spielstand, Fahrzeuge und bestimmte Mitarbeiter sollten später übernommen werden können.
+>
+> Nachricht an Claude
+> Der Erweiterungsplan ist grundsätzlich freigegeben. Vor der Umsetzung bitte folgende Punkte einarbeiten:
+>
+> * Ein Spieltag dauert ungefähr 15–20 Minuten statt 6 Minuten. Ziel sind etwa 250–350 Spieltage beziehungsweise 50–100 Stunden für die erste Welt.
+> * Zeitsteuerung mit Pause, 1×, 2× und 4× ergänzen. Bei dringenden Einsätzen und wichtigen Entscheidungen automatisch pausieren.
+> * Einsatzausgänge dürfen nicht hauptsächlich zufällig sein. Mitarbeiterwerte, Fahrzeugklasse, Ausrüstung, Wetter und getroffene Entscheidungen müssen ausschlaggebend sein. Zufall bleibt nur als kleiner Unsicherheitsfaktor.
+> * Der Betriebshof erzeugt Standgebühren, verursacht gleichzeitig aber Verwaltungs-, Sicherheits- und Platzkosten. Dadurch entsteht keine passive Gelddruckmaschine.
+> * Rechtliche Abläufe intern korrekt simulieren, für Spieler aber auf drei verständliche Schritte reduzieren: Kontaktaufnahme, Frist, Abholung/Verkauf/Auktion.
+> * Mitarbeitern erkennbare Stärken, Schwächen und höchstens eine besondere Eigenschaft geben.
+> * Die Architektur bereits auf weitere Welten vorbereiten. Eine zweite Welt wird aber erst in einem späteren Update veröffentlicht.
+> * Die 50–100 Stunden dürfen nicht durch bloßes Wiederholen gleicher Einsätze entstehen. Neue Einsatzvarianten, größere Verantwortung, Fahrzeuge, Verträge und Gebiete müssen regelmäßig dazukommen.
+>
+> Danach zuerst ausschließlich E1 umsetzen und testen. Keine späteren Systeme vorziehen.
+
+**Eingearbeitet als:**
+- **[R1]** Spieltag 18 Minuten bei 1×, erste Welt ca. 300 Spieltage → Teil 0, Teil 2 neu gerechnet.
+- **[R2]** Zeitsteuerung Pause/1×/2×/4× mit Auto-Pause → Teil 1.2a, Teil 3, E1.
+- **[R3]** Ausgänge überwiegend aus Werten, Zufall höchstens ±8 % → Teil 1.3 (2) mit Formel.
+- **[R4]** Betriebshof mit Platz-, Verwaltungs- und Sicherheitskosten, Rechnung → Teil 1.3 (10)–(12).
+- **[R5]** Recht für Spieler in 3 Schritten → Teil 4.2.
+- **[R6]** Mitarbeiter mit Stärke, Schwäche, höchstens einer Besonderheit → Teil 1.3 (4).
+- **[R7]** Mehrere Welten in der Architektur, Ausblick nach Welt 1 → Teil 1.1, 1.2, E1, E19.
+- **[R8]** Taktplan gegen Wiederholung → Teil 2a.
+
 ## 0. Leitplanken
 
 - **Die Karte bleibt die Mitte.** Jedes neue System zeigt sich zuerst auf der Karte (Marker, Fahrzeug, Gebäudeteil, Straßenabschnitt) und nur unterstützend in den vier vorhandenen Tabs **Karte · Flotte · Zentrale · Personal** oder im Einsatz-Panel (UI-Vorgabe 00b). **Kein fünfter Tab, keine neuen Hauptmenüs.**
 - **Eine neue Funktion pro Freischaltstufe.** Was noch nicht freigeschaltet ist, ist unsichtbar (keine grauen Platzhalter, kein „Demnächst“).
 - **Zahlen sind Startwerte** zum Ausbalancieren im Test. Der Mac gleicht Namen und Felder mit dem echten Swift-Code ab; bei Abweichung gilt der Code, dieser Plan wird angepasst.
-- **Spielzeit:** 1 Spieltag ≈ 6 Minuten echte Zeit (bei normaler Geschwindigkeit). 50–100 Stunden ≈ 500–1.000 Spieltage. Fristen aus dem echten Recht werden im Spiel gestaucht (1 echter Monat = 7 Spieltage), die Reihenfolge der Schritte bleibt echt.
+- **[R1] Spielzeit:** 1 Spieltag = **18 Minuten** echte Zeit bei 1× (Spieluhr 06:00–22:00, Nacht wird übersprungen, außer Nachtdienst ist freigeschaltet). Erste Welt ≈ **300 Spieltage** (250–350) ≈ 75 Stunden bei 1×; wer oft 2× oder 4× nutzt, kommt eher auf 50, wer gründlich spielt eher auf 100 Stunden. Fristen aus dem echten Recht werden gestaucht (**1 echter Monat = 5 Spieltage**), die Reihenfolge der Schritte bleibt echt.
 
 ---
 
@@ -38,10 +97,18 @@ Stand 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-P
 
 ### 1.1 Aufbau
 
+**[R7]** Zwei Ebenen: ein **Profil** (weltübergreifend) und je Welt ein **Weltstand**. Welt 1 ist die einzige spielbare Welt.
+
 ```
-GameState (ein Spielstand, Codable)
-├── meta: SaveMeta            Version, Spieltag, Uhrzeit, Spielzeit gesamt
-├── company: Company          Geld, Ruf, Ziele, freigeschaltete Stufen
+Profile (profile.json, weltübergreifend)
+├── schemaVersion, activeWorldId, completedWorldIds
+├── company: Company          Firmenname, Ruf gesamt, Erfolge
+├── carryOver: CarryOver      übertragbare Fahrzeuge, ausgewählte Mitarbeiter, Sammlung
+└── settings: Settings        Zeitsteuerung, Auto-Pause an/aus je Ereignis, Ton
+
+WorldState (world-<id>.json, eine Datei pro Welt)
+├── meta: SaveMeta            Version, worldId, Spieltag, Uhrzeit, Spielzeit, Geschwindigkeit
+├── economy: Economy          Geld, Ruf in dieser Welt, Ziele, freigeschaltete Stufen
 ├── world: World              Gebiete, Wetter, Verkehr
 ├── fleet: [Vehicle]          eigene Einsatzfahrzeuge
 ├── staff: [Employee]
@@ -60,11 +127,43 @@ Getrennte Schichten: **Simulation** (reine Logik, Takt pro Spielminute, ohne UI,
 ```swift
 struct SaveMeta: Codable {
   var schemaVersion: Int      // steigt mit jedem Update, das Felder ergänzt
+  var worldId: String         // [R7] "welt1-heimatstadt"
   var gameDay: Int; var minuteOfDay: Int
+  var speed: GameSpeed        // [R2] .paused, .x1, .x2, .x4
   var totalPlaySeconds: Int
   var unlockedStage: Int      // 0…18, siehe Teil 2
 }
+struct WorldDefinition {      // [R7] statische Daten, im App-Paket, nicht im Spielstand
+  let id: String; let name: String
+  let districts: [DistrictDefinition]; let roadGraph: String   // Datei
+  let stages: [StageDefinition]; let finale: FinaleDefinition
+  let isPlayable: Bool        // Welt 2 später: false → nur Ausblick
+}
+struct CarryOver: Codable {   // [R7] was in eine spätere Welt mitkommt
+  var vehicleIds: [VehicleID]           // alle eigenen Fahrzeuge
+  var employeeIds: [EmployeeID]         // höchstens 3, vom Spieler gewählt
+  var collection: [CollectionCar]
+  var startMoneyBonus: Int              // fester Bonus statt Restgeld
+}
 ```
+
+- **[R7]** Alle Inhalte (Gebiete, Einsatzarten, Stufen) hängen an `worldId`. Neue Welt = neue `WorldDefinition` + neue Datei `world-<id>.json`, ohne Codeänderung am Kern.
+- **[R7]** Nach dem Endziel von Welt 1: Am Kartenrand erscheint eine abgedunkelte Region mit Schild **„Neue Region folgt mit einem späteren Update“**. Antippen zeigt, was mitkommt (Fahrzeuge, bis zu 3 Mitarbeiter, Sammlung). Welt 1 bleibt weiter spielbar (freies Spiel).
+
+### 1.2a Zeitsteuerung **[R2]**
+
+```swift
+enum GameSpeed: Int, Codable { case paused = 0, x1 = 1, x2 = 2, x4 = 4 }
+enum AutoPauseReason: String, Codable { case urgentMission, specialDecision, unlock, dayEnd, legalStepDone }
+struct GameClock { var speed: GameSpeed; var pauseQueue: [AutoPauseReason]
+  mutating func tick(realSeconds: Double) -> Int   // liefert vergangene Spielminuten (1 Spielminute = 1,125 s bei 1×)
+}
+```
+- Auto-Pause bei: neuem dringenden Einsatz (Autobahn, Polizei, Countdown < 2 Min), Sonderentscheidung, Freischaltung, Tagesende. Nicht bei normalen Einsätzen.
+- Nach Auto-Pause geht es mit der vorherigen Geschwindigkeit weiter, sobald der Spieler das Fenster schließt oder „Weiter“ tippt.
+- Einstellungen: Auto-Pause je Grund an/aus (Standard: alle an).
+- Die Simulation läuft in festen Spielminuten-Schritten; 4× rechnet 4 Schritte pro Takt, damit Ergebnisse bei jeder Geschwindigkeit gleich sind.
+- App im Hintergrund: Spiel pausiert, keine Simulation offline.
 
 - Neue Felder sind immer **optional oder mit Standardwert** (`decodeIfPresent ?? Standard`), damit alte Stände laden.
 - `migrate(from: Int)` läuft Schritt für Schritt (v1→v2→v3 …). Jeder Schritt füllt neue Felder sinnvoll (z. B. Mitarbeiter ohne Erfahrung bekommen Stufe 1).
@@ -86,31 +185,72 @@ Dauer = **Anfahrt** + **Arbeit**
 - Wetter: Regen 1,15 · Nebel 1,2 · Schnee 1,35 · Glatteis 1,5 (Glatteis auch mehr Unfälle).
 - Angezeigt wird nur das Ergebnis: „Ankunft 3:10 · Arbeit ca. 6 Min“.
 
-**(2) Mehrere Ausgänge pro Einsatz**
+**(2) Mehrere Ausgänge pro Einsatz [R3]**
 
 ```swift
-enum Outcome: String, Codable { case fixedOnSite, towedToDepot, towedToPartner, needsSecondVehicle, customerLeft, aborted, partial }
-struct MissionResult: Codable { var outcome: Outcome; var income: Int; var costs: Int; var stars: Int; var minutes: Int; var xp: [EmployeeID: Int] }
+enum Outcome: String, Codable { case fixedOnSite, fixedLate, towedToDepot, towedToPartner, needsSecondVehicle, aborted, customerLeft }
+struct OutcomeFactors: Codable { var staff, vehicle, equipment, conditions, decisions, luck: Double }  // je −1…+1 bzw. luck klein
+struct MissionResult: Codable { var outcome: Outcome; var factors: OutcomeFactors; var income: Int; var costs: Int; var stars: Int; var minutes: Int; var xp: [EmployeeID: Int] }
 ```
-Ausgang wird bei Ankunft gewürfelt: Chance aus Mitarbeiterwert vs. Schwierigkeit, Ausrüstung, Wetter. Spieler sieht vorher nur ein Wort („gute Chance“ / „riskant“). Beispiel Batterie: vor Ort behoben 80 % · Batterie defekt → Abschleppen 15 % · Kunde weg 5 %.
+
+**Formel.** Jeder Einsatz hat eine Schwierigkeit `D` (0,30 leicht … 0,90 Großunfall). Der Einsatzwert `E` (0…1):
+
+| Anteil | Faktor | Berechnung (0…1) |
+|---|---|---|
+| **35 %** | Mitarbeiter | passender Wert (1–5) ÷ 5, ± Stärke/Schwäche/Besonderheit, × Müdigkeit (1,0 frisch … 0,8 erschöpft) |
+| **25 %** | Fahrzeugklasse | 1,0 passend · 0,6 geht notdürftig · 0 ungeeignet; × Zustand (unter 50 % linear schlechter) |
+| **15 %** | Ausrüstung | Anteil der benötigten Ausrüstung, die an Bord ist |
+| **10 %** | Bedingungen | Wetter und Tageszeit: klar 1,0 · Regen 0,85 · Nebel 0,8 · Schnee 0,7 · Glatteis 0,6 · Nacht 0,85 (Nachteule 1,0) |
+| **15 %** | Entscheidungen | Sonderentscheidung gut gewählt, Absicherung angefordert, zweites Fahrzeug, Ersatzteil mitgenommen: 0,5 neutral, bis 1,0 |
+
+`Ergebnis = E − D + Glück`, **Glück** gleichverteilt zwischen **−0,08 und +0,08** (also höchstens eine Stufe Verschiebung).
+
+| Ergebnis | Ausgang |
+|---|---|
+| ≥ +0,15 | vor Ort behoben, schnell (Bonus-Stern) |
+| 0 … +0,15 | behoben, etwas länger |
+| −0,15 … 0 | Teilerfolg: abschleppen statt reparieren oder zweiter Wagen nötig |
+| < −0,15 | Abbruch (Kosten, Bewertung sinkt) |
+
+„Kunde weg“ entsteht **nur** durch den abgelaufenen Countdown, nie durch Zufall.
+
+**Sichtbar machen:**
+- Vor dem Losschicken (Panel 00b): Wort aus `E − D` **ohne** Glück: „sehr gute Chance“ (≥ 0,15), „gute Chance“ (0…0,15), „knapp“ (−0,15…0), „riskant“ (darunter). Darunter bis zu zwei Hinweise, was hilft: „Abschlepper würde passen“, „Starthilfe fehlt an Bord“.
+- Im Einsatzbericht: fünf kleine Zeilen mit Symbol und grünem Plus bzw. rotem Minus (Mitarbeiter, Fahrzeug, Ausrüstung, Wetter, Entscheidung), Glück nur als „etwas Glück“ / „etwas Pech“, wenn es den Ausgang verschoben hat.
 
 **(3) Dringende Autobahn-Einsätze**
 
 `Mission.priority: .normal | .urgent | .highway`. Autobahn = eigenes Gebiet (Teil 2, Stufe 8), kurzer Countdown, hohe Bezahlung, Bonus bei Ankunft unter Zielzeit, Sicherungsaufwand (Absicherung durch zweites Fahrzeug oder Polizei bringt mehr Sterne).
 
-**(4) Mitarbeiterwerte und Erfahrung**
+**(4) Mitarbeiterwerte, Persönlichkeit und Erfahrung [R6]**
 
 ```swift
+enum Skill: String, Codable { case repair, towing, speed, reliability }
+enum Trait: String, Codable { case fastButSloppy, reliableButSlow, nightOwl, truckSpecialist, recoveryPro, tiresQuickly, calmUnderPressure, customerCharmer }
 struct Employee: Codable {
   var id: EmployeeID; var name: String; var portrait: String
-  var repair, towing, speed, reliability: Int  // 1…5, wie bisher
+  var repair, towing, speed, reliability: Int  // 1…5
+  var strength: Skill; var weakness: Skill     // genau eine Stärke (+1 wirksam) und eine Schwäche (−1 wirksam)
+  var trait: Trait?                            // höchstens eine Besonderheit
   var level: Int; var xp: Int                  // Stufe 1…10
-  var licenses: Set<License>                   // .b, .c (Lkw), .ce, .crane
-  var shiftMinutesLeft: Int; var wage: Int
-  var trait: Trait?                            // höchstens eine: nachtfit, ruhig bei Stress, schnell aber grob …
+  var licenses: Set<License>                   // .b, .c1, .c, .ce, .crane
+  var shiftMinutesLeft: Int; var fatigue: Double; var wage: Int
+  var transferable: Bool                       // [R7] darf in spätere Welt mit
 }
 ```
-Erfahrung pro Einsatz in der genutzten Fähigkeit; alle 3 Stufen +1 auf einen Wert nach Wahl des Spielers (eine Karte, ein Tipp). Führerscheine schalten Fahrzeuge frei (Lkw-Führerschein = Schulung im Tab Personal, kostet Geld und eine Schicht).
+
+| Besonderheit | Wirkung (im Spiel in einem Satz erklärt) |
+|---|---|
+| schnell, aber unsauber | Arbeit 20 % schneller, Ausgang −0,05 (öfter Nacharbeit) |
+| zuverlässig, aber langsam | Arbeit 20 % langsamer, Ausgang +0,07 |
+| Nachteule | nachts kein Abzug, tagsüber normal |
+| Lkw-Spezialist | +0,10 bei Lkw/Bus, Lkw-Führerschein günstiger |
+| Bergungsprofi | +0,10 bei Bergungen und Großunfällen |
+| wird schnell müde | Müdigkeit steigt 50 % schneller, dafür niedrigeres Gehalt |
+| ruhig unter Druck | kein Abzug bei dringenden Einsätzen |
+| Kundenliebling | +1 Stern bei gelungenem Einsatz |
+
+Darstellung: Mitarbeiterkarte zeigt Stärke (grünes Symbol), Schwäche (rotes Symbol) und die Besonderheit als goldene Kapsel mit Kurztext. Keine Talentbäume. Erfahrung pro Einsatz in der genutzten Fähigkeit; alle 3 Stufen +1 auf einen Wert nach Wahl (eine Karte, ein Tipp). Führerscheine per Schulung im Tab Personal (Geld + eine Schicht). Neue Bewerber kommen alle paar Tage mit zufälliger, aber sichtbarer Kombination.
 
 **(5) Fahrzeugklassen**
 
@@ -172,8 +312,9 @@ Ruf 0–100 aus Ø Sternen, Pünktlichkeit und Vertragserfüllung. Ruf öffnet G
 **(10) Betriebshof mit begrenzten Stellplätzen**
 
 ```swift
-enum SizeClass: String, Codable { case car, van, truck, bus }   // Platzbedarf: car 1, van 2, truck 4, bus 4 Einheiten
-struct Depot: Codable { var capacityUnits: Int; var level: Int; var stored: [StoredVehicle] }
+enum SizeClass: String, Codable { case car, van, truck, bus }   // [R4] Platzbedarf: car 1, van 2, truck 5, bus 6 Einheiten
+struct Depot: Codable { var capacityUnits: Int; var level: Int; var stored: [StoredVehicle]
+  var dailyCosts: DepotCosts }   // [R4] Platz, Verwaltung, Sicherheit
 struct StoredVehicle: Codable {
   var id: UUID; var size: SizeClass; var model: GenericModel; var plate: String?  // fiktive Kennzeichen
   var reason: StorageReason   // .breakdown, .accident, .policeSeizure, .privateTow, .unpaidRepair, .abandoned, .purchased
@@ -183,21 +324,37 @@ struct StoredVehicle: Codable {
   var legalCase: LegalCase?      // Teil 4
 }
 ```
-Betriebshof ist ein eigenes Gebäudeteil an der Zentrale (sichtbar wachsend, UI-Vorgabe Teil 12). Stufen: 6 → 12 → 20 → 32 → 48 Einheiten. Ist er voll, kann kein weiteres Fahrzeug eingelagert werden; Abschleppaufträge gehen dann nur noch zu Partnern.
+Betriebshof ist ein eigenes Gebäudeteil an der Zentrale (sichtbar wachsend, UI-Vorgabe Teil 12). Stufen: 6 → 12 → 20 → 32 → 48 Einheiten. Ist er voll, kann kein weiteres Fahrzeug eingelagert werden; Abschleppaufträge gehen dann nur noch zu Partnern (bringt 40 % weniger).
+
+**[R4] Kosten, damit der Hof keine Gelddruckmaschine wird** (Startwerte pro Spieltag):
+
+| Kostenart | Wert | läuft |
+|---|---|---|
+| Platz (Pacht, Unterhalt) | 4 € je **gebauter** Einheit | immer, auch wenn leer |
+| Sicherheit (Zaun, Licht, Kamera, Versicherung) | 20 / 40 / 70 / 110 / 160 € je Hofstufe | immer |
+| Verwaltung | 3 € je eingelagertem Fahrzeug | solange es steht |
+
+Einnahmen: Standgebühr pro Fahrzeug (Teil 11) nur bis zum Herausgabeverlangen; Polizei-Verwahrung 20 €/Tag von der Behörde (nur mit Vertrag, begrenzt auf 6 Fahrzeuge gleichzeitig).
+
+**Nachgerechnet (Hofstufe 2, 12 Einheiten, Ø 8 Pkw, Gebühr läuft im Schnitt 2 von 4 Standtagen):**
+Einnahmen 8 × 15 € × ½ = 60 € · Kosten 12 × 4 € + 40 € + 8 × 3 € = 112 € · **Saldo −52 €/Tag.**
+Gut geführt mit Polizeivertrag (Stufe 3, 20 Einheiten, 6 Polizei- + 8 Privat-Pkw): 120 € + 60 € − (80 € + 70 € + 42 €) = **−12 €/Tag.**
+Ein Lkw (5 Einheiten, 40 €/Tag Gebühr) bringt 8 € je Einheit statt 15 €, ein nicht abgeholtes Auto belegt Platz ohne Einnahme und kostet 7 € am Tag.
+Der Hof verdient also **nicht von allein**. Er lohnt sich nur, weil er Abschleppaufträge mit voller Bezahlung (120–400 €) und später Verträge, Kaufangebote und Auktionen möglich macht. Ein voller Hof mit Dauerstehern ist ein spürbares Problem, das der Spieler über Halterkontakt und Frist lösen muss.
 
 **(11) Tägliche Standgebühren**
 
-Startwerte pro Tag: Pkw 15 € · Transporter 20 € · Lkw/Bus 40 €. Gebühren laufen **bis zum Herausgabeverlangen des Halters** (siehe Teil 4, BGH V ZR 192/22). Danach laufen keine Gebühren mehr, auch wenn er das Fahrzeug erst später holt; der Platz bleibt aber belegt. Das macht volle Höfe zu einer echten Entscheidung.
+Startwerte pro Tag: Pkw 15 € · Transporter 20 € · Lkw/Bus 40 € (pro Einheit weniger als beim Pkw, **[R4]**). Gebühren laufen **bis zum Herausgabeverlangen des Halters** (siehe Teil 4, BGH V ZR 192/22). Danach laufen keine Gebühren mehr, auch wenn er das Fahrzeug erst später holt; der Platz bleibt aber belegt. Das macht volle Höfe zu einer echten Entscheidung.
 
 **(12) Standzeiten und Platzbedarf**
 
-| Grund | Pkw | Transporter | Lkw/Bus | Standzeit (Spieltage) |
+| Grund | Pkw | Transporter | Lkw/Bus **[R4]** | Standzeit (Spieltage) |
 |---|---|---|---|---|
-| Panne, wartet auf Werkstatt | 1 | 2 | 4 | 1–3 |
-| Unfall, wartet auf Gutachter/Versicherung | 1 | 2 | 4 | 3–10 |
-| Polizeiliche Sicherstellung | 1 | 2 | 4 | 1–14, ca. 5 % nie abgeholt |
+| Panne, wartet auf Werkstatt | 1 | 2 | 5 / 6 | 1–3 |
+| Unfall, wartet auf Gutachter/Versicherung | 1 | 2 | 5 / 6 | 3–10 |
+| Polizeiliche Sicherstellung | 1 | 2 | 5 / 6 | 1–14, ca. 5 % nie abgeholt |
 | Privat abgeschleppter Falschparker | 1 | 2 | — | 0–2 |
-| Reparatur nicht bezahlt | 1 | 2 | 4 | bis Rechtsweg (Teil 4) |
+| Reparatur nicht bezahlt | 1 | 2 | 5 / 6 | bis Rechtsweg (Teil 4) |
 | Schrottfahrzeug ohne Kennzeichen | 1 | 2 | — | bis Entsorgung |
 
 **(13) Auktionen und Kaufangebote (rechtlich nachvollziehbar)**
@@ -230,48 +387,61 @@ struct CollectionCar: Codable {
 
 ---
 
-## 2. Freischaltreihenfolge (erste Welt, ca. 50–100 Stunden)
+## 2. Freischaltreihenfolge (erste Welt, ca. 300 Spieltage) **[R1]**
 
-Genau **eine neue Funktion pro Stufe**. Freischaltung zeigt eine einzige Karte: was neu ist, ein Satz, „Los geht’s“. Auslöser sind Geld, Ruf, erledigte Einsätze oder Spieltag; alle Bedingungen einer Stufe müssen erfüllt sein. Kosten werden erst beim Bestätigen abgezogen.
+Genau **eine neue Funktion pro Stufe**. Freischaltung zeigt eine einzige Karte (Auto-Pause): was neu ist, ein Satz, „Los geht’s“. Auslöser sind Geld, Ruf, erledigte Einsätze oder Spieltag; alle Bedingungen einer Stufe müssen erfüllt sein. Kosten werden erst beim Bestätigen abgezogen. Spieltag und Stunde sind **Zielwerte fürs Ausbalancieren** (Stunden bei 1×, 18 Min pro Tag).
 
-| Stufe | ca. Stunde | Auslöser | Neue Funktion | Punkt |
-|---|---|---|---|---|
-| 0 | 0 | Spielstart | Kernspiel (Version 1 mit den 8 Pflichtpunkten) | – |
-| 1 | 1 | 15 Einsätze | **Wetter** auf der Karte, beeinflusst Fahrt und Arbeit | 1 |
-| 2 | 2,5 | 30 Einsätze | **Erfahrung und Stufen** für Mitarbeiter | 4 |
-| 3 | 4 | Ruf 20 | **Mehrere Ausgänge** (Abschleppen statt Reparatur, Kunde weg …) | 2 |
-| 4 | 6 | Spieltag 50 | **Unternehmensziele** (immer 3 aktiv) | 9 |
-| 5 | 8 | 60 Einsätze, 8.000 € | **Betriebshof** mit 6 Einheiten und **Standgebühren** | 10, 11 |
-| 6 | 11 | Ruf 30 | **Standzeiten und Platzbedarf** (Pkw/Transporter unterscheiden) | 12 |
-| 7 | 14 | 15.000 € | **Gebiet Wohnviertel + Bahnhof** | 7 |
-| 8 | 17 | Ruf 35, 120 Einsätze | **Vertrag Werkstatt** | 8 |
-| 9 | 21 | 25.000 € | **Bergefahrzeug** + Bergungseinsätze | 5 |
-| 10 | 25 | Ruf 45 | **Gebiet Autobahn** + dringende Autobahn-Einsätze | 3, 7 |
-| 11 | 30 | Betriebshof Stufe 2 | **Kaufangebote** von Haltern für abgestellte Fahrzeuge + **Sammlung** (Behalten/Verkaufen) | 13, 14 |
-| 12 | 35 | Ruf 50 | **Vertrag Polizei** (Sicherstellung, Verwahrung, Absicherung) | 8 |
-| 13 | 41 | Werkstatt Stufe 2 | **Restaurieren** in der Sammlung | 14 |
-| 14 | 48 | 60.000 €, Lkw-Führerschein bei einem Mitarbeiter | **Schwerlastabschlepper** + **Lkw-Einsätze**, Gebiet Gewerbegebiet | 5, 6, 7 |
-| 15 | 55 | Ruf 60 | **Vertrag Automobilclub** | 8 |
-| 16 | 63 | 300 Einsätze | **Öffentliche Versteigerungen** (Pfandverkauf eigener Forderungen, Behördenauktionen) | 13 |
-| 17 | 72 | 120.000 € | **Kranwagen** + **Bus-Einsätze**, Gebiet Industriehafen | 5, 6, 7 |
-| 18 | 82 | Ruf 75, alle Verträge Stufe 2 | **Großunfälle** (mehrere Teilaufträge) + Gebiet Land/Vororte | 6, 7 |
-| Ziel | 90–100 | Ruf 90, alle Gebiete | Endziel der ersten Welt: „Größte Pannenhilfe der Region“ mit großer Autobahnbergung als Abschluss-Einsatz | – |
+| Stufe | Spieltag | ca. Stunde | Auslöser | Neue Funktion | Punkt |
+|---|---|---|---|---|---|
+| 0 | 1 | 0 | Spielstart | Kernspiel (Version 1 mit den 8 Pflichtpunkten) | – |
+| 1 | 4 | 1 | 15 Einsätze | **Wetter** auf der Karte, beeinflusst Fahrt und Arbeit | 1 |
+| 2 | 8 | 2,5 | 35 Einsätze | **Erfahrung und Stufen** für Mitarbeiter | 4 |
+| 3 | 14 | 4 | Ruf 20 | **Sichtbare Ausgänge** mit Faktoren (Teil 1.3 (2)) | 2 |
+| 4 | 22 | 6,5 | Spieltag 22 | **Unternehmensziele** (immer 3 aktiv) + Verlauf | 9 |
+| 5 | 32 | 9,5 | 100 Einsätze, 8.000 € | **Betriebshof** mit Kosten und **Standgebühren** | 10, 11 |
+| 6 | 44 | 13 | Ruf 30 | **Standzeiten und Platzbedarf** (Pkw/Transporter) | 12 |
+| 7 | 58 | 17 | 15.000 € | **Gebiet Wohnviertel + Bahnhof** | 7 |
+| 8 | 72 | 21,5 | Ruf 35, 220 Einsätze | **Vertrag Werkstatt** | 8 |
+| 9 | 88 | 26 | 25.000 € | **Bergefahrzeug** + Bergungseinsätze | 5 |
+| 10 | 104 | 31 | Ruf 45 | **Gebiet Autobahn** + dringende Autobahn-Einsätze | 3, 7 |
+| 11 | 122 | 36,5 | Betriebshof Stufe 2 | **Kaufangebote** + **Sammlung** (Behalten/Verkaufen) | 13, 14 |
+| 12 | 140 | 42 | Ruf 50 | **Vertrag Polizei** (Sicherstellung, Verwahrung, Absicherung) | 8 |
+| 13 | 158 | 47,5 | Werkstatt Stufe 2 | **Restaurieren** in der Sammlung | 14 |
+| 14 | 178 | 53 | 60.000 €, Lkw-Führerschein bei einem Mitarbeiter | **Schwerlastabschlepper** + **Lkw-Einsätze**, Gebiet Gewerbegebiet | 5, 6, 7 |
+| 15 | 198 | 59,5 | Ruf 60 | **Vertrag Automobilclub** | 8 |
+| 16 | 218 | 65,5 | 550 Einsätze | **Offizielle Auktionen** (Pfandverkauf, Behördenauktion) | 13 |
+| 17 | 240 | 72 | 120.000 € | **Kranwagen** + **Bus-Einsätze**, Gebiet Industriehafen | 5, 6, 7 |
+| 18 | 262 | 78,5 | Ruf 75, alle Verträge Stufe 2 | **Großunfälle** (Teilaufträge) + Gebiet Land/Vororte | 6, 7 |
+| Ziel | 290–330 | 87–99 | Ruf 90, alle Gebiete | Endziel „Größte Pannenhilfe der Region“ mit großer Autobahnbergung; danach Ausblick „Neue Region folgt mit einem späteren Update“ **[R7]** | – |
 
-**Ausführliche Statistik** (Punkt 9) kommt ohne eigene Stufe mit Stufe 4 als Knopf „Verlauf“ in der Tagesabrechnung, weil sie nichts Neues zu bedienen verlangt.
+Bremse für den Einstieg: In den ersten 10 Spieltagen nie mehr als 4 gleichzeitige Einsätze und kein Wetter schlimmer als Regen.
 
-Bremse für den Einstieg: In den ersten 2 Stunden gibt es nie mehr als 4 gleichzeitige Einsätze und kein Wetter schlimmer als Regen.
+## 2a. Taktplan gegen Wiederholung **[R8]**
 
----
+Regel: **Spätestens alle 8 Spieltage (ca. 2½ Stunden) kommt etwas Neues**: eine Stufe aus Teil 2 oder eine neue Einsatzvariante. Keine Einsatzart läuft länger als 20 Spieltage ohne neue Variante. Varianten sind neue Inhalte innerhalb bekannter Abläufe, kein neues System.
+
+| Spieltage | Neues System (Teil 2) | Neue Einsatzvarianten | Mehr Verantwortung |
+|---|---|---|---|
+| 1–20 | Wetter, Erfahrung, sichtbare Ausgänge | Kind/Hund im abgeschlossenen Auto (dringend) · E-Auto ohne Akku · Wohnmobil-Panne · Motorrad | 2 → 3 Mitarbeiter, erster Bewerber |
+| 21–50 | Ziele, Betriebshof | Unfall mit Gutachter-Wartezeit · Anhänger-Panne · Falschparker im Privatauftrag | Hof verwalten, Standgebühren |
+| 51–90 | Standzeiten, Wohnviertel+Bahnhof, Werkstatt-Vertrag, Bergefahrzeug | Taxi am Bahnhof (schnell, gute Sterne) · Lieferwagen mit Ware (Zeitdruck) · Fahrzeug im Graben · Tiefgarage (enge Zufahrt) | erster Vertrag mit Pünktlichkeitsquote, 4–5 Fahrzeuge |
+| 91–140 | Autobahn, Kaufangebote+Sammlung, Polizei | Pannenstreifen nachts · Unfall mit Absicherung · Sicherstellung nach Kontrolle · Oldtimer-Panne (Sammler-Kontakt) | Nachtdienst, Schichtplan für 6–8 Mitarbeiter, Polizei-Zeitlimits |
+| 141–200 | Restaurieren, Schwerlast+Lkw, Automobilclub | Lkw mit Reifenschaden · Sattelzug blockiert Kreuzung · Club-Serienpannen bei Hitze/Kälte · Baustellenfahrzeug | zwei Standorte im Hof, 10+ Mitarbeiter, Club-Reaktionszeiten |
+| 201–260 | Offizielle Auktionen, Kranwagen+Bus | Linienbus liegengeblieben (Fahrgäste warten) · Reisebus auf Autobahn · umgestürzter Transporter · Hafen-Container-Lkw | Großaufträge mit 2–3 Fahrzeugen, Auktionen bewerten |
+| 261–330 | Großunfälle, Land/Vororte, Endziel | Massenkarambolage bei Nebel · Glatteis-Welle (viele kleine Einsätze) · Landstraße weit draußen · große Autobahnbergung (Finale) | 4 Fahrzeuge gleichzeitig koordinieren, ganze Region |
+
+Zusätzlich wechselnde Wetterwochen (Herbstregen, Wintereinbruch) ab Spieltag 60, je 5–7 Tage, mit eigener Einsatzmischung.
 
 ## 3. UI-Ablauf (keine neue Menüstruktur)
 
 | System | Auf der Karte | Im Panel / Tab |
 |---|---|---|
+| **Zeitsteuerung [R2]** | kleine Leiste oben links unter der Kopfleiste: ⏸ · 1× · 2× · 4× (aktive Stufe gold); bei Auto-Pause ein Banner „Pausiert: dringender Einsatz“ mit Knopf „Weiter“ | Einstellungen (Zahnrad): Auto-Pause je Grund |
 | Einsatzdauer | Route, Ankunftszeit an der Plakette | Panel 00b: „Ankunft 3:10 · Arbeit ca. 6 Min“ |
 | Wetter | Regen-/Schnee-/Nebel-Effekt über der ganzen Karte, Glatteis-Straßen glänzen | kleines Wettersymbol in der Kopfleiste neben Geld |
-| Ausgänge | Ergebnis-Symbol am Marker (Haken, Haken + Haken-Symbol für Abschleppen, X) | Einsatzbericht nennt den Ausgang in einem Satz |
+| Ausgänge **[R3]** | Ergebnis-Symbol am Marker (Haken, Haken + Haken-Symbol für Abschleppen, X) | Panel 00b: Chance-Wort + bis zu 2 Hinweise; Einsatzbericht: 5 Faktor-Zeilen mit Plus/Minus |
 | Autobahn-Einsätze | rote Marker mit blinkendem Rand auf der Autobahn, Sirene-Ton | Panel 00b mit „Dringend“-Kapsel und Zielzeit |
-| Mitarbeiter-Erfahrung | Stufen-Zahl auf der Fahrzeugplakette | Tab **Personal**: Karte pro Person mit 4 Werten, Stufe, Erfahrungsleiste, Führerscheine; „Stufe erreicht“-Karte |
+| Mitarbeiter **[R6]** | Stufen-Zahl auf der Fahrzeugplakette, Mond-Symbol bei Nachteulen nachts | Tab **Personal**: Karte pro Person mit 4 Werten, Stärke (grün), Schwäche (rot), Besonderheit (goldene Kapsel), Stufe, Müdigkeit, Führerscheine |
 | Fahrzeugklassen | eigene 3D-Modelle, gelb-schwarz | Tab **Flotte**: Karten nach Klasse, Kauf bei freiem Stellplatz |
 | Lkw/Bus/Großunfall | großer Marker mit Zähler „0/4“, mehrere Routen gleichzeitig | Panel 00b zeigt Teilaufträge als Reihe kleiner Karten, je ein Fahrzeug zuteilen |
 | Gebiete | gesperrt = abgedunkelt mit Schild; Freischalten = Kamera fährt hin, Lichter gehen an | Antippen des Schilds: Kosten, Ruf, Knopf „Freischalten“ |
@@ -279,9 +449,10 @@ Bremse für den Einstieg: In den ersten 2 Stunden gibt es nie mehr als 4 gleichz
 | Ruf | — | Stern-Kapsel in der Kopfleiste zeigt Ø Sterne; Antippen: Ruf 0–100 als Leiste + was der nächste Ruf freischaltet |
 | Ziele | — | 3 kleine Zielkarten, einklappbar am rechten Kartenrand |
 | Statistik | — | Tagesabrechnung → „Verlauf“ |
-| Betriebshof | eigenes Gebäudeteil, abgestellte Fahrzeuge stehen sichtbar auf dem Hof | Tab **Zentrale**: Karte „Betriebshof“ (wie Garage/Werkstatt/Leitstelle) mit Belegung „14/20“, Liste der Fahrzeuge mit Grund, Tagen, Gebühren, Status |
+| Betriebshof **[R4]** | eigenes Gebäudeteil, abgestellte Fahrzeuge stehen sichtbar auf dem Hof, Dauersteher grau markiert | Tab **Zentrale**: Karte „Betriebshof“ mit Belegung „14/20 Einheiten“ und **Tagessaldo** (Gebühren − Kosten, grün/rot), Liste der Fahrzeuge |
 | Standgebühren | Münz-Symbol über lange stehenden Fahrzeugen | Tagesabrechnung: Zeile „Standgebühren“ |
-| Kaufangebote/Auktionen | Hammer-Symbol über dem betroffenen Fahrzeug im Hof | Antippen: Angebot mit Preis, Zustand, Rechtsgrund in einem Satz, „Kaufen“ bzw. „Bieten“ |
+| Halter/Frist/Auktion **[R5]** | Countdown-Ring über dem Fahrzeug im Hof, Hammer-Symbol bei Auktion | Antippen: 3 Schritte als Leiste (Kontakt · Frist · Ergebnis), Knopf „Halter kontaktieren“, später „Kaufen“ bzw. „Bieten“; „i“ für den Zeitstrahl |
+| Welt-Ausblick **[R7]** | abgedunkelte Region am Kartenrand mit Schild „Neue Region folgt mit einem späteren Update“ | Antippen: was mitkommt |
 | Sammlung | Schauhalle an der Zentrale, Fahrzeuge sichtbar ausgestellt | Tab **Zentrale** → Karte „Sammlung“: Behalten / Restaurieren / Verkaufen |
 
 Neue Zentrale-Karten (Betriebshof, Sammlung) erscheinen erst mit ihrer Stufe und reihen sich hinter Garage, Werkstatt, Leitstelle ein (seitlich wischen, UI-Vorgabe 00c).
@@ -303,6 +474,16 @@ Neue Zentrale-Karten (Betriebshof, Sammlung) erscheinen erst mit ihrer Stufe und
 
 ### 4.2 Umsetzung im Spiel
 
+**[R5] Für den Spieler gibt es nur drei Schritte:**
+
+1. **Halter kontaktieren**: ein Knopf am Fahrzeug im Hof. Die Simulation erledigt im Hintergrund Halterauskunft und Anschreiben.
+2. **Frist läuft**: ein Countdown-Ring am Fahrzeug (z. B. „noch 5 Tage“). Im Hintergrund laufen Mahnung, Androhung und Wartefrist automatisch nacheinander.
+3. **Abholung, Verkauf oder offizielle Auktion**: Das Ergebnis erscheint von selbst: Halter holt ab und zahlt, Halter bietet das Fahrzeug zum Kauf an, oder es kommt zur offiziellen Auktion (Versteigerer bzw. Behörde), bei der der Spieler mitbieten kann.
+
+Wer mehr wissen will, tippt auf ein kleines „i“: Dann zeigt ein Zeitstrahl die echten Schritte aus der Tabelle unten. Bedienen muss man dort nichts.
+
+Intern:
+
 Jedes Fahrzeug im Betriebshof hat einen `LegalCase`:
 
 ```swift
@@ -315,10 +496,10 @@ struct LegalCase: Codable {
 }
 ```
 
-| Fall | Schritte im Spiel (Fristen gestaucht: 1 Monat = 7 Spieltage) | Was der Spieler tun kann |
+| Fall | Schritte intern (Fristen gestaucht: 1 Monat = 5 Spieltage) | Was der Spieler tun kann |
 |---|---|---|
 | **A Panne/Unfall, Halter bekannt** | Gebühren laufen → Halter meldet sich (Herausgabeverlangen, Gebühren stoppen) → Abholung | Warten. Manchmal **Kaufangebot**: Halter bietet das Fahrzeug an (Reparatur lohnt sich nicht) → Kaufen oder Ablehnen |
-| **B Reparatur nicht bezahlt** | Forderung offen → 1) Halter ermitteln (§ 39 StVG, kleine Gebühr, 1 Tag) → 2) Mahnung, 3 Tage → 3) **Verkauf androhen** mit Betrag → 4) **7 Spieltage Wartefrist** → 5) **öffentliche Versteigerung** durch Versteigerer (Gebühr) → Erlös: Forderung an Spieler, Rest „an den Eigentümer“ (im Bericht ausgewiesen) | Jeden Schritt per Knopf anstoßen; bei der Versteigerung **mitbieten** wie jeder andere Bieter; Halter kann bis zur Versteigerung zahlen und abholen |
+| **B Reparatur nicht bezahlt** | Forderung offen → 1) Halter ermitteln (§ 39 StVG, kleine Gebühr, 1 Tag) → 2) Mahnung, 2 Tage → 3) **Verkauf androhen** mit Betrag → 4) **5 Spieltage Wartefrist** (= 1 Monat) → 5) **öffentliche Versteigerung** durch Versteigerer (Gebühr) → Erlös: Forderung an Spieler, Rest „an den Eigentümer“ (im Bericht ausgewiesen) | Nur „Halter kontaktieren“ **[R5]**; der Rest läuft automatisch; bei der Versteigerung **mitbieten** wie jeder andere Bieter; Halter kann bis zur Versteigerung zahlen und abholen |
 | **C Polizeiliche Sicherstellung** (Vertrag Polizei) | Spieler verwahrt im Auftrag, Behörde zahlt Verwahrung → Abholung durch Halter oder, wenn nicht abgeholt, **Behörde verwertet**: Behördenauktion | Gebühren werden von der Behörde bezahlt. Bei der **Behördenauktion** mitbieten; der Spieler verkauft nie selbst |
 | **D Privat abgeschleppter Falschparker** | Gebühren laufen nur bis Herausgabeverlangen (BGH) → Halter zahlt Abschleppen + Gebühren bis dahin → Abholung | Nichts verkaufen. Wer zahlt nicht, wird über Fall B geführt, wenn eine Werkleistung offen ist; sonst bleibt nur die Forderung |
 | **E Schrottfahrzeug ohne Kennzeichen** (Auftrag Stadt) | Abholung im Auftrag → Entsorgung beim Verwerter | Auftrag ausführen, Bezahlung von der Stadt. Kein Behalten, keine Sammlung |
@@ -347,7 +528,7 @@ Plan-Nummern E1–E19. Die echte Versionsnummer und Build-Nummer vergibt der Mac
 
 | Update | Inhalt | Abnahme | Screenshots |
 |---|---|---|---|
-| **E1 Fundament** | `schemaVersion`, Migration, Simulationstakt, Freischaltstufen-System (Stufe 0), Seed-Tests; nichts Neues sichtbar | Alter Spielstand lädt, neuer Stand speichert v2; defekter Stand → sauberer Neustart; Spiel sieht aus wie vorher | Karte unverändert, Freischalt-Testkarte |
+| **E1 Fundament** (siehe 5a) | Profil + Weltstand mit `worldId`, `schemaVersion` + Migration, Spieltag 18 Min, Simulation in festen Spielminuten, **Zeitsteuerung ⏸/1×/2×/4× mit Auto-Pause**, Freischaltsystem (nur Stufe 0), Seed-Tests | siehe 5a | siehe 5a |
 | **E2 Wetter + Dauer** (Stufe 1) | Wetter, Verkehrsfaktoren, Dauerformel, A*-Route über Stau | Regen verlängert sichtbar Fahrt; Route weicht Stau aus; Anzeige stimmt mit tatsächlicher Dauer ±10 % | Karte bei Regen, Panel mit Ankunft/Arbeit, Umweg um Stau |
 | **E3 Erfahrung** (Stufe 2) | XP, Stufen, Wertwahl alle 3 Stufen | Nach Einsätzen steigt XP in der genutzten Fähigkeit; Stufenkarte erscheint; Wert wirkt auf Dauer | Personal-Tab, Stufe-erreicht-Karte |
 | **E4 Ausgänge** (Stufe 3) | Outcome-Würfel, „gute Chance/riskant“, Berichte | Alle 7 Ausgänge mit festem Seed auslösbar, Geld/Sterne korrekt | Panel mit Chance-Wort, 3 Berichte mit unterschiedlichem Ausgang |
@@ -365,13 +546,35 @@ Plan-Nummern E1–E19. Die echte Versionsnummer und Build-Nummer vergibt der Mac
 | **E16 Automobilclub** (Stufe 15) | dritter Vertrag | Viele kurze Einsätze, fester Satz | Club-Station |
 | **E17 Versteigerungen** (Stufe 16) | LegalCase Fall B komplett, Behördenauktion Fall C, Bieten | Auktion entsteht nur nach allen Schritten; Erlösverteilung korrekt; Halter kann vorher zahlen | Zeitstrahl LegalCase, Auktion, Erlösbericht |
 | **E18 Kranwagen + Bus** (Stufe 17) | Klasse `crane`, Bus-Einsätze, Industriehafen | Umgestürztes Fahrzeug nur mit Kran | Kraneinsatz, Hafen |
-| **E19 Großunfälle + Land** (Stufe 18) | SubTasks, Großunfall-Marker, Gebiet Land/Vororte, Endziel | 4 Teilaufträge parallel, Bezahlung am Ende; Endziel-Einsatz | Großunfall mit 4 Routen, Endziel-Karte |
+| **E19 Großunfälle + Land** (Stufe 18) | SubTasks, Großunfall-Marker, Gebiet Land/Vororte, Endziel, Ausblick „Neue Region folgt“ **[R7]** | 4 Teilaufträge parallel, Bezahlung am Ende; Endziel-Einsatz | Großunfall mit 4 Routen, Endziel-Karte |
 
-Reihenfolge ist verbindlich, Inhalte eines Updates werden nicht vorgezogen. Nach jedem Update: TestFlight, Screenshots, Julian testet, dann das nächste.
+Reihenfolge ist verbindlich, Inhalte eines Updates werden nicht vorgezogen. Jedes Update bringt neben seiner Funktion die Einsatzvarianten seines Spieltag-Bereichs aus Teil 2a mit **[R8]**.
+
+### 5a. E1 genau (als Nächstes umsetzen, sonst nichts)
+
+**Inhalt**
+1. **Spielstand neu aufteilen [R7]:** `profile.json` (Profil, Einstellungen, CarryOver leer) und `world-welt1-heimatstadt.json` (Weltstand). Bestehenden Spielstand automatisch in diese Form migrieren (`schemaVersion` 1 → 2). `WorldDefinition` für Welt 1 als statische Daten; der bisherige Kartenaufbau wird daraus geladen.
+2. **Versionierung:** `schemaVersion`, schrittweise `migrate(from:)`, neue Felder mit Standardwerten. Defekter oder unbekannter Stand → Kopie als `save-defekt-<datum>.json`, dann sauberer Neustart mit kurzem Hinweis.
+3. **Spieltag 18 Minuten [R1]:** Spieluhr 06:00–22:00, Tagesabrechnung am Tagesende wie bisher.
+4. **Simulationstakt:** feste Spielminuten-Schritte, getrennt von der Darstellung; 2× und 4× rechnen mehrere Schritte pro Takt.
+5. **Zeitsteuerung [R2]:** Leiste ⏸ · 1× · 2× · 4× oben links unter der Kopfleiste. Auto-Pause bei dringendem Einsatz, Sonderentscheidung, Tagesende (Freischaltung folgt ab E2). Banner „Pausiert: …“ mit „Weiter“, danach alte Geschwindigkeit. App im Hintergrund = Pause. Einstellung Auto-Pause je Grund.
+6. **Freischaltsystem:** `unlockedStage`, `StageDefinition` mit Auslösern; in E1 nur Stufe 0 aktiv, Stufe 1 als Testeintrag im Debug-Menü.
+7. **Tests:** Simulation mit festem Seed: gleicher Seed + gleiche Eingaben = gleicher Spielstand nach 3 Spieltagen, bei 1× und bei 4× identisch. Migrationstest mit einem echten Spielstand der aktuellen Version.
+
+**Nicht in E1:** Wetter, Ausgangsformel, Persönlichkeiten, Betriebshof, Gebiete, alles ab E2.
+
+**Abnahme**
+- Bestehender Spielstand lädt ohne Verlust (Geld, Fahrzeuge, Mitarbeiter, Ausbauten) und liegt danach als Profil + Weltstand v2 vor.
+- Absichtlich kaputter Spielstand → kein Absturz, sauberer Neustart, Kopie vorhanden.
+- Ein Spieltag dauert bei 1× 18 Minuten (±10 s), bei 2× 9, bei 4× 4½ Minuten.
+- ⏸/1×/2×/4× funktionieren jederzeit; Fahrzeuge bewegen sich bei 4× flüssig auf der Route, ohne Springen.
+- Dringender Einsatz und Sonderentscheidung pausieren automatisch; „Weiter“ setzt die vorige Geschwindigkeit fort.
+- Seed-Test grün, Projekt ohne Warnungen, sonst sieht das Spiel aus wie vorher.
+
+**Screenshots:** Karte mit Zeitsteuerung (1× aktiv) · Karte bei 4× mit fahrenden Fahrzeugen · Auto-Pause-Banner bei dringendem Einsatz · Einstellungen Auto-Pause · Hinweis nach Neustart wegen defektem Stand. Nach jedem Update: TestFlight, Screenshots, Julian testet, dann das nächste.
 
 ---
 
 ## 6. Offen bei Julian
 
-- Ob die Spielzeit-Stauchung (1 Monat = 7 Spieltage) so passt.
-- Startwerte für Gebühren und Freischaltkosten nach dem ersten Test.
+- Startwerte (Gebühren, Hofkosten, Freischaltkosten, 18 Minuten) nach den ersten Tests feinjustieren.
