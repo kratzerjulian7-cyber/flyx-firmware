@@ -1,6 +1,6 @@
-# Vaultoria – Erweiterungsplan Pannenhilfe 1.1 (freigegeben, Umsetzung ab E1)
+# Vaultoria – Erweiterungsplan Pannenhilfe 1.2 (freigegeben, Umsetzung ab E1)
 
-Stand 14.10.2026, 13:45 (**1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
+Stand 14.10.2026, 14:15 (**1.2: Teil 7 Abgleich mit dem Code vom Mac übernommen; wo der Code abweicht, gilt Teil 7. Spielstand der App: Vaultoria 1.4, Build 202610141306, auf TestFlight, mit Optik-Angleichung und Kenney-Stadt.** 1.1 13:45: **1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
 
 ## Julians Auftrag (wörtlich, 14.10.2026 12:57)
 
@@ -159,10 +159,10 @@ struct GameClock { var speed: GameSpeed; var pauseQueue: [AutoPauseReason]
   mutating func tick(realSeconds: Double) -> Int   // liefert vergangene Spielminuten (1 Spielminute = 1,125 s bei 1×)
 }
 ```
-- Auto-Pause bei: neuem dringenden Einsatz (Autobahn, Polizei, Countdown < 2 Min), Sonderentscheidung, Freischaltung, Tagesende. Nicht bei normalen Einsätzen.
+- Auto-Pause bei: neuem dringenden Einsatz (`urgent`; Countdown unter 2 Spielminuten erst ab E11, Teil 7), Sonderentscheidung, Freischaltung, Tagesende. Nicht bei normalen Einsätzen.
 - Nach Auto-Pause geht es mit der vorherigen Geschwindigkeit weiter, sobald der Spieler das Fenster schließt oder „Weiter“ tippt.
 - Einstellungen: Auto-Pause je Grund an/aus (Standard: alle an).
-- Die Simulation läuft in festen Spielminuten-Schritten; 4× rechnet 4 Schritte pro Takt, damit Ergebnisse bei jeder Geschwindigkeit gleich sind.
+- Die Simulation läuft in festen Schritten von **1/10 Spielminute** (Teil 7); 4× rechnet 4 Schritte pro Takt, damit Ergebnisse bei jeder Geschwindigkeit gleich sind.
 - App im Hintergrund: Spiel pausiert, keine Simulation offline.
 
 - Neue Felder sind immer **optional oder mit Standardwert** (`decodeIfPresent ?? Standard`), damit alte Stände laden.
@@ -553,18 +553,19 @@ Reihenfolge ist verbindlich, Inhalte eines Updates werden nicht vorgezogen. Jede
 ### 5a. E1 genau (als Nächstes umsetzen, sonst nichts)
 
 **Inhalt**
-1. **Spielstand neu aufteilen [R7]:** `profile.json` (Profil, Einstellungen, CarryOver leer) und `world-welt1-heimatstadt.json` (Weltstand). Bestehenden Spielstand automatisch in diese Form migrieren (`schemaVersion` 1 → 2). `WorldDefinition` für Welt 1 als statische Daten; der bisherige Kartenaufbau wird daraus geladen.
+1. **Spielstand neu aufteilen [R7]:** `profile.json` (Profil, Einstellungen, CarryOver leer) und `world-welt1-heimatstadt.json` (Weltstand). Bestehenden Spielstand automatisch in diese Form migrieren (**Schema 2 → 3**, Teil 7; alte Datei bleibt als `…-v2-backup.json`). `WorldDefinition` für Welt 1 als statische Daten; der bisherige Kartenaufbau wird daraus geladen.
 2. **Versionierung:** `schemaVersion`, schrittweise `migrate(from:)`, neue Felder mit Standardwerten. Defekter oder unbekannter Stand → Kopie als `save-defekt-<datum>.json`, dann sauberer Neustart mit kurzem Hinweis.
 3. **Spieltag 18 Minuten [R1]:** Spieluhr 06:00–22:00, Tagesabrechnung am Tagesende wie bisher.
-4. **Simulationstakt:** feste Spielminuten-Schritte, getrennt von der Darstellung; 2× und 4× rechnen mehrere Schritte pro Takt.
+4. **Simulationstakt:** feste Schritte von 1/10 Spielminute (Teil 7), getrennt von der Darstellung; 2× und 4× rechnen mehrere Schritte pro Takt.
 5. **Zeitsteuerung [R2]:** Leiste ⏸ · 1× · 2× · 4× oben links unter der Kopfleiste. Auto-Pause bei dringendem Einsatz, Sonderentscheidung, Tagesende (Freischaltung folgt ab E2). Banner „Pausiert: …“ mit „Weiter“, danach alte Geschwindigkeit. App im Hintergrund = Pause. Einstellung Auto-Pause je Grund.
-6. **Freischaltsystem:** `unlockedStage`, `StageDefinition` mit Auslösern; in E1 nur Stufe 0 aktiv, Stufe 1 als Testeintrag im Debug-Menü.
+6. **Freischaltsystem:** `unlockedStage`, `StageDefinition` mit Auslösern; in E1 nur Stufe 0 aktiv, Stufe 1 als Testeintrag im Debug-Menü. Die bisherige Viertel-Freischaltung bleibt bis E8 unverändert (Teil 7).
+8. **Löhne ×3,6** zum 18-Minuten-Tag (Teil 7), Feinjustierung per Bot-Test über 3 Spieltage.
 7. **Tests:** Simulation mit festem Seed: gleicher Seed + gleiche Eingaben = gleicher Spielstand nach 3 Spieltagen, bei 1× und bei 4× identisch. Migrationstest mit einem echten Spielstand der aktuellen Version.
 
 **Nicht in E1:** Wetter, Ausgangsformel, Persönlichkeiten, Betriebshof, Gebiete, alles ab E2.
 
 **Abnahme**
-- Bestehender Spielstand lädt ohne Verlust (Geld, Fahrzeuge, Mitarbeiter, Ausbauten) und liegt danach als Profil + Weltstand v2 vor.
+- Bestehender Spielstand lädt ohne Verlust (Geld, Fahrzeuge, Mitarbeiter, Ausbauten, Einsätze) und liegt danach als Profil + Weltstand Schema 3 vor.
 - Absichtlich kaputter Spielstand → kein Absturz, sauberer Neustart, Kopie vorhanden.
 - Ein Spieltag dauert bei 1× 18 Minuten (±10 s), bei 2× 9, bei 4× 4½ Minuten.
 - ⏸/1×/2×/4× funktionieren jederzeit; Fahrzeuge bewegen sich bei 4× flüssig auf der Route, ohne Springen.
@@ -578,3 +579,28 @@ Reihenfolge ist verbindlich, Inhalte eines Updates werden nicht vorgezogen. Jede
 ## 6. Offen bei Julian
 
 - Startwerte (Gebühren, Hofkosten, Freischaltkosten, 18 Minuten) nach den ersten Tests feinjustieren.
+
+---
+
+## 7. Abgleich mit dem echten Code (Mac, 14.10.2026, Stand Vaultoria 1.4)
+
+Wo der Code abweicht, gilt der Code. So setze ich den Plan um:
+
+| Plan | Code heute (Vaultoria/Tow/) | Umsetzung |
+|---|---|---|
+| `Mission`, `fleet`, `staff`, `economy.money` | `Job`, `vehicles`, `employees`, `TowState.money` | Die Code-Namen bleiben. Das Planmodell wird als Felder in `TowState` ergänzt, nicht umbenannt. Umbenennen würde jeden Spielstand brechen und bringt keinen sichtbaren Vorteil. |
+| `schemaVersion` 1 → 2 | `TowState.version` ist schon **2** (große Stadt) | E1 führt **Schema 3** ein (Profil + Weltstand). Die Migration v2 → v3 übernimmt Geld, Fahrzeuge, Mitarbeiter, Ausbauten und Einsätze. |
+| Datei `world-<id>.json` + `profile.json` | eine Datei `vaultoria-pannenhilfe.json` | E1: `profile.json` + `world-welt1-heimatstadt.json` in Application Support. Die alte Datei wird nach der Migration als `…-v2-backup.json` aufbewahrt. |
+| Simulation in festen Spielminuten | `Tow.tick(dt:)` in 0,1-s-Schritten, Uhr in Sekunden | Fester Schritt = **1/10 Spielminute** (0,1125 s bei 1×). Ganze Spielminuten würden Fahrzeuge springen lassen. 2× und 4× rechnen 2 bzw. 4 Schritte pro Takt. Der Seed-Test vergleicht 1× und 4×. |
+| Spieltag 18 Min, 06:00–22:00 | `dayLength = 300` s, 08:00–20:00 | `dayLength = 1080` s, Anzeige 06:00–22:00. Fahrzeug- und Arbeitszeiten bleiben in Echtzeit-Sekunden, die Fahrten fühlen sich also gleich an. |
+| Wirtschaft pro Tag | Löhne 110–120 €/Tag bei 5-Min-Tag | Ein Tag ist jetzt 3,6× so lang, darum steigen auch die Tageslöhne um den Faktor 3,6 (rund 400 €). Sonst würde Geld zu schnell wachsen. Feinjustierung über den Bot-Test (3 Spieltage). |
+| `unlockedStage` 0…18 | Viertel schalten heute über Ausbaustufen und 4 erledigte Einsätze frei | E1: `unlockedStage` = 0, `StageDefinition` angelegt, Verhalten unverändert. Die bisherige Viertel-Freischaltung wird in E8 in das Stufensystem überführt. Bis dahin bleibt sie, damit E1 „aussieht wie vorher“. |
+| `WorldDefinition` | `enum City` (16 × 20, Viertel, Fluss, Bahn, Autobahn) als statische Konstanten | `WorldDefinition.welt1` verweist auf `City`. Eine zweite Welt bekommt später eine eigene Definition. |
+| Auto-Pause bei dringendem Einsatz | Einsätze haben `urgent` | Auto-Pause, sobald ein neuer Einsatz mit `urgent` erscheint. Ein Countdown unter 2 Spielminuten pausiert erst ab E11. |
+| Sonderentscheidung pausiert | `decision != nil` hält die Simulation an | bleibt; zusätzlich zeigt das Banner den Grund |
+| Bestehende Entscheidung „Schaden größer als gemeldet“ | vorhanden | bleibt unverändert |
+| Ausgänge [R3] | heute: Reparaturchance = Fähigkeit + Werkstatt-Stufe | E4 baut darauf auf: Wert-Anteil ≥ 80 %, Zufall ≤ 20 %. |
+
+**Speicherorte:** Application Support/Vaultoria/profile.json und world-welt1-heimatstadt.json. Ein defekter Stand wird als `save-defekt-<Datum>.json` daneben gelegt.
+
+**Hinweis zu Ausgängen:** Die Formel in Teil 1.3 (2) (Werte 100 %, Glück höchstens ±0,08) liegt innerhalb der Grenze aus Teil 7 (Zufall ≤ 20 %) und gilt für E4.
