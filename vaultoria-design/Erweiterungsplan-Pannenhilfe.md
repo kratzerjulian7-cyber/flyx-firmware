@@ -1,6 +1,6 @@
-# Vaultoria – Erweiterungsplan Pannenhilfe 1.2 (freigegeben, Umsetzung ab E1)
+# Vaultoria – Erweiterungsplan Pannenhilfe 1.3 (freigegeben, E1 erledigt)
 
-Stand 14.10.2026, 14:15 (**1.2: Teil 7 Abgleich mit dem Code vom Mac übernommen; wo der Code abweicht, gilt Teil 7. Spielstand der App: Vaultoria 1.4, Build 202610141306, auf TestFlight, mit Optik-Angleichung und Kenney-Stadt.** 1.1 13:45: **1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
+Stand 14.10.2026, 14:00 (**1.3: E1 erledigt in Vaultoria 5.1, Build 202610141353, auf TestFlight; 17 Tests grün; Testbericht `/mnt/project-files/Testbericht.md`. Urteil Mac: Start mit 2 Wagen zu hektisch, Viertel öffnen zu schnell → Balancing in den nächsten Updates.** 1.2 14:15: **1.2: Teil 7 Abgleich mit dem Code vom Mac übernommen; wo der Code abweicht, gilt Teil 7. Spielstand der App: Vaultoria 1.4, Build 202610141306, auf TestFlight, mit Optik-Angleichung und Kenney-Stadt.** 1.1 13:45: **1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
 
 ## Julians Auftrag (wörtlich, 14.10.2026 12:57)
 
@@ -528,7 +528,7 @@ Plan-Nummern E1–E19. **App-Versionen ab 14.10.2026: nächster Build = Vaultori
 
 | Update | Inhalt | Abnahme | Screenshots |
 |---|---|---|---|
-| **E1 Fundament** (siehe 5a) | Profil + Weltstand mit `worldId`, `schemaVersion` + Migration, Spieltag 18 Min, Simulation in festen Spielminuten, **Zeitsteuerung ⏸/1×/2×/4× mit Auto-Pause**, Freischaltsystem (nur Stufe 0), Seed-Tests | siehe 5a | siehe 5a |
+| **E1 Fundament** (siehe 5a) **✓ erledigt in 5.1** | Profil + Weltstand mit `worldId`, `schemaVersion` + Migration, Spieltag 18 Min, Simulation in festen Spielminuten, **Zeitsteuerung ⏸/1×/2×/4× mit Auto-Pause**, Freischaltsystem (nur Stufe 0), Seed-Tests | siehe 5a | siehe 5a |
 | **E2 Wetter + Dauer** (Stufe 1) | Wetter, Verkehrsfaktoren, Dauerformel, A*-Route über Stau | Regen verlängert sichtbar Fahrt; Route weicht Stau aus; Anzeige stimmt mit tatsächlicher Dauer ±10 % | Karte bei Regen, Panel mit Ankunft/Arbeit, Umweg um Stau |
 | **E3 Erfahrung** (Stufe 2) | XP, Stufen, Wertwahl alle 3 Stufen | Nach Einsätzen steigt XP in der genutzten Fähigkeit; Stufenkarte erscheint; Wert wirkt auf Dauer | Personal-Tab, Stufe-erreicht-Karte |
 | **E4 Ausgänge** (Stufe 3) | Outcome-Würfel, „gute Chance/riskant“, Berichte | Alle 7 Ausgänge mit festem Seed auslösbar, Geld/Sterne korrekt | Panel mit Chance-Wort, 3 Berichte mit unterschiedlichem Ausgang |
@@ -550,7 +550,9 @@ Plan-Nummern E1–E19. **App-Versionen ab 14.10.2026: nächster Build = Vaultori
 
 Reihenfolge ist verbindlich, Inhalte eines Updates werden nicht vorgezogen. Jedes Update bringt neben seiner Funktion die Einsatzvarianten seines Spieltag-Bereichs aus Teil 2a mit **[R8]**.
 
-### 5a. E1 genau (als Nächstes umsetzen, sonst nichts)
+### 5a. E1 genau (**erledigt**)
+
+**Status 14.10.2026:** E1 komplett in Vaultoria 5.1 (Build 202610141353, TestFlight): Profil- und Weltstand, 18-Minuten-Tag, Zeitsteuerung mit Auto-Pause, 17 Tests grün. 5.1 enthält außerdem die Lesbarkeitspunkte aus UI-Vorgabe 000a. Testbericht: `/mnt/project-files/Testbericht.md`. Erkenntnis aus dem Test: Start mit 2 Wagen zu hektisch, Viertel öffnen zu schnell (die alte Viertel-Freischaltung läuft bis E8 weiter, Teil 7). Balancing folgt in den nächsten Updates; danach E2.
 
 **Inhalt**
 1. **Spielstand neu aufteilen [R7]:** `profile.json` (Profil, Einstellungen, CarryOver leer) und `world-welt1-heimatstadt.json` (Weltstand). Bestehenden Spielstand automatisch in diese Form migrieren (**Schema 2 → 3**, Teil 7; alte Datei bleibt als `…-v2-backup.json`). `WorldDefinition` für Welt 1 als statische Daten; der bisherige Kartenaufbau wird daraus geladen.
