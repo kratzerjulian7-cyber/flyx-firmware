@@ -1,8 +1,51 @@
-# Vaultoria – UI-Vorgabe Pannenhilfe 1.4 (verbindlich)
+# Vaultoria – UI-Vorgabe Pannenhilfe 2.0 (verbindlich)
 
-Stand 14.10.2026, 11:30 (**1.4: Teil 13 erste Version mit 8 Pflichtpunkten, Später-Liste, offene Konzeptbilder, Julian 11:21.** 1.3 11:20: **1.3: Teil 00b Einsatz-Zuteilung und 00c Zentrale nach Julians Konzeptbildern 11:16.** 1.2 11:10: **1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
+Stand 14.10.2026, 13:20 (**2.0: KEIN GOLD. Julian zu 1.4: „nicht gold mache es besser das sieht scheiße billig aus und wie für ein 2 jährigen“. Teil 000 Stil geht allem vor; Layout und Aufbau der Konzeptbilder bleiben, Farbe und Stil daraus gelten nicht mehr.** 1.4 11:30: **1.4: Teil 13 erste Version mit 8 Pflichtpunkten, Später-Liste, offene Konzeptbilder, Julian 11:21.** 1.3 11:20: **1.3: Teil 00b Einsatz-Zuteilung und 00c Zentrale nach Julians Konzeptbildern 11:16.** 1.2 11:10: **1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
 
 **Prüffrage für jeden Bildschirm:** Sieht man in zwei Sekunden, welches Fahrzeug wohin fährt und was als Nächstes zu tun ist? Wenn nicht, ist der Bildschirm zu voll.
+
+## 000. Stil 2.0: erwachsen und realistisch, KEIN GOLD (geht allem in dieser Datei vor)
+
+Julian 14.10 13:12 zu Build 1.4: „nicht gold mache es besser das sieht scheiße billig aus und wie für ein 2 jährigen“.
+
+**Bleibt aus den Konzeptbildern:** Aufbau und Anordnung (Kopfleiste mit Geld- und Bewertungs-Kapsel, Karte als Hauptbildschirm, Einsatz-Panel von unten mit Bild, Titel, km, €-Spanne, zwei vorausgewählten Karten und einem Hauptknopf, Tab Zentrale mit Nahansicht und drei Ausbaukarten, vier Tabs unten), isometrische Stadt bei Abend, Abläufe und Zahlen.
+**Gilt nicht mehr aus den Konzeptbildern:** Gold, Goldränder, goldene Schrift, Glow und Leuchtlinien, glänzende Knöpfe, Verläufe, verspielte Symbole. Überall wo in dieser Datei „gold“ steht, gilt die Tabelle unten.
+
+**Farben**
+
+| Rolle | Farbe |
+|---|---|
+| Hintergrund, Leisten | Graphit #1C1C1E |
+| Flächen, Panels, Karten | Anthrazit #2A2A2E, Rand 0,5–1 pt #3A3A3F |
+| Text | #FFFFFF, zweitrangig #D7D7DB, leise #8A8A91 |
+| Akzent (aktiver Tab, Auswahlrahmen, Hauptknopf, eigene Routen, eigene Fahrzeuge auf der Karte) | Silber #C7C7CC, gedrückt #AEAEB2; Hauptknopf: Silber-Fläche mit dunkler Schrift #1C1C1E |
+| Status dringend | #D9473A (rot, gedeckt) |
+| Status normal / wartet | #D99A2B (bernstein, gedeckt) |
+| Status erledigt / Gewinn | #3FA35B (grün, gedeckt) |
+| Verlust | #D9473A |
+
+Farbe nur für Status. Kein Blau/Cyan in der Oberfläche (Wasser auf der Karte darf nachtdunkel bleiben).
+
+**Form und Schrift**
+- **SF Pro** (System) überall: Titel SF Pro Display Semibold, Text SF Pro Text Regular, Zahlen mit Tabellenziffern (`monospacedDigit`). Keine Versal-Zierschrift, kein „VAULTORIA“ in Großbuchstaben-Gold.
+- Dünne Linien (0,5–1 pt), Ecken 12 pt bei Karten, 10 pt bei Knöpfen, 20 pt beim Panel oben. Keine Schatten-Glows, höchstens ein weicher dunkler Schatten unter dem Panel.
+- Symbole: SF Symbols in Linienstärke Regular, einfarbig (Silber oder Textgrau, Statusfarbe nur bei Status). Keine Geldbündel-Bilder, kein Stern-Emoji-Look: Geld als „12.480 €“ mit `eurosign`-Symbol, Bewertung als „4,8“ mit `star.fill` in #D7D7DB.
+- Knöpfe flach, kein Glanz, kein Doppelpfeil-Deko. „Losschicken“ = silberner Hauptknopf mit dunkler Schrift, volle Breite, 52 pt hoch (das Grün aus 00b entfällt).
+- Animationen ruhig: Ein- und Ausblenden 0,2–0,3 s, Federung gering. Belohnung als kurzer Zähler „+180 €“ in Grün, keine fliegenden Münzen, kein Konfetti.
+
+**Logo**
+- Im Spiel nur klein und dezent: V-Symbol einfarbig Silber, ca. 22 pt, links in der Kopfleiste, daneben „Vaultoria“ in SF Pro Semibold 17 pt #FFFFFF (normale Schreibweise). Auf dem Dach der Zentrale als unaufdringliches, unbeleuchtetes Schild.
+- App-Icon: bis Julian entscheidet, bleibt das bisherige Icon (Frage offen).
+
+**3D und Karte**
+- Entsättigte, realistische Materialien: Asphalt matt, Häuser in gedeckten Putz- und Ziegeltönen, Dächer dunkelgrau/rotbraun, Bäume dunkelgrün. Abendlicht warm, aber zurückhaltend; Straßenlaternen kleine Lichtpunkte ohne Bloom.
+- **Eigene Fahrzeuge:** realistisch weiß/graphit lackiert mit rot-weißer Warnmarkierung am Heck und orangefarbenem Rundumlicht (wie echte Abschleppwagen), kleines silbernes V an der Tür. Kein Gelb-Schwarz, kein Gold. Keine echten Marken.
+- **Routen:** dünne silberne Linie (2 pt), gestrichelt bei Rückfahrt, kein Leuchten.
+- **Einsatzmarker:** kleine flache Kreise mit SF-Symbol in Statusfarbe (rot dringend, bernstein normal), dezenter Puls nur bei dringend.
+- **Zentrale:** moderner Flachbau in Anthrazit und Glas, Rolltore, sachlich beleuchtet, keine Goldfassade.
+- Personen (Mitarbeiterporträts): realistische Arbeitskleidung in Grau/Anthrazit mit Warnstreifen, kleines V-Logo.
+
+**Prüffrage zum Stil:** Sieht der Bildschirm aus wie eine ernsthafte Disponenten-Software in einem hochwertigen Spiel, nicht wie ein Kinderspiel? Wenn irgendwo Gold, Glow oder Spielzeug-Optik auftaucht, ist es falsch.
 
 ## 00. Julians Konzeptbild und App-Icon (14.10 10:55, verbindlich, genau so umsetzen)
 
@@ -58,7 +101,7 @@ Ersetzt den Ablauf aus Teil 2 und 3 (zwei Seiten) durch **ein** Panel. Antippen 
 - Keine Platzhalter-Menüs, kein „Demnächst“.
 - Euro, deutsche Zahlen (1.250 €).
 
-### Farben (dunkles Tycoon-Design, Gold als Akzent)
+### Farben (bis 1.4, ÜBERHOLT durch Teil 000, nur noch Archiv)
 
 | Rolle | Farbe |
 |---|---|
