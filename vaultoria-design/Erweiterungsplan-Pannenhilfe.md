@@ -1,6 +1,6 @@
-# Vaultoria – Erweiterungsplan Pannenhilfe 1.3 (freigegeben, E1 erledigt)
+# Vaultoria – Erweiterungsplan Pannenhilfe 1.4 (freigegeben, E1 erledigt, als Nächstes Tempo + E1.5)
 
-Stand 14.10.2026, 14:00 (**1.3: E1 erledigt in Vaultoria 5.1, Build 202610141353, auf TestFlight; 17 Tests grün; Testbericht `/mnt/project-files/Testbericht.md`. Urteil Mac: Start mit 2 Wagen zu hektisch, Viertel öffnen zu schnell → Balancing in den nächsten Updates.** 1.2 14:15: **1.2: Teil 7 Abgleich mit dem Code vom Mac übernommen; wo der Code abweicht, gilt Teil 7. Spielstand der App: Vaultoria 1.4, Build 202610141306, auf TestFlight, mit Optik-Angleichung und Kenney-Stadt.** 1.1 13:45: **1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
+Stand 14.10.2026, 14:10 (**1.4: Julian 14:03 bestellt E1.5 „Zielorte und Betriebsmittel“ vor E2 und ein ruhigeres Starttempo (8–12 Einsätze pro Spieltag), siehe Teil 5b. Tempo kommt in 5.2, E1.5 als 5.3.** 1.3 14:00: **1.3: E1 erledigt in Vaultoria 5.1, Build 202610141353, auf TestFlight; 17 Tests grün; Testbericht `/mnt/project-files/Testbericht.md`. Urteil Mac: Start mit 2 Wagen zu hektisch, Viertel öffnen zu schnell → Balancing in den nächsten Updates.** 1.2 14:15: **1.2: Teil 7 Abgleich mit dem Code vom Mac übernommen; wo der Code abweicht, gilt Teil 7. Spielstand der App: Vaultoria 1.4, Build 202610141306, auf TestFlight, mit Optik-Angleichung und Kenney-Stadt.** 1.1 13:45: **1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
 
 ## Julians Auftrag (wörtlich, 14.10.2026 12:57)
 
@@ -529,11 +529,12 @@ Plan-Nummern E1–E19. **App-Versionen ab 14.10.2026: nächster Build = Vaultori
 | Update | Inhalt | Abnahme | Screenshots |
 |---|---|---|---|
 | **E1 Fundament** (siehe 5a) **✓ erledigt in 5.1** | Profil + Weltstand mit `worldId`, `schemaVersion` + Migration, Spieltag 18 Min, Simulation in festen Spielminuten, **Zeitsteuerung ⏸/1×/2×/4× mit Auto-Pause**, Freischaltsystem (nur Stufe 0), Seed-Tests | siehe 5a | siehe 5a |
+| **E1.5 Zielorte + Betriebsmittel** (Stufe 0, siehe 5b) | Zielwahl nach dem Abschleppen, Ladung sichtbar, Hof-Grundumfang, 5 Bestände, 4 Entsorgungscontainer, Ausbau Lager/Reifencontainer/Recycling, Starttempo | siehe 5b | siehe 5b |
 | **E2 Wetter + Dauer** (Stufe 1) | Wetter, Verkehrsfaktoren, Dauerformel, A*-Route über Stau | Regen verlängert sichtbar Fahrt; Route weicht Stau aus; Anzeige stimmt mit tatsächlicher Dauer ±10 % | Karte bei Regen, Panel mit Ankunft/Arbeit, Umweg um Stau |
 | **E3 Erfahrung** (Stufe 2) | XP, Stufen, Wertwahl alle 3 Stufen | Nach Einsätzen steigt XP in der genutzten Fähigkeit; Stufenkarte erscheint; Wert wirkt auf Dauer | Personal-Tab, Stufe-erreicht-Karte |
 | **E4 Ausgänge** (Stufe 3) | Outcome-Würfel, „gute Chance/riskant“, Berichte | Alle 7 Ausgänge mit festem Seed auslösbar, Geld/Sterne korrekt | Panel mit Chance-Wort, 3 Berichte mit unterschiedlichem Ausgang |
 | **E5 Ziele + Verlauf** (Stufe 4) | 3 aktive Ziele, Belohnungen, Verlauf in der Tagesabrechnung | Ziel erfüllen → Belohnung, neues Ziel; Verlauf zeigt 30 Tage | Zielkarten am Rand, Verlauf-Diagramme |
-| **E6 Betriebshof** (Stufe 5) | Depot, Einlagern, Gebühren bis Herausgabeverlangen | Voller Hof blockiert Einlagern; Gebühren stoppen bei Herausgabeverlangen; Tagesabrechnung zeigt Gebühren | Hof auf der Karte, Zentrale-Karte Betriebshof, Liste |
+| **E6 Betriebshof** (Stufe 5) | baut auf dem Hof-Grundumfang aus E1.5 auf: Depot, Einlagern, Gebühren bis Herausgabeverlangen | Voller Hof blockiert Einlagern; Gebühren stoppen bei Herausgabeverlangen; Tagesabrechnung zeigt Gebühren | Hof auf der Karte, Zentrale-Karte Betriebshof, Liste |
 | **E7 Standzeiten/Platz** (Stufe 6) | Größenklassen, Gründe, Standzeiten | Transporter belegt 2 Einheiten; Standzeiten im Bereich der Tabelle | Hof mit gemischten Fahrzeugen |
 | **E8 Gebiete 1** (Stufe 7) | District-System, Wohnviertel + Bahnhof | Gesperrt sichtbar, Freischalten mit Kosten/Ruf; neue Einsatzmischung | Gesperrtes Gebiet, Freischalt-Kamerafahrt |
 | **E9 Vertrag Werkstatt** (Stufe 8) | Contract-System, Partnergebäude | Vertragsaufträge mit Zeitlimit; Pünktlichkeit zählt; Verlängerung/Ende | Partnergebäude, Vertragskarte |
@@ -577,6 +578,145 @@ Reihenfolge ist verbindlich, Inhalte eines Updates werden nicht vorgezogen. Jede
 **Screenshots:** Karte mit Zeitsteuerung (1× aktiv) · Karte bei 4× mit fahrenden Fahrzeugen · Auto-Pause-Banner bei dringendem Einsatz · Einstellungen Auto-Pause · Hinweis nach Neustart wegen defektem Stand. Nach jedem Update: TestFlight, Screenshots, Julian testet, dann das nächste.
 
 ---
+
+### 5b. E1.5 Zielorte und Betriebsmittel (vor E2; Tempo in 5.2, E1.5 als 5.3)
+
+**Julians Auftrag (wörtlich, 14.10.2026 14:03):**
+
+> Genau, du hast einen wichtigen fehlenden Teil entdeckt: Nach einem Einsatz verschwindet momentan alles einfach. Das wirkt unfertig. Es fehlt ein richtiges Abschlepp- und Lagersystem.
+> Nach dem Abschleppen
+> Der Spieler wählt ein Ziel:
+>
+> * eigener Betriebshof
+> * Partnerwerkstatt
+> * Polizeiverwahrung
+> * Schrottplatz
+> * vom Kunden gewünschte Werkstatt
+>
+> Der Abschlepper fährt mit dem Auto sichtbar dorthin, lädt es ab und ist erst danach wieder verfügbar. Auf dem eigenen Hof bleibt das Fahrzeug sichtbar stehen und belegt Platz.
+> Ersatzteile und Abfälle
+> Die Zentrale braucht zusätzlich ein kleines Lager:
+> Verbrauchsmaterial
+>
+> * Batterien
+> * Pkw-, Transporter- und später Lkw-Reifen
+> * Kraftstoffkanister
+> * Ersatzteile
+> * Ölbindemittel
+>
+> Altteile und Abfälle
+>
+> * alte Reifen
+> * defekte Batterien
+> * Altöl
+> * beschädigte Ersatzteile
+> * Unfallschrott
+>
+> Neue Teile werden bei Einsätzen verbraucht. Alte Teile kommen danach in begrenzte Container am Betriebshof:
+>
+> * Altreifenentsorgung kostet Geld.
+> * Altöl muss kostenpflichtig abgeholt werden.
+> * Batterien und Metallschrott können etwas Geld bringen.
+> * Ist der Lagerplatz voll, können bestimmte Einsätze nicht mehr angenommen werden.
+> * Lager, Reifencontainer und Recyclingbereich lassen sich ausbauen.
+>
+> Es sollte aber keine Kleinteile-Mikroverwaltung geben. Lieber fünf verständliche Bestände statt jede einzelne Schraube.
+> Änderung für Claude
+> Vor E2 ein zusätzliches Update E1.5 – Zielorte und Betriebsmittel einfügen.
+>
+> * Abgeschleppte Fahrzeuge dürfen nicht verschwinden.
+> * Nach der Bergung muss ein Ziel gewählt werden: eigener Hof, Partnerwerkstatt, Polizei, Schrottplatz oder Kundenwerkstatt.
+> * Das abgeschleppte Fahrzeug bleibt während der Fahrt sichtbar auf dem Abschlepper.
+> * Der Abschlepper bleibt bis Abladen und Rückfahrt belegt.
+> * Fahrzeuge auf dem eigenen Hof stehen sichtbar dort und belegen Stellfläche.
+> * Einfaches Lager für Batterien, Reifen, Kraftstoff, Ersatzteile und Ölbindemittel ergänzen.
+> * Einsätze verbrauchen passende Materialien.
+> * Alte Reifen, Batterien, Altöl und Schrott landen in begrenzten Entsorgungsbereichen.
+> * Abholung beziehungsweise Entsorgung kostet Geld; Batterien und Metallschrott können einen kleinen Erlös bringen.
+> * Keine Verwaltung einzelner Schrauben oder unnötige Menüs. Lagerbestand direkt in der Zentrale und bei der Einsatzwahl anzeigen.
+> * Der große Betriebshof mit Standgebühren, Auktionen und Sammlung bleibt später in E6. E1.5 baut nur den notwendigen Grundablauf.
+>
+> Außerdem das Starttempo reduzieren: 43–49 erledigte Einsätze pro Spieltag sind viel zu hektisch. Anfangs ungefähr 8–12 Einsätze pro Tag, später mit größerer Flotte entsprechend mehr.
+> Das gehört tatsächlich früh rein. Erst dadurch wird aus „Einsatz erledigt und Auto weg“ ein nachvollziehbarer Abschleppbetrieb.
+
+**Umsetzung (Startwerte zum Testen):**
+
+**1. Starttempo (zuerst, in 5.2).** Einsätze kommen über ein Tagesbudget statt über ein festes Intervall:
+`tagesbudget = clamp(4,5 × einsatzfähige eigene Fahrzeuge + 1 × Leitstellen-Stufe, 8, 40)` → mit 2 Wagen ca. 9–10, Spanne durch Zufall ±2, also **8–12 am Anfang**. Die Einsätze verteilen sich über den Tag mit Spitzen morgens und am späten Nachmittag; nachts weniger. Mehr Fahrzeuge bedeuten mehr Einsätze, nie mehr als die Flotte schaffen kann (Ziel: jedes Fahrzeug 4–6 Einsätze pro Tag). Die alte Viertel-Freischaltung bleibt bis E8 (Teil 7), darf aber das Tagesbudget nicht erhöhen.
+
+**2. Zielorte nach dem Abschleppen.**
+```swift
+enum TowDestination: String, Codable { case ownYard, partnerWorkshop, policeImpound, scrapyard, customerWorkshop }
+struct DestinationSite: Codable { let id: String; let kind: TowDestination; let position: GridPos; let name: String }
+```
+- Jeder Zielort steht als Gebäude auf der Karte (fiktive Namen, keine Marken). In Welt 1: eigener Hof an der Zentrale, 2 Partnerwerkstätten, 1 Polizeiverwahrung, 1 Schrottplatz, Kundenwerkstätten als 3–4 normale Werkstätten in den Vierteln.
+- Nach der Bergung erscheint **ein** kleines Panel „Wohin?“ mit nur den passenden Zielen (2–4 Knöpfe, Empfehlung markiert, Fahrzeit und Erlös je Ziel). Passend heißt: Kundenwerkstatt nur, wenn der Kunde eine nennt; Polizei nur bei Unfall mit Polizei vor Ort; Schrottplatz nur bei Totalschaden oder Kundenwunsch; Partnerwerkstatt und eigener Hof immer (Hof nur mit freiem Platz).
+- Erlös je Ziel (zusätzlich zum Einsatzlohn): Partnerwerkstatt +40 € Vermittlung, Kundenwerkstatt +0 € aber +Ruf, Polizei +60 € Pauschale, Schrottplatz +Schrotterlös nach Fahrzeug (80–200 €), eigener Hof +0 € (Abholung durch Halter nach 1–3 Spieltagen, dann +50 € Abstellpauschale; **keine Tagesgebühren vor E6**).
+- Auto-Pause-Grund „Ziel wählen“; ohne Wahl nach 30 Spielminuten wird die Empfehlung genommen.
+
+**3. Ladung auf dem Abschlepper.**
+```swift
+struct Load: Codable { let jobId: UUID; let size: VehicleSize; let visual: CarVisualId }   // VehicleSize: .car, .van (.truck ab E15)
+// FleetVehicle bekommt: var load: Load?   und Phasen:
+enum TowPhase: String, Codable { case toScene, working, loading, toDestination, unloading, returning }
+```
+- Das Fahrzeug steht sichtbar auf der Ladefläche (gleiches Modell wie am Einsatzort). Aufladen 10 Spielminuten, Abladen 10 Spielminuten, beides als kurze Animation.
+- Der Abschlepper ist bis zur Rückkehr in die Zentrale belegt. Plakette: Statuspunkt orange während `toDestination`, zusätzlich kleines Auto-Symbol solange `load != nil`; grau bei `returning`.
+- Servicewagen ohne Plattform können nicht abschleppen; Einsätze, die Abschleppen brauchen, verlangen einen Abschlepper.
+
+**4. Eigener Hof, Grundumfang.**
+```swift
+struct YardBasic: Codable { var capacityUnits: Int = 4; var parked: [ParkedVehicle] }
+struct ParkedVehicle: Codable { let id: UUID; let size: VehicleSize; let slot: Int; let since: GameTime; let pickupAt: GameTime; let visual: CarVisualId }
+```
+- 4 Einheiten am Start, Pkw 1, Transporter 2. Abgestellte Fahrzeuge stehen sichtbar auf festen Stellplätzen im Hof hinter der Zentrale (UI 000a Punkt 9).
+- Hof voll → Ziel „eigener Hof“ ausgegraut mit „Hof voll“.
+- Abholung: Der Halter holt nach 1–3 Spieltagen ab (kleines Kundenauto fährt vor und wieder weg).
+- E6 baut darauf auf (mehr Platz, Standgebühren bis Herausgabeverlangen, Kosten, Auktionen, Sammlung). Nichts davon in E1.5.
+
+**5. Fünf Bestände (Verbrauchsmaterial).**
+```swift
+enum Supply: String, Codable, CaseIterable { case battery, tire, fuelCan, spareParts, oilBinder }
+struct Storage: Codable { var stock: [Supply: Int]; var level: Int = 1 }   // Kapazität je Stufe gesamt
+```
+| Bestand | Einkauf | Verbrauch |
+|---|---|---|
+| Batterien | 90 € | Batterie-Einsatz: 1 (nur wenn Starthilfe nicht reicht, ca. 40 %) |
+| Reifen (Pkw/Transporter; Lkw ab E15 als eigene Größe) | 60 € | Reifenpanne: 1 |
+| Kraftstoffkanister | 15 € | Kraftstoff-Einsatz: 1 |
+| Ersatzteile (ein Sammelbestand) | 40 € | Technischer Defekt: 1 |
+| Ölbindemittel (Sack) | 12 € | Unfall: 1–2 |
+
+- Lager Stufe 1/2/3: 20/40/70 Einheiten gesamt; Ausbau 1.500 € / 4.000 €, sichtbar größeres Regal-Gebäude neben der Zentrale.
+- Nachkaufen mit einem Knopf je Bestand in der Zentrale („+5 · 300 €“), Lieferung nach 1 Spielstunde (Lieferwagen fährt sichtbar vor). Optional „Automatisch nachbestellen unter 3“ (Standard an).
+- Fehlt das passende Material, ist der Einsatz in der Zuteilung ausgegraut mit Grund („Keine Reifen“). Bestände stehen als 5 kleine Zähler in der Zentrale und in der Einsatzwahl.
+
+**6. Vier Entsorgungscontainer (Altteile und Abfälle).**
+```swift
+enum WasteBin: String, Codable, CaseIterable { case oldTires, oldBatteries, usedOil, scrapMetal }   // scrapMetal = beschädigte Ersatzteile + Unfallschrott
+struct WasteArea: Codable { var fill: [WasteBin: Int]; var tireLevel: Int = 1; var recyclingLevel: Int = 1 }
+```
+| Container | Füllung pro Einsatz | Größe Stufe 1/2/3 | Abholung |
+|---|---|---|---|
+| Altreifen | Reifenpanne +1 | 10/20/35 (Reifencontainer) | **kostet** 4 € je Reifen |
+| Altbatterien | Batterietausch +1 | 8/15/25 (Recycling) | **bringt** 6 € je Batterie |
+| Altöl | Unfall/Defekt +1 Kanister | 6/12/20 (Recycling) | **kostet** 45 € pauschal je Abholung |
+| Metallschrott | Defekt +1, Unfall +2 | 12/25/40 (Recycling) | **bringt** 3 € je Einheit |
+
+- Ausbau Reifencontainer 800 € / 2.000 €; Recyclingbereich 1.200 € / 3.000 €; beides sichtbar am Hof.
+- Abholung per Knopf „Abholen lassen“ in der Zentrale; der Entsorger-Lkw kommt sichtbar innerhalb 1 Spielstunde. Bei 80 % Füllung ein orangefarbener Hinweis.
+- Container voll → Einsätze, die genau diesen Abfall erzeugen, sind ausgegraut („Altreifen-Container voll“). Nie ein Absturz und kein Totlauf: Abholen ist immer möglich, notfalls mit Kredit-Hinweis im Minus.
+- Tagesabrechnung bekommt die Zeilen „Material“, „Entsorgung“ und „Recycling-Erlös“.
+
+**7. UI (keine neuen Menüs).** Zielwahl als einzelnes Panel nach dem Einsatz. Bestände und Container als eine kompakte Karte „Lager“ im Tab Zentrale (5 Zähler, 4 Füllbalken, Knöpfe Nachkaufen und Abholen). In der Einsatzwahl eine Zeile mit dem benötigten Material. Stil nach UI-Vorgabe 000/000a/000b.
+
+**8. Spielstand.** Schema 3 → 4: `yardBasic`, `storage`, `wasteArea`, `load` und `towPhase` an Fahrzeugen, mit Standardwerten (Lager mit 3 von jedem Bestand, leere Container). Laufende Einsätze aus Schema 3 schließen wie bisher ab. Migrationstest mit einem echten 5.1/5.2-Stand.
+
+**Tests:** gleicher Seed = gleiches Ergebnis; mit 2 Wagen 8–12 Einsätze am Tag 1–3; abgeschlepptes Auto ist bis zum Abladen sichtbar und steht danach am Ziel bzw. auf dem Hof; voller Hof blockiert nur das Ziel Hof; fehlendes Material und voller Container sperren nur passende Einsätze; Abholung rechnet Kosten und Erlöse richtig.
+
+**Screenshots:** Panel „Wohin?“ · Abschlepper mit Auto auf der Ladefläche unterwegs · Abladen auf dem Hof · Hof mit 3 abgestellten Autos · Lager-Karte in der Zentrale · ausgegrauter Einsatz wegen fehlender Reifen · Entsorger-Lkw am Hof · Tagesabrechnung mit Material/Entsorgung.
+
+**Nicht in E1.5:** Standgebühren, Auktionen, Kaufangebote, Sammlung, Hofkosten (alles E6/E12), Lkw-Reifen (E15), Wetter (E2).
 
 ## 6. Offen bei Julian
 
