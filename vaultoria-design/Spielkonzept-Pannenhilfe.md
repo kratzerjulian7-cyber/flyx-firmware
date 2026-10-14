@@ -259,3 +259,9 @@ Aussehen und Bedienung jeder Ansicht: `UI-Vorgabe-Pannenhilfe.md`. Bei Widerspru
 > 10. Spielstand bleibt nach einem Neustart erhalten.
 >
 > Arbeite selbstständig weiter und stelle nur Rückfragen, wenn eine Entscheidung technisch wirklich nicht ohne mich getroffen werden kann. Am Ende liefere eine Zusammenfassung der entfernten Systeme, des neuen Aufbaus, der Tests und Screenshots aller wichtigen Ansichten.
+
+## 2. Ergänzung Julian (wörtlich, 14.10.2026 11:06)
+
+> noch viel viel mehr machen große welt machen eine sehr große welt man soll sehen können wie die werkstatt größer wird wenn man es upgradet
+
+Gemeint (vom Koordinator bestätigt): eine sehr große Welt mit mehreren Vierteln, durch die man wischt und zoomt. Zentrale und Werkstatt wachsen auf der Karte sichtbar mit jedem Ausbau, jeder Ausbau ist ein eigenes Gebäudeteil mit kurzer Bau-Animation. Umsetzung: `UI-Vorgabe-Pannenhilfe.md` Teil 12.

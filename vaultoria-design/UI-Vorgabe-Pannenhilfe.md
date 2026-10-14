@@ -1,6 +1,6 @@
-# Vaultoria – UI-Vorgabe Pannenhilfe 1.1 (verbindlich)
+# Vaultoria – UI-Vorgabe Pannenhilfe 1.2 (verbindlich)
 
-Stand 14.10.2026, 11:00 (**1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
+Stand 14.10.2026, 11:10 (**1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
 
 **Prüffrage für jeden Bildschirm:** Sieht man in zwei Sekunden, welches Fahrzeug wohin fährt und was als Nächstes zu tun ist? Wenn nicht, ist der Bildschirm zu voll.
 
@@ -49,7 +49,7 @@ Ab 1.1: Hintergrund und Leisten schwarz/graphit wie im Konzeptbild (Teil 00). Ke
 
 ## 1. Hauptbildschirm: Stadtkarte (immer sichtbar)
 
-- Draufsicht, leicht schräg von oben wie ein Tycoon-Spiel, Stadt klein genug, dass sie ohne Zoomen fast ganz zu sehen ist. Zoomen mit zwei Fingern, verschieben mit einem.
+- Draufsicht, leicht schräg von oben wie ein Tycoon-Spiel. Ab 1.2 ist die Welt sehr groß (Teil 12); der Start-Ausschnitt zeigt das erste Viertel mit der Zentrale. Zoomen mit zwei Fingern, verschieben mit einem.
 - **Straßen** dunkelgrau, Häuserblöcke etwas heller, ein paar Bäume. Keine echten Ortsnamen oder Marken.
 - **Zentrale**: goldenes Gebäude mit Vaultoria-V auf dem Dach, Stellplätze davor sichtbar.
 - **Eigene Fahrzeuge**: goldene Fahrzeugsymbole (Servicewagen klein, Abschleppwagen länger mit Haken). Darüber eine kleine Plakette mit Fahrerinitial und Restzeit („2:10“).
@@ -152,6 +152,22 @@ Knopf: **Nächster Tag**.
 
 Pfandhaus, Gegenstandshandel, Käufer und Sammler, Marktpreise, Museum, Auktionen, Rufgruppen, Konkurrenten, Versicherungsbüro, Rebirth, altes Imperium, Tierpension, Raubzüge, alter Baumodus, alte Handelswährungen, Shop und Werbung (bis Julian etwas anderes sagt).
 
+## 12. Große Welt + sichtbare Ausbauten (1.2, Julian 14.10 11:06)
+
+**Große Welt**
+- Eine zusammenhängende, sehr große Stadtkarte aus mehreren Vierteln, z. B. Altstadt mit Kirche und Fluss (Start), Wohnviertel, Bahnhof, Gewerbegebiet, Autobahnzubringer, Hafen, Vororte. Jedes Viertel hat einen eigenen Look und eigene typische Einsätze.
+- Frei wischen und mit zwei Fingern zoomen, flüssig mit Schwung und weichem Abbremsen. Weit herausgezoomt sieht man die ganze Stadt mit allen Fahrzeugen und Markern, nah dran Einzelheiten wie Warndreiecke und Werkzeug.
+- Viertel sind von Anfang an sichtbar. Einsätze kommen zuerst nur aus dem Startviertel, weitere Viertel kommen mit dem Ausbau „Bessere Leitstelle“ und weiteren Stellplätzen hinzu (kein eigenes Freischalt-Menü).
+- Einsatz außerhalb des Bildes: kleiner Pfeil am Bildrand in Markerfarbe, Antippen springt hin.
+- Knopf unten rechts über der Tab-Leiste: „Zur Zentrale“ (V-Symbol), zentriert die Kamera.
+- Leistung: nur sichtbare Bereiche voll zeichnen, ruckelfrei bei 60 fps auch auf kleinen iPhones.
+
+**Sichtbare Ausbauten**
+- Jeder Ausbau ist ein eigenes Gebäudeteil an der Zentrale und bleibt dauerhaft auf der Karte: Stellplatz = neue markierte Parkbucht, kleine Werkstatt = Anbau mit Rolltor und Hebebühne, Ersatzteillager = Hallenteil mit Regalen, Tankstelle = Zapfsäule mit Dach, Ladepunkt = Ladesäulen, bessere Leitstelle = Turm mit Antenne und Bildschirmen.
+- Ausbauten haben Stufen (mindestens 3), jede Stufe sieht man: größere Werkstatt mit mehr Toren und Bühnen, mehr Stellplätze, größere Halle. Die Werkstatt wächst sichtbar mit.
+- Beim Kauf: Kamera fährt zur Zentrale, kurze Bau-Animation (Gerüst, Kran, Staubwolke, Teil wächst hoch, Funken), dann goldenes Aufleuchten und Ton. Etwa 2–3 Sekunden, antippen überspringt.
+- Im Tab Zentrale zeigt jeder Eintrag ein Vorschaubild, wie das Teil an der Zentrale aussehen wird.
+
 ## 11. Screenshots für die Abnahme
 
-Hauptkarte leer · Einsatz erscheint · Einsatzfenster · Zuteilung · Fahrzeug unterwegs mit Route · Arbeit vor Ort · Belohnung · Rückfahrt · Fahrzeuge mit Warten · Zentrale mit Ausbau · Sonderentscheidung · Tagesabrechnung.
+Hauptkarte leer · Einsatz erscheint · Einsatzfenster · Zuteilung · Fahrzeug unterwegs mit Route · Arbeit vor Ort · Belohnung · Rückfahrt · Fahrzeuge mit Warten · Zentrale mit Ausbau · Sonderentscheidung · Tagesabrechnung · ganze Stadt herausgezoomt · Zentrale vor und nach einem Ausbau · Bau-Animation.
