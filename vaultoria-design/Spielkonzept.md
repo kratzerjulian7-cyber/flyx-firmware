@@ -416,7 +416,7 @@ Liefere einen startbaren Build und berichte:
 - Belohnungsvideos immer freiwillig, Bonus fest und vorher sichtbar. Erster Build: Offline-Verdopplung und kleiner Geldbonus. Schilde später.
 
 ## B9. Darstellung
-- Spielgeld = Goldmünze mit Zahl **ohne „€“**; „€“ nur bei Echtgeld im Shop; Rebirth-Coins violett.
+- ~~Spielgeld ohne „€“~~ → **ersetzt durch F2 (14.10):** Beträge im Laden in Euro mit realistischen Preisen; Rebirth-Coins violett.
 - Hauptknöpfe grün (Betrieb) bzw. gold (Raubzug), Creme-Karten, Goldrahmen (UI-Vorgabe).
 
 ---
@@ -636,3 +636,49 @@ Bisher gab es ein einziges Ansehen (Stern in der Kopfleiste, Rebirth-Voraussetzu
 1. ~~Rebirth-Voraussetzung Ansehen~~ **ENTSCHIEDEN 14:03: Gesamtansehen (Durchschnitt der freigeschalteten Bereiche).**
 2. ~~Übertrag zwischen Bereichen~~ **ENTSCHIEDEN 14:03: kein Übertrag.**
 3. ~~Umfang erster Build~~ **ENTSCHIEDEN 14:03: alle 8 Punkte im ersten Build.**
+
+---
+
+# Teil F – Sammlung 4 (ab 14.10.2026 07:09)
+
+Ergänzt Teil A–E und geht bei Widerspruch vor.
+
+## F1. Julians Punkte (14.10. 07:09, wörtlich)
+
+> es soll mit echtem geld sein und nicht mit spielgeld das ist unrealistisch das ist nicht gut und den kredit und alles besser erklären und die normale ansicht soll von viel weiter oben kommen nicht von so komisch schräg
+
+## F2. Euro statt Spielgeld (ersetzt B9)
+
+- Alle Beträge im Betrieb stehen als **Euro mit realistischen Preisen** da: Kontostand „12.460 €“, Ankauf „200 €“, Kredit „150 €“. Das Wort „Spielgeld“ und Goldmünzen als Ladenwährung entfallen überall (Spiel, Shop-Texte, Store-Texte).
+- Es bleibt Geld **im Spiel**: Es kann nie ausgezahlt und nie gegen echtes Geld getauscht werden. Echtes Geld gibt der Spieler nur über die drei Shop-Käufe aus (Preise aus StoreKit). Das steht einmal in den Einstellungen und in den Store-Texten, damit es keine Verwechslung mit Echtgeld-Glücksspiel gibt.
+- **Rebirth-Coins** bleiben eine eigene violette Währung (Julian hat dazu nichts geändert). Keine Premiumwährung (C1 unverändert).
+- **ENTWURF realistische Startwerte** (ersetzen die Zahlen in UI-Vorgabe Teil 8, Julian kann ändern):
+
+| Was | Bisher | Neu |
+|---|---|---|
+| Startkapital | 1.000 | **5.000 €** |
+| Ankauf / Verkauf Armbanduhr | 200 / 330 | **200 € / 330 €** |
+| Pfandkredit Kamera | 150, Gebühr 30 | **150 €, Gebühr 15 € (10 %)** |
+| Theke ausbauen (erste Stufen) | 100 | **250 €** (+12 % je Stufe) |
+| Verkäufer einstellen (einmalig) | 600 | **1.500 €** |
+| Wertlager freischalten | 1.500 | **4.500 €** |
+| Lagergebühr pro Fach und Spieltag | – | **12 €** |
+| Restaurierung Stuhl | 350 | **80 € Material**, Wert 300 € → 520 € |
+| Tierpension freischalten | 6.000 | **18.000 €** |
+| Geldziel Neustart Standort 1 | 25.000 | **250.000 €** |
+| Geldziel Standort 2 | 50.000 | **500.000 €** |
+| Starterpaket (2,99 €) | 5.000 Spielgeld | **5.000 € Startkapital im Spiel** |
+
+Kunden-Einnahmen werden so angehoben, dass die Zeitpunkte aus UI-Vorgabe Teil 8 gleich bleiben.
+
+## F3. Kredit und alle Systeme erklären
+
+- Jedes System bekommt beim ersten Mal eine **Erklärkarte** mit drei Schritten in Euro-Beispielen und danach einen „?“-Knopf (UI-Vorgabe K5).
+- **Pfandkredit** (Kunde leiht von dir): Du zahlst 150 € aus, der Kunde lässt die Kamera als Sicherheit da, holt sie in 2 Spieltagen gegen 165 € ab, sonst gehört sie dir. Auf der Karte steht immer die Rückzahlungssumme.
+- **Bank-Kredit** (du leihst dir Geld, §-Regel „Kredit ≤ eigener Bestand“): Erklärkarte zeigt Betrag, Zinsen pro Spieltag, automatische Rückzahlung und dass offene Kredite den Neustart blockieren. ENTWURF: 5 % Zinsen auf die ganze Laufzeit, Rückzahlung in 5 Spieltagen.
+- Weitere Erklärkarten: Ankauf & Verkauf, Wertlager, Werkstatt, Personal, Tierpension, Raubzug, Neustart.
+
+## F4. Hauptansicht von weit oben
+
+- Laden-Hauptansicht (B1) fast als Draufsicht (≈ 70°), gerade ausgerichtet, ohne seitliche Drehung, weit herausgezoomt. Gebäudeübersicht (A3) gerade von vorne und deutlich von oben statt 20° gedreht. Schräge Blicke nur noch in Nahansichten (Theke, Raubzug). Details: UI-Vorgabe Regel 6.
+
