@@ -1,6 +1,6 @@
-# Vaultoria – UI-Vorgabe 3.1 (verbindlich)
+# Vaultoria – UI-Vorgabe 4.0 (verbindlich)
 
-Stand 14.10.2026, 09:45 (**3.1: Teil 00K, Stufen A–D mit Julians 14 Punkten und Warenkategorien-Tabelle.** 3.0 09:30:  neuer Kern nach Julians Konzept 09:19, Teil 00. Spielablauf aus Teil 0–8 ersetzt, dort gilt nur noch das Aussehen.** 2.4 vom 14.10. 09:10 ( Teil 00 neu: Idle-Tycoon wie Eatventure, Handel von Hand nur Bonus). 2.3 vom 14.10. 09:00 ( Teil 00 oberste Regel „Spiel, nicht Arbeit“, Handel/Werkstatt/Ausbau direkt in der Szene). 2.2 vom 14.10. 08:00 ( Julians Überarbeitungsliste nach Prüfung von 25 Screenshots, Spielkonzept Teil G: Teil 0b, neue Tab-Leiste, Bottom-Sheets, 16 pt, Tutorial in 7 Schritten, Rebirth-Zusammenfassung). 2.1 vom 14.10. 07:20 ( Euro statt Spielgeld, Kamera von weit oben, Erklärkarten K5, Julian 14.10 07:09). 2.0 vom 13.10.2026, 20:45 ersetzt die erste Fassung. Grund: Julian zu Build 1.0 (18:33): „noch sehr unübersichtlich … so wie ich es dir geschickt habe, so möchte ich das haben und nicht anders. Sondern genau so. Wie auf den Bildern … Genau diese Logik.“
+Stand 14.10.2026, 10:30 (**4.0: radikal vereinfacht nach Julian 14.10 10:23, Spielkonzept Teil L. Teil 000 geht allem vor; Teil 00 und 00K sind abgeschaltet.** 3.1 09:45: **3.1: Teil 00K, Stufen A–D mit Julians 14 Punkten und Warenkategorien-Tabelle.** 3.0 09:30:  neuer Kern nach Julians Konzept 09:19, Teil 00. Spielablauf aus Teil 0–8 ersetzt, dort gilt nur noch das Aussehen.** 2.4 vom 14.10. 09:10 ( Teil 00 neu: Idle-Tycoon wie Eatventure, Handel von Hand nur Bonus). 2.3 vom 14.10. 09:00 ( Teil 00 oberste Regel „Spiel, nicht Arbeit“, Handel/Werkstatt/Ausbau direkt in der Szene). 2.2 vom 14.10. 08:00 ( Julians Überarbeitungsliste nach Prüfung von 25 Screenshots, Spielkonzept Teil G: Teil 0b, neue Tab-Leiste, Bottom-Sheets, 16 pt, Tutorial in 7 Schritten, Rebirth-Zusammenfassung). 2.1 vom 14.10. 07:20 ( Euro statt Spielgeld, Kamera von weit oben, Erklärkarten K5, Julian 14.10 07:09). 2.0 vom 13.10.2026, 20:45 ersetzt die erste Fassung. Grund: Julian zu Build 1.0 (18:33): „noch sehr unübersichtlich … so wie ich es dir geschickt habe, so möchte ich das haben und nicht anders. Sondern genau so. Wie auf den Bildern … Genau diese Logik.“
 
 **Diese Datei beschreibt jede Ansicht aus Julians Konzeptbildern so, dass sie ohne Bild nachgebaut werden kann.** Spielregeln und Zahlen stehen in `Spielkonzept.md`. Bei Widerspruch gilt für Aussehen und Bedienung diese Datei, für Regeln und Zahlen das Spielkonzept.
 
@@ -13,7 +13,84 @@ Quelle: fünf Bilder von Julian (13.10.2026, 12:40 bis 12:50), im selben Ordner:
 
 ---
 
-# Teil 00 – DER NEUE KERN: „Fund oder Fehlkauf?“ (3.0, Julian 14.10 09:19, Spielkonzept Teil J)
+# Teil 000 – RADIKAL EINFACH (4.0, Julian 14.10 10:23, Spielkonzept Teil L)
+
+**Geht allem in dieser Datei vor.** Teil 00 und 00K (Stufen A–D, Version 2.3) sind abgeschaltet: der Code bleibt, aber nichts davon ist sichtbar. Teil 0–8 gelten weiter nur für das Aussehen (Farben, Schrift, Bottom-Sheets, 16 pt, Figuren, Kamera von oben, Euro).
+
+**Prüffrage für jeden Bildschirm:** „Kaufe ich die Uhr für 100 € oder finde ich einen Käufer für 300 €?“ Wer in einem Menü suchen muss, was zu tun ist, hat verloren.
+
+## 000.1 Ein Bildschirm: der Laden
+
+- Laden von oben (Regel 6), groß, mindestens 70 % des Bildschirms.
+- Oben eine schmale Leiste: **nur Bargeld** in Euro und die **Ladenstufe** (z. B. „Stufe 2“). Kein Ruf, keine Sterne, kein Lagerwert, keine Tabs.
+- Keine untere Tab-Leiste. Kein Markt, keine Statistik, kein Kassenbuch, kein Stadt- oder Imperiumsmenü.
+- Unten rechts ein einziger Knopf **„Laden vergrößern“**, sichtbar nur, wenn das Geld für die nächste Stufe reicht.
+- Einstellungen über ein kleines Zahnrad oben rechts.
+
+## 000.2 Ein Kunde, ein Gegenstand, ein Preis, eine Spanne
+
+Kunde läuft sichtbar zur Theke, der Gegenstand liegt groß darauf. Darunter eine Karte (Bottom-Sheet, höchstens 40 % Höhe):
+
+- Name des Gegenstands, z. B. „Armbanduhr“.
+- **Er verlangt: 100 €** (große Zahl).
+- **Wert ungefähr: 80–250 €** (Balken mit der Spanne, der Preis als Markierung darauf).
+- Drei Knöpfe, gleich groß, nebeneinander: **Prüfen · Angebot machen · Ablehnen**.
+
+Regeln:
+- **Prüfen** geht einmal pro Gegenstand und kostet nichts außer einem Augenblick: kurze Lupen-Animation, danach wird die Spanne enger (z. B. 140–190 €). Fälschung ist eine seltene Überraschung: dann zeigt die Prüfung „Fälschung!“ mit roter Spanne.
+- **Angebot machen**: ein Regler oder drei feste Vorschläge (−10 %, −25 %, −40 %). Der Kunde nimmt an, macht ein Gegenangebot oder geht. Höchstens zwei Runden.
+- **Ablehnen**: Kunde geht, nächster kommt.
+- Nur **eine** verdeckte Größe: der echte Wert. Keine weiteren Eigenschaften, keine Persönlichkeitsanzeigen, keine Prozente.
+- Eine Runde dauert 20–40 Sekunden.
+
+## 000.3 Eigener Gegenstand: drei Knöpfe
+
+Nach dem Kauf fliegt der Gegenstand sichtbar ins Regal. Antippen eines Gegenstands im Regal öffnet eine kleine Karte mit Einkaufspreis, Wertspanne und drei Knöpfen:
+
+**Sofort verkaufen · Ins Regal stellen · Restaurieren**
+
+- Sofort verkaufen: sicherer, niedriger Preis (unteres Ende der Spanne).
+- Ins Regal stellen: bleibt sichtbar stehen, Käufer kommen dafür.
+- Restaurieren: erst ab Stufe 3 (Werkbank), kostet etwas Geld und Zeit, hebt den Wert sichtbar. Vorher ausgegraut mit „ab Stufe 3“.
+
+## 000.4 Ein Regal, Käufer-Angebote
+
+- Stufe 1 hat **ein Regal mit 4 Plätzen**. Voll heißt: erst verkaufen, dann neu kaufen.
+- Käufer laufen herein, gehen zu einem Gegenstand, über ihrem Kopf erscheint eine Sprechblase: **„Ich gebe 220 €“**.
+- Antippen: **Annehmen · Warten**. Warten heißt, der Käufer geht, ein späterer bietet vielleicht mehr oder weniger.
+- Verkaufseffekt: Münzen fliegen zur Geldanzeige, Betrag zählt hoch, „+120 € Gewinn“ kurz grün. Das ist das Erfolgserlebnis, es muss sich gut anfühlen (Haptik und Ton).
+
+## 000.5 Sieben Stufen, immer nur eine neue Funktion
+
+| Stufe | Neu (sichtbar im Laden) | Neue Ware |
+|---|---|---|
+| 1 | kleiner Laden, ein Regal | Alltagsgegenstände |
+| 2 | zweites Regal | Elektronik |
+| 3 | Werkbank, Knopf „Restaurieren“ wird aktiv | – |
+| 4 | Vitrine | Schmuck und seltene Gegenstände |
+| 5 | erster Mitarbeiter (einfach: bedient Käufer, nimmt das erste Angebot an) | – |
+| 6 | größerer Laden (mehr Regalplätze, mehr Kunden) | – |
+| 7 | Auktionen als gelegentliches Ereignis | – |
+
+- Jede Stufe kostet Geld und wird mit „Laden vergrößern“ gekauft. Die Veränderung ist im Laden sichtbar.
+- Beim Aufstieg eine einzige Karte: was neu ist, ein Satz Erklärung, Knopf „Los geht’s“. Nie zwei Neuheiten gleichzeitig.
+
+## 000.6 Die ersten 2 Minuten (Zahlen hier und in 000.4 sind Startwerte, im Test anpassen)
+
+1. Laden ist leer bis auf ein Regal, 500 € Bargeld.
+2. Ein Kunde bringt eine Uhr: „Ich will 100 €.“ Spanne 80–250 €. Ein Finger zeigt auf „Prüfen“.
+3. Nach Prüfen 150–200 €. Finger zeigt auf „Angebot machen“.
+4. Kauf, Uhr fliegt ins Regal.
+5. Ein Käufer kommt: „Ich gebe 180 €.“ Annehmen, +80 € Gewinn mit Effekt.
+6. Danach keine Hilfen mehr, nur noch Kunden und Käufer im Wechsel.
+
+## 000.7 Abgeschaltet (Code bleibt, nichts sichtbar)
+
+Marktgraphen, sieben Rufgruppen, Versicherungen, Dokumentationen, Konkurrenten, Imperiumsmenü, Museum, komplexe Mitarbeiterfähigkeiten, tägliches Kassenbuch, verschiedene Büros, Kredite, Rebirth, Stadtmenü, Raubzüge, komplizierte Aufträge, mehrere unbekannte Eigenschaften. Ebenso Shop und Werbung, bis Julian etwas anderes sagt.
+
+---
+
+# Teil 00 – ABGESCHALTET seit 4.0 (Archiv): „Fund oder Fehlkauf?“ (3.0, Julian 14.10 09:19, Spielkonzept Teil J)
 
 Geht **allem** in dieser Datei vor und ersetzt den Idle-Kern aus 2.4 vollständig. **Teil 0 bis Teil 8 gelten nur noch für das Aussehen** (Farben, Schrift, Bottom-Sheets N2, Fensterform N3, 16 pt N6, ein Hinweis zur Zeit N7, Verkaufseffekt N8, Räume N9, Figuren N10, Kamera von oben Regel 6, Euro F2). Jeder Spielablauf, jede Zahl und jeder Knopf dort, der dem Kern hier widerspricht, entfällt. Der wichtigste Moment im Spiel: **„Ist dieser Gegenstand ein wertvoller Fund oder verbrenne ich gerade mein Geld?“**
 
@@ -142,7 +219,7 @@ Tab **Käufer**: wartende Kaufinteressenten als Porträtkarten mit Wunsch in ein
 
 ---
 
-# Teil 00K – Stufen A bis D (3.1, Julian 14.10 09:21, Spielkonzept Teil K)
+# Teil 00K – ABGESCHALTET seit 4.0 (Archiv): Stufen A bis D (3.1, Julian 14.10 09:21, Spielkonzept Teil K)
 
 Ergänzt Teil 00 (Kern). Gebaut wird **Stufe für Stufe ohne Wartepausen**. Nach jeder Stufe gibt es Build und Screenshots, dann geht es direkt mit der nächsten weiter, angepasst wird nur, wenn Julian etwas ändern will. Alles hängt am Handeln, an Gegenständen und am eigenen Geschäft.
 

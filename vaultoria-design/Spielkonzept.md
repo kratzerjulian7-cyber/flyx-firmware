@@ -1189,3 +1189,105 @@ Ergänzt Teil J und gilt mit ihm zusammen. Julian: „Aber alles muss mit Handel
 | **D Langfristig** | Spielstile, Expansion zu Filialen und Handelsimperium mit Zentrale, ganz zum Schluss Raubzüge | K13, K14, J Raubzüge |
 
 Nach jeder Stufe gibt es Build und Screenshots, dann geht es direkt mit der nächsten weiter, angepasst wird nur, wenn Julian etwas ändern will. (Julian 14.10, keine Wartepausen)
+
+
+---
+
+# Teil L – RADIKAL VEREINFACHT (14.10.2026 10:23) – ERSETZT J UND K FÜR DEN SPIELABLAUF
+
+**Gilt ab sofort vor allem anderen in dieser Datei.** Version 2.3 (Stufen A–D) wird nicht weitergebaut. Die Systeme aus Teil J und K (Markt, Rufgruppen, Versicherung, Museum, Konkurrenten, Imperium, Kassenbuch, Kredite, Rebirth, Stadtmenü, Raubzüge, komplizierte Aufträge) werden **nicht gelöscht, sondern im Code abgeschaltet** und kommen vielleicht später einzeln zurück. Teil J und K bleiben hier als Archiv stehen.
+
+## L1. Julians Text (wörtlich)
+
+> Dann ist die Entscheidung eigentlich klar: Die aktuelle Version wird nicht weiter ausgebaut. Wenn sie beim echten Spielen null Spaß macht, sind schöne Screenshots und viele Systeme komplett egal. Ich habe die Struktur anhand der Bilder zu positiv bewertet – dein tatsächliches Spielerlebnis zählt mehr.
+> Das Problem ist:
+>
+> * zu viele Menüs
+> * zu viele Zahlen und unbekannte Werte
+> * Markt, Ruf, Käufer, Museum, Versicherung, Konkurrenten und Imperium gleichzeitig
+> * kaum direkte Aktionen
+> * kein sofortiges Erfolgserlebnis
+> * das Spiel fühlt sich wie Buchhaltung an
+>
+> Vaultoria radikal vereinfachen
+> Wir behalten nur diese eine Idee:
+> Kunden bringen Gegenstände. Du kaufst sie günstig und verkaufst sie teuer.
+> Der komplette Spielablauf
+>
+> 1. Kunde kommt mit einem sichtbaren Gegenstand.
+> 2. Er verlangt beispielsweise 100 €.
+> 3. Du siehst einen groben Wertbereich, beispielsweise 80–250 €.
+> 4. Du kannst einmal prüfen, verhandeln oder ablehnen.
+> 5. Nach dem Kauf landet der Gegenstand sichtbar im Regal.
+> 6. Käufer kommen herein und machen Angebote.
+> 7. Du akzeptierst oder wartest auf ein besseres Angebot.
+> 8. Mit dem Gewinn vergrößerst du den Laden.
+>
+> Eine Runde mit einem Gegenstand dauert ungefähr 20 bis 40 Sekunden.
+> Nur drei aktive Entscheidungen
+> Bei einem Kunden:
+>
+> * Prüfen
+> * Angebot machen
+> * Ablehnen
+>
+> Bei einem eigenen Gegenstand:
+>
+> * Sofort verkaufen
+> * Ins Regal stellen
+> * Restaurieren
+>
+> Mehr braucht der Anfang nicht.
+> Was komplett rausfliegt
+>
+> * Marktgraphen
+> * sieben Rufgruppen
+> * Versicherungen
+> * Dokumentationen
+> * Konkurrenten
+> * Imperiumsmenü
+> * Museum
+> * komplexe Mitarbeiterfähigkeiten
+> * tägliches Kassenbuch
+> * verschiedene Büros
+> * Kredite
+> * Rebirth
+> * Stadtmenü
+> * Raubzüge
+> * komplizierte Aufträge
+> * mehrere unbekannte Eigenschaften gleichzeitig
+>
+> Diese Systeme werden nicht gelöscht, sondern im Code deaktiviert und vielleicht später einzeln zurückgebracht.
+> Was bleiben darf
+>
+> * bestehender Laden
+> * Kunden und Gegenstände
+> * Preisverhandlung
+> * Fälschungen als seltene Überraschung
+> * Restaurierung
+> * Regale und Lagerplätze
+> * einfache Mitarbeiter
+> * sichtbare Ladenerweiterungen
+> * gelegentliche Auktionen als besonderes Ereignis
+>
+> Der neue Fortschritt
+>
+> * Stufe 1: kleiner Laden, nur Alltagsgegenstände
+> * Stufe 2: zweites Regal und Elektronik
+> * Stufe 3: Werkbank und Restaurierung
+> * Stufe 4: Schmuck und seltene Gegenstände
+> * Stufe 5: erster Mitarbeiter
+> * Stufe 6: größerer Laden
+> * Stufe 7: Auktionen
+>
+> Immer nur eine neue Funktion gleichzeitig.
+> Wichtigster Unterschied
+> Der Spieler soll nicht überlegen:
+> „In welchem der zwölf Menüs muss ich jetzt etwas einstellen?“
+> Sondern:
+> „Kaufe ich diese Uhr für 100 €, obwohl sie vielleicht nur 80 € wert ist – oder finde ich einen Käufer für 300 €?“
+> Das ist verständlich, schnell und kann Spaß machen. Wenn selbst diese stark vereinfachte Version im Test nicht funktioniert, beenden wir Vaultoria und wechseln beispielsweise zu Storage Auction Tycoon oder Car Flip Empire. Aber die aktuelle komplizierte 2.3 sollte auf keinen Fall weitergebaut werden.
+
+## L2. Prüffrage für jeden Build
+
+„Kaufe ich die Uhr für 100 € oder finde ich einen Käufer für 300 €?“ Wenn ein Bildschirm diese Frage nicht in Sekunden spürbar macht, ist er zu kompliziert. Scheitert auch die einfache Version im Test, wird Vaultoria beendet (Alternativen laut Julian: Storage Auction Tycoon, Car Flip Empire).
