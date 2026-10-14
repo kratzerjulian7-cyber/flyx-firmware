@@ -477,19 +477,19 @@ struct Loan: Codable { let principal: Int; var remaining: Int; let dailyRate: In
 
 ## 2c. Preismodell und Premium-Inhalte (1.8, Julian 14.10.2026 14:48)
 
-Julians Text steht wörtlich in `Komplettueberarbeitung-5.3.md` (Nachtrag 3). Klick-Anleitung für App Store Connect: `/mnt/project-files/vaultoria/AppStoreConnect-InApp-Kaeufe.md`.
+Julians Text steht wörtlich in `Komplettueberarbeitung-5.3.md` (Nachtrag 3). Product-IDs (Präfix `com.julian.vaultoria.`) vom Mac festgelegt, 14.10.2026 15:05. Klick-Anleitung für App Store Connect: `/mnt/project-files/vaultoria/AppStoreConnect-InApp-Kaeufe.md`.
 
 | Produkt | Typ | Preis | Kommt mit | Wirkung im Spiel |
 |---|---|---:|---|---|
-| Werbung entfernen (= Werbefrei-Paket) | Nicht-Verbrauchsartikel | 5,99 € | **5.3** | automatische Werbung dauerhaft aus |
-| Premium-Servicewagen | Nicht-Verbrauchsartikel | 2,49 € | **5.3** | eigenes Modell, eine Spezialisierung (z. B. Diagnose +15 %) |
-| Premium-Abschlepper | Nicht-Verbrauchsartikel | 3,99 € | **5.3** | eigenes Modell, eigene Lade-Animation, bessere Ausstattung |
-| Premium-Zentrale | Nicht-Verbrauchsartikel | 3,49 € | **5.3** | exklusive Gebäudevarianten, Hof-Gestaltung, Beleuchtung |
-| Premium-Schwerlastfahrzeug | Nicht-Verbrauchsartikel | 4,99 € | Update mit Schwerlast (E15) | besonderes Schwerlastfahrzeug |
-| Premium-Fuhrpark | Nicht-Verbrauchsartikel | 8,99 € | mit Schwerlastfahrzeug | alle drei Premium-Fahrzeuge |
-| Premium-Unternehmen | Nicht-Verbrauchsartikel | 12,99 € | mit Schwerlastfahrzeug | werbefrei + Fuhrpark + Zentrale |
-| Flughafen- und Eventbezirk | Nicht-Verbrauchsartikel | 8,99 € | **Update P1** (nach 5.3) | Premium-Gebiet, siehe unten |
-| Vaultoria Ultimate | Nicht-Verbrauchsartikel | 17,99 € | mit P1 und Schwerlastfahrzeug | werbefrei + alle Premium-Fahrzeuge + Zentrale + Gebiet |
+| Werbung entfernen (= Werbefrei-Paket) `noads` | Nicht-Verbrauchsartikel | 5,99 € | sobald ein Werbe-SDK freigegeben ist (in 5.3 ausgeblendet) | automatische Werbung dauerhaft aus |
+| Premium-Servicewagen `premium.service` | Nicht-Verbrauchsartikel | 2,49 € | **5.3** | eigenes Modell, +15 % Tempo |
+| Premium-Abschlepper `premium.tow` | Nicht-Verbrauchsartikel | 3,99 € | **5.3** | eigenes Modell, eigene Lade-Animation, 15 % schneller auf- und abladen |
+| Premium-Zentrale `premium.hq` | Nicht-Verbrauchsartikel | 3,49 € | **5.3** | exklusive Gebäudevarianten, Hof-Gestaltung, Beleuchtung |
+| Premium-Schwerlastfahrzeug `premium.heavy` | Nicht-Verbrauchsartikel | 4,99 € | Update mit Schwerlast (E15) | besonderes Schwerlastfahrzeug |
+| Premium-Fuhrpark `premium.fleet` | Nicht-Verbrauchsartikel | 8,99 € | mit Schwerlastfahrzeug | alle drei Premium-Fahrzeuge |
+| Premium-Unternehmen `bundle.company` | Nicht-Verbrauchsartikel | 12,99 € | mit Schwerlastfahrzeug und Werbe-SDK | werbefrei + Fuhrpark + Zentrale |
+| Flughafen- und Eventbezirk `area.event` | Nicht-Verbrauchsartikel | 8,99 € | **Update P1** (nach 5.3) | Premium-Gebiet, siehe unten |
+| Vaultoria Ultimate `bundle.ultimate` | Nicht-Verbrauchsartikel | 17,99 € | mit P1, Schwerlastfahrzeug und Werbe-SDK | werbefrei + alle Premium-Fahrzeuge + Zentrale + Gebiet |
 | Später: Zusatzregion / große Welt / Welt + Spezialfahrzeug / Designs | Nicht-Verbrauchsartikel | 5,99 € / 8,99 € / 11,99 € / 1,49–2,49 € | spätere Updates | – |
 
 **Regeln für die Umsetzung (Docs-Thread, aus Julians Text abgeleitet):**
@@ -508,7 +508,7 @@ Julians Text steht wörtlich in `Komplettueberarbeitung-5.3.md` (Nachtrag 3). Kl
 - Besondere Mitarbeiter und Lackierungen nur dort.
 - Wirtschaft: Erlöse ca. ×1,6, Kosten ca. ×1,3, strengere Zeitfenster und Bewertung; nach Kauf sofort nutzbar, aber auf Firmenstufe 1 mit kleiner Flotte bewusst fordernd.
 - Hauptwelt bleibt vollständig ohne P1 spielbar; Endziel der Hauptwelt hängt nie an P1.
-- Datenmodell: eigener `District` mit `requiresEntitlement: "area.airport"`, eigene `JobType`-Varianten; Spielstand speichert Fortschritt im Gebiet getrennt, damit ein Wiederherstellen nach Neuinstallation funktioniert.
+- Datenmodell: eigener `District` mit `requiresEntitlement: "area.event"`, eigene `JobType`-Varianten; Spielstand speichert Fortschritt im Gebiet getrennt, damit ein Wiederherstellen nach Neuinstallation funktioniert.
 
 ## 2a. Taktplan gegen Wiederholung **[R8]**
 

@@ -1,10 +1,10 @@
 # Vaultoria – In-App-Käufe in App Store Connect anlegen
 
-Stand 14.10.2026, 15:00. Grundlage: Julians Preismodell vom 14.10.2026 14:48 (`design/Komplettueberarbeitung-5.3.md`, Nachtrag 3) und `design/Erweiterungsplan-Pannenhilfe.md` Teil 2c.
+Stand 14.10.2026, 15:05 (Product-IDs vom Mac bestätigt, stehen so in `Shop.swift` und `Vaultoria.storekit`). Grundlage: Julians Preismodell vom 14.10.2026 14:48 (`design/Komplettueberarbeitung-5.3.md`, Nachtrag 3) und `design/Erweiterungsplan-Pannenhilfe.md` Teil 2c.
 
-**Product-IDs sind Platzhalter.** Der Mac bestätigt die endgültigen IDs aus dem Code. Eine Product-ID lässt sich nach dem Anlegen **nie mehr ändern oder wiederverwenden**, also erst anlegen, wenn der Mac die ID bestätigt hat.
+**Die Product-IDs sind endgültig.** Bitte buchstabengenau übernehmen (am besten kopieren). Eine Product-ID lässt sich nach dem Anlegen **nie mehr ändern oder wiederverwenden**.
 
-**Wann anlegen:** nur die Produkte, die im eingereichten Build wirklich kaufbar sind. Für 5.3 sind das die Produkte 1–4. Die Produkte 5–9 kommen erst mit dem passenden Update. „Werbefrei-Paket“ und „Werbung entfernen“ sind **ein** Produkt (gleicher Inhalt, gleicher Preis).
+**Wann anlegen:** nur die Produkte, die im eingereichten Build wirklich kaufbar sind. Das sind für 5.3 **die 3 Produkte in Teil A**. Die Produkte in Teil B kommen erst mit dem passenden Update. „Werbefrei-Paket“ und „Werbung entfernen“ sind **ein** Produkt (gleicher Inhalt, gleicher Preis).
 
 ## Vorher einmal prüfen
 
@@ -23,19 +23,24 @@ Stand 14.10.2026, 15:00. Grundlage: Julians Preismodell vom 14.10.2026 14:48 (`d
 8. Der Status wird zu **„Bereit zur Einreichung“**.
 9. Den **ersten** Kauf reichst du zusammen mit einer App-Version ein. Dafür auf der Versionsseite (z. B. 5.3) im Bereich **In-App-Käufe und Abonnements** die Käufe auswählen und dann die Version einreichen.
 
-## Die Käufe
+## Teil A: Jetzt für 5.3 anlegen (3 Käufe)
 
-| Nr. | Wann anlegen | Referenzname | Produkt-ID (Platzhalter) | Preis | Anzeigename (DE) | Beschreibung (DE) |
-|---|---|---|---|---:|---|---|
-| 1 | 5.3 | Werbung entfernen | `com.julian.vaultoria.removeads` | 5,99 € | Werbung entfernen | Entfernt die automatische Werbung dauerhaft. |
-| 2 | 5.3 | Premium-Servicewagen | `com.julian.vaultoria.vehicle.service` | 2,49 € | Premium-Servicewagen | Exklusiver Servicewagen mit Spezialisierung. |
-| 3 | 5.3 | Premium-Abschlepper | `com.julian.vaultoria.vehicle.tow` | 3,99 € | Premium-Abschlepper | Exklusiver Abschlepper mit eigener Animation. |
-| 4 | 5.3 | Premium-Zentrale | `com.julian.vaultoria.hq` | 3,49 € | Premium-Zentrale | Exklusiver Betriebshof mit Beleuchtung. |
-| 5 | mit Schwerlast-Update | Premium-Schwerlastfahrzeug | `com.julian.vaultoria.vehicle.heavy` | 4,99 € | Premium-Schwerlastfahrzeug | Besonderes Fahrzeug für große Aufträge. |
-| 6 | mit Nr. 5 | Premium-Fuhrpark | `com.julian.vaultoria.fleet` | 8,99 € | Premium-Fuhrpark | Alle drei Premium-Einsatzfahrzeuge. |
-| 7 | mit Nr. 5 | Premium-Unternehmen | `com.julian.vaultoria.bundle.business` | 12,99 € | Premium-Unternehmen | Werbefrei, Premium-Fuhrpark und -Zentrale. |
-| 8 | mit Update P1 | Flughafen- und Eventbezirk | `com.julian.vaultoria.area.airport` | 8,99 € | Flughafen- und Eventbezirk | Neues Gebiet mit VIP- und Event-Aufträgen. |
-| 9 | mit Nr. 5 und Nr. 8 | Vaultoria Ultimate | `com.julian.vaultoria.bundle.ultimate` | 17,99 € | Vaultoria Ultimate | Werbefrei und alle Premium-Inhalte. |
+| Nr. | Referenzname | Produkt-ID | Typ | Preis | Anzeigename (DE) | Beschreibung (DE) | Wirkung im Spiel |
+|---|---|---|---|---:|---|---|---|
+| A1 | Premium-Servicewagen | `com.julian.vaultoria.premium.service` | Nicht-Verbrauchsartikel | 2,49 € | Premium-Servicewagen | Exklusiver Servicewagen mit Spezialisierung. | eigenes Modell, +15 % Tempo |
+| A2 | Premium-Abschlepper | `com.julian.vaultoria.premium.tow` | Nicht-Verbrauchsartikel | 3,99 € | Premium-Abschlepper | Exklusiver Abschlepper mit eigener Animation. | eigenes Modell, 15 % schneller auf- und abladen |
+| A3 | Premium-Zentrale | `com.julian.vaultoria.premium.hq` | Nicht-Verbrauchsartikel | 3,49 € | Premium-Zentrale | Exklusiver Betriebshof mit Beleuchtung. | nur Optik |
+
+## Teil B: Später anlegen (6 Käufe, erst mit dem passenden Update)
+
+| Nr. | Wann | Referenzname | Produkt-ID | Typ | Preis | Anzeigename (DE) | Beschreibung (DE) |
+|---|---|---|---|---|---:|---|---|
+| B1 | sobald ein Werbe-SDK freigegeben und im Build ist | Werbung entfernen | `com.julian.vaultoria.noads` | Nicht-Verbrauchsartikel | 5,99 € | Werbung entfernen | Entfernt die automatische Werbung dauerhaft. |
+| B2 | mit dem Schwerlast-Update | Premium-Schwerlastfahrzeug | `com.julian.vaultoria.premium.heavy` | Nicht-Verbrauchsartikel | 4,99 € | Premium-Schwerlastfahrzeug | Besonderes Fahrzeug für große Aufträge. |
+| B3 | mit B2 | Premium-Fuhrpark | `com.julian.vaultoria.premium.fleet` | Nicht-Verbrauchsartikel | 8,99 € | Premium-Fuhrpark | Alle drei Premium-Einsatzfahrzeuge. |
+| B4 | mit B1 und B2 | Premium-Unternehmen | `com.julian.vaultoria.bundle.company` | Nicht-Verbrauchsartikel | 12,99 € | Premium-Unternehmen | Werbefrei, Premium-Fuhrpark und -Zentrale. |
+| B5 | mit Update P1 | Flughafen- und Eventbezirk | `com.julian.vaultoria.area.event` | Nicht-Verbrauchsartikel | 8,99 € | Flughafen- und Eventbezirk | Neues Gebiet mit VIP- und Event-Aufträgen. |
+| B6 | mit B1, B2 und B5 | Vaultoria Ultimate | `com.julian.vaultoria.bundle.ultimate` | Nicht-Verbrauchsartikel | 17,99 € | Vaultoria Ultimate | Werbefrei und alle Premium-Inhalte. |
 
 Spätere Erweiterungen (Zusatzregion 5,99 €, große Welt 8,99 €, Welt mit Spezialfahrzeug 11,99 €, Designs 1,49–2,49 €) bekommen eigene Zeilen, sobald sie gebaut sind.
 
@@ -47,8 +52,8 @@ Spätere Erweiterungen (Zusatzregion 5,99 €, große Welt 8,99 €, Welt mit Sp
 
 ## Was sich am Store-Eintrag mit 5.3 ändert
 
-- **App-Informationen / Altersfreigabe:** Bei der Frage nach Werbung **Ja** angeben, sobald der Build Werbung zeigt.
-- **App-Datenschutz:** Die Angaben des Werbeanbieters eintragen (Tabelle in `Vaultoria-Store-Texte.md`, Teil Datenschutz). Wenn der Anbieter trackt, braucht der Build den ATT-Hinweis.
+- **App-Informationen / Altersfreigabe:** 5.3 zeigt noch **keine Werbung**, also bei der Frage nach Werbung **Nein**. Auf **Ja** stellen, sobald ein Build mit Werbe-SDK eingereicht wird.
+- **App-Datenschutz:** Erst mit dem Werbe-SDK die Angaben des Werbeanbieters eintragen (Tabelle in `Vaultoria-Store-Texte.md`, Teil Datenschutz). Wenn der Anbieter trackt, braucht der Build den ATT-Hinweis.
 - **Store-Texte:** Nur Käufe nennen, die im Build kaufbar sind. Die Texte schreibe ich neu, sobald 5.3 spielbar ist.
 
 ## Hinweis zu den Paketen
