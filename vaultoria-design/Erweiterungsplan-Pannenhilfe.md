@@ -1,8 +1,8 @@
-# Vaultoria – Erweiterungsplan Pannenhilfe 1.7 (freigegeben, E1 erledigt, als Nächstes Komplettüberarbeitung 5.3; Rückgrat = Firmenentwicklung, Teil 2b)
+# Vaultoria – Erweiterungsplan Pannenhilfe 1.8 (freigegeben, E1 erledigt, als Nächstes Komplettüberarbeitung 5.3; Rückgrat = Firmenentwicklung, Teil 2b)
 
 **Vorrang ab 14.10.2026 14:30: `Komplettueberarbeitung-5.3.md`** (Julians Komplettüberarbeitung, wörtlich). 5.3 ist ein polierter vertikaler Ausschnitt mit Starttempo, Premium-UI/Modelltausch, E1.6 und E1.5 komplett, ohne Zwischenversion auf TestFlight; erst danach E2 ff. Wo jene Datei Neueres festlegt, gilt sie.
 
-Stand 14.10.2026, 14:50 (**1.7: Firmenentwicklung in 5 Stufen + Bausystem als Rückgrat (Teil 2b), Garage/Werkstatt/Leitstelle ×3 entfallen; Monetarisierungsregel in Teil 0.** 1.6 14:35: **1.6: Verweis auf Komplettueberarbeitung-5.3.md; Build-Reihenfolge in 5c ersetzt.** 1.5 14:20: **1.5: Julian 14:15 bestellt vor allen großen Erweiterungen ein Transparenz- und Detail-Update → E1.6, Teil 5c. Build-Reihenfolge: 5.2 Tempo + Premium-UI, 5.3 E1.6 + Zielort/Lager aus E1.5, 5.4 Rest E1.5, danach E2.** 1.4 14:10: **1.4: Julian 14:03 bestellt E1.5 „Zielorte und Betriebsmittel“ vor E2 und ein ruhigeres Starttempo (8–12 Einsätze pro Spieltag), siehe Teil 5b. Tempo kommt in 5.2, E1.5 als 5.3.** 1.3 14:00: **1.3: E1 erledigt in Vaultoria 5.1, Build 202610141353, auf TestFlight; 17 Tests grün; Testbericht `/mnt/project-files/Testbericht.md`. Urteil Mac: Start mit 2 Wagen zu hektisch, Viertel öffnen zu schnell → Balancing in den nächsten Updates.** 1.2 14:15: **1.2: Teil 7 Abgleich mit dem Code vom Mac übernommen; wo der Code abweicht, gilt Teil 7. Spielstand der App: Vaultoria 1.4, Build 202610141306, auf TestFlight, mit Optik-Angleichung und Kenney-Stadt.** 1.1 13:45: **1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
+Stand 14.10.2026, 15:00 (**1.8: Julians Preismodell 14:48 → Teil 2c; ersetzt die Regel „Echtgeld nur Designs“; Premium-Gebiet als Update P1 nach 5.3.** 1.7 14:50: **1.7: Firmenentwicklung in 5 Stufen + Bausystem als Rückgrat (Teil 2b), Garage/Werkstatt/Leitstelle ×3 entfallen; Monetarisierungsregel in Teil 0.** 1.6 14:35: **1.6: Verweis auf Komplettueberarbeitung-5.3.md; Build-Reihenfolge in 5c ersetzt.** 1.5 14:20: **1.5: Julian 14:15 bestellt vor allen großen Erweiterungen ein Transparenz- und Detail-Update → E1.6, Teil 5c. Build-Reihenfolge: 5.2 Tempo + Premium-UI, 5.3 E1.6 + Zielort/Lager aus E1.5, 5.4 Rest E1.5, danach E2.** 1.4 14:10: **1.4: Julian 14:03 bestellt E1.5 „Zielorte und Betriebsmittel“ vor E2 und ein ruhigeres Starttempo (8–12 Einsätze pro Spieltag), siehe Teil 5b. Tempo kommt in 5.2, E1.5 als 5.3.** 1.3 14:00: **1.3: E1 erledigt in Vaultoria 5.1, Build 202610141353, auf TestFlight; 17 Tests grün; Testbericht `/mnt/project-files/Testbericht.md`. Urteil Mac: Start mit 2 Wagen zu hektisch, Viertel öffnen zu schnell → Balancing in den nächsten Updates.** 1.2 14:15: **1.2: Teil 7 Abgleich mit dem Code vom Mac übernommen; wo der Code abweicht, gilt Teil 7. Spielstand der App: Vaultoria 1.4, Build 202610141306, auf TestFlight, mit Optik-Angleichung und Kenney-Stadt.** 1.1 13:45: **1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
 
 ## Julians Auftrag (wörtlich, 14.10.2026 12:57)
 
@@ -91,7 +91,7 @@ Stand 14.10.2026, 14:50 (**1.7: Firmenentwicklung in 5 Stufen + Bausystem als R�
 - **Die Karte bleibt die Mitte.** Jedes neue System zeigt sich zuerst auf der Karte (Marker, Fahrzeug, Gebäudeteil, Straßenabschnitt) und nur unterstützend in den vier vorhandenen Tabs **Karte · Flotte · Zentrale · Personal** oder im Einsatz-Panel (UI-Vorgabe 00b). **Kein fünfter Tab, keine neuen Hauptmenüs.**
 - **Eine neue Funktion pro Freischaltstufe.** Was noch nicht freigeschaltet ist, ist unsichtbar (keine grauen Platzhalter, kein „Demnächst“).
 - **Zahlen sind Startwerte** zum Ausbalancieren im Test. Der Mac gleicht Namen und Felder mit dem echten Swift-Code ab; bei Abweichung gilt der Code, dieser Plan wird angepasst.
-- **Monetarisierung (Julian 14.10.2026 14:43, verbindlich):** Das normale Firmenwachstum ist Teil des kostenlosen Spiels. Echtgeld schaltet **nur** besondere Designs, Gebäudevarianten oder Lackierungen frei, **nie** den normalen Ausbau, keine Zeitverkürzung, kein Spielgeld, keine Vorteile. Ob und wann es solche Käufe gibt, entscheidet Julian.
+- **Monetarisierung (Julian 14.10.2026 14:48, ersetzt die Regel „nur Designs“ von 14:43):** Vaultoria ist kostenlos mit Werbung. Die komplette Hauptwelt inkl. normalem Firmenwachstum bleibt **ohne Kauf vollständig spielbar**; der normale Ausbau wird **nie** blockiert. Käufe: Werbung entfernen, Premium-Fahrzeuge, Premium-Zentrale, Premium-Gebiet „Flughafen- und Eventbezirk“, Pakete, später Zusatzregionen/Welten/Designs (Preise und Regeln: Erweiterungsplan Teil 2c). Nicht im Preismodell: Spielgeld gegen Echtgeld, „Sofort fertig“, Zufallskäufe.
 - **[R1] Spielzeit:** 1 Spieltag = **18 Minuten** echte Zeit bei 1× (Spieluhr 06:00–22:00, Nacht wird übersprungen, außer Nachtdienst ist freigeschaltet). Erste Welt ≈ **300 Spieltage** (250–350) ≈ 75 Stunden bei 1×; wer oft 2× oder 4× nutzt, kommt eher auf 50, wer gründlich spielt eher auf 100 Stunden. Fristen aus dem echten Recht werden gestaucht (**1 echter Monat = 5 Spieltage**), die Reihenfolge der Schritte bleibt echt.
 
 ---
@@ -421,7 +421,7 @@ Bremse für den Einstieg: In den ersten 10 Spieltagen nie mehr als 4 gleichzeiti
 
 ## 2b. Firmenentwicklung: das Rückgrat (1.7, Julian 14.10.2026 14:43)
 
-Julians Text steht wörtlich in `Komplettueberarbeitung-5.3.md` (Nachtrag 2). Die Abschleppfirma wächst **sichtbar auf der Karte** in 5 Firmenstufen. Die 18 Freischaltstufen aus Teil 2 hängen jetzt an diesen Firmenstufen. **Garage, Werkstatt und Leitstelle mit je 3 Stufen entfallen**; an ihre Stelle tritt das Bausystem unten. **Monetarisierung (Julian 14.10.2026 14:43, verbindlich):** Das normale Firmenwachstum ist Teil des kostenlosen Spiels. Echtgeld schaltet **nur** besondere Designs, Gebäudevarianten oder Lackierungen frei, **nie** den normalen Ausbau, keine Zeitverkürzung, kein Spielgeld, keine Vorteile. Ob und wann es solche Käufe gibt, entscheidet Julian.
+Julians Text steht wörtlich in `Komplettueberarbeitung-5.3.md` (Nachtrag 2). Die Abschleppfirma wächst **sichtbar auf der Karte** in 5 Firmenstufen. Die 18 Freischaltstufen aus Teil 2 hängen jetzt an diesen Firmenstufen. **Garage, Werkstatt und Leitstelle mit je 3 Stufen entfallen**; an ihre Stelle tritt das Bausystem unten. **Monetarisierung (Julian 14.10.2026 14:48, ersetzt die Regel „nur Designs“ von 14:43):** Vaultoria ist kostenlos mit Werbung. Die komplette Hauptwelt inkl. normalem Firmenwachstum bleibt **ohne Kauf vollständig spielbar**; der normale Ausbau wird **nie** blockiert. Käufe: Werbung entfernen, Premium-Fahrzeuge, Premium-Zentrale, Premium-Gebiet „Flughafen- und Eventbezirk“, Pakete, später Zusatzregionen/Welten/Designs (Preise und Regeln: Erweiterungsplan Teil 2c). Nicht im Preismodell: Spielgeld gegen Echtgeld, „Sofort fertig“, Zufallskäufe.
 
 ### Firmenstufen und Freischaltstufen
 
@@ -474,6 +474,41 @@ struct Loan: Codable { let principal: Int; var remaining: Int; let dailyRate: In
 ### Was in 5.3 gebaut wird
 
 **Firmenstufe 1 komplett** (gemietete Halle, Büro, 4 Stellplätze, 1 Servicewagen + 1 Abschlepper, 2 Mitarbeiter, kleiner Teilebestand) **plus das Bausystem** mit den ersten Ausbauten Richtung Stufe 2: Stellplatzfläche, Reifencontainer, Entsorgungsbereich, Lagerhalle, Zusätzliche Garage (ersetzen die Ausbaustufen aus Teil 5b Punkt 5–6). Bausystem inkl. Baustelle, Bauzeit, laufender Kosten, Kredit und Anzeige „Firmenstufe 1 · Kleiner Familienbetrieb“ mit Fortschritt zum Aufstieg. **Der Aufstieg zu Stufe 2 selbst** kommt mit E6 (Betriebshof); Stufen 3–5 in den späteren Updates nach Teil 5.
+
+## 2c. Preismodell und Premium-Inhalte (1.8, Julian 14.10.2026 14:48)
+
+Julians Text steht wörtlich in `Komplettueberarbeitung-5.3.md` (Nachtrag 3). Klick-Anleitung für App Store Connect: `/mnt/project-files/vaultoria/AppStoreConnect-InApp-Kaeufe.md`.
+
+| Produkt | Typ | Preis | Kommt mit | Wirkung im Spiel |
+|---|---|---:|---|---|
+| Werbung entfernen (= Werbefrei-Paket) | Nicht-Verbrauchsartikel | 5,99 € | **5.3** | automatische Werbung dauerhaft aus |
+| Premium-Servicewagen | Nicht-Verbrauchsartikel | 2,49 € | **5.3** | eigenes Modell, eine Spezialisierung (z. B. Diagnose +15 %) |
+| Premium-Abschlepper | Nicht-Verbrauchsartikel | 3,99 € | **5.3** | eigenes Modell, eigene Lade-Animation, bessere Ausstattung |
+| Premium-Zentrale | Nicht-Verbrauchsartikel | 3,49 € | **5.3** | exklusive Gebäudevarianten, Hof-Gestaltung, Beleuchtung |
+| Premium-Schwerlastfahrzeug | Nicht-Verbrauchsartikel | 4,99 € | Update mit Schwerlast (E15) | besonderes Schwerlastfahrzeug |
+| Premium-Fuhrpark | Nicht-Verbrauchsartikel | 8,99 € | mit Schwerlastfahrzeug | alle drei Premium-Fahrzeuge |
+| Premium-Unternehmen | Nicht-Verbrauchsartikel | 12,99 € | mit Schwerlastfahrzeug | werbefrei + Fuhrpark + Zentrale |
+| Flughafen- und Eventbezirk | Nicht-Verbrauchsartikel | 8,99 € | **Update P1** (nach 5.3) | Premium-Gebiet, siehe unten |
+| Vaultoria Ultimate | Nicht-Verbrauchsartikel | 17,99 € | mit P1 und Schwerlastfahrzeug | werbefrei + alle Premium-Fahrzeuge + Zentrale + Gebiet |
+| Später: Zusatzregion / große Welt / Welt + Spezialfahrzeug / Designs | Nicht-Verbrauchsartikel | 5,99 € / 8,99 € / 11,99 € / 1,49–2,49 € | spätere Updates | – |
+
+**Regeln für die Umsetzung (Docs-Thread, aus Julians Text abgeleitet):**
+- Ein Produkt wird erst in App Store Connect angelegt und im Shop angeboten, wenn sein Inhalt im Build wirklich spielbar ist (Pakete erst, wenn alle Teile da sind). „Werbefrei-Paket“ und „Werbung entfernen“ sind dasselbe Produkt.
+- Premium-Fahrzeuge sind spürbar besser in **einem** Wert (höchstens ca. +15 %) und optisch eigenständig; jeder Auftrag der Hauptwelt bleibt mit normalen Fahrzeugen lösbar. Premium-Fahrzeuge kosten im Spiel normale laufende Kosten.
+- Premium-Zentrale ist Optik und Gestaltung (Gebäudevarianten, Beleuchtung), kein schnellerer Ausbau, keine zusätzlichen Bauflächen in der Hauptwelt.
+- **Werbung:** nur „automatische“ Werbung (Vollbild) an ruhigen Stellen, Startwert höchstens 1 pro Spieltag bei der Tagesabrechnung, nie während einer Entscheidung, eines Einsatzes oder in den ersten 30 Minuten. Datenschutz/ATT nach Store-Texten Teil Datenschutz.
+- **Käufe wiederherstellen** in den Einstellungen; Kaufstatus über StoreKit 2 (`Transaction.currentEntitlements`), offline gültig.
+- Shop-Ort ohne neuen Tab: Karte **„Premium“** im Tab Zentrale (UI-Vorgabe 000e).
+
+### Update P1: Premium-Gebiet „Flughafen- und Eventbezirk“ (8,99 €, eigenes Update nach 5.3)
+
+- Eigener großer Kartenbereich, über eine Brücke/Zufahrt mit der Hauptwelt verbunden, ohne Kauf sichtbar aber gesperrt (dezent, mit Infokarte statt Werbung im Spielfluss).
+- Bezirke: Flughafen, Messegelände, Rennstrecke, Luxusviertel; eigene Partnerverträge (Flughafen-Betreiber, Messe, Rennveranstalter; fiktiv, keine Marken).
+- Auftragsarten: VIP-Pannen, Sportwagen- und Oldtimertransporte (geschlossener Transporter), Pannen bei Großveranstaltungen (mehrere gleichzeitig), Transport von Rennfahrzeugen, Sicherheits- und Begleitaufträge; seltene Fahrzeuge für die Sammlung (sobald Sammlung E12 freigeschaltet ist, vorher normale Transporte).
+- Besondere Mitarbeiter und Lackierungen nur dort.
+- Wirtschaft: Erlöse ca. ×1,6, Kosten ca. ×1,3, strengere Zeitfenster und Bewertung; nach Kauf sofort nutzbar, aber auf Firmenstufe 1 mit kleiner Flotte bewusst fordernd.
+- Hauptwelt bleibt vollständig ohne P1 spielbar; Endziel der Hauptwelt hängt nie an P1.
+- Datenmodell: eigener `District` mit `requiresEntitlement: "area.airport"`, eigene `JobType`-Varianten; Spielstand speichert Fortschritt im Gebiet getrennt, damit ein Wiederherstellen nach Neuinstallation funktioniert.
 
 ## 2a. Taktplan gegen Wiederholung **[R8]**
 
@@ -590,6 +625,7 @@ Plan-Nummern E1–E19. **App-Versionen ab 14.10.2026: nächster Build = Vaultori
 | **E1 Fundament** (siehe 5a) **✓ erledigt in 5.1** | Profil + Weltstand mit `worldId`, `schemaVersion` + Migration, Spieltag 18 Min, Simulation in festen Spielminuten, **Zeitsteuerung ⏸/1×/2×/4× mit Auto-Pause**, Freischaltsystem (nur Stufe 0), Seed-Tests | siehe 5a | siehe 5a |
 | **E1.5 Zielorte + Betriebsmittel** (Stufe 0, siehe 5b) | Zielwahl nach dem Abschleppen, Ladung sichtbar, Hof-Grundumfang, 5 Bestände, 4 Entsorgungscontainer, Ausbau Lager/Reifencontainer/Recycling, Starttempo | siehe 5b | siehe 5b |
 | **E1.6 Transparenz + Details** (Stufe 0, siehe 5c) | Kalkulation vor Zuteilung, Status während, Abrechnung danach, Kassenbuch, Fixkosten, Verlauf, eindeutige Status, Gründe, Kaufbestätigung, Geld-Rückmeldung, Ersthinweise | siehe 5c | siehe 5c |
+| **P1 Premium-Gebiet** (Kauf 8,99 €, nach 5.3, siehe 2c) | Flughafen- und Eventbezirk, VIP- und Event-Aufträge, eigene Verträge | Hauptwelt ohne Kauf vollständig; Kauf/Wiederherstellen schaltet frei | Gebiet gesperrt, gekauft, VIP-Auftrag |
 | **E2 Wetter + Dauer** (Stufe 1) | Wetter, Verkehrsfaktoren, Dauerformel, A*-Route über Stau | Regen verlängert sichtbar Fahrt; Route weicht Stau aus; Anzeige stimmt mit tatsächlicher Dauer ±10 % | Karte bei Regen, Panel mit Ankunft/Arbeit, Umweg um Stau |
 | **E3 Erfahrung** (Stufe 2) | XP, Stufen, Wertwahl alle 3 Stufen | Nach Einsätzen steigt XP in der genutzten Fähigkeit; Stufenkarte erscheint; Wert wirkt auf Dauer | Personal-Tab, Stufe-erreicht-Karte |
 | **E4 Ausgänge** (Stufe 3) | Outcome-Würfel, „gute Chance/riskant“, Berichte | Alle 7 Ausgänge mit festem Seed auslösbar, Geld/Sterne korrekt | Panel mit Chance-Wort, 3 Berichte mit unterschiedlichem Ausgang |

@@ -1,6 +1,6 @@
 # Vaultoria – Komplettüberarbeitung 5.3 (verbindlich)
 
-Stand 14.10.2026, 14:40. Julians Auftrag vom 14.10.2026 14:30 und Nachträge 14:36 und 14:43, **wörtlich** unten. Geht bei Widerspruch allen anderen Dateien vor (`Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md`, `Erweiterungsplan-Pannenhilfe.md`); diese bleiben als Detail- und Zahlenquelle gültig.
+Stand 14.10.2026, 14:40. Julians Auftrag vom 14.10.2026 14:30 und Nachträge 14:36, 14:43 und 14:48, **wörtlich** unten. Geht bei Widerspruch allen anderen Dateien vor (`Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md`, `Erweiterungsplan-Pannenhilfe.md`); diese bleiben als Detail- und Zahlenquelle gültig.
 
 ## Einordnung (Docs-Thread)
 
@@ -14,7 +14,7 @@ Stand 14.10.2026, 14:40. Julians Auftrag vom 14.10.2026 14:30 und Nachträge 14:
   - Neu für 5.3: Diagnose vor Ort, zweites Fahrzeug anfordern, Ausgänge „falsch gemeldet“, „Kunde storniert“, „nicht sicher reparierbar“, „Folgeauftrag“; Kosten vorab auch Entsorgung, Partnerkosten, Vertragsboni/-strafen; Bewertung mit Begründung; Kamera folgt eigenem Fahrzeug; Marker beim Herauszoomen kleiner/zusammengefasst; Tag/Abend/Nacht; Sounds und Haptik abschaltbar; Hof mit Werkstatt und Tank-/Ladebereich.
   - Stil: einheitlich, realistische Materialien auf stilisierten Formen, keine Mischung aus fotorealistischen Bildern und Low-Poly-Modellen (präzisiert UI-Vorgabe 000b Punkt 7).
 - **Firmenentwicklung (Nachtrag 14:43):** zentrales Fortschrittssystem, 5 Firmenstufen + Bausystem auf freien Hofflächen. In 5.3: **Firmenstufe 1 komplett + Bausystem mit den ersten Ausbauten Richtung Stufe 2** (Erweiterungsplan Teil 2b). Garage/Werkstatt/Leitstelle mit je 3 Stufen entfallen.
-- **Monetarisierung (Julian 14.10.2026 14:43, verbindlich):** Das normale Firmenwachstum ist Teil des kostenlosen Spiels. Echtgeld schaltet **nur** besondere Designs, Gebäudevarianten oder Lackierungen frei, **nie** den normalen Ausbau, keine Zeitverkürzung, kein Spielgeld, keine Vorteile. Ob und wann es solche Käufe gibt, entscheidet Julian.
+- **Monetarisierung (Julian 14.10.2026 14:48, ersetzt die Regel „nur Designs“ von 14:43):** Vaultoria ist kostenlos mit Werbung. Die komplette Hauptwelt inkl. normalem Firmenwachstum bleibt **ohne Kauf vollständig spielbar**; der normale Ausbau wird **nie** blockiert. Käufe: Werbung entfernen, Premium-Fahrzeuge, Premium-Zentrale, Premium-Gebiet „Flughafen- und Eventbezirk“, Pakete, später Zusatzregionen/Welten/Designs (Preise und Regeln: Erweiterungsplan Teil 2c). Nicht im Preismodell: Spielgeld gegen Echtgeld, „Sofort fertig“, Zufallskäufe. In 5.3: Shop (Karte „Premium“ in der Zentrale), Werbung entfernen, Premium-Servicewagen, Premium-Abschlepper, Premium-Zentrale; Premium-Gebiet als eigenes Update P1 danach.
 - **Lieferung an Julian:** TestFlight-Build 5.3, Screenshots aller überarbeiteten Bereiche, kurzes Video eines kompletten Einsatzes, Änderungsliste, ehrliche Schwächenliste, Testergebnisse, Sicherung von 5.1.
 
 ## Julians Auftrag (wörtlich, 14.10.2026 14:30)
@@ -405,3 +405,56 @@ Bauzeit: 5 Spieltage
 Laufende Kosten: 180 € pro Tag
 Vorteil: Zwei Fahrzeuge gleichzeitig warten
 Wichtig: Das normale Firmenwachstum ist Bestandteil des kostenlosen Spiels. Echtgeld darf nur besondere Designs, Gebäudevarianten oder Lackierungen freischalten – nicht den normalen Ausbau blockieren. Genau dieses sichtbare Wachstum kann die langfristige Motivation für die geplanten 50–100 Stunden liefern.
+
+## Nachtrag 3 (wörtlich, Julian 14.10.2026 14:48): Preismodell
+
+> Dann positionieren wir Vaultoria etwas hochwertiger. Wenn die erste Welt wirklich 50–100 Stunden bietet, sind höhere Preise vertretbar.
+>
+> ## Überarbeitetes Preismodell
+>
+> | Angebot | Inhalt | Preis |
+> |---|---|---:|
+> | App | komplette erste Welt mit Werbung | **kostenlos** |
+> | Werbung entfernen | automatische Werbung dauerhaft entfernen | **5,99 €** |
+> | Premium-Servicewagen | exklusives Fahrzeug mit besonderer Spezialisierung | **2,49 €** |
+> | Premium-Abschlepper | exklusives Modell mit eigener Animation und Ausstattung | **3,99 €** |
+> | Premium-Schwerlastfahrzeug | besonderes Fahrzeug für große Aufträge | **4,99 €** |
+> | Premium-Zentrale | exklusiver Betriebshof, Gebäude und Beleuchtung | **3,49 €** |
+> | Premium-Fuhrpark | alle drei Premium-Einsatzfahrzeuge | **8,99 €** |
+>
+> ## Premium-Gebiet
+>
+> ### Flughafen- und Eventbezirk – 8,99 €
+>
+> Nur durch Echtgeld freischaltbar:
+>
+> - eigener großer Kartenbereich
+> - Flughafen, Messegelände, Rennstrecke und Luxusviertel
+> - besonders lukrative VIP-Aufträge
+> - Sportwagen- und Oldtimertransporte
+> - Pannen bei Großveranstaltungen
+> - Transport von Rennfahrzeugen
+> - Sicherheits- und Begleitaufträge
+> - seltene Fahrzeuge für die eigene Sammlung
+> - eigene Partnerverträge
+> - besondere Mitarbeiter und Fahrzeuglackierungen
+> - größere Gewinne, aber auch höhere Kosten und schwierigere Einsätze
+>
+> Das Gebiet darf deutlich bessere Aufträge bieten, aber die kostenlose Hauptwelt muss trotzdem vollständig spielbar bleiben.
+>
+> ## Pakete
+>
+> | Paket | Inhalt | Preis |
+> |---|---|---:|
+> | **Werbefrei-Paket** | nur automatische Werbung entfernen | **5,99 €** |
+> | **Premium-Unternehmen** | werbefrei + Premium-Fuhrpark + Premium-Zentrale | **12,99 €** |
+> | **Vaultoria Ultimate** | werbefrei + alle Premium-Fahrzeuge + Premium-Zentrale + Premium-Gebiet | **17,99 €** |
+>
+> ## Spätere Erweiterungen
+>
+> - kleine Zusatzregion: **5,99 €**
+> - große neue Welt: **8,99 €**
+> - Welt inklusive Spezialfahrzeug: **11,99 €**
+> - einzelne Designs: **1,49–2,49 €**
+>
+> Das Premium-Gebiet würde ich nicht unter **8,99 €** anbieten. Es soll schließlich nicht wie ein kleiner Skin wirken, sondern wie eine echte Erweiterung mit eigenen Gebieten, Aufträgen und Fahrzeugen. baue das alles mit ein
