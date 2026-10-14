@@ -1,6 +1,6 @@
-# Vaultoria – UI-Vorgabe Pannenhilfe 2.2 (verbindlich)
+# Vaultoria – UI-Vorgabe Pannenhilfe 2.3 (verbindlich)
 
-Stand 14.10.2026, 14:00 (**2.2: Julians Bewertung des 5.0-Zwischenstands (8/10), Teil 000a Lesbarkeit. Grundoptik bleibt, Realismus-Block abgeschwächt, Orange wieder Funktionsfarbe.** 2.1 13:45: **2.1: realistische Autos, Häuser und Menschen, CC0 von Poly Haven und ambientCG freigegeben, Julian 13:40.** 2.0 13:20: **2.0: KEIN GOLD. Julian zu 1.4: „nicht gold mache es besser das sieht scheiße billig aus und wie für ein 2 jährigen“. Teil 000 Stil geht allem vor; Layout und Aufbau der Konzeptbilder bleiben, Farbe und Stil daraus gelten nicht mehr.** 1.4 11:30: **1.4: Teil 13 erste Version mit 8 Pflichtpunkten, Später-Liste, offene Konzeptbilder, Julian 11:21.** 1.3 11:20: **1.3: Teil 00b Einsatz-Zuteilung und 00c Zentrale nach Julians Konzeptbildern 11:16.** 1.2 11:10: **1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
+Stand 14.10.2026, 14:05 (**2.3: Julian 13:59 „doch mache die ui besser viel besser“ → Teil 000b Premium-UI und einheitlich realistischer Modelltausch, Build 5.2. Farbe, Layout und Lesbarkeitsregeln bleiben.** 2.2 14:00: **2.2: Julians Bewertung des 5.0-Zwischenstands (8/10), Teil 000a Lesbarkeit. Grundoptik bleibt, Realismus-Block abgeschwächt, Orange wieder Funktionsfarbe.** 2.1 13:45: **2.1: realistische Autos, Häuser und Menschen, CC0 von Poly Haven und ambientCG freigegeben, Julian 13:40.** 2.0 13:20: **2.0: KEIN GOLD. Julian zu 1.4: „nicht gold mache es besser das sieht scheiße billig aus und wie für ein 2 jährigen“. Teil 000 Stil geht allem vor; Layout und Aufbau der Konzeptbilder bleiben, Farbe und Stil daraus gelten nicht mehr.** 1.4 11:30: **1.4: Teil 13 erste Version mit 8 Pflichtpunkten, Später-Liste, offene Konzeptbilder, Julian 11:21.** 1.3 11:20: **1.3: Teil 00b Einsatz-Zuteilung und 00c Zentrale nach Julians Konzeptbildern 11:16.** 1.2 11:10: **1.2: Teil 12 Große Welt + sichtbare Ausbauten, Julian 11:06.** 1.1 11:00: **1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
 
 **Versionen:** Die nächste App-Version ist **Vaultoria 5.0**, danach 5.1, 5.2 … (Julian 14.10.2026). Stil 2.0 dieser Datei gilt ab 5.0; „1.4“ meint den bisherigen Gold-Build 202610141306.
 
@@ -48,7 +48,7 @@ Farbe nur für Status. Kein Blau/Cyan in der Oberfläche (Wasser auf der Karte d
 - **Zentrale:** moderner Flachbau in Anthrazit und Glas, Rolltore, sachlich beleuchtet, keine Goldfassade.
 - Personen (Mitarbeiterporträts): realistische Arbeitskleidung in Grau/Anthrazit mit Warnstreifen, kleines V-Logo.
 
-**Realismus (2.1, ab 2.2 abgeschwächt, siehe Teil 000a: einheitlicher Stil geht vor; kein großer Asset-Tausch jetzt) — ursprünglich Julian 14.10 13:40: „ich gebe es dir frei weil ich wil ldas das realisitische autos häuser und menschen sind man“)**
+**Realismus (2.1; in 2.2 kurz abgeschwächt, ab 2.3 wieder gültig: Tausch kommt in 5.2, aber nur einheitlich für die ganze Stadt, siehe Teil 000b) — ursprünglich Julian 14.10 13:40: „ich gebe es dir frei weil ich wil ldas das realisitische autos häuser und menschen sind man“)**
 - **Autos, Häuser und Menschen realistisch**: echte Proportionen, realistische Fahrzeugformen (Kleinwagen, Kombi, Transporter, Lkw, Bus), Häuser mit echten Fassaden, Fenstern, Dächern, Gehwegen; Menschen mit natürlichen Körperproportionen und Kleidung.
 - **Keine Spielzeug- oder Low-Poly-Optik, auch nicht bei Figuren**: keine Kastenköpfe, keine Knubbelfiguren, keine übergroßen Köpfe, keine flachen Einfarb-Polygone, keine Comic-Konturen.
 - **Freigegebene Quellen (CC0):** Poly Haven (Modelle, PBR-Texturen, HDRIs) und ambientCG (PBR-Materialien: Asphalt, Putz, Ziegel, Dachziegel, Metall, Glas). Bisherige Kenney-/Quaternius-Low-Poly-Teile werden schrittweise ersetzt, wo sie sichtbar sind.
@@ -58,7 +58,30 @@ Farbe nur für Status. Kein Blau/Cyan in der Oberfläche (Wasser auf der Karte d
 
 **Prüffrage zum Stil:** Sieht der Bildschirm aus wie eine ernsthafte Disponenten-Software in einem hochwertigen Spiel, nicht wie ein Kinderspiel? Wenn irgendwo Gold, Glow oder Spielzeug-Optik auftaucht, ist es falsch.
 
-## 000a. Lesbarkeit nach dem 5.0-Zwischenstand (2.2, geht Teil 000 bei Widerspruch vor)
+## 000b. Premium-UI und einheitlich realistische Modelle (2.3, für Vaultoria 5.2, geht 000a Punkt 1 vor)
+
+> doch mache die ui besser viel besser
+
+(Julian 14.10.2026 13:59, nach seinem 8/10-Urteil; die neuere Ansage geht vor.)
+
+**Bleibt:** Farben aus Teil 000 (Graphit/Anthrazit/Silber, Orange als Funktionsfarbe, Statusfarben), Layout der Konzeptbilder, alle Lesbarkeitsregeln aus 000a (Punkte 2–9). Kein Gold, kein Glow, keine Spielzeug-Optik.
+
+**UI auf Premium-Niveau:**
+1. **Panels:** Material-Hintergrund (`.ultraThinMaterial` über Anthrazit #2A2A2E bei ca. 85 %), Eckenradius 16 pt (Karten) bzw. 12 pt (Knöpfe), 0,5 pt Rand #3A3A3F, weicher Schatten (Schwarz 30 %, Radius 12, y 4). Keine harten Kästen, keine Doppelrahmen.
+2. **Typografie:** SF Pro mit klarer Hierarchie: Titel 20 pt Semibold, Abschnitt 15 pt Semibold, Text 15 pt Regular, Zusatz 13 pt #8A8A91; Geld und Zeiten mit `monospacedDigit()`; Zahlen-Wechsel mit `contentTransition(.numericText())`. Höchstens 3 Schriftgrößen pro Panel.
+3. **Abstände:** 8-pt-Raster (8/16/24), Panel-Innenabstand 16 pt, Zeilenhöhe in Listen mindestens 52 pt, Trennlinien 0,5 pt. Nichts klebt am Rand, nichts wirkt gequetscht.
+4. **Animationen:** Federn statt linear (`.spring(response: 0.35, dampingFraction: 0.85)`); Panels gleiten von unten ein, Marker erscheinen mit kurzem Skalieren (0,8→1,0), Fahrzeuge fahren und lenken weich, Kamera fährt beim Auswählen sanft hin. Ausbauten wachsen sichtbar (Gerüst → fertig). Nie länger als 0,4 s für Bedienreaktionen.
+5. **Haptik:** leichtes Tippen beim Auswählen, mittel beim Losschicken, Erfolgs-Haptik bei erledigtem Einsatz und Ausbau, Warn-Haptik bei dringendem Einsatz/Auto-Pause. Abschaltbar in den Einstellungen.
+6. **Icons und Details:** einheitlich SF Symbols in einer Strichstärke (Medium), Kapseln für Status, Fortschrittsbalken dünn (4 pt) mit runden Enden.
+
+**Modelle einheitlich realistisch tauschen (5.2):**
+7. Autos, Häuser und Menschen werden **gemeinsam** gegen realistische CC0-Modelle getauscht (Poly Haven, ambientCG-Materialien), nach dem Realismus-Block in Teil 000. **Kein Stilbruch:** nie einzelne realistische Teile in einer sonst stilisierten Stadt. Was nicht realistisch ersetzt werden kann, wird per PBR-Material und Licht angeglichen.
+8. Einheitliches Licht (ein HDRI, gleiche Sonnenrichtung, weiche Schatten), gleicher Detailgrad aus der Spielkamera, LOD beim Herauszoomen, 60 fps auf kleinen iPhones bleibt Pflicht.
+9. Keine echten Marken oder Logos, Kennzeichen fiktiv.
+
+**Abnahme 5.2:** Seite-an-Seite-Vergleich mit 5.1 (Karte, Einsatzfenster, Zuteilung, Zentrale) und ehrliche Selbstkritik vor dem Upload: Wirkt es wie ein hochwertiges Management-Spiel? Gibt es Stilbrüche?
+
+## 000a. Lesbarkeit nach dem 5.0-Zwischenstand (2.2, geht Teil 000 bei Widerspruch vor; Punkt 1 ab 2.3 durch 000b ersetzt)
 
 Julian 14.10 13:50 (wörtlich):
 
@@ -79,7 +102,7 @@ Julian 14.10 13:50 (wörtlich):
 
 **Grundoptik bleibt** wie im 5.0-Zwischenstand (Graphit/Anthrazit/Silber, SF Pro, dünne Linien, kein Gold). Nicht erneut umbauen. Danach Gameplay testen.
 
-1. **Einheitlicher Stil statt Fotorealismus:** Karte, Fahrzeuge, Häuser und Figuren im selben Stil wie die Stadt. Keine fotorealistischen Einzelteile in der stilisierten Stadt. Neu gerenderte Kartenbilder werden an Stil, Licht und Detailgrad der Stadt angepasst. Poly Haven/ambientCG nur für Materialien und Licht, wo es zur Stadt passt; **kein großer Asset-Tausch jetzt**. Keine Kinder-/Knubbel-Optik bleibt verboten.
+1. ~~(ab 2.3 ersetzt durch 000b Punkt 7–8: einheitlicher Tausch in 5.2)~~ **Einheitlicher Stil statt Fotorealismus:** Karte, Fahrzeuge, Häuser und Figuren im selben Stil wie die Stadt. Keine fotorealistischen Einzelteile in der stilisierten Stadt. Neu gerenderte Kartenbilder werden an Stil, Licht und Detailgrad der Stadt angepasst. Poly Haven/ambientCG nur für Materialien und Licht, wo es zur Stadt passt; **kein großer Asset-Tausch jetzt**. Keine Kinder-/Knubbel-Optik bleibt verboten.
 2. **Orange als Funktionsfarbe (#F08A24):** Einsatzmarker, Warnungen und Rundumlichter sind orange. Dringend bleibt rot (#D9473A) mit orangem Rundumlicht-Puls. Sonst bleibt alles Graphit/Silber.
 3. **Route kräftiger:** 4 pt Silber #C7C7CC mit 1,5 pt dunklem Rand #1C1C1E (insgesamt ca. 7 pt), auf Straßenniveau, nicht von Gebäuden verdeckt (über der Geometrie gezeichnet). Rückfahrt gestrichelt in gleicher Stärke. Kein Leuchten.
 4. **Touchflächen:** Alle Bedienelemente mindestens **44 × 44 pt** Trefferfläche, auch wenn sie optisch kleiner sind (Zeitknöpfe ⏸ 1× 2× 4× bleiben optisch klein, `contentShape` auf 44 × 44).
