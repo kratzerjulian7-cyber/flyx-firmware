@@ -1,8 +1,27 @@
-# Vaultoria – UI-Vorgabe Pannenhilfe 1.0 (verbindlich)
+# Vaultoria – UI-Vorgabe Pannenhilfe 1.1 (verbindlich)
 
-Stand 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
+Stand 14.10.2026, 11:00 (**1.1: Julians Konzeptbild und App-Icon sind verbindlich, Teil 00 geht bei Widerspruch vor**). 1.0 vom 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 10:34). Ersetzt alle früheren UI-Vorgaben (Archiv in `archiv-pfandhaus/`). Zahlen sind Startwerte zum Testen, im Spiel anpassen.
 
 **Prüffrage für jeden Bildschirm:** Sieht man in zwei Sekunden, welches Fahrzeug wohin fährt und was als Nächstes zu tun ist? Wenn nicht, ist der Bildschirm zu voll.
+
+## 00. Julians Konzeptbild und App-Icon (14.10 10:55, verbindlich, genau so umsetzen)
+
+Bilder im selben Ordner: `Konzept-Hauptbildschirm-Karte.png` (Hauptbildschirm, „so soll das aussehen“) und `App-Icon-Pannenhilfe.png` (neues App-Icon, sofort als Icon setzen). Das Konzeptbild ist eine Vorgabe für den Look, kein Screenshot.
+
+**App-Icon:** goldenes, gebürstetes V auf schwarzem Grund, oben ein goldener Kranhaken an Seilen, unten durch das V eine schwarze Straße mit goldenen Mittelstreifen. Ersetzt das alte „Goldene V“. In alle Icon-Größen exportieren, Hintergrund ohne Transparenz. App-Name bleibt **Vaultoria**.
+
+**Hauptbildschirm (von oben nach unten):**
+1. **Kopfleiste** auf schwarzem Grund mit feinem Goldrand unten: links das Icon-Logo (V mit Haken), daneben „VAULTORIA“ in goldener Versal-Schrift. Rechts zwei Kapseln mit Goldrand: **Geld** (Geldbündel-Symbol, „12.480 €“) und **Bewertung** (goldener Stern, „4,8“). Uhrzeit/Tag nicht in der Kopfleiste (steht in der Tagesabrechnung).
+2. **Karte** füllt den ganzen Rest: isometrische Abendstadt, warmes Laternenlicht, europäische Häuser mit roten und grauen Dächern, Kirche, Fluss mit Brücke, Kreisverkehr mit Denkmal, Bahnstrecke mit Bahnsteig, Bäume, Zebrastreifen. Keine echten Ortsnamen oder Marken.
+3. **Zentrale** in der Mitte: schwarzes, flaches Gebäude mit großem goldenen V-Haken-Logo auf dem Dach, beleuchtete Rolltore, Parkplatz mit Stellplätzen davor.
+4. **Eigene Fahrzeuge**: gelb-schwarz mit goldenem V auf dem Dach, orangefarbenes Rundumlicht. Servicewagen als Transporter, Abschleppwagen als Plateau-Abschlepper.
+5. **Routen**: leuchtende goldene Linien, die auf den Straßen von der Zentrale zum Fahrzeug und weiter zum Einsatz führen.
+6. **Einsatzmarker**: runde Nadel mit Symbol über dem Kundenauto, Kundenauto mit Warndreiecken. **Rot** = dringend (z. B. Batterie, Unfall/Abschleppen), **goldorange** = normal (z. B. Reifen). Leichtes Pulsieren.
+7. **Untere Leiste**, vier Tabs auf schwarzem Grund mit Goldrand oben: **Karte · Flotte · Zentrale · Personal**. Aktiver Tab gold mit goldenem Strich darunter, andere grau.
+
+**Farben ab 1.1:** Schwarz und Graphit mit Gold sind jetzt der Grundlook (Julians Bild, geht der alten Flyx-Regel „kein Schwarz“ hier vor). Kein Blau in der Oberfläche; Wasser auf der Karte darf nachtdunkel sein, wie im Bild.
+
+Was weiter unten anders steht (3 Tabs, Kopfleiste mit Uhrzeit, Farbe der Fahrzeuge), gilt nicht mehr; der Rest (Fenster, Abläufe, Zahlen) gilt unverändert.
 
 ## 0. Grundregeln
 
@@ -26,7 +45,7 @@ Stand 14.10.2026, 10:40. Grundlage: `Spielkonzept-Pannenhilfe.md` (Julian 14.10 
 | Normal | #E3A83A (bernstein) |
 | Erledigt, Gewinn | #4CB86A (grün) |
 
-Kein Blau, kein Cyan, kein reines Schwarz (Flyx-Regel).
+Ab 1.1: Hintergrund und Leisten schwarz/graphit wie im Konzeptbild (Teil 00). Kein Blau, kein Cyan in der Oberfläche.
 
 ## 1. Hauptbildschirm: Stadtkarte (immer sichtbar)
 
@@ -43,11 +62,9 @@ Kein Blau, kein Cyan, kein reines Schwarz (Flyx-Regel).
 
 Links Geld (z. B. **2.000 €**), Mitte Uhrzeit des Spieltags (**Tag 1 · 09:40**), rechts Bewertung als Zahl mit einem Stern (**4,6 ★**). Zahnrad ganz rechts für Einstellungen.
 
-### Untere Leiste (drei Knöpfe, sonst nichts)
+### Untere Leiste (ab 1.1: vier Tabs)
 
-**Einsätze** (mit Zähler offener Einsätze) · **Fahrzeuge** · **Zentrale**
-
-Mitarbeiter stehen im Fenster „Fahrzeuge“ beim jeweiligen Fahrzeug und bei der Einsatzwahl, kein eigener Reiter.
+**Karte** (mit Zähler offener Einsätze) · **Flotte** (Teil 6) · **Zentrale** (Teil 7) · **Personal** (Mitarbeiter mit ihren vier Werten, Gehalt, aktueller Einsatz; Einstellen erst, wenn ein Ausbau Platz schafft).
 
 ## 2. Einsatzfenster (Antippen einer Einsatznadel)
 
@@ -94,7 +111,7 @@ Bottom-Sheet, Spiel pausiert dabei:
   - **Abbrechen** – kein Geld, Bewertung sinkt
 - Kein Prozentwert, nur die Worte.
 
-## 6. Fahrzeuge (Reiter)
+## 6. Flotte (Tab)
 
 Je Fahrzeug eine Karte: Bild, Name, Zustand, Tank, Geschwindigkeit, Verbrauch, Wartungskosten, Ausrüstung, aktueller Einsatz mit Restzeit, zugeteilter Mitarbeiter.
 
