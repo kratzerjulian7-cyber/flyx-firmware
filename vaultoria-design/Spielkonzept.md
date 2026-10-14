@@ -992,3 +992,200 @@ Shop und Rebirth-Shop sind zurückgestellt. Kein Schritt wird freigeschaltet, be
 - Shop (Echtgeld) und Rebirth-Shop – zurückgestellt.
 - Alles gleichzeitig freischalten – weg.
 - Raubzug im Spiel – erst nach Schritt 4.
+
+
+---
+
+# Teil K – Was ein starkes Spiel braucht (14.10.2026 09:21, Ergänzung zu Teil J, alles umsetzen)
+
+Ergänzt Teil J und gilt mit ihm zusammen. Julian: „Aber alles muss mit Handeln, Gegenständen und dem eigenen Geschäft zusammenhängen.“ und „mache das auch ales“. Umsetzung in vier Stufen, Details in UI-Vorgabe 3.1 Teil 00K.
+
+## K1. Julians Text (wörtlich)
+
+> Da fehlt noch einiges, damit Vaultoria wirklich ein starkes Spiel wird. Aber alles muss mit Handeln, Gegenständen und dem eigenen Geschäft zusammenhängen.
+> 1. Gegenstände müssen richtig spannend sein
+> Nicht nur „Armbanduhr – Wert 320 €“, sondern jeder Gegenstand wird fast zu einem kleinen Rätsel:
+>
+> * Hersteller und Modell herausfinden
+> * Seriennummer prüfen
+> * Material testen
+> * Gewicht kontrollieren
+> * Kratzer und Schäden entdecken
+> * Geheimfächer finden
+> * Signaturen vergleichen
+> * Echtheitszertifikate verlangen
+> * Herkunft recherchieren
+> * UV-Lampe, Lupe, Magnet oder Prüfgerät benutzen
+>
+> Beispiel: Eine scheinbar billige Uhr besitzt ein seltenes Uhrwerk. Oder ein wertvolles Gemälde ist eine Fälschung.
+> 2. Richtige Warenvielfalt
+>
+> * Elektronik
+> * Schmuck und Uhren
+> * Kunst
+> * Instrumente
+> * Möbel
+> * Fahrzeuge
+> * Spielzeug und Sammlerstücke
+> * historische Gegenstände
+> * Sportartikel
+> * Luxuswaren
+> * Werkzeuge
+> * mysteriöse Gegenstände
+>
+> Jede Kategorie braucht andere Prüfungen, Käufer und Risiken.
+> 3. Kunden mit Geschichten
+> Kunden sollten wiedererkennbar sein und später zurückkommen:
+>
+> * Jemand verpfändet ein Familienerbstück.
+> * Ein Betrüger versucht regelmäßig Fälschungen zu verkaufen.
+> * Ein Sammler sucht bestimmte Gegenstände.
+> * Ein Kunde holt sein Pfand nicht rechtzeitig ab.
+> * Ein Geschäftsmann bietet eine komplette Lagerauflösung an.
+> * Ein verzweifelter Kunde verlangt schnelles Geld.
+> * Ein Dieb versucht, gestohlene Ware loszuwerden.
+>
+> Deine Entscheidungen beeinflussen Ruf, Kundenbindung und spätere Ereignisse.
+> 4. Ein echter Tagesablauf
+> Jeder Tag hat eine klare Struktur:
+>
+> 1. Laden vorbereiten
+> 2. Mitarbeiter einteilen
+> 3. Kunden bedienen
+> 4. Gegenstände prüfen und kaufen
+> 5. Werkstattaufträge starten
+> 6. Preise und Auslagen festlegen
+> 7. Auktionen und Sonderangebote prüfen
+> 8. Tagesabrechnung durchführen
+>
+> Abends sieht man:
+>
+> * Umsatz
+> * Gewinn
+> * Fehlkäufe
+> * Mitarbeiterkosten
+> * neue Stammkunden
+> * gestiegene Gegenstandswerte
+> * besondere Ereignisse
+>
+> 5. Lebendige Wirtschaft
+> Preise dürfen nicht immer gleich bleiben:
+>
+> * Goldpreis verändert Schmuckwerte
+> * neue Konsole senkt den Wert alter Modelle
+> * Künstler wird plötzlich berühmt
+> * bestimmte Sammelkarten werden selten
+> * regionale Ereignisse beeinflussen Nachfrage
+> * Trends sorgen für kurzfristige Preissteigerungen
+>
+> Der Spieler kann Waren beobachten und gezielt spekulieren.
+> 6. Andere Händler und Konkurrenten
+> Es gibt rivalisierende Geschäfte:
+>
+> * Konkurrenten kaufen begehrte Gegenstände
+> * versuchen Mitarbeiter abzuwerben
+> * unterbieten deine Verkaufspreise
+> * bieten bei Auktionen gegen dich
+> * verbreiten Gerüchte
+> * können Handelspartner oder Feinde werden
+>
+> Man kann mit ihnen handeln, zusammenarbeiten, sie aufkaufen oder wirtschaftlich verdrängen.
+> 7. Auktionen
+> Zwei unterschiedliche Arten:
+>
+> * Einkaufsauktionen: Lagercontainer, Nachlässe, Behördenauktionen und Sammlungen
+> * Verkaufsauktionen: seltene Waren an wohlhabende Sammler versteigern
+>
+> Bei Auktionen muss man entscheiden, wann man aussteigt. Zu viel zahlen kann den kompletten Tagesgewinn zerstören.
+> 8. Aufträge und Wunschlisten
+> Statt stumpfer Tagesaufgaben:
+> „Finde eine mechanische Uhr aus den 1960ern.“
+> „Beschaffe drei alte Musikinstrumente für ein Museum.“
+> „Restauriere das Familienerbstück, ohne den Originalzustand zu zerstören.“
+> Solche Aufträge erzeugen gezielte Entscheidungen und nicht nur zufälliges Abhaken.
+> 9. Konsequenzen
+> Das Spiel braucht echte Risiken:
+>
+> * Fälschung gekauft
+> * gestohlene Ware angenommen
+> * Kredit nicht zurückgezahlt
+> * wertvoller Gegenstand beschädigt
+> * Mitarbeiter macht einen schlechten Kauf
+> * Lager wird zu voll
+> * Kunde verklagt den Laden
+> * Versicherung verweigert Zahlung
+> * Diebstahl oder Einbruch
+>
+> Aber ein Fehler darf nicht sofort alles vernichten. Der Spieler muss sich wieder herausarbeiten können.
+> 10. Rufsystem mit verschiedenen Gruppen
+> Nicht nur ein einzelner Sternwert:
+>
+> * normale Kunden
+> * Sammler
+> * Luxus-Kunden
+> * Händler
+> * Banken
+> * Unterwelt
+> * Behörden
+>
+> Man kann bei einer Gruppe beliebt und bei einer anderen unbeliebt sein. Dadurch entstehen unterschiedliche Spielrichtungen.
+> 11. Sicherheits- und Versicherungssystem
+>
+> * Kameras
+> * Tresore
+> * Alarmanlagen
+> * Wachhunde
+> * Sicherheitskräfte
+> * Versicherungen
+> * Echtheitsdokumentation
+> * Seriennummer-Datenbank
+>
+> Je wertvoller der Laden wird, desto interessanter wird er für Diebe.
+> 12. Sammlungen und Museum
+> Besondere Gegenstände können behalten und ausgestellt werden:
+>
+> * komplette Sammlungsreihen
+> * seltene Einzelstücke
+> * historische Sets
+> * versteckte legendäre Gegenstände
+> * persönliche Trophäen aus Ereignissen
+>
+> Später kann der Spieler ein eigenes Museum eröffnen. Das bringt Besucher und passive Einnahmen, ohne wie ein billiger Idle-Generator zu wirken.
+> 13. Verschiedene Spielstile
+> Der Spieler entscheidet selbst:
+>
+> * seriöser Pfandhändler
+> * Restaurierungsprofi
+> * Auktionshändler
+> * Luxusgeschäft
+> * Sammler und Museum
+> * Filialimperium
+> * riskanter Unterwelthändler
+>
+> Diese Richtungen sollten unterschiedliche Vorteile und Ereignisse freischalten.
+> 14. Langfristiges Ziel
+> Das Spiel braucht ein echtes Endziel:
+> Vom kleinen Pfandladen zum bekanntesten Handelsimperium der Welt.
+> Dazu gehören:
+>
+> * mehrere Standorte
+> * eigene Auktionshäuser
+> * internationale Käufer
+> * berühmte Sammlungen
+> * hochwertige Immobilien
+> * Übernahme konkurrierender Unternehmen
+> * eigener Geschäftsführer pro Standort
+> * eine große Vaultoria-Zentrale
+>
+> So hat Vaultoria einen starken Weg: kleiner Laden → cleverer Händler → Unternehmer → Handelsimperium. Das wäre ein wesentlich stärkeres Spiel als das aktuelle Upgrade- und Idle-System. mache das auch ales
+
+## K2. Stufen (verbindlich, ersetzt J2 und fasst beide zusammen)
+
+| Stufe | Inhalt | Julians Punkte |
+|---|---|---|
+| **A Kern** | Kunde → Prüfen mit Werkzeugen → Dialog-Verhandeln → Entscheidung nach dem Kauf → Käufer. Gegenstände als Rätsel, 12 Warenkategorien, wiederkehrende Kunden mit Geschichten | J, K1–K3 |
+| **B Tag und Wirtschaft** | Tagesablauf mit Abrechnung, schwankende Preise und Trends, Aufträge und Wunschlisten, Konsequenzen mit Ausweg, Ruf bei 7 Gruppen. Dazu Baumodus und Mitarbeiter aus J2 | K4, K5, K8, K9, K10 |
+| **C Wachstum** | Auktionen (Einkauf und Verkauf), Sicherheit und Versicherung, Sammlungen und Museum, Konkurrenten | K7, K11, K12, K6 |
+| **D Langfristig** | Spielstile, Expansion zu Filialen und Handelsimperium mit Zentrale, ganz zum Schluss Raubzüge | K13, K14, J Raubzüge |
+
+Jede Stufe wird erst begonnen, wenn die vorige im Build spielbar ist und Julian sie abgenommen hat.

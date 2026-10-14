@@ -1,6 +1,6 @@
-# Vaultoria – UI-Vorgabe 3.0 (verbindlich)
+# Vaultoria – UI-Vorgabe 3.1 (verbindlich)
 
-Stand 14.10.2026, 09:30 (**3.0: neuer Kern nach Julians Konzept 09:19, Teil 00. Spielablauf aus Teil 0–8 ersetzt, dort gilt nur noch das Aussehen.** 2.4 vom 14.10. 09:10 ( Teil 00 neu: Idle-Tycoon wie Eatventure, Handel von Hand nur Bonus). 2.3 vom 14.10. 09:00 ( Teil 00 oberste Regel „Spiel, nicht Arbeit“, Handel/Werkstatt/Ausbau direkt in der Szene). 2.2 vom 14.10. 08:00 ( Julians Überarbeitungsliste nach Prüfung von 25 Screenshots, Spielkonzept Teil G: Teil 0b, neue Tab-Leiste, Bottom-Sheets, 16 pt, Tutorial in 7 Schritten, Rebirth-Zusammenfassung). 2.1 vom 14.10. 07:20 ( Euro statt Spielgeld, Kamera von weit oben, Erklärkarten K5, Julian 14.10 07:09). 2.0 vom 13.10.2026, 20:45 ersetzt die erste Fassung. Grund: Julian zu Build 1.0 (18:33): „noch sehr unübersichtlich … so wie ich es dir geschickt habe, so möchte ich das haben und nicht anders. Sondern genau so. Wie auf den Bildern … Genau diese Logik.“
+Stand 14.10.2026, 09:45 (**3.1: Teil 00K, Stufen A–D mit Julians 14 Punkten und Warenkategorien-Tabelle.** 3.0 09:30:  neuer Kern nach Julians Konzept 09:19, Teil 00. Spielablauf aus Teil 0–8 ersetzt, dort gilt nur noch das Aussehen.** 2.4 vom 14.10. 09:10 ( Teil 00 neu: Idle-Tycoon wie Eatventure, Handel von Hand nur Bonus). 2.3 vom 14.10. 09:00 ( Teil 00 oberste Regel „Spiel, nicht Arbeit“, Handel/Werkstatt/Ausbau direkt in der Szene). 2.2 vom 14.10. 08:00 ( Julians Überarbeitungsliste nach Prüfung von 25 Screenshots, Spielkonzept Teil G: Teil 0b, neue Tab-Leiste, Bottom-Sheets, 16 pt, Tutorial in 7 Schritten, Rebirth-Zusammenfassung). 2.1 vom 14.10. 07:20 ( Euro statt Spielgeld, Kamera von weit oben, Erklärkarten K5, Julian 14.10 07:09). 2.0 vom 13.10.2026, 20:45 ersetzt die erste Fassung. Grund: Julian zu Build 1.0 (18:33): „noch sehr unübersichtlich … so wie ich es dir geschickt habe, so möchte ich das haben und nicht anders. Sondern genau so. Wie auf den Bildern … Genau diese Logik.“
 
 **Diese Datei beschreibt jede Ansicht aus Julians Konzeptbildern so, dass sie ohne Bild nachgebaut werden kann.** Spielregeln und Zahlen stehen in `Spielkonzept.md`. Bei Widerspruch gilt für Aussehen und Bedienung diese Datei, für Regeln und Zahlen das Spielkonzept.
 
@@ -139,6 +139,85 @@ Tab **Käufer**: wartende Kaufinteressenten als Porträtkarten mit Wunsch in ein
 - Alle Erklärkarten, die mehr als eine Zeile haben.
 
 **Prüffrage vor jedem Build:** Gab es in den ersten 5 Minuten mindestens einen Moment „Fund oder Fehlkauf?“, bei dem der Spieler selbst entschieden hat? Kommt jedes Geld aus einem sichtbaren Geschäft? Wenn nein, nicht an Julian schicken.
+
+---
+
+# Teil 00K – Stufen A bis D (3.1, Julian 14.10 09:21, Spielkonzept Teil K)
+
+Ergänzt Teil 00 (Kern). Gebaut wird **Stufe für Stufe**, die nächste erst nach Julians Abnahme der vorigen. Alles hängt am Handeln, an Gegenständen und am eigenen Geschäft.
+
+## Stufe A – Kern (Punkte 1–3)
+
+**A1. Gegenstände als Rätsel.** Neben „Genauer ansehen“, „Gutachter“ und „Ungeprüft kaufen“ (00.4) gibt es im Prüf-Bildschirm eine **Werkzeugleiste** unten (5 runde Knöpfe, 56 pt, nur die Werkzeuge, die zur Kategorie passen): **Lupe, UV-Lampe, Magnet, Waage, Prüfgerät** (Multimeter, Säuretest, Seriennummern-Scanner je nach Kategorie). Werkzeug antippen und über den Gegenstand ziehen: Fundstellen leuchten auf, das Ergebnis erscheint als Notiz auf der Gutachten-Karte. Jedes Werkzeug kostet Geduld. Weitere Prüfaktionen als Antwortkarten im Gespräch: **„Zertifikat dabei?“**, **„Woher stammt das?“** (Herkunft), **„Seriennummer?“**. Recherche nach Kauf im Besitz: **„Herkunft recherchieren“** (1 Spieltag).
+Was man herausfinden kann: Hersteller und Modell, Seriennummer (gültig, gefälscht, als gestohlen gemeldet), Material (Gold 585/750, vergoldet, Messing), Gewicht (zu leicht = Verdacht), Kratzer und Schäden, Geheimfächer (Mini-Animation: Fach springt auf, manchmal mit Bonus-Fund), Signatur (Vergleich mit Referenzbild: zwei Bilder nebeneinander, Unterschied antippen).
+**Fund-Moment:** Wird ein seltenes Detail entdeckt (z. B. seltenes Uhrwerk), friert die Szene 0,3 s ein, Goldglanz, Marktwert-Spanne springt sichtbar nach oben, Ton „Fund“. **Fälschung entdeckt:** roter Stempel „Fälschung“ auf der Karte, Kunde reagiert je nach Persönlichkeit.
+
+**A2. Zwölf Warenkategorien.** Jede Kategorie hat eigene Werkzeuge, Käufer und Risiken. In Stufe A sind die ersten **4 Kategorien** aktiv (Schmuck und Uhren, Elektronik, Instrumente, Kunst), weitere kommen mit Baumodus und Ruf dazu.
+
+| Kategorie | Prüfwerkzeuge | Typische Käufer | Risiken | Beispiel-Fund |
+|---|---|---|---|---|
+| Elektronik | Prüfgerät (Funktionstest), Seriennummer, Lupe | Laufkundschaft, Gamer, Händler | defekt, gestohlen (Seriennummer gemeldet), Wertverlust durch neues Modell | erste Konsolen-Auflage in Originalverpackung |
+| Schmuck und Uhren | Lupe, Magnet, Waage, Säuretest, Seriennummer | Laufkundschaft, Sammler, Luxus-Kunden | vergoldet statt Gold, Nachbau, gestohlen | billige Uhr mit seltenem Uhrwerk |
+| Kunst | UV-Lampe, Lupe, Signaturvergleich, Zertifikat, Herkunft | Sammler, Galerien, Auktion | Fälschung, übermalte Schäden | übermaltes Bild eines bekannten Malers |
+| Instrumente | Lupe (Zettel im Korpus), Klangtest, Seriennummer | Musiker, Sammler, Museum | Risse, nachgebaute Zettel | Geige mit Werkstattzettel einer berühmten Werkstatt |
+| Möbel | Lupe (Holzwurm, Verbindungen), Geheimfach suchen, Herkunft | Sammler, Innenausstatter | Nachbau, Holzwurm, sperrig (2 Lagerplätze) | Sekretär mit Geheimfach und alten Briefen |
+| Fahrzeuge | Prüfgerät (Motor), Seriennummer (Fahrgestell), Papiere | Liebhaber, Händler | fehlende Papiere, gestohlen, Rost, belegt Hof-Stellplatz | Oldtimer-Moped mit seltener Ausstattung |
+| Spielzeug und Sammlerstücke | Lupe (Druckfehler), Originalverpackung, Seriennummer | Sammler, Kinder-Eltern | Nachdruck, beschädigte Verpackung | Sammelkarte mit Fehldruck |
+| Historische Gegenstände | Lupe, Herkunft, Zertifikat, Gewicht | Museum, Sammler, Behörden | Fälschung, Herkunft unklar (Behörden-Ärger) | Orden mit belegter Herkunft |
+| Sportartikel | Lupe (Signatur), Zertifikat, Herkunft | Fans, Sammler | gefälschte Autogramme | signiertes Trikot aus einem Finale |
+| Luxuswaren | Lupe (Nähte, Prägung), Seriennummer, Zertifikat, UV | Luxus-Kunden, Händler | Fälschungen sehr häufig | Tasche in seltener Farbe |
+| Werkzeuge | Prüfgerät (Funktion), Gewicht, Seriennummer | Handwerker, Händler | defekt, gestohlen von Baustellen | Werkzeugkoffer komplett und neu |
+| Mysteriöse Gegenstände | alle Werkzeuge, Herkunft (mehrere Tage) | Sammler, Museum, Unterwelt | Wert völlig offen, manchmal wertlos | verschlossene Kiste mit unbekanntem Inhalt |
+
+Erfundene Hersteller- und Künstlernamen, keine echten Marken.
+
+**A3. Kunden mit Geschichten.** Kunden haben **Namen, festes Aussehen und ein Gedächtnis**. Wiederkehrende Kunden tragen ein kleines Namensschild über dem Kopf („Frau Berger“) und erinnern sich („Sie haben mir letztes Mal fair geholfen.“). Mindestens 7 Geschichten-Kunden in Stufe A, je mit 3–5 Besuchen:
+
+| Geschichte | Ablauf über mehrere Besuche | Folge der Entscheidungen |
+|---|---|---|
+| Familienerbstück | verpfändet, kommt zurück, braucht Verlängerung, löst ein oder nicht | fair → Stammkundin, empfiehlt Sammler |
+| Betrüger | bringt regelmäßig Fälschungen, wird geschickter | erwischt → kommt seltener, Ruf Händler steigt |
+| Sammler | sucht bestimmte Serie, zahlt gut | beliefert → Wunschlisten-Aufträge |
+| Pfand nicht abgeholt | Frist läuft ab, Gegenstand gehört dir, kommt später verzweifelt zurück | zurückverkaufen → Ruf normale Kunden ↑ |
+| Geschäftsmann | bietet Lagerauflösung (10 Gegenstände, Stichproben) an | Paketkauf mit Risiko |
+| Verzweifelter Kunde | will schnelles Geld | ausnutzen → später schlechte Presse, fair → Treue |
+| Dieb | bringt gestohlene Ware (Seriennummer gemeldet, nervös) | annehmen → Unterwelt ↑, Behörden ↓, Risiko Durchsuchung; melden → Behörden ↑ |
+
+## Stufe B – Tag und Wirtschaft (Punkte 4, 5, 8, 9, 10)
+
+**B1. Tagesablauf.** Ein Spieltag hat drei sichtbare Phasen (Licht im Laden wechselt):
+1. **Morgen (Vorbereitung, kein Zeitlimit):** Sheet „Neuer Tag“ mit drei Karten: Mitarbeiter einteilen (Porträts auf Plätze ziehen: Theke, Werkstatt, Lager), Auslagen und Preise (Schaufenster- und Regalplätze belegen, Preisschild antippen und ändern), Hinweise (Aufträge, Auktion heute, Preis-Nachrichten). Knopf „Laden öffnen“.
+2. **Tag (Öffnungszeit ≈ 6 Minuten Echtzeit):** Kunden bedienen, prüfen, kaufen, Werkstattaufträge starten, Auktionen besuchen. Uhr in der Kopfleiste läuft (9:00–18:00 Spielzeit).
+3. **Abend (Tagesabrechnung):** Vollbild-Bericht auf Creme-Papier wie ein Kassenbuch, Zeilen kommen nacheinander mit Ton: **Umsatz, Gewinn, Fehlkäufe (rot, mit Bild), Mitarbeiterkosten, neue Stammkunden (Porträts), gestiegene Werte (grüne Pfeile), besondere Ereignisse.** Unten „Bester Fund des Tages“ groß. Knopf „Nächster Tag“.
+Der Pfand-Spieltag (Fristen) entspricht ab jetzt einem solchen Tag.
+
+**B2. Lebendige Wirtschaft.** Jede Kategorie und Unterkategorie hat einen **Marktpreis-Faktor**, der sich täglich ändert. Anzeige: kleine Zeitung **„Markt heute“** am Morgen mit 2–3 Schlagzeilen („Goldpreis steigt: Schmuck +8 %“, „Neue Konsole erschienen: ältere Modelle −15 %“, „Maler Aurelio Venn plötzlich gefragt“) und ein **Markt-Tab** (ab Stufe B) mit Kurven pro Kategorie über 14 Tage. Gegenstände im Besitz zeigen einen Pfeil ↑ ↓ neben dem Wert. Spekulieren = kaufen und warten (bindet Kapital).
+
+**B3. Aufträge und Wunschlisten.** Keine Tagesaufgaben zum Abhaken. Aufträge kommen von Personen (Sammler, Museum, Stammkunden) mit Bild und Satz, Belohnung und Frist: „Finde eine mechanische Uhr aus den 1960ern.“, „Beschaffe drei alte Musikinstrumente für ein Museum.“, „Restauriere das Familienerbstück, ohne den Originalzustand zu zerstören.“ (Werkstatt: Wahl zwischen „schonend“ und „vollständig“). Passt ein Gegenstand im Laden zu einem Auftrag, zeigt er ein kleines Auftragssymbol. Höchstens 3 Aufträge gleichzeitig.
+
+**B4. Konsequenzen mit Ausweg.** Echte Risiken: Fälschung gekauft, gestohlene Ware angenommen, Kredit nicht zurückgezahlt, Gegenstand beschädigt, Mitarbeiter macht schlechten Kauf, Lager zu voll, Kunde verklagt den Laden, Versicherung verweigert Zahlung, Diebstahl oder Einbruch. Regeln: Ein einzelnes Ereignis kostet **höchstens 25 % des Gesamtvermögens**. Bargeld fällt nie unter einen **Notgroschen** (z. B. 300 €), mit dem man weiterhandeln kann. Nach einem schweren Fehler kommt bald ein guter Gelegenheitskunde (Ausweg). Konsequenzen erscheinen als Ereignis-Karte mit Person und Satz, nie als Zahl allein.
+
+**B5. Ruf bei sieben Gruppen.** Normale Kunden, Sammler, Luxus-Kunden, Händler, Banken, Unterwelt, Behörden. **Keine Sterne und keine Prozentbalken:** Anzeige im Tab „Ruf“ (ab Stufe B) als sieben Porträts mit einem Wort darunter: Feindlich · Misstrauisch · Neutral · Freundlich · Treu. Wirkung sichtbar: welche Kunden kommen, Kreditrahmen der Bank, Durchsuchungen der Behörden, Angebote aus der Unterwelt.
+
+**B6. Baumodus und Mitarbeiter** wie in 00.9 und Spielkonzept J1: Mitarbeiter mit Porträt, Name, Erfahrung (wächst mit Einsätzen), Tagesgehalt, zwei Eigenschaften (z. B. „Gutes Auge für Kunst“, „ungeduldig“) und einem Fehler (z. B. „zahlt zu viel bei Schmuck“). Verkäufer verhandeln selbst, sichtbar an der Theke.
+
+## Stufe C – Wachstum (Punkte 7, 11, 12, 6)
+
+**C1. Auktionen.** Eigener Ort auf einer kleinen Stadtkarte. **Einkauf:** Lagercontainer (nur Blick durch die Tür, 10 s), Nachlässe, Behördenauktionen, Sammlungen. **Verkauf:** eigene seltene Stücke an Sammler (Gebühr 10 %). Bietablauf: Auktionator-Figur, andere Bieter (auch Konkurrenten) als Porträts, Preis steigt in Schritten. Zwei Knöpfe: **„Bieten +50 €“** (grün) und **„Aussteigen“**. Neben dem Preis die eigene Schätzung („Deine Schätzung 1.400–2.200 €“). Zu viel zahlen ist möglich und tut weh.
+
+**C2. Sicherheit und Versicherung.** Im Baumodus: Kameras, Tresore, Alarmanlage, Wachhund (nur Aufpassen, Tiere werden nie verletzt), Sicherheitskräfte. Im Büro: Versicherungsvertrag (Prämie pro Tag, deckt nur dokumentierte Ware), Echtheitsdokumentation, Seriennummer-Datenbank (deckt gestohlene Ware beim Prüfen automatisch auf). Diebstahl-Risiko steigt mit dem Wert im Laden. Einbruch als Ereignis über Nacht, am Morgen sieht man die Folgen.
+
+**C3. Sammlungen und Museum.** **Album** mit Sammlungsreihen, Einzelstücken, historischen Sets, versteckten legendären Gegenständen und Trophäen aus Ereignissen. Später eigenes **Museum** als Gebäude: Exponate auf Plätze stellen, Besucher laufen sichtbar durch, Eintritt pro Tag hängt von den ausgestellten Stücken ab. Kein Geld ohne sichtbare Besucher.
+
+**C4. Konkurrenten.** 2–3 rivalisierende Läden in der Stadt mit Inhaber-Porträt und Charakter. Sie kaufen begehrte Stücke weg, werben Mitarbeiter ab, unterbieten Preise (sichtbar in „Markt heute“), bieten bei Auktionen, streuen Gerüchte (Ruf-Ereignis). Beziehung pro Konkurrent: Feind · Rivale · Neutral · Partner. Aktionen: handeln, zusammenarbeiten, aufkaufen (wenn er schwach ist), verdrängen.
+
+## Stufe D – Langfristig (Punkte 13, 14, Raubzüge)
+
+**D1. Spielstile.** Der Spieler entscheidet durch sein Handeln (nicht per Menü), die Richtung wird ab einem Punkt sichtbar und schaltet Vorteile und Ereignisse frei: seriöser Pfandhändler (Bank, Behörden), Restaurierungsprofi (Werkstatt-Aufträge), Auktionshändler (eigene Auktionen), Luxusgeschäft (Luxus-Kunden), Sammler und Museum, Filialimperium, riskanter Unterwelthändler (Unterwelt, Raubzüge).
+
+**D2. Weg zum Handelsimperium.** Kleiner Laden → cleverer Händler → Unternehmer → Handelsimperium. Meilensteine: mehrere Standorte (Viertel, Innenstadt, Luxusbezirk, Industriegebiet, Hafen, international), eigene Auktionshäuser, internationale Käufer, berühmte Sammlungen, Immobilien, Übernahme von Konkurrenten, Geschäftsführer pro Standort, **Vaultoria-Zentrale** als Endziel (eigenes Gebäude auf der Stadtkarte). Laden verkaufen oder mit Geschäftsführer behalten (Teil J).
+
+**D3. Raubzüge zum Schluss.** Nur für den Unterwelt-Weg, wie in Teil J beschrieben. Erst wenn A bis C fertig sind.
 
 ---
 
