@@ -19,7 +19,7 @@ Geht **allem** in dieser Datei vor und ersetzt den Idle-Kern aus 2.4 vollständi
 
 ## 00.1 Bau-Reihenfolge (verbindlich, nichts vorziehen)
 
-1. **Kern** (00.2–00.8): Kunde, Prüfen, Verhandeln, Entscheiden, Käufer finden, gebundenes Kapital. Nur Laden-Erdgeschoss. Erst weiter, wenn Julian sagt, dass das Spaß macht.
+1. **Kern** (00.2–00.8): Kunde, Prüfen, Verhandeln, Entscheiden, Käufer finden, gebundenes Kapital. Nur Laden-Erdgeschoss. Nach jeder Stufe gibt es Build und Screenshots, dann geht es direkt mit der nächsten weiter, angepasst wird nur, wenn Julian etwas ändern will.
 2. **Baumodus** (00.9).
 3. **Mitarbeiter** mit Erfahrung, Gehalt, Eigenschaften, Fehlern.
 4. **Expansion**: Laden verkaufen oder Geschäftsführer, neue Standorte.
@@ -144,7 +144,7 @@ Tab **Käufer**: wartende Kaufinteressenten als Porträtkarten mit Wunsch in ein
 
 # Teil 00K – Stufen A bis D (3.1, Julian 14.10 09:21, Spielkonzept Teil K)
 
-Ergänzt Teil 00 (Kern). Gebaut wird **Stufe für Stufe**, die nächste erst nach Julians Abnahme der vorigen. Alles hängt am Handeln, an Gegenständen und am eigenen Geschäft.
+Ergänzt Teil 00 (Kern). Gebaut wird **Stufe für Stufe ohne Wartepausen**. Nach jeder Stufe gibt es Build und Screenshots, dann geht es direkt mit der nächsten weiter, angepasst wird nur, wenn Julian etwas ändern will. Alles hängt am Handeln, an Gegenständen und am eigenen Geschäft.
 
 ## Stufe A – Kern (Punkte 1–3)
 

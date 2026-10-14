@@ -974,7 +974,7 @@ Der Kernablauf (Gegenstand entdecken → einschätzen → verhandeln → verbess
 
 ## J2. Bau-Reihenfolge (verbindlich)
 
-1. **Kern:** Kunde → Gegenstand prüfen → verhandeln (Dialog, Persönlichkeiten) → Entscheidung nach dem Kauf → passenden Käufer finden. Gebundenes Kapital sichtbar. **Erst wenn das Spaß macht, weiter.**
+1. **Kern:** Kunde → Gegenstand prüfen → verhandeln (Dialog, Persönlichkeiten) → Entscheidung nach dem Kauf → passenden Käufer finden. Gebundenes Kapital sichtbar. **Nach jeder Stufe gibt es Build und Screenshots, dann geht es direkt mit der nächsten weiter, angepasst wird nur, wenn Julian etwas ändern will.**
 2. **Baumodus:** echte Bereiche im Gebäude sichtbar verbessern (Theke, Schaufenster, Regale, Werkstatt, Sicherheit, Wertlager, Büro, Tierpension, Auktionsbereich).
 3. **Mitarbeiter** mit Erfahrung, Gehalt, Eigenschaften und Fehlern (ersetzt „Personal einmalig“ und Prozent-Boni).
 4. **Expansion:** Laden verkaufen oder Geschäftsführer, neue Standorte (Viertel, Innenstadt, Luxusbezirk, Industriegebiet, Hafen, international).
@@ -1188,4 +1188,4 @@ Ergänzt Teil J und gilt mit ihm zusammen. Julian: „Aber alles muss mit Handel
 | **C Wachstum** | Auktionen (Einkauf und Verkauf), Sicherheit und Versicherung, Sammlungen und Museum, Konkurrenten | K7, K11, K12, K6 |
 | **D Langfristig** | Spielstile, Expansion zu Filialen und Handelsimperium mit Zentrale, ganz zum Schluss Raubzüge | K13, K14, J Raubzüge |
 
-Jede Stufe wird erst begonnen, wenn die vorige im Build spielbar ist und Julian sie abgenommen hat.
+Nach jeder Stufe gibt es Build und Screenshots, dann geht es direkt mit der nächsten weiter, angepasst wird nur, wenn Julian etwas ändern will. (Julian 14.10, keine Wartepausen)
