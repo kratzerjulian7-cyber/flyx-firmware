@@ -1,12 +1,10 @@
 # Vaultoria – In-App-Käufe in App Store Connect anlegen
 
-Stand 14.10.2026, 16:10. Umgebaut auf alle 14 Kaufpositionen für 5.4 (Julian 15:57). Die Product-IDs der ersten 9 hat der Mac bestätigt, sie stehen so in `Shop.swift` und `Vaultoria.storekit`. Die IDs der Welt- und Design-Produkte (A10–A15) sind **Vorschläge**, bis der Mac sie bestätigt. Grundlage: Julians Preismodell vom 14.10.2026 14:48 (`design/Komplettueberarbeitung-5.3.md`, Nachtrag 3) und `design/Erweiterungsplan-Pannenhilfe.md` Teil 2c.
+Stand 14.10.2026, 16:15. Alle 14 Produkte für 5.4 (Julian 15:57). **Alle Product-IDs sind vom Mac endgültig festgelegt.** Sie stehen so in `Shop.swift` und `Vaultoria.storekit`. Grundlage: Julians Preismodell vom 14.10.2026 14:48 (`design/Komplettueberarbeitung-5.3.md`, Nachtrag 3) und `design/Erweiterungsplan-Pannenhilfe.md` Teil 2c.
 
-**Product-IDs buchstabengenau übernehmen** (am besten kopieren). Eine Product-ID lässt sich nach dem Anlegen **nie mehr ändern oder wiederverwenden**. Die mit „Vorschlag“ markierten erst anlegen, wenn der Mac sie bestätigt hat.
+**Product-IDs buchstabengenau übernehmen** (am besten kopieren). Eine Product-ID lässt sich nach dem Anlegen **nie mehr ändern oder wiederverwenden**.
 
-**Deine 14 Positionen = 15 Produkte in App Store Connect:** „Werbung entfernen“ und „Werbefrei-Paket“ sind dasselbe (gleicher Inhalt, gleicher Preis) und damit **ein** Produkt. „Einzelne Designs“ sind drei eigene Produkte.
-
-**Wann anlegen:** Alle Produkte in Teil A kommen mit **5.4**. Anlegen kannst du sie sofort, einreichen nur zusammen mit dem 5.4-Build, der sie wirklich enthält.
+**Wann anlegen:** Alle 14 Produkte kannst du sofort anlegen. Einreichen nur zusammen mit dem 5.4-Build, A1 erst mit dem Werbe-Build (siehe Teil A).
 
 ## Vorher einmal prüfen
 
@@ -25,29 +23,30 @@ Stand 14.10.2026, 16:10. Umgebaut auf alle 14 Kaufpositionen für 5.4 (Julian 15
 8. Der Status wird zu **„Bereit zur Einreichung“**.
 9. Den **ersten** Kauf reichst du zusammen mit einer App-Version ein. Dafür auf der Versionsseite (z. B. 5.3) im Bereich **In-App-Käufe und Abonnements** die Käufe auswählen und dann die Version einreichen.
 
-## Teil A: Alles für 5.4 anlegen (15 Produkte)
+## Teil A: Alles für 5.4 anlegen (14 Produkte)
 
-Alle Produkte haben den Typ **Nicht-Verbrauchsartikel**.
+Alle Produkte haben den Typ **Nicht-Verbrauchsartikel**. Vor jede ID kommt `com.julian.vaultoria.` (in der Tabelle schon ausgeschrieben).
 
-| Nr. | Deine Position | Referenzname | Produkt-ID | Preis | Anzeigename (DE) | Beschreibung (DE) |
-|---|---|---|---|---:|---|---|
-| A1 | 1 Werbung entfernen + 8 Werbefrei-Paket | Werbung entfernen | `com.julian.vaultoria.noads` | 5,99 € | Werbung entfernen | Entfernt die automatische Werbung dauerhaft. |
-| A2 | 2 Premium-Servicewagen | Premium-Servicewagen | `com.julian.vaultoria.premium.service` | 2,49 € | Premium-Servicewagen | Exklusiver Servicewagen mit Spezialisierung. |
-| A3 | 3 Premium-Abschlepper | Premium-Abschlepper | `com.julian.vaultoria.premium.tow` | 3,99 € | Premium-Abschlepper | Exklusiver Abschlepper mit eigener Animation. |
-| A4 | 4 Premium-Schwerlastfahrzeug | Premium-Schwerlastfahrzeug | `com.julian.vaultoria.premium.heavy` | 4,99 € | Premium-Schwerlastfahrzeug | Besonderes Fahrzeug für große Aufträge. |
-| A5 | 5 Premium-Zentrale | Premium-Zentrale | `com.julian.vaultoria.premium.hq` | 3,49 € | Premium-Zentrale | Exklusiver Betriebshof mit Beleuchtung. |
-| A6 | 6 Premium-Fuhrpark | Premium-Fuhrpark | `com.julian.vaultoria.premium.fleet` | 8,99 € | Premium-Fuhrpark | Alle drei Premium-Einsatzfahrzeuge. |
-| A7 | 7 Premium-Gebiet | Flughafen- und Eventbezirk | `com.julian.vaultoria.area.event` | 8,99 € | Flughafen- und Eventbezirk | Neues Gebiet mit VIP- und Event-Aufträgen. |
-| A8 | 9 Premium-Unternehmen | Premium-Unternehmen | `com.julian.vaultoria.bundle.company` | 12,99 € | Premium-Unternehmen | Werbefrei, Premium-Fuhrpark und -Zentrale. |
-| A9 | 10 Vaultoria Ultimate | Vaultoria Ultimate | `com.julian.vaultoria.bundle.ultimate` | 17,99 € | Vaultoria Ultimate | Werbefrei und alle Premium-Inhalte. |
-| A10 | 11 Kleine Zusatzregion | Zusatzregion Bergland | `com.julian.vaultoria.world.region` (Vorschlag) | 5,99 € | Bergland | Neue Region mit Passstraßen und Bergungen. |
-| A11 | 12 Große neue Welt | Welt Küstenstadt | `com.julian.vaultoria.world.large` (Vorschlag) | 8,99 € | Küstenstadt | Zweite Spielwelt mit eigener Firma. |
-| A12 | 13 Welt inkl. Spezialfahrzeug | Welt Küstenstadt + Hafenkran | `com.julian.vaultoria.world.special` (Vorschlag) | 11,99 € | Küstenstadt + Hafenkran | Zweite Welt mit exklusivem Hafen-Bergekran. |
-| A13 | 14 Design | Design Lackierung Nachtschicht | `com.julian.vaultoria.design.paint.night` (Vorschlag) | 1,49 € | Lackierung Nachtschicht | Mattes Graphit mit orangem Streifen. |
-| A14 | 14 Design | Design Zentrale Backstein | `com.julian.vaultoria.design.hq.brick` (Vorschlag) | 1,99 € | Zentrale Backstein-Klassik | Klassische Backsteinfassade für die Zentrale. |
-| A15 | 14 Design | Design Fuhrpark Retro | `com.julian.vaultoria.design.fleet.retro` (Vorschlag) | 2,49 € | Fuhrpark Retro-Lackierung | Retro-Lackierung für alle eigenen Fahrzeuge. |
+| Nr. | Referenzname | Produkt-ID | Preis | Anzeigename (DE) | Beschreibung (DE) | Inhalt |
+|---|---|---|---:|---|---|---|
+| A1 | Werbung entfernen | `com.julian.vaultoria.noads` | 5,99 € | Werbung entfernen | Entfernt die automatische Werbung dauerhaft. | = auch dein „Werbefrei-Paket“ |
+| A2 | Premium-Servicewagen | `com.julian.vaultoria.premium.service` | 2,49 € | Premium-Servicewagen | Exklusiver Servicewagen mit Spezialisierung. | – |
+| A3 | Premium-Abschlepper | `com.julian.vaultoria.premium.tow` | 3,99 € | Premium-Abschlepper | Exklusiver Abschlepper mit eigener Animation. | – |
+| A4 | Premium-Schwerlastfahrzeug | `com.julian.vaultoria.premium.heavy` | 4,99 € | Premium-Schwerlastfahrzeug | Besonderes Fahrzeug für große Aufträge. | – |
+| A5 | Premium-Zentrale | `com.julian.vaultoria.premium.hq` | 3,49 € | Premium-Zentrale | Exklusiver Betriebshof mit Beleuchtung. | – |
+| A6 | Premium-Fuhrpark | `com.julian.vaultoria.premium.fleet` | 8,99 € | Premium-Fuhrpark | Alle drei Premium-Einsatzfahrzeuge. | A2 + A3 + A4 |
+| A7 | Premium-Unternehmen | `com.julian.vaultoria.bundle.company` | 12,99 € | Premium-Unternehmen | Werbefrei, Premium-Fuhrpark und -Zentrale. | A1 + A2 + A3 + A4 + A5 |
+| A8 | Vaultoria Ultimate | `com.julian.vaultoria.bundle.ultimate` | 17,99 € | Vaultoria Ultimate | Werbefrei und alle Premium-Inhalte. | A1 + A2 + A3 + A4 + A5 + A9 |
+| A9 | Flughafen- und Eventbezirk | `com.julian.vaultoria.area.event` | 8,99 € | Flughafen- und Eventbezirk | Neues Gebiet mit VIP- und Event-Aufträgen. | Premium-Gebiet |
+| A10 | Zusatzregion Seeufer | `com.julian.vaultoria.region.extra` | 5,99 € | Seeufer | Neue Region am Seeufer mit eigenen Einsätzen. | kleine Zusatzregion |
+| A11 | Große Welt Umland Ost | `com.julian.vaultoria.world.large` | 8,99 € | Umland Ost | Große neue Welt mit eigener Firma. | große neue Welt |
+| A12 | Welt Bergland mit Bergekran | `com.julian.vaultoria.world.special` | 11,99 € | Bergland mit Bergekran | Neue Welt Bergland mit exklusivem Bergekran. | Welt + Spezialfahrzeug |
+| A13 | Design Carbon | `com.julian.vaultoria.design.carbon` | 1,49 € | Design Carbon | Carbon-Optik für deine Einsatzfahrzeuge. | nur Optik |
+| A14 | Design Nachtlicht | `com.julian.vaultoria.design.night` | 2,49 € | Design Nachtlicht | Nachtlicht-Optik für Fahrzeuge und Zentrale. | nur Optik |
 
-Namen von Region, Welt und Designs sind Arbeitsnamen des Docs-Threads und fiktiv. Du kannst sie vor dem Anlegen ändern, Anzeigename höchstens 30, Beschreibung höchstens 45 Zeichen.
+**Deine 14 Positionen:** „Werbung entfernen“ und „Werbefrei-Paket“ sind ein Produkt (A1). Dafür gibt es zwei Designs (A13, A14). Das ergibt 14 Produkte. Die Texte sind Vorschläge und passen in Apples Grenzen (Name höchstens 30, Beschreibung höchstens 45 Zeichen). Du kannst sie ändern, die IDs nicht.
+
+**Achtung bei A1 (Werbung entfernen):** Im Spiel bleibt der Kauf gesperrt, bis ein Werbeanbieter eingebaut ist. Leg A1 jetzt in App Store Connect an, **hänge ihn aber nicht an die 5.4-Einreichung**. Apple prüft jeden eingereichten Kauf im Build, und ohne Werbung hätte er dort keine Wirkung. A1 reichst du mit dem Build ein, der Werbung enthält. A7 und A8 enthalten Werbefreiheit als Teil des Pakets. Das ist unkritisch, solange der Shop dazuschreibt: „werbefrei, sobald Werbung kommt“.
 
 ## Prüfungsnotiz (bei jedem Kauf gleich, Namen anpassen)
 
@@ -57,8 +56,8 @@ Namen von Region, Welt und Designs sind Arbeitsnamen des Docs-Threads und fiktiv
 
 ## Was sich am Store-Eintrag mit 5.4 ändert
 
-- **App-Informationen / Altersfreigabe:** 5.4 zeigt Werbung, also bei der Frage nach Werbung **Ja**.
-- **App-Datenschutz:** Die Angaben des Werbeanbieters eintragen (der Mac nennt den Anbieter) (Tabelle in `Vaultoria-Store-Texte.md`, Teil Datenschutz). Wenn der Anbieter trackt, braucht der Build den ATT-Hinweis.
+- **App-Informationen / Altersfreigabe:** 5.4 zeigt noch **keine Werbung**, also bei der Frage nach Werbung **Nein**. Auf **Ja** stellen, sobald der Werbe-Build kommt.
+- **App-Datenschutz:** Erst mit dem Werbe-Build die Angaben des Werbeanbieters eintragen (Tabelle in `Vaultoria-Store-Texte.md`, Teil Datenschutz). Wenn der Anbieter trackt, braucht der Build den ATT-Hinweis.
 - **Store-Texte:** Nur Käufe nennen, die im Build kaufbar sind. Die Texte schreibe ich neu, sobald 5.3 spielbar ist.
 
 ## Hinweis zu den Paketen

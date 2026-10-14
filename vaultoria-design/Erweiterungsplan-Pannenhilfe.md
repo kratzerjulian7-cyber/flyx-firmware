@@ -481,7 +481,7 @@ Julians Text steht wörtlich in `Komplettueberarbeitung-5.3.md` (Nachtrag 3). Pr
 
 | Produkt | Typ | Preis | Kommt mit | Wirkung im Spiel |
 |---|---|---:|---|---|
-| Werbung entfernen (= Werbefrei-Paket) `noads` | Nicht-Verbrauchsartikel | 5,99 € | **5.4** (mit Werbeanbieter, Teil 5d) | automatische Werbung dauerhaft aus |
+| Werbung entfernen (= Werbefrei-Paket) `noads` | Nicht-Verbrauchsartikel | 5,99 € | im Shop ab 5.4, kaufbar mit dem Werbe-Build (Teil 5d Punkt 9) | automatische Werbung dauerhaft aus |
 | Premium-Servicewagen `premium.service` | Nicht-Verbrauchsartikel | 2,49 € | **5.3** | eigenes Modell, +15 % Tempo |
 | Premium-Abschlepper `premium.tow` | Nicht-Verbrauchsartikel | 3,99 € | **5.3** | eigenes Modell, eigene Lade-Animation, 15 % schneller auf- und abladen |
 | Premium-Zentrale `premium.hq` | Nicht-Verbrauchsartikel | 3,49 € | **5.3** | exklusive Gebäudevarianten, Hof-Gestaltung, Beleuchtung |
@@ -490,7 +490,7 @@ Julians Text steht wörtlich in `Komplettueberarbeitung-5.3.md` (Nachtrag 3). Pr
 | Premium-Unternehmen `bundle.company` | Nicht-Verbrauchsartikel | 12,99 € | **5.4** | werbefrei + Fuhrpark + Zentrale |
 | Flughafen- und Eventbezirk `area.event` | Nicht-Verbrauchsartikel | 8,99 € | **5.4** (P1 vorgezogen) | Premium-Gebiet, siehe unten |
 | Vaultoria Ultimate `bundle.ultimate` | Nicht-Verbrauchsartikel | 17,99 € | **5.4** | werbefrei + alle Premium-Fahrzeuge + Zentrale + Gebiet |
-| Bergland `world.region` / Küstenstadt `world.large` / Küstenstadt + Hafenkran `world.special` / 3 Designs `design.*` | Nicht-Verbrauchsartikel | 5,99 € / 8,99 € / 11,99 € / 1,49–2,49 € | **5.4** (Teil 5d Punkt 7; IDs Vorschlag, Mac bestätigt) | Zusatzregion, zweite Welt, Welt + Spezialfahrzeug, Optik |
+| Seeufer `region.extra` / Umland Ost `world.large` / Bergland mit Bergekran `world.special` / Designs `design.carbon` 1,49 €, `design.night` 2,49 € | Nicht-Verbrauchsartikel | 5,99 € / 8,99 € / 11,99 € / 1,49–2,49 € | **5.4** (Teil 5d Punkt 7) | Zusatzregion, zweite Welt, Welt + Spezialfahrzeug, Optik |
 
 **Regeln für die Umsetzung (Docs-Thread, aus Julians Text abgeleitet):**
 - Ein Produkt wird erst in App Store Connect angelegt und im Shop angeboten, wenn sein Inhalt im Build wirklich spielbar ist (Pakete erst, wenn alle Teile da sind). „Werbefrei-Paket“ und „Werbung entfernen“ sind dasselbe Produkt.
@@ -921,18 +921,19 @@ Julians Text steht wörtlich in `Komplettueberarbeitung-5.3.md` (Nachtrag 4). De
 | Industriehafen | 70.000 € Spielgeld, Ruf 55 | große Fahrzeuge |
 | Land/Vororte | 90.000 € Spielgeld, Ruf 65 | wenige, weite Einsätze |
 | **Flughafen- und Eventbezirk** | **Kauf 8,99 €** (`area.event`) | Premium-Gebiet nach Teil 2c (P1) |
-| **Bergland** | **Kauf 5,99 €** (`world.region`) | Zusatzregion: Passstraßen, Serpentinen, schwierige Bergungen |
+| **Seeufer** | **Kauf 5,99 €** (`region.extra`) | Zusatzregion am See: Uferstraßen, Bootsanhänger, Ausflugsverkehr |
 Gesperrte Gebiete leicht entsättigt mit Grenze; Antippen → Karte mit Preis, Voraussetzung, was es bringt, Knopf „Freischalten“ (Spielgeld) bzw. „Im Shop ansehen“ (Kauf). Spielgeld-Gebiete ersetzen die alte Viertel-Freischaltung (vorgezogen aus E8).
 
 **7. Weltprodukte.**
-- **Küstenstadt** (`world.large`, 8,99 €): zweite Spielwelt mit eigener Firma ab Firmenstufe 1 (Hafen, Promenade, Brücke). Profil teilt sich Erfolge, Welten haben eigene Spielstände (Architektur R7, `world-<id>.json`). Weltwechsel über Zentrale → „Welten“.
-- **Küstenstadt + Hafenkran** (`world.special`, 11,99 €): Küstenstadt plus exklusiver Hafen-Bergekran (Spezialfahrzeug, in beiden Welten nutzbar). *Auslegung des Docs-Threads: „Welt inklusive Spezialfahrzeug“ als Paket aus großer Welt + Fahrzeug.*
-- **Designs** (je eigenes Produkt): Lackierung Nachtschicht 1,49 € (`design.paint.night`), Zentrale Backstein-Klassik 1,99 € (`design.hq.brick`), Fuhrpark Retro-Lackierung 2,49 € (`design.fleet.retro`). Nur Optik.
-- Mindestumfang, damit der Kauf echten Inhalt liefert: Bergland 1 Gebiet mit 3 eigenen Einsatzvarianten; Küstenstadt mindestens 4 Viertel, alle 7 Einsatzarten, eigener Betriebshof.
+- **Umland Ost** (`world.large`, 8,99 €): große neue Spielwelt mit eigener Firma ab Firmenstufe 1. Profil teilt sich Erfolge, Welten haben eigene Spielstände (Architektur R7, `world-<id>.json`). Weltwechsel über Zentrale → „Welten“.
+- **Bergland mit Bergekran** (`world.special`, 11,99 €): eigene Welt Bergland (Passstraßen, Serpentinen, schwierige Bergungen) mit exklusivem Bergekran.
+- **Designs:** Design Carbon 1,49 € (`design.carbon`), Design Nachtlicht 2,49 € (`design.night`). Nur Optik.
+- Mindestumfang, damit der Kauf echten Inhalt liefert: Seeufer 1 Gebiet mit 3 eigenen Einsatzvarianten; jede Welt mindestens 4 Viertel, alle 7 Einsatzarten, eigener Betriebshof.
+- Alle IDs vom Mac endgültig festgelegt (14.10.2026 16:15); Präfix `com.julian.vaultoria.`.
 
 **8. Premium-Schwerlastfahrzeug in 5.4.** Mit dem Fahrzeug kommen Lkw-/Transporter-Bergungen, die nur ein Schwerlastfahrzeug annehmen kann; in der Hauptwelt sind sie ohne Kauf ab E15 mit dem normalen Schwerlastabschlepper erreichbar.
 
-**9. Werbung + Werbung entfernen in 5.4.** Ein Werbeanbieter ist für Vaultoria grundsätzlich erlaubt (Projektregel). Der Mac wählt einen kostenlosen Anbieter, setzt Datenschutz-Angaben und ggf. ATT-Hinweis und nennt ihn in der Lieferung. Regeln aus Teil 2c (höchstens 1 pro Spieltag bei der Tagesabrechnung, nie in den ersten 30 Minuten).
+**9. Werbung entfernen.** `noads` steht im Shop, bleibt aber gesperrt (Hinweis „kommt mit Werbung“), bis ein Werbeanbieter eingebaut ist (Mac, 16:15). Dann gelten die Regeln aus Teil 2c.
 
 **10. Abnahme:** Block „5.4“ in `Abnahme-Checkliste-5.3.md`.
 

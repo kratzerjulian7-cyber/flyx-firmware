@@ -421,15 +421,15 @@ Gilt für den nächsten Build 5.4 zusätzlich zu allen Punkten oben. ⚠ Neuer g
 
 | Nr. | Anforderung | Quelle | Status | Begründung / Hinweis |
 |---|---|---|---|---|
-| V1 | Alle 14 Kaufpositionen eingebaut und kaufbar (15 Produkte, siehe `AppStoreConnect-InApp-Kaeufe.md` Teil A) | 15:57 | in 5.4 | ⚠ Neuer gilt: ersetzt „nur 3 in 5.3“ |
+| V1 | Alle 14 Produkte im Shop (`AppStoreConnect-InApp-Kaeufe.md` Teil A), 13 davon kaufbar | 15:57 | in 5.4 | ⚠ Neuer gilt: ersetzt „nur 3 in 5.3“ |
 | V2 | Jeder Kauf liefert echten, spielbaren Inhalt (kein leeres Produkt) | 10:34, 14:48 | in 5.4 | Regel G14 |
-| V3 | Werbung über einen kostenlosen Anbieter + „Werbung entfernen“ wirkt sofort | 14:48, 15:57 | in 5.4 | Anbieter in der Lieferung nennen, Datenschutz/ATT |
+| V3 | „Werbung entfernen“ im Shop sichtbar, gesperrt mit Hinweis, bis ein Werbeanbieter eingebaut ist | 14:48, 15:57 | in 5.4 (Kauf später) | Mac 16:15: kein Werbe-SDK in 5.4 |
 | V4 | Premium-Schwerlastfahrzeug mit eigenen großen Aufträgen | 14:48, 15:57 | in 5.4 | Plan 5d Punkt 8 |
 | V5 | Premium-Gebiet „Flughafen- und Eventbezirk“ sichtbar, per Kauf freischaltbar, mit VIP-/Event-Aufträgen | 14:48, 15:57 | in 5.4 | P1 vorgezogen |
-| V6 | Zusatzregion Bergland (Kauf) mit eigenen Einsätzen | 14:48, 15:57 | in 5.4 | – |
-| V7 | Zweite Welt Küstenstadt (Kauf) mit eigener Firma; Weltwechsel | 14:48, 15:57 | in 5.4 | ⚠ Neuer gilt: R7 „zweite Welt erst später“ |
-| V8 | Welt + Spezialfahrzeug (Hafen-Bergekran) | 14:48, 15:57 | in 5.4 | Auslegung als Paket, Julian kann korrigieren |
-| V9 | Mindestens drei Design-Produkte (nur Optik) | 14:48, 15:57 | in 5.4 | – |
+| V6 | Zusatzregion Seeufer (`region.extra`) mit eigenen Einsätzen | 14:48, 15:57 | in 5.4 | – |
+| V7 | Große Welt Umland Ost (`world.large`) mit eigener Firma; Weltwechsel | 14:48, 15:57 | in 5.4 | ⚠ Neuer gilt: R7 „zweite Welt erst später“ |
+| V8 | Welt + Spezialfahrzeug: Bergland mit Bergekran (`world.special`) | 14:48, 15:57 | in 5.4 | – |
+| V9 | Design Carbon und Design Nachtlicht (nur Optik) | 14:48, 15:57 | in 5.4 | – |
 | V10 | Pakete Premium-Fuhrpark, Premium-Unternehmen, Ultimate schalten alle Teile frei | 14:48 | in 5.4 | bereits besessene Teile anzeigen |
 | V11 | Optik dunkler und abwechslungsreicher, nicht „hell und eintönig“ | 15:57 | in 5.4 | UI 000f Punkt 1 |
 | V12 | Keine komisch herumstehenden Autos: geparkte Autos ausgerichtet, keine Überschneidungen | 15:57 | in 5.4 | – |
@@ -447,4 +447,4 @@ Gilt für den nächsten Build 5.4 zusätzlich zu allen Punkten oben. ⚠ Neuer g
 ## O. Offen bei Julian
 
 - App-Icon: Silber oder das bestehende Icon behalten. Bis zu seiner Entscheidung bleibt das bestehende.
-- In-App-Käufe A1–A15 in App Store Connect anlegen (Anleitung Teil A); A10–A15 erst nach Bestätigung der IDs durch den Mac.
+- In-App-Käufe A1–A14 in App Store Connect anlegen (Anleitung Teil A); A1 nicht an die 5.4-Einreichung hängen.
