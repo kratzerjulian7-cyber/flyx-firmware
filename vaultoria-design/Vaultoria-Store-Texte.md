@@ -2,7 +2,7 @@
 
 > **Pannenhilfe-Umstellung (14.10.2026 10:34):** Vaultoria ist jetzt ein Pannenhilfe- und Abschlepp-Tycoon. Store-Texte werden erst neu geschrieben, wenn das neue Spiel spielbar ist.
 >
-> **Preismodell (Julian 14.10.2026 14:48, ersetzt die Regel von 14:43):** Kostenlos mit Werbung, komplette erste Welt ohne Kauf spielbar. In-App-Käufe: Werbung entfernen 5,99 €, Premium-Servicewagen 2,49 €, Premium-Abschlepper 3,99 €, Premium-Schwerlastfahrzeug 4,99 €, Premium-Zentrale 3,49 €, Premium-Fuhrpark 8,99 €, Premium-Gebiet „Flughafen- und Eventbezirk“ 8,99 €, Premium-Unternehmen 12,99 €, Vaultoria Ultimate 17,99 €. Im neuen Store-Eintrag also: „Enthält Werbung: Ja“, „In-App-Käufe: Ja“, nur Produkte nennen, die im eingereichten Build wirklich kaufbar sind. Details: `design/Erweiterungsplan-Pannenhilfe.md` Teil 2c, Anleitung `AppStoreConnect-InApp-Kaeufe.md`.
+> **Preismodell (Julian 14.10.2026 14:48, ersetzt die Regel von 14:43):** Kostenlos mit Werbung, komplette erste Welt ohne Kauf spielbar. In-App-Käufe: Werbung entfernen 6,99 € (Julian 16:46), Premium-Servicewagen 2,49 €, Premium-Abschlepper 3,99 €, Premium-Schwerlastfahrzeug 4,99 €, Premium-Zentrale 3,49 €, Premium-Fuhrpark 8,99 €, Premium-Gebiet „Flughafen- und Eventbezirk“ 8,99 €, Premium-Unternehmen 12,99 €, Vaultoria Ultimate 17,99 €. Im neuen Store-Eintrag also: „Enthält Werbung: Ja“, „In-App-Käufe: Ja“, nur Produkte nennen, die im eingereichten Build wirklich kaufbar sind. Details: `design/Erweiterungsplan-Pannenhilfe.md` Teil 2c, Anleitung `AppStoreConnect-InApp-Kaeufe.md`.
 
 > **ÜBERHOLT (14.10.2026 10:30):** Julian hat Vaultoria radikal vereinfacht (Spielkonzept Teil L). Diese Texte beschreiben die abgeschaltete Version 2.3 und werden neu geschrieben, sobald die einfache Version spielbar ist. Nicht verwenden.
 
@@ -151,7 +151,7 @@ Questions or ideas? Write to julian_kratzer@web.de.
 
 ## App-Datenschutz-Fragebogen (ASC → App-Datenschutz)
 
-Hängt vom Werbeanbieter ab. Vor dem Einreichen mit dessen offizieller Liste („Apple privacy manifest / data disclosure“) abgleichen. Typisch für ein Werbe-SDK:
+Anbieter ab 5.4: **Google AdMob** (Julian 16:46). Klick-für-Klick-Ausfüllen in `AdMob-Anleitung.md`, Teil F. Vor dem Einreichen mit Googles aktueller Liste für das Google Mobile Ads SDK abgleichen. Übersicht:
 
 | Datenart | Zweck | Mit Identität verknüpft | Tracking |
 |---|---|---|---|

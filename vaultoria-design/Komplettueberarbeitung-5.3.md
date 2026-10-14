@@ -472,3 +472,9 @@ Wichtig: Das normale Firmenwachstum ist Bestandteil des kostenlosen Spiels. Echt
 - größere Welt mit sichtbarem Premium-Gebiet und mit Spielgeld kaufbaren Gebieten.
 
 Neuer gilt: Julians Wunsch „alles jetzt“ zieht Inhalte vor, die im Plan später lagen. Das betrifft die Gebiete (E8), das Schwerlastfahrzeug, das Premium-Gebiet P1 und die Weltprodukte.
+
+## Nachtrag 5 (wörtlich, Julian 14.10.2026 16:46): Preis Werbung entfernen, Werbung in 5.4
+
+> Nee, ich würde 6,99 für Werbung entfernen lassen, weil es ja ein Euro mehr. Und äh, können wir die Werbung jetzt gleich machen, dass die Werbung gleich mit drinnen ist?
+
+**Einordnung (Docs-Thread):** ⚠ Neuer gilt (Julian 14.10.2026 16:46): „Werbung entfernen“ kostet **6,99 €** statt 5,99 €, und die Werbung kommt **schon in 5.4** (Anbieter Google AdMob mit Einwilligungsdialog, Klick-Anleitung `AdMob-Anleitung.md`). Damit ist `noads` in 5.4 kaufbar und wird mit 5.4 eingereicht. Die Werberegeln aus Plan Teil 2c gelten unverändert (höchstens 1 Vollbild pro Spieltag bei der Tagesabrechnung, nie in den ersten 30 Minuten).

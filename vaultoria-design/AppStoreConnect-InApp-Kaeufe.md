@@ -1,10 +1,10 @@
 # Vaultoria – In-App-Käufe in App Store Connect anlegen
 
-Stand 14.10.2026, 16:15. Alle 14 Produkte für 5.4 (Julian 15:57). **Alle Product-IDs sind vom Mac endgültig festgelegt.** Sie stehen so in `Shop.swift` und `Vaultoria.storekit`. Grundlage: Julians Preismodell vom 14.10.2026 14:48 (`design/Komplettueberarbeitung-5.3.md`, Nachtrag 3) und `design/Erweiterungsplan-Pannenhilfe.md` Teil 2c.
+Stand 14.10.2026, 16:55. **Neu (Julian 16:46): „Werbung entfernen“ 6,99 €, Werbung schon in 5.4, alle 14 Produkte gehen mit 5.4 in die Prüfung.** Alle 14 Produkte für 5.4 (Julian 15:57). **Alle Product-IDs sind vom Mac endgültig festgelegt.** Sie stehen so in `Shop.swift` und `Vaultoria.storekit`. Grundlage: Julians Preismodell vom 14.10.2026 14:48 (`design/Komplettueberarbeitung-5.3.md`, Nachtrag 3) und `design/Erweiterungsplan-Pannenhilfe.md` Teil 2c.
 
 **Product-IDs buchstabengenau übernehmen** (am besten kopieren). Eine Product-ID lässt sich nach dem Anlegen **nie mehr ändern oder wiederverwenden**.
 
-**Wann anlegen:** Alle 14 Produkte kannst du sofort anlegen. Einreichen nur zusammen mit dem 5.4-Build, A1 erst mit dem Werbe-Build (siehe Teil A).
+**Wann anlegen:** Alle 14 Produkte kannst du sofort anlegen. Eingereicht werden alle 14 zusammen mit dem 5.4-Build.
 
 ## Vorher einmal prüfen
 
@@ -29,7 +29,7 @@ Alle Produkte haben den Typ **Nicht-Verbrauchsartikel**. Vor jede ID kommt `com.
 
 | Nr. | Referenzname | Produkt-ID | Preis | Anzeigename (DE) | Beschreibung (DE) | Inhalt |
 |---|---|---|---:|---|---|---|
-| A1 | Werbung entfernen | `com.julian.vaultoria.noads` | 5,99 € | Werbung entfernen | Entfernt die automatische Werbung dauerhaft. | = auch dein „Werbefrei-Paket“ |
+| A1 | Werbung entfernen | `com.julian.vaultoria.noads` | **6,99 €** | Werbung entfernen | Entfernt die automatische Werbung dauerhaft. | = auch dein „Werbefrei-Paket“ |
 | A2 | Premium-Servicewagen | `com.julian.vaultoria.premium.service` | 2,49 € | Premium-Servicewagen | Exklusiver Servicewagen mit Spezialisierung. | – |
 | A3 | Premium-Abschlepper | `com.julian.vaultoria.premium.tow` | 3,99 € | Premium-Abschlepper | Exklusiver Abschlepper mit eigener Animation. | – |
 | A4 | Premium-Schwerlastfahrzeug | `com.julian.vaultoria.premium.heavy` | 4,99 € | Premium-Schwerlastfahrzeug | Besonderes Fahrzeug für große Aufträge. | – |
@@ -46,7 +46,7 @@ Alle Produkte haben den Typ **Nicht-Verbrauchsartikel**. Vor jede ID kommt `com.
 
 **Deine 14 Positionen:** „Werbung entfernen“ und „Werbefrei-Paket“ sind ein Produkt (A1). Dafür gibt es zwei Designs (A13, A14). Das ergibt 14 Produkte. Die Texte sind Vorschläge und passen in Apples Grenzen (Name höchstens 30, Beschreibung höchstens 45 Zeichen). Du kannst sie ändern, die IDs nicht.
 
-**Achtung bei A1 (Werbung entfernen):** Im Spiel bleibt der Kauf gesperrt, bis ein Werbeanbieter eingebaut ist. Leg A1 jetzt in App Store Connect an, **hänge ihn aber nicht an die 5.4-Einreichung**. Apple prüft jeden eingereichten Kauf im Build, und ohne Werbung hätte er dort keine Wirkung. A1 reichst du mit dem Build ein, der Werbung enthält. A7 und A8 enthalten Werbefreiheit als Teil des Pakets. Das ist unkritisch, solange der Shop dazuschreibt: „werbefrei, sobald Werbung kommt“.
+**A1 (Werbung entfernen) auf 6,99 € umstellen:** A1 steht bei dir schon mit 6,99 € drin. Das passt jetzt, du musst nichts ändern. 5.4 enthält Werbung (Google AdMob), deshalb kommt A1 mit allen anderen Käufen in die 5.4-Einreichung. Das AdMob-Konto legst du nach `AdMob-Anleitung.md` an.
 
 ## Prüfungsnotiz (bei jedem Kauf gleich, Namen anpassen)
 
@@ -56,8 +56,8 @@ Alle Produkte haben den Typ **Nicht-Verbrauchsartikel**. Vor jede ID kommt `com.
 
 ## Was sich am Store-Eintrag mit 5.4 ändert
 
-- **App-Informationen / Altersfreigabe:** 5.4 zeigt noch **keine Werbung**, also bei der Frage nach Werbung **Nein**. Auf **Ja** stellen, sobald der Werbe-Build kommt.
-- **App-Datenschutz:** Erst mit dem Werbe-Build die Angaben des Werbeanbieters eintragen (Tabelle in `Vaultoria-Store-Texte.md`, Teil Datenschutz). Wenn der Anbieter trackt, braucht der Build den ATT-Hinweis.
+- **App-Informationen / Altersfreigabe:** 5.4 zeigt Werbung, also bei der Frage nach Werbung **Ja**.
+- **App-Datenschutz:** vor der 5.4-Einreichung neu ausfüllen, Schritt für Schritt in `AdMob-Anleitung.md`, Teil F.
 - **Store-Texte:** Nur Käufe nennen, die im Build kaufbar sind. Die Texte schreibe ich neu, sobald 5.3 spielbar ist.
 
 ## Hinweis zu den Paketen

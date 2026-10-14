@@ -375,7 +375,7 @@ Spalten: **Nr.** · **Anforderung** · **Quelle** · **Status** · **Begründung
 | P3 | Premium-Servicewagen 2,49 € (`premium.service`, +15 % Tempo) | 14:48 | in 5.3 | – |
 | P4 | Premium-Abschlepper 3,99 € (`premium.tow`, eigene Animation, 15 % schneller laden) | 14:48 | in 5.3 | – |
 | P5 | Premium-Zentrale 3,49 € (`premium.hq`, nur Optik) | 14:48 | in 5.3 | – |
-| P6 | Werbung (automatisch) und „Werbung entfernen“ 5,99 € (`noads`) | 14:48 | später (wenn ein Werbe-SDK freigegeben ist) | Julian muss einen Werbeanbieter freigeben (G13). Bis dahin ist 5.3 werbefrei und `noads` ausgeblendet |
+| P6 | Werbung (automatisch) und „Werbung entfernen“ 6,99 € (`noads`) | 14:48, 16:46 | in 5.4 (siehe V3; Julian hat Werbung 16:46 bestellt) | Julian muss einen Werbeanbieter freigeben (G13). Bis dahin ist 5.3 werbefrei und `noads` ausgeblendet |
 | P7 | Premium-Schwerlastfahrzeug 4,99 €, Premium-Fuhrpark 8,99 €, Premium-Unternehmen 12,99 € | 14:48 | später (mit Schwerlast-Update E15) | Inhalt existiert vorher nicht |
 | P8 | Premium-Gebiet „Flughafen- und Eventbezirk“ 8,99 € (`area.event`) | 14:48 | später (Update P1) | – |
 | P9 | Vaultoria Ultimate 17,99 € | 14:48 | später (mit P1, E15 und Werbe-SDK) | – |
@@ -421,9 +421,9 @@ Gilt für den nächsten Build 5.4 zusätzlich zu allen Punkten oben. ⚠ Neuer g
 
 | Nr. | Anforderung | Quelle | Status | Begründung / Hinweis |
 |---|---|---|---|---|
-| V1 | Alle 14 Produkte im Shop (`AppStoreConnect-InApp-Kaeufe.md` Teil A), 13 davon kaufbar | 15:57 | in 5.4 | ⚠ Neuer gilt: ersetzt „nur 3 in 5.3“ |
+| V1 | Alle 14 Produkte im Shop (`AppStoreConnect-InApp-Kaeufe.md` Teil A), alle 14 kaufbar (⚠ Neuer gilt, Julian 16:46) | 15:57 | in 5.4 | ⚠ Neuer gilt: ersetzt „nur 3 in 5.3“ |
 | V2 | Jeder Kauf liefert echten, spielbaren Inhalt (kein leeres Produkt) | 10:34, 14:48 | in 5.4 | Regel G14 |
-| V3 | „Werbung entfernen“ im Shop sichtbar, gesperrt mit Hinweis, bis ein Werbeanbieter eingebaut ist | 14:48, 15:57 | in 5.4 (Kauf später) | Mac 16:15: kein Werbe-SDK in 5.4 |
+| V3 | Werbung (Google AdMob, Interstitial bei der Tagesabrechnung, höchstens 1 pro Spieltag, nie in den ersten 30 Min.) mit Einwilligungsdialog + ATT; „Werbung entfernen“ 6,99 € kaufbar und schaltet Werbung sofort ab (auch über `bundle.company`/`bundle.ultimate`) | 14:48, 15:57, 16:46 | in 5.4 | ⚠ Neuer gilt (16:46): ersetzt „kein Werbe-SDK in 5.4“ (Mac 16:15). Echte IDs von Julian (`AdMob-Anleitung.md`), bis dahin Test-IDs |
 | V4 | Premium-Schwerlastfahrzeug mit eigenen großen Aufträgen | 14:48, 15:57 | in 5.4 | Plan 5d Punkt 8 |
 | V5 | Premium-Gebiet „Flughafen- und Eventbezirk“ sichtbar, per Kauf freischaltbar, mit VIP-/Event-Aufträgen | 14:48, 15:57 | in 5.4 | P1 vorgezogen |
 | V6 | Zusatzregion Seeufer (`region.extra`) mit eigenen Einsätzen | 14:48, 15:57 | in 5.4 | – |
@@ -447,4 +447,4 @@ Gilt für den nächsten Build 5.4 zusätzlich zu allen Punkten oben. ⚠ Neuer g
 ## O. Offen bei Julian
 
 - App-Icon: Silber oder das bestehende Icon behalten. Bis zu seiner Entscheidung bleibt das bestehende.
-- In-App-Käufe A1–A14 in App Store Connect anlegen (Anleitung Teil A); A1 nicht an die 5.4-Einreichung hängen.
+- In-App-Käufe A1–A14 in App Store Connect anlegen (Anleitung Teil A); alle 14 an die 5.4-Einreichung hängen. AdMob-Konto, App und Werbeeinheit anlegen und IDs an den Mac geben (`AdMob-Anleitung.md`); App-Datenschutz und Altersfreigabe (Werbung: Ja) vor dem Einreichen.
