@@ -1,6 +1,6 @@
 # Vaultoria – Komplettüberarbeitung 5.3 (verbindlich)
 
-Stand 14.10.2026, 14:40. Julians Auftrag vom 14.10.2026 14:30 und Nachträge 14:36, 14:43 und 14:48, **wörtlich** unten. Geht bei Widerspruch allen anderen Dateien vor (`Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md`, `Erweiterungsplan-Pannenhilfe.md`); diese bleiben als Detail- und Zahlenquelle gültig.
+Stand 14.10.2026, 14:40. Julians Auftrag vom 14.10.2026 14:30 und Nachträge 14:36, 14:43, 14:48 und 15:57 (Test von 5.3 → Update 5.4), **wörtlich** unten. Geht bei Widerspruch allen anderen Dateien vor (`Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md`, `Erweiterungsplan-Pannenhilfe.md`); diese bleiben als Detail- und Zahlenquelle gültig.
 
 ## Einordnung (Docs-Thread)
 
@@ -458,3 +458,17 @@ Wichtig: Das normale Firmenwachstum ist Bestandteil des kostenlosen Spiels. Echt
 > - einzelne Designs: **1,49–2,49 €**
 >
 > Das Premium-Gebiet würde ich nicht unter **8,99 €** anbieten. Es soll schließlich nicht wie ein kleiner Skin wirken, sondern wie eine echte Erweiterung mit eigenen Gebieten, Aufträgen und Fahrzeugen. baue das alles mit ein
+
+## Nachtrag 4 (wörtlich, Julian 14.10.2026 15:57): Test von 5.3 → Update 5.4
+
+> Aber das waren ja nicht nur drei In-App-Käufe, das waren ja viel, viel mehr, was ich dir geschickt habe. Oder? Es waren da 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Mit der neuen Welt 11, 12, 13, 14 Stück. Was für drei? Das heißt, alles Werte machen. Und ich schaue mir das jetzt an. So. Testflight. Aktualisieren. Und wie, das ist jetzt nichts Gutes, dann kracht es aber. So. Mhm. Weiterspielen. Okay, sieht schon mal sehr, sehr gut aus. Es ist zwar alles sehr hell und eintönig. Schaut noch gut aus, da stehen ein paar Autos komisch rum. Dann gut, und wo kann ich jetzt sagen, dass der S1-Ding zum... Ich kann erstmal die Flotte nicht mehr zumachen, sondern muss wieder auf Karte gehen. Wo kann ich jetzt sagen, dass der tanken soll? Ich weiß ja nicht, wo, wie oder was. Also, es muss. Ich will da meine Dinge haben auf der Base, sag ich mal, wo ich draufklicken kann, wo ich die Baufläche erweitern kann oder so. Also, rund um die Baufläche muss ein bisschen was frei sein und die soll nicht so mittig sein, sondern eher so ein bisschen abgeschieden. Dann die Welt, vielleicht eine Größe, wo ist mein Zusatzbiom, wo man Kosten. richtig freischalten kann. Wo sind die anderen Biome, die man mit Ingame-Geld kaufen kann und so? Mir fehlt noch sehr, sehr viel.
+
+**Einordnung (Docs-Thread):** Daraus wird Update **5.4**, festgelegt in `Erweiterungsplan-Pannenhilfe.md` Teil 5d, `UI-Vorgabe-Pannenhilfe.md` Teil 000f, `AppStoreConnect-InApp-Kaeufe.md` (Teil A = alles für 5.4) und `Abnahme-Checkliste-5.3.md` Block 5.4. Kurz:
+- alle 14 Kaufpositionen in 5.4,
+- dunklere und abwechslungsreichere Optik, Autos stehen ordentlich,
+- jedes Fenster schließbar,
+- Fahrzeugbefehle (Tanken, Warten, zur Zentrale, Folgen),
+- Betriebshof am Stadtrand mit anklickbaren Objekten und erweiterbarer Baufläche,
+- größere Welt mit sichtbarem Premium-Gebiet und mit Spielgeld kaufbaren Gebieten.
+
+Neuer gilt: Julians Wunsch „alles jetzt“ zieht Inhalte vor, die im Plan später lagen. Das betrifft die Gebiete (E8), das Schwerlastfahrzeug, das Premium-Gebiet P1 und die Weltprodukte.

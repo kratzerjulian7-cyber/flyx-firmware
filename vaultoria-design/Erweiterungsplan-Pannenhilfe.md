@@ -1,8 +1,8 @@
-# Vaultoria – Erweiterungsplan Pannenhilfe 1.8 (freigegeben, E1 erledigt, als Nächstes Komplettüberarbeitung 5.3; Rückgrat = Firmenentwicklung, Teil 2b)
+# Vaultoria – Erweiterungsplan Pannenhilfe 1.9 (freigegeben, E1 erledigt, als Nächstes Komplettüberarbeitung 5.3; Rückgrat = Firmenentwicklung, Teil 2b)
 
 **Vorrang ab 14.10.2026 14:30: `Komplettueberarbeitung-5.3.md`** (Julians Komplettüberarbeitung, wörtlich). 5.3 ist ein polierter vertikaler Ausschnitt mit Starttempo, Premium-UI/Modelltausch, E1.6 und E1.5 komplett, ohne Zwischenversion auf TestFlight; erst danach E2 ff. Wo jene Datei Neueres festlegt, gilt sie.
 
-Stand 14.10.2026, 15:00 (**1.8: Julians Preismodell 14:48 → Teil 2c; ersetzt die Regel „Echtgeld nur Designs“; Premium-Gebiet als Update P1 nach 5.3.** 1.7 14:50: **1.7: Firmenentwicklung in 5 Stufen + Bausystem als Rückgrat (Teil 2b), Garage/Werkstatt/Leitstelle ×3 entfallen; Monetarisierungsregel in Teil 0.** 1.6 14:35: **1.6: Verweis auf Komplettueberarbeitung-5.3.md; Build-Reihenfolge in 5c ersetzt.** 1.5 14:20: **1.5: Julian 14:15 bestellt vor allen großen Erweiterungen ein Transparenz- und Detail-Update → E1.6, Teil 5c. Build-Reihenfolge: 5.2 Tempo + Premium-UI, 5.3 E1.6 + Zielort/Lager aus E1.5, 5.4 Rest E1.5, danach E2.** 1.4 14:10: **1.4: Julian 14:03 bestellt E1.5 „Zielorte und Betriebsmittel“ vor E2 und ein ruhigeres Starttempo (8–12 Einsätze pro Spieltag), siehe Teil 5b. Tempo kommt in 5.2, E1.5 als 5.3.** 1.3 14:00: **1.3: E1 erledigt in Vaultoria 5.1, Build 202610141353, auf TestFlight; 17 Tests grün; Testbericht `/mnt/project-files/Testbericht.md`. Urteil Mac: Start mit 2 Wagen zu hektisch, Viertel öffnen zu schnell → Balancing in den nächsten Updates.** 1.2 14:15: **1.2: Teil 7 Abgleich mit dem Code vom Mac übernommen; wo der Code abweicht, gilt Teil 7. Spielstand der App: Vaultoria 1.4, Build 202610141306, auf TestFlight, mit Optik-Angleichung und Kenney-Stadt.** 1.1 13:45: **1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
+Stand 14.10.2026, 16:10 (**1.9: Julians Test von 5.3 → Update 5.4, Teil 5d: alle Käufe, Gebiete mit Spielgeld, Premium-Gebiet, Weltprodukte, Fahrzeugbefehle, abgelegener Betriebshof.** 1.8 15:00: **1.8: Julians Preismodell 14:48 → Teil 2c; ersetzt die Regel „Echtgeld nur Designs“; Premium-Gebiet als Update P1 nach 5.3.** 1.7 14:50: **1.7: Firmenentwicklung in 5 Stufen + Bausystem als Rückgrat (Teil 2b), Garage/Werkstatt/Leitstelle ×3 entfallen; Monetarisierungsregel in Teil 0.** 1.6 14:35: **1.6: Verweis auf Komplettueberarbeitung-5.3.md; Build-Reihenfolge in 5c ersetzt.** 1.5 14:20: **1.5: Julian 14:15 bestellt vor allen großen Erweiterungen ein Transparenz- und Detail-Update → E1.6, Teil 5c. Build-Reihenfolge: 5.2 Tempo + Premium-UI, 5.3 E1.6 + Zielort/Lager aus E1.5, 5.4 Rest E1.5, danach E2.** 1.4 14:10: **1.4: Julian 14:03 bestellt E1.5 „Zielorte und Betriebsmittel“ vor E2 und ein ruhigeres Starttempo (8–12 Einsätze pro Spieltag), siehe Teil 5b. Tempo kommt in 5.2, E1.5 als 5.3.** 1.3 14:00: **1.3: E1 erledigt in Vaultoria 5.1, Build 202610141353, auf TestFlight; 17 Tests grün; Testbericht `/mnt/project-files/Testbericht.md`. Urteil Mac: Start mit 2 Wagen zu hektisch, Viertel öffnen zu schnell → Balancing in den nächsten Updates.** 1.2 14:15: **1.2: Teil 7 Abgleich mit dem Code vom Mac übernommen; wo der Code abweicht, gilt Teil 7. Spielstand der App: Vaultoria 1.4, Build 202610141306, auf TestFlight, mit Optik-Angleichung und Kenney-Stadt.** 1.1 13:45: **1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
 
 ## Julians Auftrag (wörtlich, 14.10.2026 12:57)
 
@@ -481,16 +481,16 @@ Julians Text steht wörtlich in `Komplettueberarbeitung-5.3.md` (Nachtrag 3). Pr
 
 | Produkt | Typ | Preis | Kommt mit | Wirkung im Spiel |
 |---|---|---:|---|---|
-| Werbung entfernen (= Werbefrei-Paket) `noads` | Nicht-Verbrauchsartikel | 5,99 € | sobald ein Werbe-SDK freigegeben ist (in 5.3 ausgeblendet) | automatische Werbung dauerhaft aus |
+| Werbung entfernen (= Werbefrei-Paket) `noads` | Nicht-Verbrauchsartikel | 5,99 € | **5.4** (mit Werbeanbieter, Teil 5d) | automatische Werbung dauerhaft aus |
 | Premium-Servicewagen `premium.service` | Nicht-Verbrauchsartikel | 2,49 € | **5.3** | eigenes Modell, +15 % Tempo |
 | Premium-Abschlepper `premium.tow` | Nicht-Verbrauchsartikel | 3,99 € | **5.3** | eigenes Modell, eigene Lade-Animation, 15 % schneller auf- und abladen |
 | Premium-Zentrale `premium.hq` | Nicht-Verbrauchsartikel | 3,49 € | **5.3** | exklusive Gebäudevarianten, Hof-Gestaltung, Beleuchtung |
-| Premium-Schwerlastfahrzeug `premium.heavy` | Nicht-Verbrauchsartikel | 4,99 € | Update mit Schwerlast (E15) | besonderes Schwerlastfahrzeug |
-| Premium-Fuhrpark `premium.fleet` | Nicht-Verbrauchsartikel | 8,99 € | mit Schwerlastfahrzeug | alle drei Premium-Fahrzeuge |
-| Premium-Unternehmen `bundle.company` | Nicht-Verbrauchsartikel | 12,99 € | mit Schwerlastfahrzeug und Werbe-SDK | werbefrei + Fuhrpark + Zentrale |
-| Flughafen- und Eventbezirk `area.event` | Nicht-Verbrauchsartikel | 8,99 € | **Update P1** (nach 5.3) | Premium-Gebiet, siehe unten |
-| Vaultoria Ultimate `bundle.ultimate` | Nicht-Verbrauchsartikel | 17,99 € | mit P1, Schwerlastfahrzeug und Werbe-SDK | werbefrei + alle Premium-Fahrzeuge + Zentrale + Gebiet |
-| Später: Zusatzregion / große Welt / Welt + Spezialfahrzeug / Designs | Nicht-Verbrauchsartikel | 5,99 € / 8,99 € / 11,99 € / 1,49–2,49 € | spätere Updates | – |
+| Premium-Schwerlastfahrzeug `premium.heavy` | Nicht-Verbrauchsartikel | 4,99 € | **5.4** (Teil 5d Punkt 8) | besonderes Schwerlastfahrzeug |
+| Premium-Fuhrpark `premium.fleet` | Nicht-Verbrauchsartikel | 8,99 € | **5.4** | alle drei Premium-Fahrzeuge |
+| Premium-Unternehmen `bundle.company` | Nicht-Verbrauchsartikel | 12,99 € | **5.4** | werbefrei + Fuhrpark + Zentrale |
+| Flughafen- und Eventbezirk `area.event` | Nicht-Verbrauchsartikel | 8,99 € | **5.4** (P1 vorgezogen) | Premium-Gebiet, siehe unten |
+| Vaultoria Ultimate `bundle.ultimate` | Nicht-Verbrauchsartikel | 17,99 € | **5.4** | werbefrei + alle Premium-Fahrzeuge + Zentrale + Gebiet |
+| Bergland `world.region` / Küstenstadt `world.large` / Küstenstadt + Hafenkran `world.special` / 3 Designs `design.*` | Nicht-Verbrauchsartikel | 5,99 € / 8,99 € / 11,99 € / 1,49–2,49 € | **5.4** (Teil 5d Punkt 7; IDs Vorschlag, Mac bestätigt) | Zusatzregion, zweite Welt, Welt + Spezialfahrzeug, Optik |
 
 **Regeln für die Umsetzung (Docs-Thread, aus Julians Text abgeleitet):**
 - Ein Produkt wird erst in App Store Connect angelegt und im Shop angeboten, wenn sein Inhalt im Build wirklich spielbar ist (Pakete erst, wenn alle Teile da sind). „Werbefrei-Paket“ und „Werbung entfernen“ sind dasselbe Produkt.
@@ -896,6 +896,45 @@ enum LedgerCategory: String, Codable { case job, destination, material, fuel, wa
 **Screenshots:** Panel mit „Erwarteter Gewinn“ zu und mit „Details“ offen · Fahrzeugkarte während des Einsatzes · Banner nach dem Einsatz · vollständiger Bericht · Kasse mit Fixkosten · Verlauf · Zuteilung mit ausgegrautem Fahrzeug und Grund · Kaufbestätigung · Geldkapsel mit „+142 €“ · ein Ersthinweis.
 
 **Nicht in E1.6:** neue Tabs oder Hauptnavigation, Statistiken mit Diagrammen (E10), Wetter (E2), neue Gebiete oder Fahrzeugklassen.
+
+### 5d. Update 5.4 nach Julians Test von 5.3 (Julian 14.10.2026 15:57)
+
+Julians Text steht wörtlich in `Komplettueberarbeitung-5.3.md` (Nachtrag 4). Der neuere Auftrag gilt und zieht vor: Gebiete mit Spielgeld (eigentlich E8), Premium-Gebiet (P1), Premium-Schwerlastfahrzeug, alle Pakete und die Weltprodukte. Regel bleibt: **Jedes Produkt im Shop braucht spielbaren Inhalt im Build**, und die kostenlose Hauptwelt bleibt ohne Kauf vollständig.
+
+**1. Optik dunkler und abwechslungsreicher.** Standard-Licht Spätnachmittag/Abend statt Mittag; Boden und Dächer dunkler (Asphalt #2B2B2E bis #3A3A3F, Fassaden entsättigt in mehreren Tönen: Sandstein, Backstein, Putz grau/beige, Glas). Jedes Viertel mit eigenem Charakter (Altbau, Wohnsiedlung, Gewerbe, Hafen). Mehr Details: Bäume, Zäune, Laternen, Schilder (fiktiv). Weiterhin kein Gold, Farbe nur gedämpft.
+
+**2. Geparkte Autos ordentlich.** Nur auf Parkbuchten, Stellplätzen und am Straßenrand, ausgerichtet an Fahrbahn bzw. Markierung, keine Überschneidung mit Gebäuden, Bäumen oder anderen Autos; Kollisionstest beim Platzieren.
+
+**3. Jedes Fenster schließbar.** Jede Ansicht/jedes Sheet (auch Flotte, Personal, Zentrale-Karten) hat oben rechts ein ✕ (44 × 44 pt) und lässt sich nach unten wegwischen; Tippen auf den Tab „Karte“ schließt alles. Nie muss man „über einen anderen Tab raus“.
+
+**4. Fahrzeugbefehle.** Fahrzeug antippen (Karte oder Flotte) → Befehlsleiste mit großen Knöpfen: **Tanken** (fährt zur Zapfstelle, Kosten vorher), **Warten/Reparieren** (fährt in die Halle, Dauer + Kosten vorher), **Zur Zentrale**, **Folgen** (Kamera), **Einsatz zuweisen** (nächster passender offener Auftrag). Nicht verfügbare Befehle ausgegraut mit Grund. Automatik als Einstellung: „Bei unter 20 % Tank automatisch tanken“ (Standard an).
+
+**5. Betriebshof abgelegen und anklickbar.** Die Zentrale liegt **am Stadtrand** (nicht mittig) mit freier Fläche ringsum. Jedes Objekt auf dem Hof ist antippbar und zeigt sein eigenes kleines Panel: Halle (Wartung), Zapfstelle (Tanken, Preis), Lager (Bestände, Nachbestellen), Container (Füllstand, Abholen), Stellplätze (abgestellte Autos), Büro (Kasse/Verlauf), freie Bauflächen (Bauen). **Grundstück erweitern:** angrenzende Flächen sind sichtbar (Bauzaun-Markierung) und mit Spielgeld kaufbar, Startwerte 6.000 € / 12.000 € / 20.000 € je Erweiterung, jeweils +2 Bauflächen.
+
+**6. Größere Welt mit Gebieten.** Karte deutlich größer, alle Gebiete von Anfang an sichtbar:
+| Gebiet | Freischalten | Charakter |
+|---|---|---|
+| Innenstadt (Start) | frei | Verkehr, Falschparker, kurze Wege |
+| Wohnviertel + Bahnhof | 15.000 € Spielgeld, Ruf 20 | Taxis, Pendler, Morgen-/Abendspitzen |
+| Gewerbegebiet | 30.000 € Spielgeld, Ruf 35 | Lieferwagen, Transporter |
+| Autobahnabschnitt | 45.000 € Spielgeld, Ruf 45 | lange Wege, dringende Einsätze |
+| Industriehafen | 70.000 € Spielgeld, Ruf 55 | große Fahrzeuge |
+| Land/Vororte | 90.000 € Spielgeld, Ruf 65 | wenige, weite Einsätze |
+| **Flughafen- und Eventbezirk** | **Kauf 8,99 €** (`area.event`) | Premium-Gebiet nach Teil 2c (P1) |
+| **Bergland** | **Kauf 5,99 €** (`world.region`) | Zusatzregion: Passstraßen, Serpentinen, schwierige Bergungen |
+Gesperrte Gebiete leicht entsättigt mit Grenze; Antippen → Karte mit Preis, Voraussetzung, was es bringt, Knopf „Freischalten“ (Spielgeld) bzw. „Im Shop ansehen“ (Kauf). Spielgeld-Gebiete ersetzen die alte Viertel-Freischaltung (vorgezogen aus E8).
+
+**7. Weltprodukte.**
+- **Küstenstadt** (`world.large`, 8,99 €): zweite Spielwelt mit eigener Firma ab Firmenstufe 1 (Hafen, Promenade, Brücke). Profil teilt sich Erfolge, Welten haben eigene Spielstände (Architektur R7, `world-<id>.json`). Weltwechsel über Zentrale → „Welten“.
+- **Küstenstadt + Hafenkran** (`world.special`, 11,99 €): Küstenstadt plus exklusiver Hafen-Bergekran (Spezialfahrzeug, in beiden Welten nutzbar). *Auslegung des Docs-Threads: „Welt inklusive Spezialfahrzeug“ als Paket aus großer Welt + Fahrzeug.*
+- **Designs** (je eigenes Produkt): Lackierung Nachtschicht 1,49 € (`design.paint.night`), Zentrale Backstein-Klassik 1,99 € (`design.hq.brick`), Fuhrpark Retro-Lackierung 2,49 € (`design.fleet.retro`). Nur Optik.
+- Mindestumfang, damit der Kauf echten Inhalt liefert: Bergland 1 Gebiet mit 3 eigenen Einsatzvarianten; Küstenstadt mindestens 4 Viertel, alle 7 Einsatzarten, eigener Betriebshof.
+
+**8. Premium-Schwerlastfahrzeug in 5.4.** Mit dem Fahrzeug kommen Lkw-/Transporter-Bergungen, die nur ein Schwerlastfahrzeug annehmen kann; in der Hauptwelt sind sie ohne Kauf ab E15 mit dem normalen Schwerlastabschlepper erreichbar.
+
+**9. Werbung + Werbung entfernen in 5.4.** Ein Werbeanbieter ist für Vaultoria grundsätzlich erlaubt (Projektregel). Der Mac wählt einen kostenlosen Anbieter, setzt Datenschutz-Angaben und ggf. ATT-Hinweis und nennt ihn in der Lieferung. Regeln aus Teil 2c (höchstens 1 pro Spieltag bei der Tagesabrechnung, nie in den ersten 30 Minuten).
+
+**10. Abnahme:** Block „5.4“ in `Abnahme-Checkliste-5.3.md`.
 
 ## 6. Offen bei Julian
 

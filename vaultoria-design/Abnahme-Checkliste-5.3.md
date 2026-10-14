@@ -1,6 +1,6 @@
 # Vaultoria 5.3 – Abnahme-Checkliste
 
-Stand 14.10.2026, 15:15. Hier steht jede Anforderung, die Julian heute zu Vaultoria geschrieben hat, als nummerierter Prüfpunkt mit Quelle. Die Zeiten sind Julians Nachrichten in deutscher Zeit. Die Volltexte stehen wörtlich in `design/Spielkonzept-Pannenhilfe.md` (10:34, 11:06, 11:21), `design/Erweiterungsplan-Pannenhilfe.md` (12:57, 13:05), `design/UI-Vorgabe-Pannenhilfe.md` (13:12, 13:40, 13:50, 13:59) und `design/Komplettueberarbeitung-5.3.md` (14:03 im Plan Teil 5b, 14:15 im Plan Teil 5c, 14:30, 14:36, 14:43, 14:48).
+Stand 14.10.2026, 16:10 (neuer Block 5.4 vor „Offen“). Hier steht jede Anforderung, die Julian heute zu Vaultoria geschrieben hat, als nummerierter Prüfpunkt mit Quelle. Die Zeiten sind Julians Nachrichten in deutscher Zeit. Die Volltexte stehen wörtlich in `design/Spielkonzept-Pannenhilfe.md` (10:34, 11:06, 11:21), `design/Erweiterungsplan-Pannenhilfe.md` (12:57, 13:05), `design/UI-Vorgabe-Pannenhilfe.md` (13:12, 13:40, 13:50, 13:59) und `design/Komplettueberarbeitung-5.3.md` (14:03 im Plan Teil 5b, 14:15 im Plan Teil 5c, 14:30, 14:36, 14:43, 14:48).
 
 **So wird geprüft:** Der Mac hakt vor dem Upload jeden Punkt mit **„in 5.3“** einzeln ab: ✅ erfüllt, ❌ fehlt, mit einem Satz, wie er es geprüft hat. Punkte mit **„später“** dürfen in 5.3 **nicht** als Platzhalter auftauchen (Regel 10:34: keine Platzhalter-Menüs).
 
@@ -415,8 +415,36 @@ Spalten: **Nr.** · **Anforderung** · **Quelle** · **Status** · **Begründung
 | L7 | Sicherung der bisherigen Version | 14:30 | in 5.3 | S2 |
 | L8 | Das Spiel fühlt sich zusammenhängend, verständlich, hochwertig und überraschend vollständig an, nicht wie eine abgearbeitete Liste | 14:30 | in 5.3 | ehrliches Selbsturteil des Mac in L5 |
 
-## O. Offen bei Julian (blockiert 5.3 nicht)
+## 5.4 Update nach Julians Test von 5.3 (15:57)
+
+Gilt für den nächsten Build 5.4 zusätzlich zu allen Punkten oben. ⚠ Neuer gilt: Die hier vorgezogenen Punkte ersetzen bei P6–P10, F4/R7 (zweite Welt) und R9 (Gebiete) den Status „später“.
+
+| Nr. | Anforderung | Quelle | Status | Begründung / Hinweis |
+|---|---|---|---|---|
+| V1 | Alle 14 Kaufpositionen eingebaut und kaufbar (15 Produkte, siehe `AppStoreConnect-InApp-Kaeufe.md` Teil A) | 15:57 | in 5.4 | ⚠ Neuer gilt: ersetzt „nur 3 in 5.3“ |
+| V2 | Jeder Kauf liefert echten, spielbaren Inhalt (kein leeres Produkt) | 10:34, 14:48 | in 5.4 | Regel G14 |
+| V3 | Werbung über einen kostenlosen Anbieter + „Werbung entfernen“ wirkt sofort | 14:48, 15:57 | in 5.4 | Anbieter in der Lieferung nennen, Datenschutz/ATT |
+| V4 | Premium-Schwerlastfahrzeug mit eigenen großen Aufträgen | 14:48, 15:57 | in 5.4 | Plan 5d Punkt 8 |
+| V5 | Premium-Gebiet „Flughafen- und Eventbezirk“ sichtbar, per Kauf freischaltbar, mit VIP-/Event-Aufträgen | 14:48, 15:57 | in 5.4 | P1 vorgezogen |
+| V6 | Zusatzregion Bergland (Kauf) mit eigenen Einsätzen | 14:48, 15:57 | in 5.4 | – |
+| V7 | Zweite Welt Küstenstadt (Kauf) mit eigener Firma; Weltwechsel | 14:48, 15:57 | in 5.4 | ⚠ Neuer gilt: R7 „zweite Welt erst später“ |
+| V8 | Welt + Spezialfahrzeug (Hafen-Bergekran) | 14:48, 15:57 | in 5.4 | Auslegung als Paket, Julian kann korrigieren |
+| V9 | Mindestens drei Design-Produkte (nur Optik) | 14:48, 15:57 | in 5.4 | – |
+| V10 | Pakete Premium-Fuhrpark, Premium-Unternehmen, Ultimate schalten alle Teile frei | 14:48 | in 5.4 | bereits besessene Teile anzeigen |
+| V11 | Optik dunkler und abwechslungsreicher, nicht „hell und eintönig“ | 15:57 | in 5.4 | UI 000f Punkt 1 |
+| V12 | Keine komisch herumstehenden Autos: geparkte Autos ausgerichtet, keine Überschneidungen | 15:57 | in 5.4 | – |
+| V13 | Jedes Fenster schließbar (✕ und Wischen), auch Flotte | 15:57 | in 5.4 | – |
+| V14 | Fahrzeugbefehle: Tanken, Warten/Reparieren, Zur Zentrale, Folgen, Einsatz zuweisen | 15:57 | in 5.4 | – |
+| V15 | Automatisch tanken unter 20 % (abschaltbar) | 15:57 | in 5.4 | Startwert des Docs-Threads |
+| V16 | Betriebshof abgelegen am Stadtrand, nicht mittig, freie Fläche ringsum | 15:57 | in 5.4 | – |
+| V17 | Hof-Objekte antippbar (Halle, Zapfstelle, Lager, Container, Stellplätze, Büro, Bauflächen) | 15:57 | in 5.4 | – |
+| V18 | Baufläche erweiterbar: angrenzendes Grundstück mit Spielgeld kaufen | 15:57 | in 5.4 | 3 Erweiterungen, je +2 Bauflächen |
+| V19 | Größere Welt | 15:57 | in 5.4 | – |
+| V20 | Gebiete mit Spielgeld kaufbar (Wohnviertel + Bahnhof, Gewerbegebiet, Autobahn, Industriehafen, Land/Vororte) | 15:57 | in 5.4 | ⚠ Neuer gilt: E8 vorgezogen |
+| V21 | Gesperrte Gebiete sichtbar, mit Preis, Voraussetzung und Nutzen beim Antippen | 15:57 | in 5.4 | – |
+| V22 | Alles aus dem Block „in 5.3“ bleibt erfüllt (keine Rückschritte) | – | in 5.4 | – |
+
+## O. Offen bei Julian
 
 - App-Icon: Silber oder das bestehende Icon behalten. Bis zu seiner Entscheidung bleibt das bestehende.
-- Werbeanbieter freigeben, sonst bleibt P6 später.
-- In-App-Käufe A1–A3 in App Store Connect anlegen (P11).
+- In-App-Käufe A1–A15 in App Store Connect anlegen (Anleitung Teil A); A10–A15 erst nach Bestätigung der IDs durch den Mac.
