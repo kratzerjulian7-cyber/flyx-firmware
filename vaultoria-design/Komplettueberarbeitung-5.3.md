@@ -1,6 +1,6 @@
 # Vaultoria – Komplettüberarbeitung 5.3 (verbindlich)
 
-Stand 14.10.2026, 14:40. Julians Auftrag vom 14.10.2026 14:30 und Nachtrag 14:36, **wörtlich** unten. Geht bei Widerspruch allen anderen Dateien vor (`Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md`, `Erweiterungsplan-Pannenhilfe.md`); diese bleiben als Detail- und Zahlenquelle gültig.
+Stand 14.10.2026, 14:40. Julians Auftrag vom 14.10.2026 14:30 und Nachträge 14:36 und 14:43, **wörtlich** unten. Geht bei Widerspruch allen anderen Dateien vor (`Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md`, `Erweiterungsplan-Pannenhilfe.md`); diese bleiben als Detail- und Zahlenquelle gültig.
 
 ## Einordnung (Docs-Thread)
 
@@ -13,6 +13,8 @@ Stand 14.10.2026, 14:40. Julians Auftrag vom 14.10.2026 14:30 und Nachtrag 14:36
   - Höchstens **4 gleichzeitige Aufträge** am Anfang (zusätzlich zum Tagesbudget 8–12).
   - Neu für 5.3: Diagnose vor Ort, zweites Fahrzeug anfordern, Ausgänge „falsch gemeldet“, „Kunde storniert“, „nicht sicher reparierbar“, „Folgeauftrag“; Kosten vorab auch Entsorgung, Partnerkosten, Vertragsboni/-strafen; Bewertung mit Begründung; Kamera folgt eigenem Fahrzeug; Marker beim Herauszoomen kleiner/zusammengefasst; Tag/Abend/Nacht; Sounds und Haptik abschaltbar; Hof mit Werkstatt und Tank-/Ladebereich.
   - Stil: einheitlich, realistische Materialien auf stilisierten Formen, keine Mischung aus fotorealistischen Bildern und Low-Poly-Modellen (präzisiert UI-Vorgabe 000b Punkt 7).
+- **Firmenentwicklung (Nachtrag 14:43):** zentrales Fortschrittssystem, 5 Firmenstufen + Bausystem auf freien Hofflächen. In 5.3: **Firmenstufe 1 komplett + Bausystem mit den ersten Ausbauten Richtung Stufe 2** (Erweiterungsplan Teil 2b). Garage/Werkstatt/Leitstelle mit je 3 Stufen entfallen.
+- **Monetarisierung (Julian 14.10.2026 14:43, verbindlich):** Das normale Firmenwachstum ist Teil des kostenlosen Spiels. Echtgeld schaltet **nur** besondere Designs, Gebäudevarianten oder Lackierungen frei, **nie** den normalen Ausbau, keine Zeitverkürzung, kein Spielgeld, keine Vorteile. Ob und wann es solche Käufe gibt, entscheidet Julian.
 - **Lieferung an Julian:** TestFlight-Build 5.3, Screenshots aller überarbeiteten Bereiche, kurzes Video eines kompletten Einsatzes, Änderungsliste, ehrliche Schwächenliste, Testergebnisse, Sicherung von 5.1.
 
 ## Julians Auftrag (wörtlich, 14.10.2026 14:30)
@@ -316,3 +318,90 @@ Das ist jetzt ein richtiger Qualitäts-Neuaufbau. Claude soll nicht sofort die g
 ## Nachtrag (wörtlich, Julian 14.10.2026 14:36)
 
 5.3 muss nicht nur vollständig funktionieren, sondern eine eigene Identität und Motivation besitzen. Der Spieler soll nach einem Einsatz freiwillig noch einen Auftrag erledigen wollen. Wachstum muss auf der Karte sichtbar sein, Entscheidungen müssen echte Unterschiede erzeugen und ruhige Momente dürfen nicht leer wirken. Prüfe außerdem Schwierigkeitsgrade, Atmosphäre, Wiederaufnahme, Schutz vor unrettbaren Spielständen und langfristige Motivation. Danach keine weiteren Funktionen hinzufügen, sondern spielen, vereinfachen, ausbalancieren und polieren.
+
+## Nachtrag 2 (wörtlich, Julian 14.10.2026 14:43): Firmenentwicklung
+
+Ja, das gehört unbedingt als zentrales Fortschrittssystem hinein. Nicht nur „Garage Stufe 2“, sondern die Abschleppfirma muss auf der Karte wirklich sichtbar wachsen.
+Realistische Firmenentwicklung
+Stufe 1 – Kleiner Familienbetrieb
+
+* gemietete kleine Halle
+* ein Servicewagen
+* ein Abschlepper
+* zwei Mitarbeiter
+* kleiner Teilebestand
+* vier Stellplätze
+* einfaches Büro
+
+Stufe 2 – Eigener Betriebshof
+
+* größere Werkstatt
+* zusätzliche Fahrzeugstellplätze
+* Reifen- und Teilelager
+* Lager für Altteile
+* Waschplatz
+* Aufenthaltsraum
+* kleine Leitstelle
+* ungefähr vier bis sechs Einsatzfahrzeuge
+
+Stufe 3 – Professioneller Abschleppdienst
+
+* mehrere Werkstattplätze
+* großer Verwahrhof
+* Schwerlastbereich
+* eigene Tankstelle beziehungsweise Ladesäulen
+* moderne Leitstelle
+* Schulungsraum
+* ungefähr acht bis zwölf Fahrzeuge
+* Verträge mit Polizei, Werkstätten und Automobilclubs
+
+Stufe 4 – Regionalunternehmen
+
+* zweite Niederlassung in einem anderen Stadtgebiet
+* eigener Niederlassungsleiter
+* Fahrzeuge starten vom jeweils näheren Standort
+* zentrale Lagerverwaltung
+* große Lkw- und Busbergungen
+* ungefähr 15–25 Fahrzeuge
+
+Stufe 5 – Marktführer der Region
+
+* mehrere Niederlassungen
+* rund um die Uhr besetzte Leitstelle
+* Schwerlast-, Kran- und Spezialfahrzeuge
+* großer Verwaltungs- und Werkstattkomplex
+* Autobahn- und Großschadensverträge
+* sichtbares Firmengelände als Wahrzeichen der Stadt
+
+So funktioniert der Ausbau
+Auf dem Hof befinden sich echte freie Bauflächen. Der Spieler wählt dort beispielsweise:
+
+* zusätzliche Garage
+* Werkstattplatz
+* Stellplatzfläche
+* Lagerhalle
+* Reifencontainer
+* Entsorgungsbereich
+* Leitstelle
+* Mitarbeitergebäude
+* Tankstelle oder Ladesäule
+* Schwerlastgarage
+* Sammlungshalle
+
+Der Bau dauert Spielzeit. Währenddessen sieht man Absperrungen, Baufahrzeuge und Baufortschritt. Danach steht dort wirklich das neue Gebäude und Fahrzeuge beziehungsweise Mitarbeiter benutzen es.
+Jeder Ausbau benötigt:
+
+* Kaufpreis oder Kredit
+* laufende Kosten
+* Bauzeit
+* ausreichend Grundstück
+* teilweise bestimmte Genehmigungen oder Ruf
+* einen klaren Nutzen
+
+Beispiel:
+Zweite Werkstatthalle
+Baukosten: 35.000 €
+Bauzeit: 5 Spieltage
+Laufende Kosten: 180 € pro Tag
+Vorteil: Zwei Fahrzeuge gleichzeitig warten
+Wichtig: Das normale Firmenwachstum ist Bestandteil des kostenlosen Spiels. Echtgeld darf nur besondere Designs, Gebäudevarianten oder Lackierungen freischalten – nicht den normalen Ausbau blockieren. Genau dieses sichtbare Wachstum kann die langfristige Motivation für die geplanten 50–100 Stunden liefern.

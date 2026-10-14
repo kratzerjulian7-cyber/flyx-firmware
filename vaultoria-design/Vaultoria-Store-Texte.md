@@ -1,6 +1,8 @@
 # Vaultoria – App-Store-Texte (Entwurf)
 
 > **Pannenhilfe-Umstellung (14.10.2026 10:34):** Vaultoria ist jetzt ein Pannenhilfe- und Abschlepp-Tycoon. Store-Texte werden erst neu geschrieben, wenn das neue Spiel spielbar ist.
+>
+> **Monetarisierungsregel (Julian 14.10.2026 14:43, gilt auch für alle künftigen Store-Texte):** Das normale Firmenwachstum ist kostenlos. Echtgeld schaltet nur besondere Designs, Gebäudevarianten oder Lackierungen frei, nie den normalen Ausbau. Store-Texte dürfen nichts anderes versprechen.
 
 > **ÜBERHOLT (14.10.2026 10:30):** Julian hat Vaultoria radikal vereinfacht (Spielkonzept Teil L). Diese Texte beschreiben die abgeschaltete Version 2.3 und werden neu geschrieben, sobald die einfache Version spielbar ist. Nicht verwenden.
 

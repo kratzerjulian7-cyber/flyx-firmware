@@ -1,8 +1,8 @@
-# Vaultoria – Erweiterungsplan Pannenhilfe 1.6 (freigegeben, E1 erledigt, als Nächstes Komplettüberarbeitung 5.3)
+# Vaultoria – Erweiterungsplan Pannenhilfe 1.7 (freigegeben, E1 erledigt, als Nächstes Komplettüberarbeitung 5.3; Rückgrat = Firmenentwicklung, Teil 2b)
 
 **Vorrang ab 14.10.2026 14:30: `Komplettueberarbeitung-5.3.md`** (Julians Komplettüberarbeitung, wörtlich). 5.3 ist ein polierter vertikaler Ausschnitt mit Starttempo, Premium-UI/Modelltausch, E1.6 und E1.5 komplett, ohne Zwischenversion auf TestFlight; erst danach E2 ff. Wo jene Datei Neueres festlegt, gilt sie.
 
-Stand 14.10.2026, 14:35 (**1.6: Verweis auf Komplettueberarbeitung-5.3.md; Build-Reihenfolge in 5c ersetzt.** 1.5 14:20: **1.5: Julian 14:15 bestellt vor allen großen Erweiterungen ein Transparenz- und Detail-Update → E1.6, Teil 5c. Build-Reihenfolge: 5.2 Tempo + Premium-UI, 5.3 E1.6 + Zielort/Lager aus E1.5, 5.4 Rest E1.5, danach E2.** 1.4 14:10: **1.4: Julian 14:03 bestellt E1.5 „Zielorte und Betriebsmittel“ vor E2 und ein ruhigeres Starttempo (8–12 Einsätze pro Spieltag), siehe Teil 5b. Tempo kommt in 5.2, E1.5 als 5.3.** 1.3 14:00: **1.3: E1 erledigt in Vaultoria 5.1, Build 202610141353, auf TestFlight; 17 Tests grün; Testbericht `/mnt/project-files/Testbericht.md`. Urteil Mac: Start mit 2 Wagen zu hektisch, Viertel öffnen zu schnell → Balancing in den nächsten Updates.** 1.2 14:15: **1.2: Teil 7 Abgleich mit dem Code vom Mac übernommen; wo der Code abweicht, gilt Teil 7. Spielstand der App: Vaultoria 1.4, Build 202610141306, auf TestFlight, mit Optik-Angleichung und Kenney-Stadt.** 1.1 13:45: **1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
+Stand 14.10.2026, 14:50 (**1.7: Firmenentwicklung in 5 Stufen + Bausystem als Rückgrat (Teil 2b), Garage/Werkstatt/Leitstelle ×3 entfallen; Monetarisierungsregel in Teil 0.** 1.6 14:35: **1.6: Verweis auf Komplettueberarbeitung-5.3.md; Build-Reihenfolge in 5c ersetzt.** 1.5 14:20: **1.5: Julian 14:15 bestellt vor allen großen Erweiterungen ein Transparenz- und Detail-Update → E1.6, Teil 5c. Build-Reihenfolge: 5.2 Tempo + Premium-UI, 5.3 E1.6 + Zielort/Lager aus E1.5, 5.4 Rest E1.5, danach E2.** 1.4 14:10: **1.4: Julian 14:03 bestellt E1.5 „Zielorte und Betriebsmittel“ vor E2 und ein ruhigeres Starttempo (8–12 Einsätze pro Spieltag), siehe Teil 5b. Tempo kommt in 5.2, E1.5 als 5.3.** 1.3 14:00: **1.3: E1 erledigt in Vaultoria 5.1, Build 202610141353, auf TestFlight; 17 Tests grün; Testbericht `/mnt/project-files/Testbericht.md`. Urteil Mac: Start mit 2 Wagen zu hektisch, Viertel öffnen zu schnell → Balancing in den nächsten Updates.** 1.2 14:15: **1.2: Teil 7 Abgleich mit dem Code vom Mac übernommen; wo der Code abweicht, gilt Teil 7. Spielstand der App: Vaultoria 1.4, Build 202610141306, auf TestFlight, mit Optik-Angleichung und Kenney-Stadt.** 1.1 13:45: **1.1: Julians 8 Änderungen eingearbeitet, betroffene Stellen mit [R1]–[R8] markiert. Freigegeben, zuerst nur E1.**). 1.0 vom 14.10.2026, 13:30. Grundlage: `Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md` (1.4). Das Kernspiel mit Draufsicht bleibt, nichts wird ersetzt. Gebaut wird Update für Update nach Teil 5. Die frühere „Später“-Liste (UI-Vorgabe Teil 13) geht in diesem Plan auf.
 
 ## Julians Auftrag (wörtlich, 14.10.2026 12:57)
 
@@ -91,6 +91,7 @@ Stand 14.10.2026, 14:35 (**1.6: Verweis auf Komplettueberarbeitung-5.3.md; Build
 - **Die Karte bleibt die Mitte.** Jedes neue System zeigt sich zuerst auf der Karte (Marker, Fahrzeug, Gebäudeteil, Straßenabschnitt) und nur unterstützend in den vier vorhandenen Tabs **Karte · Flotte · Zentrale · Personal** oder im Einsatz-Panel (UI-Vorgabe 00b). **Kein fünfter Tab, keine neuen Hauptmenüs.**
 - **Eine neue Funktion pro Freischaltstufe.** Was noch nicht freigeschaltet ist, ist unsichtbar (keine grauen Platzhalter, kein „Demnächst“).
 - **Zahlen sind Startwerte** zum Ausbalancieren im Test. Der Mac gleicht Namen und Felder mit dem echten Swift-Code ab; bei Abweichung gilt der Code, dieser Plan wird angepasst.
+- **Monetarisierung (Julian 14.10.2026 14:43, verbindlich):** Das normale Firmenwachstum ist Teil des kostenlosen Spiels. Echtgeld schaltet **nur** besondere Designs, Gebäudevarianten oder Lackierungen frei, **nie** den normalen Ausbau, keine Zeitverkürzung, kein Spielgeld, keine Vorteile. Ob und wann es solche Käufe gibt, entscheidet Julian.
 - **[R1] Spielzeit:** 1 Spieltag = **18 Minuten** echte Zeit bei 1× (Spieluhr 06:00–22:00, Nacht wird übersprungen, außer Nachtdienst ist freigeschaltet). Erste Welt ≈ **300 Spieltage** (250–350) ≈ 75 Stunden bei 1×; wer oft 2× oder 4× nutzt, kommt eher auf 50, wer gründlich spielt eher auf 100 Stunden. Fristen aus dem echten Recht werden gestaucht (**1 echter Monat = 5 Spieltage**), die Reihenfolge der Schritte bleibt echt.
 
 ---
@@ -418,6 +419,62 @@ Genau **eine neue Funktion pro Stufe**. Freischaltung zeigt eine einzige Karte (
 
 Bremse für den Einstieg: In den ersten 10 Spieltagen nie mehr als 4 gleichzeitige Einsätze und kein Wetter schlimmer als Regen.
 
+## 2b. Firmenentwicklung: das Rückgrat (1.7, Julian 14.10.2026 14:43)
+
+Julians Text steht wörtlich in `Komplettueberarbeitung-5.3.md` (Nachtrag 2). Die Abschleppfirma wächst **sichtbar auf der Karte** in 5 Firmenstufen. Die 18 Freischaltstufen aus Teil 2 hängen jetzt an diesen Firmenstufen. **Garage, Werkstatt und Leitstelle mit je 3 Stufen entfallen**; an ihre Stelle tritt das Bausystem unten. **Monetarisierung (Julian 14.10.2026 14:43, verbindlich):** Das normale Firmenwachstum ist Teil des kostenlosen Spiels. Echtgeld schaltet **nur** besondere Designs, Gebäudevarianten oder Lackierungen frei, **nie** den normalen Ausbau, keine Zeitverkürzung, kein Spielgeld, keine Vorteile. Ob und wann es solche Käufe gibt, entscheidet Julian.
+
+### Firmenstufen und Freischaltstufen
+
+| Firmenstufe | Spieltag (Ziel) | Freischaltstufen (Teil 2) | Sichtbar auf der Karte | Fahrzeuge | Aufstieg zur nächsten Firmenstufe |
+|---|---|---|---|---|---|
+| **1 Kleiner Familienbetrieb** | 1–31 | 0–4 (Kernspiel, Wetter, Erfahrung, Ausgänge, Ziele) | gemietete kleine Halle, einfaches Büro, 4 Stellplätze, kleiner Teilebestand, 3 kleine Bauflächen | 1 Servicewagen + 1 Abschlepper, 2 Mitarbeiter (bis 3 Fahrzeuge) | 100 Einsätze, Ruf 25, 8.000 € Anzahlung (Rest als Kredit möglich) → **Grundstück kaufen** |
+| **2 Eigener Betriebshof** | 32–71 | 5–7 (Betriebshof mit Standgebühren, Standzeiten/Platz, Gebiet Wohnviertel + Bahnhof) | Umzug auf eigenes Grundstück: größere Werkstatt, Stellplatzflächen, Reifen-/Teilelager, Altteillager, Waschplatz, Aufenthaltsraum, kleine Leitstelle, 8 Bauflächen | 4–6 | Ruf 35, 220 Einsätze, Werkstattplatz + kleine Leitstelle gebaut → **Grundstückserweiterung** |
+| **3 Professioneller Abschleppdienst** | 72–197 | 8–15 (Verträge Werkstatt/Polizei/Automobilclub, Bergefahrzeug, Autobahn, Kaufangebote + Sammlung, Restaurieren, Schwerlast + Lkw) | mehrere Werkstattplätze, großer Verwahrhof, Schwerlastbereich, eigene Tankstelle/Ladesäulen, moderne Leitstelle, Schulungsraum, +6 Bauflächen | 8–12 | alle 3 Verträge, Ruf 60, Schwerlastgarage gebaut → **zweite Niederlassung** |
+| **4 Regionalunternehmen** | 198–261 | 16–17 (offizielle Auktionen, Kranwagen + Bus, Industriehafen) | zweite Niederlassung im Gewerbegebiet mit eigenem Niederlassungsleiter; Fahrzeuge starten vom näheren Standort; zentrale Lagerverwaltung | 15–25 | Ruf 75, beide Standorte voll ausgebaut → **Leitstelle rund um die Uhr** |
+| **5 Marktführer der Region** | 262–330 | 18 + Ziel (Großunfälle, Land/Vororte, Endziel) | mehrere Niederlassungen, 24-h-Leitstelle (Nachtdienst), Verwaltungs- und Werkstattkomplex als Wahrzeichen, Kran- und Spezialfahrzeuge, Autobahn- und Großschadensverträge | 25+ | Endziel und Ausblick „Neue Region folgt“ [R7] |
+
+Hinweis zur Reihenfolge: Teil 2 bleibt gültig, mit einer Anpassung: Schwerlast + Lkw (Stufe 14) gehört zum Schwerlastbereich der Firmenstufe 3, große Lkw- und Busbergungen kommen in Firmenstufe 4 (Bus mit Stufe 17). Ein **Firmenaufstieg** ist ein eigener Moment (Auto-Pause, eine Karte, Kamerafahrt über das neue Gelände), nie automatisch: Der Spieler bestätigt Kauf bzw. Umzug selbst.
+
+### Bausystem auf freien Hofflächen
+
+```swift
+struct BuildPlot: Codable { let id: String; let siteId: String; let size: PlotSize; var building: BuildingInstance? }   // PlotSize: .small, .medium, .large
+struct BuildingType: Codable { let id: String; let plotSize: PlotSize; let cost: Int; let buildDays: Double; let dailyCost: Int;
+                               let minCompanyStage: Int; let minReputation: Int?; let permit: String?; let effect: String }
+struct BuildingInstance: Codable { let typeId: String; var state: BuildState; var progress: Double }   // .construction, .ready
+struct CompanyState: Codable { var stage: Int = 1; var sites: [Site]; var loans: [Loan] }
+struct Loan: Codable { let principal: Int; var remaining: Int; let dailyRate: Int }   // Startwert: bis 60 % der Baukosten, 20 Spieltage, +8 % gesamt
+```
+- **Freie Bauflächen** sind auf der Karte als dezent silbern umrandete Flächen sichtbar (keine Platzhalter-Gebäude). Antippen → Sheet mit den passenden Gebäuden für diese Flächengröße.
+- **Bau dauert Spielzeit:** Absperrung, Bauzaun, Baufahrzeuge (Bagger/Kran/Lieferwagen fahren an), Fortschrittsring; danach steht das Gebäude dort, und Fahrzeuge/Mitarbeiter **benutzen es sichtbar** (Wagen fährt in die Werkstatt, Mitarbeiter geht in den Aufenthaltsraum).
+- **Jeder Ausbau zeigt vorher:** Kaufpreis (oder Kredit), laufende Kosten pro Tag, Bauzeit, Flächenbedarf, Voraussetzung (Firmenstufe, Ruf, Genehmigung) und **einen konkreten Nutzen** in einem Satz.
+- Laufende Kosten gehen in die täglichen Fixkosten (Teil 5c Punkt 4) und ins Kassenbuch.
+
+**Gebäudekatalog (Startwerte zum Ausbalancieren, Julians Beispiel „Zweite Werkstatthalle“ als Anker):**
+
+| Gebäude | Fläche | Ab Firmenstufe | Baukosten | Bauzeit | Laufend/Tag | Nutzen |
+|---|---|---|---|---|---|---|
+| Stellplatzfläche | klein | 1 | 4.000 € | 1 Tag | 15 € | +4 Einheiten Hof |
+| Reifencontainer | klein | 1 | 2.500 € | 1 Tag | 5 € | Altreifen-Kapazität +10 |
+| Entsorgungsbereich | klein | 1 | 4.000 € | 2 Tage | 15 € | Altbatterien/Altöl/Schrott-Kapazität ×2 |
+| Lagerhalle (Teile) | mittel | 1 | 9.000 € | 3 Tage | 40 € | Lager +20 Einheiten, Lieferung 30 % schneller |
+| Zusätzliche Garage | mittel | 1 | 12.000 € | 3 Tage | 50 € | +1 Einsatzfahrzeug möglich, Fahrzeuge altern draußen nicht schneller |
+| Werkstattplatz | mittel | 2 | 18.000 € | 4 Tage | 90 € | 1 Fahrzeug gleichzeitig warten/reparieren |
+| Waschplatz | klein | 2 | 5.000 € | 2 Tage | 20 € | +2 % Bewertung je Einsatz (sauberes Fahrzeug) |
+| Mitarbeitergebäude (Aufenthaltsraum) | mittel | 2 | 10.000 € | 3 Tage | 40 € | Müdigkeit erholt sich 25 % schneller |
+| Leitstelle (klein) | mittel | 2 | 15.000 € | 4 Tage | 60 € | +1 gleichzeitiger Auftrag, Einsätze 5 Spielminuten früher sichtbar |
+| Zweite Werkstatthalle | groß | 3 | 35.000 € | 5 Tage | 180 € | 2 Fahrzeuge gleichzeitig warten |
+| Tankstelle / Ladesäulen | mittel | 3 | 20.000 € | 4 Tage | 50 € | Tanken auf dem Hof, Kraftstoff 15 % günstiger |
+| Leitstelle (modern) | groß | 3 | 40.000 € | 6 Tage | 150 € | +2 gleichzeitige Aufträge, Routenvorschlag |
+| Schulungsraum | mittel | 3 | 25.000 € | 4 Tage | 80 € | Führerscheine/Erfahrung schneller |
+| Schwerlastgarage | groß | 3 | 60.000 € | 7 Tage | 220 € | Voraussetzung Schwerlastabschlepper |
+| Sammlungshalle | groß | 3 | 45.000 € | 6 Tage | 120 € | Sammlung + Restaurieren (E12/E14) |
+| Niederlassung | eigenes Gelände | 4 | 150.000 € | 10 Tage | 600 € | zweiter Startpunkt, eigener Leiter |
+
+### Was in 5.3 gebaut wird
+
+**Firmenstufe 1 komplett** (gemietete Halle, Büro, 4 Stellplätze, 1 Servicewagen + 1 Abschlepper, 2 Mitarbeiter, kleiner Teilebestand) **plus das Bausystem** mit den ersten Ausbauten Richtung Stufe 2: Stellplatzfläche, Reifencontainer, Entsorgungsbereich, Lagerhalle, Zusätzliche Garage (ersetzen die Ausbaustufen aus Teil 5b Punkt 5–6). Bausystem inkl. Baustelle, Bauzeit, laufender Kosten, Kredit und Anzeige „Firmenstufe 1 · Kleiner Familienbetrieb“ mit Fortschritt zum Aufstieg. **Der Aufstieg zu Stufe 2 selbst** kommt mit E6 (Betriebshof); Stufen 3–5 in den späteren Updates nach Teil 5.
+
 ## 2a. Taktplan gegen Wiederholung **[R8]**
 
 Regel: **Spätestens alle 8 Spieltage (ca. 2½ Stunden) kommt etwas Neues**: eine Stufe aus Teil 2 oder eine neue Einsatzvariante. Keine Einsatzart läuft länger als 20 Spieltage ohne neue Variante. Varianten sind neue Inhalte innerhalb bekannter Abläufe, kein neues System.
@@ -537,7 +594,7 @@ Plan-Nummern E1–E19. **App-Versionen ab 14.10.2026: nächster Build = Vaultori
 | **E3 Erfahrung** (Stufe 2) | XP, Stufen, Wertwahl alle 3 Stufen | Nach Einsätzen steigt XP in der genutzten Fähigkeit; Stufenkarte erscheint; Wert wirkt auf Dauer | Personal-Tab, Stufe-erreicht-Karte |
 | **E4 Ausgänge** (Stufe 3) | Outcome-Würfel, „gute Chance/riskant“, Berichte | Alle 7 Ausgänge mit festem Seed auslösbar, Geld/Sterne korrekt | Panel mit Chance-Wort, 3 Berichte mit unterschiedlichem Ausgang |
 | **E5 Ziele + Verlauf** (Stufe 4) | 3 aktive Ziele, Belohnungen, Verlauf in der Tagesabrechnung | Ziel erfüllen → Belohnung, neues Ziel; Verlauf zeigt 30 Tage | Zielkarten am Rand, Verlauf-Diagramme |
-| **E6 Betriebshof** (Stufe 5) | baut auf dem Hof-Grundumfang aus E1.5 auf: Depot, Einlagern, Gebühren bis Herausgabeverlangen | Voller Hof blockiert Einlagern; Gebühren stoppen bei Herausgabeverlangen; Tagesabrechnung zeigt Gebühren | Hof auf der Karte, Zentrale-Karte Betriebshof, Liste |
+| **E6 Betriebshof + Firmenstufe 2** (Stufe 5) | Aufstieg zu Firmenstufe 2 (Grundstück, Umzug, Teil 2b); baut auf dem Hof-Grundumfang aus E1.5 auf: Depot, Einlagern, Gebühren bis Herausgabeverlangen | Voller Hof blockiert Einlagern; Gebühren stoppen bei Herausgabeverlangen; Tagesabrechnung zeigt Gebühren | Hof auf der Karte, Zentrale-Karte Betriebshof, Liste |
 | **E7 Standzeiten/Platz** (Stufe 6) | Größenklassen, Gründe, Standzeiten | Transporter belegt 2 Einheiten; Standzeiten im Bereich der Tabelle | Hof mit gemischten Fahrzeugen |
 | **E8 Gebiete 1** (Stufe 7) | District-System, Wohnviertel + Bahnhof | Gesperrt sichtbar, Freischalten mit Kosten/Ruf; neue Einsatzmischung | Gesperrtes Gebiet, Freischalt-Kamerafahrt |
 | **E9 Vertrag Werkstatt** (Stufe 8) | Contract-System, Partnergebäude | Vertragsaufträge mit Zeitlimit; Pünktlichkeit zählt; Verlängerung/Ende | Partnergebäude, Vertragskarte |
