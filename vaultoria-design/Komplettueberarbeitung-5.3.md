@@ -1,6 +1,6 @@
 # Vaultoria – Komplettüberarbeitung 5.3 (verbindlich)
 
-Stand 14.10.2026, 14:35. Julians Auftrag vom 14.10.2026 14:30, **wörtlich** unten. Geht bei Widerspruch allen anderen Dateien vor (`Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md`, `Erweiterungsplan-Pannenhilfe.md`); diese bleiben als Detail- und Zahlenquelle gültig.
+Stand 14.10.2026, 14:40. Julians Auftrag vom 14.10.2026 14:30 und Nachtrag 14:36, **wörtlich** unten. Geht bei Widerspruch allen anderen Dateien vor (`Spielkonzept-Pannenhilfe.md`, `UI-Vorgabe-Pannenhilfe.md`, `Erweiterungsplan-Pannenhilfe.md`); diese bleiben als Detail- und Zahlenquelle gültig.
 
 ## Einordnung (Docs-Thread)
 
@@ -312,3 +312,7 @@ Keine unfertige Zwischenversion hochladen. Erstelle zunächst intern einen volls
 
 Ich möchte nicht nur eine abgearbeitete Liste sehen. Das Spiel soll sich beim nächsten Öffnen zusammenhängend, verständlich, hochwertig und überraschend vollständig anfühlen. Triff eigenständig gute Entscheidungen, wenn Details fehlen. Neue Funktionen sind nur sinnvoll, wenn der bestehende Ablauf dadurch besser wird.
 Das ist jetzt ein richtiger Qualitäts-Neuaufbau. Claude soll nicht sofort die gesamten geplanten 100 Spielstunden bauen. Er soll zunächst die vorhandene erste Spielphase so gut machen, dass bereits die ersten 30–60 Minuten wirklich Spaß machen. Danach werden die Langzeit-Erweiterungen daraufgesetzt.
+
+## Nachtrag (wörtlich, Julian 14.10.2026 14:36)
+
+5.3 muss nicht nur vollständig funktionieren, sondern eine eigene Identität und Motivation besitzen. Der Spieler soll nach einem Einsatz freiwillig noch einen Auftrag erledigen wollen. Wachstum muss auf der Karte sichtbar sein, Entscheidungen müssen echte Unterschiede erzeugen und ruhige Momente dürfen nicht leer wirken. Prüfe außerdem Schwierigkeitsgrade, Atmosphäre, Wiederaufnahme, Schutz vor unrettbaren Spielständen und langfristige Motivation. Danach keine weiteren Funktionen hinzufügen, sondern spielen, vereinfachen, ausbalancieren und polieren.
